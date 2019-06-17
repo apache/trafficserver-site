@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel id="trafficserver">
+        <title>Apache Traffic Server™ Downloads</title>
+        <description>Release feed for Apache Traffic Server™</description>
+        <link>http://trafficserver.apache.org/downloads</link>
+        <language>en-us</language>
+        <webMaster>igalic@apache.org</webMaster>
+
+ Current (stable) Release	3.2.4	25-01-2013	http://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-3.2.4.tar.bz2
+    <item>
+                <title> Current (stable) Release</title>
+                <description>
+                    <![CDATA[
+    Traffic Server 3.2.4</a>
+
+This is a bug-fix release, but we've also made a number of improvements,
+in particular on FreeBSD.
+
+If you are upgrading from the previous stable releases (v3.0.x), please see [these instructions](https://cwiki.apache.org/confluence/display/TS/Upgrading+to+3.2).
+
+
+                    ]]>
+                </description>
+                <link>http://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-3.2.4.tar.bz2</link>
+                <pubDate>25-01-2013</pubDate>
+            </item>
+
+    
+ Legacy (stable) Release	3.0.5	06-06-2012	http://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-3.0.5.tar.bz2
+    <item>
+                <title> Legacy (stable) Release</title>
+                <description>
+                    <![CDATA[
+    Traffic Server 3.0.5</a>
+
+
+                    ]]>
+                </description>
+                <link>http://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-3.0.5.tar.bz2</link>
+                <pubDate>06-06-2012</pubDate>
+            </item>
+
+    
+ Current (developer, unstable) Release	3.3.1	14-03-2013	http://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-3.3.1-dev.tar.bz2
+    <item>
+                <title> Current (developer, unstable) Release</title>
+                <description>
+                    <![CDATA[
+    Traffic Server 3.3.1</a>
+
+
+
+                    ]]>
+                </description>
+                <link>http://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-3.3.0-dev.tar.bz2</link>
+                <pubDate>07-09-2012</pubDate>
+            </item>
+
+    
+ Archived (stable) Release	3.2.0	19-06-2012	http://archive.apache.org/dist/trafficserver/trafficserver-3.2.0.tar.bz2
+    <item>
+                <title> Archived (stable) Release</title>
+                <description>
+                    <![CDATA[
+    Traffic Server 3.2.0</a>
+
+More details are also in the [CHANGES log](https://git-dual.apache.org/repos/asf?p=trafficserver.git;a=blob;f=CHANGES;h=b70108ada22f0b8872fbca218bcf09b2f3692c99;hb=f80179bce9133048d7d28cef59b4deb7adc22d20). 
+
+
+                    ]]>
+                </description>
+                <link>http://archive.apache.org/dist/trafficserver/trafficserver-3.2.0.tar.bz2</link>
+                <pubDate>19-06-2012</pubDate>
+            </item>
+
+    
+ Archived (stable) Release	3.0.4	07-12-2011	http://archive.apache.org/dist/trafficserver/trafficserver-3.0.4.tar.bz2
+    <item>
+                <title> Archived (stable) Release</title>
+                <description>
+                    <![CDATA[
+    Traffic Server 3.0.4</a>
+
+More details are also in the [CHANGES log](https://git-dual.apache.org/repos/asf?p=trafficserver.git;a=blob;f=CHANGES;h=b70108ada22f0b8872fbca218bcf09b2f3692c99;hb=f80179bce9133048d7d28cef59b4deb7adc22d20). 
+
+For details on the fixes since v2.0.0, please refer to the [bug list](v2tov3bugs.html).
+
+
+
+                    ]]>
+                </description>
+                <link>http://archive.apache.org/dist/trafficserver/trafficserver-3.0.4.tar.bz2</link>
+                <pubDate>07-12-2011</pubDate>
+            </item>
+
+    
+ Archived (stable) Release	3.0.2	07-12-2011	http://archive.apache.org/dist/trafficserver/trafficserver-3.0.2.tar.bz2
+    <item>
+                <title> Archived (stable) Release</title>
+                <description>
+                    <![CDATA[
+    Traffic Server 3.0.2</a>
+
+More details are also in the [CHANGES log]().
+For details on the fixes since v2.0.0, please refer to the [bug list](v2tov3bugs.html). 
+
+
+**Note:** Upgrading from v2.0.x or v2.1.8 and earlier requires that you migrate to the
+new records.config configuration file. You should also clear all caches after upgrading
+(e.g. `sudo traffic_server -Cclear`), as well as deleting the hostdb files (`var/trafficserver/host.db`
+and `etc/trafficserver/internal/hostdb.config`).
+			
+
+
+                    ]]>
+                </description>
+                <link>http://archive.apache.org/dist/trafficserver/trafficserver-3.0.2.tar.bz2</link>
+                <pubDate>07-12-2011</pubDate>
+            </item>
+
+    
+ Archived (stable) Release	2.0.1	01-09-2010	http://archive.apache.org/dist/trafficserver/trafficserver-2.0.1.tar.bz2
+    <item>
+                <title> Archived (stable) Release</title>
+                <description>
+                    <![CDATA[
+    Traffic Server 2.0.1</a>
+
+*  Port of CVE-2010-2952 for 2.0.x [[`TS-425`](https://issues.apache.org/jira/browse/TS-425)]
+*  Backport part of TS-322 that deals with indexing arrays with char (author: Marcus Ruckert) [[`TS-334`](https://issues.apache.org/jira/browse/TS-334)]
+*  Backport TS-336 to 2.0.x. Problems with make install DESTDIR
+
+
+
+                    ]]>
+                </description>
+                <link>http://archive.apache.org/dist/trafficserver/trafficserver-2.0.1.tar.bz2</link>
+                <pubDate>01-09-2010</pubDate>
+            </item>
+
+    
+ Archived (developer, unstable) Release	3.1.3	21-03-2012	http://archive.apache.org/dist/trafficserver/trafficserver-3.1.3-unstable.tar.bz2
+    <item>
+                <title> Archived (developer, unstable) Release</title>
+                <description>
+                    <![CDATA[
+    Traffic Server 3.1.3</a>
+
+More details are also in the [CHANGES log](https://git-dual.apache.org/repos/asf?p=trafficserver.git;a=blob;f=CHANGES;h=9fe84e12fbc75f8f5c2e56fda089622443c1fa74;hb=0f57f149b0a42798ca09e0f3ce77393a6acb0ec2). 
+The Jira release notes are also [available](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12310963&version=12317969). 
+
+This release fixes a vulnerability, [CVE-2012-0256](https://www.cert.fi/en/reports/2012/vulnerability612884.html),
+where a large Host: headers can potentially crash the server.
+All users of all unstable development releases are urged to upgrade to 3.1.3. This includes all 2..x and 3.1.x releases prior to v3.1.3.
+
+
+
+                    ]]>
+                </description>
+                <link>http://archive.apache.org/dist/trafficserver/trafficserver-3.1.3-unstable.tar.bz2</link>
+                <pubDate>21-03-2012</pubDate>
+            </item>
+
+    
+ Archived (developer, unstable) Release	3.1.2	08-02-2012	http://archive.apache.org/dist/trafficserver/trafficserver-3.1.2-unstable.tar.bz2
+    <item>
+                <title> Archived (developer, unstable) Release</title>
+                <description>
+                    <![CDATA[
+    Traffic Server 3.1.2</a>
+
+More details are also in the [CHANGES log](https://git-dual.apache.org/repos/asf?p=trafficserver.git;a=blob;f=CHANGES;h=b601cc7b8de241b7413006d50b31274f662c309b;hb=458454806b2e18230ec2a77d235e91d8682f651f).
+The Jira release notes are also [available](https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12310963&version=12316496).
+
+
+
+                    ]]>
+                </description>
+                <link>http://archive.apache.org/dist/trafficserver/trafficserver-3.1.2-unstable.tar.bz2</link>
+                <pubDate>08-02-2012</pubDate>
+            </item>
+
+    
+ Archived (developer, unstable) Release	3.1.1	18-11-2011	http://archive.apache.org/dist/trafficserver/trafficserver-3.1.1-unstable.tar.bz2
+    <item>
+                <title> Archived (developer, unstable) Release</title>
+                <description>
+                    <![CDATA[
+    Traffic Server 3.1.1</a>
+
+More details are also in the [CHANGES log](https://git-dual.apache.org/repos/asf?p=trafficserver.git;a=blob;f=CHANGES;h=b9f3bb5a460334a44589b4346321510e5cf3f225;hb=54a0686ee2961cf4f3d55d63810c077fc902ef7c).
+
+
+
+                    ]]>
+                </description>
+                <link>http://archive.apache.org/dist/trafficserver/trafficserver-3.1.1-unstable.tar.bz2</link>
+                <pubDate>18-11-2011</pubDate>
+            </item>
+
+    
+ Archived (developer, unstable) Release	3.1.0	25-08-2011	http://archive.apache.org/dist/trafficserver/trafficserver-3.1.0-unstable.tar.bz2
+    <item>
+                <title> Archived (developer, unstable) Release</title>
+                <description>
+                    <![CDATA[
+    Traffic Server 3.1.0</a>
+
+More details are also in the [CHANGES log](https://git-dual.apache.org/repos/asf?p=trafficserver.git;a=blob;f=CHANGES;h=1bcde89481a6527e85c448781aa84b311e34aea1;hb=6a6a94f5668160fba6118ca08cd2dc5cdb37c542).
+
+
+                    ]]>
+                </description>
+                <link>http://archive.apache.org/dist/trafficserver/trafficserver-3.1.0-unstable.tar.bz2</link>
+                <pubDate>25-08-2011</pubDate>
+            </item>
+
+    
+    </channel>
+</rss>
+

@@ -1,0 +1,260 @@
+.infofield {
+    background: #CFC; 
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0px;
+    float: left;
+    clear: none;
+}
+
+.regfield {
+    background: none;
+    border: none;
+    cursor: auto;
+    margin: 1px;
+    float: left;
+    clear: none;
+}
+
+body {
+    background: #333;
+}
+
+#contents     {
+    width: 1150px;
+    min-height: 600px;
+    background: #666;
+    border: 1px solid #DDD;
+    margin: 10px auto;
+    clear: none;
+    float: left;
+}
+
+#header     {
+    width: 1150px;
+    color: #000;
+    background: #DDD;
+    border: 1px solod #000;
+    clear: none;
+    float: left;
+}
+
+
+.css-treeview-parent {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+	font: normal 11px "Segoe UI", Arial, Sans-serif;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+    float: left; 
+    border-radius: 5px; 
+    border: 1px solid #000;
+    min-height: 500px;
+    min-width: 200px;
+    background: url(treeview.png);
+    background-repeat: repeat-y;
+    }
+
+.css-treeview ul,
+.css-treeview li
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.css-treeview input
+{
+	position: absolute;
+	opacity: 0;
+}
+
+.css-treeview
+{
+ 
+}
+
+.css-treeview b
+{
+ padding-left: 5px;
+}
+
+.css-treeview a
+{
+	color: #00f;
+	text-decoration: none;
+}
+
+.css-treeview a:hover
+{
+	text-decoration: underline;
+}
+
+.css-treeview input + label + ul
+{
+	margin: 0 0 0 22px;
+}
+
+.css-treeview input ~ ul
+{
+	display: none;
+}
+
+.css-treeview label,
+.css-treeview label::before
+{
+	cursor: pointer;
+}
+
+.css-treeview input:disabled + label
+{
+	cursor: default;
+	opacity: .6;
+}
+
+.css-treeview input:checked:not(:disabled) ~ ul
+{
+	display: block;
+}
+
+.css-treeview label,
+.css-treeview label::before
+{
+	background: url("icons.png") no-repeat;
+}
+
+.css-treeview label,
+.css-treeview a,
+.css-treeview label::before
+{
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;,
+	vertical-align: middle;
+}
+
+.logbox a {
+    margin-left: 10px;
+    font-size: 12px;
+}
+.css-treeview label
+{
+	background-position: 18px 0;
+}
+
+.css-treeview label::before
+{
+	content: "";
+	width: 16px;
+	margin: 0 22px 0 0;
+	vertical-align: middle;
+	background-position: 0 -32px;
+}
+
+.css-treeview input:checked + label::before
+{
+	background-position: 0 -16px;
+}
+
+/* webkit adjacent element selector bugfix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+	.css-treeview 
+	{
+		-webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+	}
+	
+	@-webkit-keyframes webkit-adjacent-element-selector-bugfix 
+	{
+		from 
+		{ 
+			padding: 0;
+		} 
+		to 
+		{ 
+			padding: 0;
+		}
+	}
+}
+
+ .menubar {
+    border-radius: 8px;
+    width: 400px;
+    height: 32px;
+    border: 1px solid #000;
+    background-image: url(menubar.png);
+    background-repeat: repeat-x;
+    float: left;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding-left: 2px;
+    }
+    .splitter {
+        float: left;
+        width: 1px;
+        height: 32px;
+        background: #000;
+        opacity: 0.3;
+    }
+    .menuitem {
+        float: left;
+        height: 24px;
+        padding-top: 8px;
+        padding-left: 8px;
+        padding-right: 12px;
+        font-family: Arial, Helvetica, Sans-Serif;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .menuitem:hover {
+        cursor: pointer;
+        background: rgba(255,255,100, 0.3);
+    }
+    .menuitem p:hover { opacity: 10; }
+    
+.log_selected {
+    background: #FFF;
+    background-image: url(logformat_selected.png);
+    background-repeat: repeat-x;
+    padding: 5px; 
+    padding-top: 2px;
+    margin-top: 15px; 
+    width: 800px; 
+    min-height: 180px; 
+    clear: none; 
+    float: left;
+    border: 1px solid #000; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+}
+.log_deselected {
+    background: #CCC;
+    background-image: url(logformat_deselected.png);
+    background-repeat: repeat-x;
+    padding: 5px; 
+    padding-top: 2px;
+    margin-top: 15px; 
+    width: 800px; 
+    min-height: 180px; 
+    clear: none; 
+    float: left;
+    border: 1px solid #000; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    margin-top: 0px;
+    text-align: center;
+}
+
+a {
+    padding-left: 10px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}

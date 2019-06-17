@@ -1,0 +1,173 @@
+a:hover {
+  text-decoration:underline;
+}
+a {
+  color:#528DC8;text-decoration:none;
+}
+
+html {
+  background: url('/images/grey_paper.jpg');
+}
+
+body {
+  margin:10px; /* content was too close to edges. */
+  font-family: sans-serif
+}
+
+#header {
+  color:#528DC8;
+  vertical-align: middle;
+}
+
+img.logo {
+  border:0px;
+  margin: 10px;
+}
+
+.title {
+  font-weight:bold;
+}
+
+.doc-title {
+}
+
+.nav {
+  background: black;
+  color: white;
+  height: 1.5em;
+  padding-top: 0.5em;
+}
+
+.nav a.lang {
+  padding-right: 15px;
+}
+
+.right {
+  text-align: right;
+}
+
+.nav a {
+  margin-left: 15px;
+  color: white;
+}
+
+div.lang {
+    text-align:right;
+}
+a.lang {
+  padding-right:2ex;
+}
+
+#content {
+  background:white;
+  padding: 1.5em;
+  text-align: justify;
+}
+
+.row.content {
+  background: white;
+}
+
+#content {
+  font-family: serif;
+}
+
+#content h1, #content h2, #content h3, #content h4 {
+  font-family: sans-serif;
+}
+
+#content h1 {
+  background-color:#EEEEEE;
+  color:#528DC8;
+  font-weight:bold;
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  height:1.5em;
+
+  padding:0px;
+  padding-top:0.5ex;
+  padding-left:1ex;
+
+  margin-top: 1em;
+}
+
+#content h2 {
+  font-weight:bold;
+  color:#528DC8;
+  margin-top: 1em;
+}
+
+#content h3 {
+  font-weight:bold;
+  color:#528DC8;
+  margin-top: 1em;
+}
+
+#content h4 {
+  font-weight:bold;
+  color:#528DC8;
+  margin-top: 1em;
+}
+
+#content p {
+  margin-top: 1em;
+}
+
+#content dl {
+  margin-top:1em;
+}
+
+#content dl dt {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#content dl dd {
+  margin-left: 3em;
+}
+
+#content div.codehilite {
+  margin-top: 1em;
+}
+
+#content ul, #content ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ul li, ol li {
+  margin-left: 3em;
+}
+
+/* workaround for TS-831 */
+#content dl dd p {
+  margin: 0.25em;
+}
+
+#content_nav {
+  background: white;
+}
+
+#disqus_thread {
+  padding: 5px;
+}
+
+span#apache_logo{
+  float:right;
+}
+
+#footer{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.banner h2, .banner h1{font-size:150%;}
+.banner h3{font-size:125%;}
+.banner {background-color:#EEEEEE; margin:0px 0 12px 0; color:#528DC8; height:30px; padding:11px 0 4px 10px;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+
+div.last > ul li {
+  margin-left:1em;
+  list-style-type:none;
+}

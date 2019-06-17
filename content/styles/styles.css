@@ -1,0 +1,382 @@
+/* Traffic server Responsive CSS theme based on 1140.css grid */
+
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+/*--------------------------------
+
+INDEX
+
+1. HTML, BODY, CONTENT
+
+2. LINKS
+
+3. HEADER AND NAVIGATION
+
+4. BLURBBOX
+
+5. HEADINGS
+
+6. LISTS
+
+7. SEARCH BOX
+
+8. DOWNLOAD BUTTON
+
+--------------------------------*/
+
+/* 1. HTML, BODY, CONTENT */
+
+html {
+    font-family: arial,sans-serif;
+    background: url('../images/grey_paper.jpg');
+}
+
+body {
+    font-size: 12pt;
+}
+
+.content {
+    background-color: white;
+}
+
+#content {
+  background:white;
+  padding: 1em;
+}
+
+
+#content p {
+  margin-top: 1em;
+}
+
+#content dl {
+  margin-top:1em;
+}
+
+#content dl dt {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#content dl dd {
+  margin-left: 3em;
+}
+
+#content div.codehilite {
+  margin-top: 1em;
+  overflow: auto;
+}
+
+#content ul, #content ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ul li, ol li {
+  margin-left: 3em;
+}
+
+/* workaround for TS-831 */
+#content dl dd p {
+  margin: 0.25em;
+}
+/* 2. LINKS */
+
+a:hover {
+  text-decoration:underline;
+}
+a {
+  color:#528DC8;text-decoration:none;
+}
+
+/* 3. HEADER AND NAVIGATION */
+
+#header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav {
+        font-weight: bold;
+        background-color: black;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+         border-radius: 5px;
+        -khtml-border-radius: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+
+.nav .right {
+    text-align: right;
+}
+
+.nav a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+}
+
+/* 4. BLURBBOX */
+/* blurbbox is a box inside an 1140 column. It's needed to get margins correct without destroying layout */
+/* effectivey the same as 'content' but with slightly different styles for the front page - shoudl merge? */
+
+#blurbbox {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* 5. HEADINGS */
+
+.banner h2, .banner h1{
+    font-size:150%;
+    margin-left: 10px;
+}
+.banner h3{
+    font-size:125%;
+    margin-left: 10px;
+}
+.banner {
+    background-color:#EEEEEE;
+    margin:0px 0 12px 0;
+    color:#528DC8;
+    height:30px;
+    padding:11px 0 4px 0px;
+    text-align: left;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#content h1 {
+    background-color:#EEEEEE;
+    margin:0px 0 1em 0;
+    color:#528DC8;
+    min-height:35px;
+    padding:11px 0 11px 10px;
+    text-align: left;
+    border-radius: 5px;
+    margin-top: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+}
+
+#content h2 {
+  font-weight:bold;
+  color:#528DC8;
+  margin-top: 1em;
+}
+
+#content h3 {
+  font-weight:bold;
+  color:#528DC8;
+  margin-top: 1em;
+}
+
+#content h4 {
+  font-weight:bold;
+  color:#528DC8;
+  margin-top: 1em;
+}
+#header-main {
+    font-weight: bold;
+    text-align: right;
+    font-size: 200%;
+    color:#528DC8;
+    margin-right: 30px;
+}
+#header-sub {
+    font-weight: bold;
+    text-align: right;
+    font-size: 15pt;
+    color:#528DC8;
+    margin-right: 30px;
+}
+/* 6. LISTS */
+
+ul li, ol li {
+  margin-left: 3em;
+}
+
+
+#content ul, #content ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#blurbbox ul li, #blurbbox ol li {
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 0.5em;
+}
+
+div.last > ul li {
+  margin-left:1em;
+  list-style-type:none;
+}
+
+
+/* 7. SEARCH BOX */
+#searchbox {
+    padding-top: 15px;
+    margin: 0;
+    line-height: 1;
+    text-align: right;
+}
+
+/* 8. DOWNLOAD BUTTON */
+
+#download {
+    float:left;
+    text-align:center;
+    height: 30px;
+    width: 200px;
+    margin:10px 10px 10px 55px;
+    border-top: 1px solid #c8c8c8;
+    background: #47bf1f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9fe47d), to(#47bf1f));
+    background: -webkit-linear-gradient(top, #9fe47d, #47bf1f);
+    background: -moz-linear-gradient(top, #9fe47d, #47bf1f);
+    background: -ms-linear-gradient(top, #9fe47d, #47bf1f);
+    background: -o-linear-gradient(top, #9fe47d, #47bf1f);
+    padding: 20px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 18px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+#download:hover {
+    border-top-color: #47bf1f;
+    background: #47bf1f;
+    color: #ccc;
+}
+#download:active {
+    border-top-color: #47bf1f;
+    background: #47bf1f;
+}
+
+/*
+#download {
+    height: 100px;
+    width: 200px;
+    float: right;
+    margin-right: 30px;
+    background: url(../images/download_background.png) right repeat-x;
+    margin-top: -30px;
+    text-align: center;
+    padding-top: 70px;
+}
+*/
+#download a {
+    color: white;
+    font-size: 150%;
+    text-decoration: none;
+}
+#download a:hover {
+}
+#download-small {
+    height: 40px;
+    width: 125px;
+    float: right;
+    margin-right: 30px;
+    background: url(../images/download_background_small.png) right repeat-x;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 28px;
+}
+#download-small a {
+    color: white;
+    font-size: 100%;
+}
+#download-small a:hover {
+}
+
+
+/* 9. COMMENTS */
+#comments_thread {
+    margin: 30px;
+}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+	}
+    #searchbox{
+        text-align: left;
+    }
+    .nav .right {
+        text-align: left;
+    }
+    .nav a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        font-size: 90%;
+    }
+    #download {
+        float: left;
+        margin-left: 30px;
+    }
+}
+
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+/* This is a guess - not tested */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+    font-size: 60%;
+    #searchbox{
+        text-align: left;
+    }
+    .nav .right {
+        text-align: left;
+    }
+    .nav a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        font-size: 90%;
+    }
+    #download {
+        float: left;
+        margin-left: 55px;
+    }
+}
+
+/* Download button */
+
+.download_ts {
+	      display: table-cell;
+	      background: url(/images/download_ts.png);
+	      width: 156px;
+	      height: 30px;
+	      color: #FFF;
+	      text-align: center;
+	      text-indent: -5px;
+	      padding-top: 35px;
+	      font-weight: bold;
+	      float: right;
+	      position: relative;
+	      margin-left: 20px;
+	      margin-top: -50px;
+}

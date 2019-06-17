@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="0Zvqk8EoyLzvCzEZj86bw4McxpCrEzUskO2c1n5OqE8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- The 1140px Grid - http://cssgrid.net/ -->
+  <link rel="stylesheet" type="text/css" href="/styles/1140.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css" media="screen" />
+  <!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+  <script type="text/javascript" src="/js/css3-mediaqueries.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold" rel="stylesheet">
+
+  <title>Apache Traffic Server</title>
+
+  <!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+       See the NOTICE file distributed with this work for additional information regarding copyright ownership.
+       The ASF licenses this file to you under the Apache License, Version 2.0 (the &quot;License&quot;); you
+       may not use this file except in compliance with the License.  You may obtain a copy of the License at
+
+           http://www.apache.org/licenses/LICENSE-2.0
+
+      Unless required by applicable law or agreed to in writing, software distributed under the License is
+      distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+      or implied.  See the License for the specific language governing permissions and limitations under the
+      License. -->
+
+
+</head>
+
+<body class="container">
+  <!-- Header -->
+  <div class="row" id="header">
+    <div class="fourcol">
+      <a href="/"><img class="logo" alt="Apache Traffic Server" src="/images/press/ts_logo_tm_380x73.png" /></a>
+    </div>
+    <div class="fourcol">
+      <a href="http://www.apache.org/"><img alt="The Apache Software Foundation" src="http://www.apache.org/images/feather-small.png" /></a>
+    </div>
+    <div class="fourcol right last" id="searchbox">
+      <form action="/search.html" id="cse-search-box" name="cse-search-box">
+        <input type="hidden" name="cx" value="014552695451971253177:hliljs75koi" /><input type="hidden" name="cof"
+          value="FORID:10" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" size="22" style="font-size: 80%" /><input
+          type="submit" name="sa" value="Search Documentation" style="font-size: 80%" />
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <div class="row nav">
+    <div class="ninecol">
+      <a href="http://trafficserver.apache.org/">Home</a>
+      <a href="downloads">Downloads</a>
+      <a href="https://docs.trafficserver.apache.org/en/latest/index.html">Documentation</a>
+      <a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server">Wiki</a>
+      <a href="https://github.com/apache/trafficserver/issues">Issues</a>
+      <a href="https://ci.trafficserver.apache.org/">CI</a>
+      <a href="/users.html">Customers</a>
+      <a href="/acknowledgements.html">Acknowledgements</a>
+      <a href="/press.html">Press kit</a>
+      <a href="/assistance.html">Assistance</a>
+    </div>
+    <div class="threecol last right">
+      <a href="http://apache.org/security/">Security</a>
+      <a href="http://www.apache.org/foundation/sponsorship.html">Donate</a>
+      <a href="http://www.apache.org/foundation/thanks.html">Thanks</a>
+    </div>
+  </div>
+
+  <div class="row content">
+    <div class="eightcol">
+      <div id="blurbbox">
+        <p style="padding-top: 20px;">Apache Traffic Server™ software is a fast, scalable and extensible HTTP/1.1 and
+          HTTP/2.0 compliant caching
+          proxy server. Formerly a commercial product, Yahoo! donated it to the Apache
+          Foundation, and currently used by several major CDNs and content owners.</p>
+      </div>
+    </div>
+    <div class="fourcol right last">
+      <span id="download">
+        <a title="Downloads" href="/downloads">Downloads</a>
+      </span>
+      <span style="display: table; margin:0 auto;">
+        <a href="https://twitter.com/trafficserver" class="twitter-follow-button" data-show-count="false">Follow
+          @trafficserver</a>
+        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+      </span>
+    </div>
+  </div>
+
+  <div class="row content">
+    <div class="twelvecol banner">
+      <h1 id="Overview">Overview</h1>
+    </div>
+  </div>
+
+  <div class="row content">
+    <div class="fourcol">
+      <div id="blurbbox">
+        <ul>
+          <li>
+            <b>Caching</b>
+            <p>Improve your response time, while reducing server load and bandwidth needs by
+              caching and reusing frequently-requested web pages, images, and web service
+              calls.</p>
+          </li>
+
+          <li>
+            <b>Proxying</b>
+            <p>Easily add keep-alive, filter or anonymize content requests, or add load
+              balancing by adding a proxy layer.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fourcol">
+      <div id="blurbbox">
+        <ul>
+          <li>
+            <b>Fast</b>
+            <p>Scales well on modern SMP hardware, handling 10s of thousands of requests per
+              second.</p>
+          </li>
+          <li>
+            <b>Extensible</b>
+            <p>APIs to write your own plug-ins to do anything from modifying HTTP headers to
+              handling ESI requests to writing your own cache algorithm.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fourcol last">
+      <div id="blurbbox">
+        <ul>
+          <li>
+            <b>Proven</b>
+            <p>Handling over 400TB a day at <a href="http://www.yahoo.com/">Yahoo!</a> both as
+              forward and reverse proxies, Apache Traffic Server is battle
+              hardened. Also visit our <a href="users.html">Customers page</a> for
+              some of our corporate users and supporters.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row content">
+    <div class="twelvecol banner">
+      <h1 id="LearnMore">Learn More</h1>
+    </div>
+  </div>
+
+  <div class="row content">
+    <div class="fourcol">
+      <div id="blurbbox">
+        <div class="banner">
+          <h3>Get Support</h3>
+        </div>
+        <ul class="blurblist">
+          <li>
+            <p>Having trouble with builds, configurations or are you getting errors you don't understand?
+              <a href="mailto:users-subscribe@trafficserver.apache.org">Subscribe</a> to our Users Mailing List
+              or join our <b>#traffic-server</b> channel on <a href="https://the-asf.slack.com/" title="Slack">
+                The ASF Slack</a> workspace to get help! Use your @apache.org email address to automatically join.
+              If you need a workspace invitation, contact us on our devevelop mailing list, or ask any ASF
+              committer.</p> 
+          </li>
+
+          <li>
+            <p>
+              Can't get your plugin to work? Have questions about the ATS code? Or maybe you have suggestions for
+              improvements or new features? <a href="mailto:dev-subscribe@trafficserver.apache.org">Get help</a>
+              from developers or start a discussion on our dev discussion list.</p>
+          </li>
+
+          <li>
+            <p>
+              <a href="https://cwiki.apache.org/confluence/display/TS/Filing+useful+bug+reports">Report</a> or confirm
+              bugs or try out the latest patches from our <a href="https://github.com/apache/trafficserver/">Bug
+                Tracker</a></p>
+          </li>
+
+          <li>
+            <p>
+              <a href="https://cwiki.apache.org/confluence/display/TS/Filing+useful+bug+reports">Learn how</a> to ask
+              <i>good</i> questions, create useful bug reports and how to apply patches.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fourcol">
+      <div id="blurbbox">
+        <div class="banner">
+          <h3>Get Involved</h3>
+        </div>
+
+        <ul class="blurblist">
+          <li>
+            <p><a href="mailto:users-subscribe@trafficserver.apache.org">Subscribe</a> and
+              help out on the users Mailing List or simply share your usecase or experience.
+              For sometimes speedier responses check out our Slack channel
+              <b>#traffic-server</b> on <a href="https://the-asf.slack.com/" title="Slack">
+                The ASF Slack</a> workspace.
+          </li>
+
+          <li>
+            <p>
+              Impress developers or help others by <a href="mailto:dev-subscribe@trafficserver.apache.org">participating</a>
+              on
+              our dev discussion list or <a href="mailto:commits-subscribe@trafficserver.apache.org">follow</a> the
+              latest development on
+              our commits list.</p>
+          </li>
+
+          <li>
+            <p>
+              <a href="https://cwiki.apache.org/confluence/display/TS/Filing+useful+bug+reports">Report</a> issues or
+              bring patches to our <a href="https://github.com/apache/trafficserver/">Bug Tracker</a></p>
+          </li>
+
+          <li>
+            <p>
+              Visit our wiki to see a list of
+              <a href="https://cwiki.apache.org/confluence/display/TS/Projects" title="Apache Traffic Server - Projects">Projects</a>
+              we are currently working on.</p>
+          </li>
+
+          <li>
+            <p>
+              Learn <a href="https://cwiki.apache.org/confluence/display/TS/Contributing">how to create patches</a> to
+              the code or the
+              documentation and how to debug Apache Traffic Server.</p>
+          </li>
+
+          <li>
+            <p>We've <a href="https://github.com/apache/trafficserver/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">tagged
+                github issues</a> that have a low entrance barrier.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="fourcol last">
+      <div id="blurbbox">
+        <div class="banner">
+          <h3>Web Resources</h3>
+        </div>
+
+        <ul class="blurblist">
+          <li>
+            <a href="https://docs.trafficserver.apache.org/en/latest/admin-guide/index.en.html">Administrator's Guide</a>
+            <p>Installing, configuring and administrating Apache Traffic Server</p>
+          </li>
+
+          <li>
+            <a href="https://docs.trafficserver.apache.org/en/latest/developer-guide/index.en.html">Developer's Guide</a>
+            <p>Developing Apache Traffic Server plug-ins and how the code works</p>
+          </li>
+
+          <li>
+            <a href="https://cwiki.apache.org/confluence/display/TS/FAQ">Frequently Asked
+              Questions</a>
+            <p>A running list of your most common questions</p>
+          </li>
+
+          <li>
+            <a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server">Wiki</a>
+            and <a href="https://blogs.apache.org/trafficserver/">Our blog</a>
+            <p>Collaboration and interesting topics around the project</p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row content">
+    <div class="twelvecol banner">
+      <h1 id="News">News</h1>
+    </div>
+  </div>
+
+  <div class="row content">
+    <div class="twelvecol">
+      <div id="blurbbox">
+        <ul>
+          <li><b>March 21, 2019:</b>Release of 8.0.3. This is third patch release
+            to 8.0.0. It includes bug fixes and minor updates.</li>
+          <li><b>January 29, 2019:</b>Release of 8.0.2. This is second patch release
+            to 8.0.0. It includes bug fixes.</li>
+          <li><b>January 29, 2019:</b>Release of 7.1.6. This is sixth patch release
+            to 7.1.0. This release includes bug fixes.</li>
+          <li><b>November 29, 2018:</b>Release of 8.0.1. This is first patch release
+            to 8.0.0. It includes memeory leak fixes and other bug fixes.</li>
+          <li><b>November 24, 2018:</b> Our latest v7.1.5 release is available
+            for download right now! This release has a number of bug fixes, and
+            perhaps more important, several memory leak fixes. It also fixes a rare,
+            but obnoxious crasher in HTTP/2.</li>
+          <li><b>September 25, 2018:</b> We are happy to announce our next major release, v8.0.0!. This includes
+            support for TLS 1.3 and many other enhancements.</li>
+          <li><b>August 4, 2018:</b> The last 6.2.x LTS release, v6.2.3, is now
+            available from the Downloads section. This is the last LTS release for
+            6.2.x</li>
+          <li><b>August 1, 2018:</b> The latest stable LTS release of ATS,
+            v7.1.4, is fresh off the presses and available for download! Users
+            of 7.1.x are highly encouraged to upgrade to this version, as it
+            fixes several issues.</li>
+          <li><b>April 16, 2018:</b> We are very pleased to announce another
+            update to the 7.1.x LTS release! ATS v7.1.3 is available for
+            download from the normal mirrors!</li>
+          <li><b>January 16, 2018:</b> The second patch release for the v7.1
+            LTS train is now available. There are no new features in this
+            release, but there are close to 100 fixes! Download ATS v7.1.2
+            from the normal download mirrors now!</li>
+          <li><b>September 7, 2017:</b> The first patch release for the v7.1
+            LTS train is now available to. There are no new features in this
+            release, it's a bug fix release only. Download ATS v7.1.1 from the
+            normal download mirrors now!</li>
+          <li><b>Aug 10, 2017:</b> The latest LTS release, v6.2.2, is now
+            available from the Downloads section. This is the LTS release for
+            6.x</li>
+          <li><b>July 24, 2017:</b> We are very proud to announce the
+            immediate release of v7.1.0, which is now available from the
+            Downloads section. This is an LTS release, supported until
+            7/2019.</li>
+          <li><b>Jan 20, 2017:</b> The latest LTS release, v6.2.1, is now
+            available from the Downloads section. This is the LTS release for
+            6.x</li>
+          <li><b>Nov 7, 2016:</b> We are happy to announce our next major
+            release, v7.0.0! This release includes HTTP/2 Push and many other
+            features and bug fixes.</li>
+          <a href="newsarchive.html">Archived News</a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row content">
+    <div class="twelvecol banner">
+      <h1 id="Misc">Miscellaneous</h1>
+    </div>
+  </div>
+
+  <div class="row content">
+    <div class="sixcol">
+      <div id="blurbbox">
+        <ul>
+          <li><a href="https://github.com/apache/trafficserver/">View Git code repository</a></li>
+          <li><a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server+AMIs+for+EC2">TrafficServer
+              AMI for EC2</a></li>
+          <li><a href="https://cwiki.apache.org/confluence/display/TS/Supported+Operating+Systems">Supported Operating
+              Systems</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sixcol last">
+      <div id="blurbbox">
+        <ul>
+          <li><a href="http://www.apache.org/licenses/">License</a></li>
+          <li><a href="https://cwiki.apache.org/confluence/display/TS/Building">Build Instructions</a></li>
+          <li><a href="https://cwiki.apache.org/confluence/display/TS/RoadMap">Roadmap</a></li>
+          <li><a href="https://cwiki.apache.org/confluence/display/TS/Committers">Committers</a></li>
+          <li><a href="http://mail-archives.apache.org/mod_mbox/trafficserver-users/">Users Archives</a></li>
+          <li><a href="http://mail-archives.apache.org/mod_mbox/trafficserver-dev/">Dev Archives</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" class="row">
+    <div class="tencol">
+
+      Copyright &copy; 2018
+      <a href="http://www.apache.org/">The Apache Software Foundation</a>.
+      Licensed under
+      the <a href="http://www.apache.org/licenses/">Apache License</a>,
+      Version 2.0. Apache Traffic Server, Apache,
+      the Apache Traffic Server logo, and the Apache feather logo are
+      trademarks of The Apache Software Foundation.
+    </div>
+    <div class="twocol right last">
+      <span id="apache_logo">
+        <a href="http://www.apache.org/"><img alt="The Apache Software Foundation" src="http://www.apache.org/images/feather-small.png" /></a>
+      </span>
+    </div>
+  </div>
+
+</body>
+
+</html>

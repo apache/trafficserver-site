@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>XML log format builder</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="treeview.css"/>
+    <script type="text/javascript">
+var log = new Array("");
+var names = new Array("");
+var init_id = 0;
+var selected_id = 0;
+var welf_example = "id=firewall time=\\\"%<cqtd> %<cqtt>\\\" fw=%<phn> pri=6 proto=%<cqus> duration=%<ttmsf> sent=%<psql> rcvd=%<cqhl> src=%<chi> dst=%<shi> dstname=%<shn> user=%<caun> op=%<cqhm> arg=\\\"%<cqup>\\\" result=%<pssc> ref=\\\"%<{Referer}cqh>\\\" agent=\\\"%<{user-agent}cqh>\\\" cache=%<crc> ";
+var squid_example = "%<cqtq> %<ttms> %<chi> %<crc>/%<pssc> %<psql> %<cqhm> %<cquc> %<caun> %<phr>/%<pqsn> %<psct>";
+var allOptions = new Array();
+allOptions['fsiz'] = new Array(false, "The size of the file (n bytes) as seen by the origin server. ", "4096");
+allOptions['cquup'] = new Array(false, "The client request unmapped URL path. This field records a URL path before it is remapped (reverse proxy mode).", "/foo/bar");
+allOptions['ttms'] = new Array(false, "The time Traffic Server spends processing the client request; the number of milliseconds between the time the client establishes the connection with Traffic Server and the time Traffic Server sends the last byte of the response back to the client.", "1023");
+allOptions['cqtq'] = new Array(false, "The client request timestamp, with millisecond resolution.", "1342627190.444");
+allOptions['phr'] = new Array(false, "The proxy hierarchy route; the route Traffic Server used to retrieve the object. ", "frontend.com, backend.com");
+allOptions['cqhv'] = new Array(false, "The client request HTTP version.", "HTTP/1.1");
+allOptions['cqtt'] = new Array(false, "The client request timestamp. The time of the client request in the format hh:mm:ss, where hh is the two-digit hour in 24-hour format, mm is the two-digit minutes value, and ss is the 2-digit seconds value (for example, 16:01:19). ", "16:01:19");
+allOptions['cqhm'] = new Array(false, "The HTTP method in the client request to Traffic Server: GET, POST, and so on (subset of cqtx).", "GET");
+allOptions['pshl'] = new Array(false, "The header length in Traffic Server's response to the client.", "3923");
+allOptions['pqhl'] = new Array(false, "The proxy request header length; the header length in Traffic Server's request to the origin server.", "1234");
+allOptions['cquuh'] = new Array(false, "The client request unmapped URL host. This field records a URL's host before it is remapped (reverse proxy mode).", "frontend.com");
+allOptions['cqts'] = new Array(false, "The client-request timestamp in Squid format; the time of the client request since January 1, 1970 UTC. Time is expressed in seconds, with millisecond resolution.", "1384737283.172");
+allOptions['crc'] = new Array(false, "The cache result code; specifies how the cache responded to the request (HIT, MISS, and so on).", "HIT");
+allOptions['psct'] = new Array(false, "The content type of the document from server response header: (for example, img/gif ).", "text/html");
+allOptions['cqus'] = new Array(false, "The client request URL scheme.", "https");
+allOptions['cqh'] = new Array(true, "Logs the information in the requested field of the client request HTTP header. For example, %<{Accept-Language}cqh> logs the Accept-Language: field in client request headers, and %<{User-Agent}cqh> adds the User-Agent field.", "??");
+allOptions['cqhl'] = new Array(false, "The client request header length; the header length in the client request to Traffic Server.", "256");
+allOptions['psh'] = new Array(true, "Logs the information in the requested field of the proxy response HTTP header. For example, %<{Retry-After}psh> logs the Retry-After: field in proxy response headers.", "??");
+allOptions['cqtn'] = new Array(false, "The client request timestamp; date and time of the client's request (in the Netscape timestamp format).", "Wed Jul 18 16:30:17 2012");
+allOptions['prob'] = new Array(false, "The number of proxy response bytes to the client from the origin server.", "2048");
+allOptions['pqh'] = new Array(true, "Logs the information in the requested field of the proxy request HTTP header. For example, %<{Authorization}pqh> logs theAuthorization: field in proxy request headers. ", "??");
+allOptions['cquuc'] = new Array(false, "The client request unmapped URL canonical. This field records a URL before it is remapped (reverse proxy mode).", "http://www.frontend.com/foo/bar");
+allOptions['pqsi'] = new Array(false, "The proxy request server IP address (0 on cache hits and parent-ip for requests to parent proxies).", "192.168.0.5");
+allOptions['sscl'] = new Array(false, "The response length (in bytes) from origin server to Traffic Server.", "1024");
+allOptions['pfsc'] = new Array(false, "The proxy finish status code; specifies whether the Traffic Server request to the origin server was successfully completed (FIN) or interrupted (INTR). ", "FIN");
+allOptions['ssh'] = new Array(true, "Logs the information in the requested field of the server response HTTP header. For example, %<{Age}ssh> logs the Age: field in server response headers.", "??");
+allOptions['pqsn'] = new Array(false, "The proxy request server name; the name of the server that fulfilled the request. ", "backend.foo-bar.com");
+allOptions['tts'] = new Array(false, "The time Traffic Server spends processing the client request; the number of seconds between the time at which the client establishes the connection with Traffic Server and the time at which Traffic Server sends the last byte of the response back to the client.", "1");
+allOptions['pscl'] = new Array(false, "The length of the Traffic Server response to the client (in bytes).", "10240");
+allOptions['ttmsf'] = new Array(false, "The time Traffic Server spends processing the client request as a fractional number of seconds. Time is specified in millisecond resolution; however, instead of formatting the output as an integer (as with ttms), the display is formatted as a floating-point number representing a fractional number of seconds. For example: if the time is 1500 milliseconds, then this field displays 1.5 while the ttms field displays 1500 and the tts field displays 1.", "1.023");
+allOptions['cqtx'] = new Array(false, "The full HTTP client request text, minus headers; for example, <b>GET http://www.company.com HTTP/1.0</b>", "GET http://www.company.com HTTP/1.0");
+allOptions['shn'] = new Array(false, "The hostname of the origin server.", "foo-bar.com");
+allOptions['pqbl'] = new Array(false, "The proxy request transfer length; the body length in Traffic Server's request to the origin server.", "2394");
+allOptions['sssc'] = new Array(false, "The HTTP response status code from origin server to Traffic Server.", "200");
+allOptions['shi'] = new Array(false, "The IP address resolved from the DNS name lookup of the host in the request. For hosts with multiple IP addresses, this field records the IP address resolveds from that particular DNS lookup.This can be misleading for cached documents. For example: if the first request was a cache miss and came from IP1 for server S and the second request for server S resolved to IP2 but came from the cache, then the log entry for the second request will show IP2", "192.168.0.3");
+allOptions['psql'] = new Array(false, "The proxy response transfer length in Squid format (includes header and content length).", "8192");
+allOptions['prcb'] = new Array(false, "The number of proxy response bytes to the client from the cache.", "2048");
+allOptions['cquc'] = new Array(false, "The client request canonical URL. This differs from cqu in that blanks (and other characters that might not be parsed by log analysis tools) are replaced by escape sequences. The escape sequence is a percentage sign followed by the ASCII code number in hex.    See the description of cqtx for behaviour in reverse proxy mode.", "http://www.company.com/foo%20bar");
+allOptions['pssc'] = new Array(false, "The HTTP response status code from Traffic Server to the client.", "200");
+allOptions['sshl'] = new Array(false, "The header length in the origin server response to Traffic Server (in bytes).", "1024");
+allOptions['chi'] = new Array(false, "The IP address of the client's host machine.", "10.0.1.20");
+allOptions['sshv'] = new Array(false, "The server response HTTP version (1.0, 1.1, etc.).", "1.1");
+allOptions['cqbl'] = new Array(false, "The client request transfer length; the body length in the client request to Traffic Server (in bytes).", "1734");
+allOptions['cfsc'] = new Array(false, "The client finish status code; specifies whether the client request to Traffic Server was successfully completed (FIN) or interrupted (INTR).", "FIN");
+allOptions['phn'] = new Array(false, "The hostname of the Traffic Server that generated the log entry in collated log files.", "frontend.com");
+allOptions['phi'] = new Array(false, "The IP of the Traffic Server that generated the log entry in collated log files.", "192.168.0.1");
+allOptions['caun'] = new Array(false, "The client authenticated username; result of the RFC931/ident lookup of the client username.", "AuthUser");
+allOptions['cqup'] = new Array(false, "The client request URL path; specifies the argument portion of the URL (everything after the host). For example, if the URL is http://www.company.com/images/x.gif, then this field displays /images/x.gif", "/foo/bar.php");
+allOptions['cqtd'] = new Array(false, "The client request timestamp. Specifies the date of the client request in the format yyyy-mm-dd, where yyyy is the 4-digit year, mm is the 2-digit month, and dd is the 2-digit day.", "2012-07-18");
+allOptions['cqu'] = new Array(false, "The universal resource identifier (URI) of the request from client to Traffic Server (subset of cqtx ). See the description of cqtx for behaviour in reverse proxy mode.", "http://www.company.com/foo.bar");
+allOptions['crat'] = new Array(false, "The client Retry-After time in seconds, if specified by the origin.", 30);
+function addToLog(id, name, needsInput) {
+    if ( id == 0 ) { id = selected_id; }
+    if (name) {
+        var output = name
+        if (needsInput == true) {
+            var input = prompt("This field requires a sub-value:")
+            if (input == null) { return false; }
+            output = "{" + input + "}" + name;
+        }
+        if (name.match("<")) { log[id] = log[id] + output + " "; }
+        else { log[id] = log[id] + " " + '%<' + output + '>'; }
+    }
+    var out = document.getElementById("logbox_" + id);
+    out.setAttribute("style"," display: block; white-space: pre-wrap; width: 780px;");
+    out.innerHTML = '<b>XML Output:</b> <br/>';
+
+    var xml = document.createElement("div");
+    xml.setAttribute("style","display: block; clear: both; float: left; white-space: pre-wrap; width: 780px;");
+    xml.setAttribute("ondrop", "dropIt(event, 'input');");
+    xml.setAttribute("ondragover", "event.preventDefault();");
+    out.appendChild(xml);
+
+    var startDiv = document.createElement("div");
+    startDiv.setAttribute("style", "clear: both;");
+    startDiv.appendChild(document.createTextNode("<LogFormat>\n         <Name = \""+names[id]+"\"/>"));
+    xml.appendChild(startDiv);
+    startDiv = document.createElement("div");
+    startDiv.setAttribute("class", "regfield");
+    startDiv.appendChild(document.createTextNode("         <Format = \""));
+    xml.appendChild(startDiv);
+    
+
+    var ar = log[id].match(/(([^ \/]+)|\/)/g);
+    var xar = log[id].match(/((([^ \/]+) ?)|\/)/g);
+
+    var textarea = document.getElementById("textarea_" + id);
+    textarea.value = log[id];
+
+
+
+    var example = document.createElement("div");
+    example.setAttribute("style","display: block; clear: both; float: left; white-space: pre-wrap; width: 780px;");
+    example.setAttribute("ondrop", "dropIt(event, 'output');");
+    example.setAttribute("ondragover", "event.preventDefault();");
+
+    example.innerHTML = "<br/><b>Example output:</b><br/>"
+    if (ar) {
+        for (i=0;i<=ar.length;i++) {
+            if (ar[i]) {
+                if (!ar[i].match(/%<[^>]*>/)) {
+                    if (typeof(ar[i]) == 'undefined') continue;
+                    var span = document.createElement("div");
+                    span.setAttribute("class", "regfield");
+                    span.setAttribute("draggable", "true");
+                    span.setAttribute("ondragstart", "dragIt(event, 'input');");
+                    var escaped = ar[i].replace(/(?!\\)"/g, "\\\"").replace(/\\\\"/g, "\\\"");
+                    var txt = document.createTextNode(escaped + " ");
+                    span.setAttribute("DATA", ar[i]);
+                    span.appendChild(txt);
+                    xml.appendChild(span);
+                    var xspan = document.createElement("div");
+                    var xtxt = document.createTextNode(ar[i] + " ");
+                    xspan.setAttribute("class", "regfield");
+                    xspan.appendChild(xtxt);
+                    xspan.setAttribute("draggable", "true");
+                    xspan.setAttribute("ondragstart", "dragIt(event, 'output');");
+                    xspan.setAttribute("DATA", ar[i]);
+                    example.appendChild(xspan);
+                    continue;
+                }
+                var exout = ""
+                var span = document.createElement("div");
+                var escaped = xar[i].replace(/(?!\\)"/g, "\\\"").replace(/\\\\"/g, "\\\"");
+                var txt = document.createTextNode(escaped + " ");
+                var val = (ar[i].match(/([a-z]+)>/))[1];
+                if (!val || !allOptions[val]) { continue; }
+                span.setAttribute("class", "regfield");
+                span.setAttribute("onMouseOver", "javascript:this.setAttribute('class', 'infofield'); displayHint(this, '"+val+"');");
+                span.setAttribute("onMouseOut", "javascript:this.setAttribute('class', 'regfield'); displayHint(false);");
+                span.setAttribute("draggable", "true");
+                span.setAttribute("ondragstart", "dragIt(event, 'input');");
+                span.setAttribute("DATA", xar[i]);
+                span.appendChild(txt);
+                xml.appendChild(span);
+                var xval = (ar[i].match(/\{([^\}]+)/));
+                if (xval && xval[1]) {
+                       exout = xval[1];
+                }
+                else if (allOptions[val][2]) {
+                    exout = allOptions[val][2];
+                }
+                var xspan = document.createElement("div");
+                xspan.setAttribute("class", "regfield");
+                xspan.setAttribute("draggable", "true");
+                xspan.setAttribute("ondragstart", "dragIt(event, 'output');");
+                var xval = (ar[i].match(/(%<\S+>)/))[1];
+                var xxval = xar[i].replace(xval, exout);
+                xxval = xxval.replace(/\\/g, "");
+                var xtxt = document.createTextNode(xxval + " ");
+                xspan.setAttribute("DATA", ar[i]);
+
+                xspan.setAttribute("onMouseOver", "javascript:this.setAttribute('class', 'infofield'); displayHint(this, '"+val+"');");
+                xspan.setAttribute("onMouseOut", "javascript:this.setAttribute('class', 'regfield'); displayHint(false);");
+                xspan.appendChild(xtxt);
+                example.appendChild(xspan);
+            }
+        }
+    }
+    var endDiv = document.createElement("div");
+    endDiv.setAttribute("class", "regfield");
+    endDiv.appendChild(document.createTextNode("\"/>"));
+    xml.appendChild(endDiv);
+
+    endDiv = document.createElement("div");
+    endDiv.setAttribute("style", "clear: both");
+    endDiv.appendChild(document.createTextNode("</LogFormat>"));
+    xml.appendChild(endDiv);
+
+
+    
+    out.appendChild(example);
+}
+
+function undoLog(id) {
+    log[id] = log[id].replace(/\s*\S+\s*$/g, "");
+    addToLog(id);
+}
+
+
+function clearLog(id) {
+    log[id] = "";
+    addToLog(id);
+}
+
+
+function insertData() {
+    var data = prompt("Type the log format to insert:")
+    if (data != null) {
+        log[selected_id] = log[selected_id].replace(/ ?$/, "") + " " + data;
+        addToLog(selected_id);
+    }
+}
+
+function selectBox(id) {
+    for (i=1;i<=init_id;i++) {
+        var obj = document.getElementById("logformat_" + i);
+        if (obj) {
+            obj.setAttribute("class", "log_deselected");
+        }
+        if (i == id) { 
+            obj.setAttribute("class", "log_selected");
+            selected_id = i;
+            document.getElementById("log_name").innerHTML = names[i];
+        }
+    }
+}
+
+function createLogformat(skip) {
+    var name = "";
+    if (skip) { name = "MyLog"; }
+    else { name = prompt("Enter a name for this format");}
+    if (name == null) { return false; }
+    init_id++;
+    log[init_id] = "";
+    names[init_id] = name;
+
+    var box = document.createElement("div")
+    box.setAttribute("id", "logformat_" + init_id);
+    box.setAttribute("class", "logformat_selected");
+    var title = document.createElement("h4");
+    title.appendChild(document.createTextNode(name));
+    box.appendChild(title);
+
+    var textarea = document.createElement("textarea");
+    textarea.setAttribute("style", "width: 740px; height: 60px");
+    textarea.setAttribute("id", "textarea_" + init_id);
+    textarea.setAttribute("onKeyUp", "log[" + init_id + "] = this.value; addToLog(" + init_id + ")");
+    box.appendChild(textarea);
+    var logbox = document.createElement("pre");
+    logbox.setAttribute("id", "logbox_" + init_id);
+    box.appendChild(logbox);
+
+    var div = document.createElement("div");
+    div.setAttribute("style", "clear: both");
+    var a = document.createElement("a");
+
+    a.appendChild(document.createTextNode("Remove an element"));
+    a.setAttribute("href", "javascript: void(0);");
+    a.setAttribute("onclick", "javascript: undoLog("+init_id+");");
+    div.appendChild(a);
+
+    a = document.createElement("a");
+    a.appendChild(document.createTextNode("Clear"));
+    a.setAttribute("href", "javascript: void(0);");
+    a.setAttribute("onclick", "javascript: clearLog("+init_id+");");
+    div.appendChild(a);
+
+    a = document.createElement("a");
+    a.appendChild(document.createTextNode("Export as URL"));
+    a.setAttribute("href", "javascript: void(0);");
+    a.setAttribute("onclick", "javascript: sendURL("+init_id+");");
+    div.appendChild(a);
+
+    a = document.createElement("a");
+    a.appendChild(document.createTextNode("Add WELF example"));
+    a.setAttribute("href", "javascript: void(0);");
+    a.setAttribute("onclick", "javascript: addToLog(selected_id, welf_example);");
+    div.appendChild(a);
+
+    a = document.createElement("a");
+    a.appendChild(document.createTextNode("Add Squid example"));
+    a.setAttribute("href", "javascript: void(0);");
+    a.setAttribute("onclick", "javascript: addToLog(selected_id, squid_example);");
+    div.appendChild(a);
+    box.appendChild(div);
+
+
+    document.getElementById("logs").appendChild(box);
+    selected_id = init_id;
+    box.setAttribute("onclick", "javascript: selectBox("+init_id+");");
+    selectBox(init_id);
+    addToLog(init_id);
+    document.getElementById("treeview").style.display = "block";
+    //document.getElementById("properties").style.display = "block";
+}
+
+function drag(e, obj) {
+    obj.style.position = "static";
+    obj.style.left = e;
+}
+
+function drop(e, obj) {
+}
+
+var xwhat = "";
+function dragIt(theEvent, what) {
+    xwhat = what;
+    //tell the browser what to drag
+    displayHint(false);
+    theEvent.dataTransfer.setData("Text", theEvent.target.getAttribute("DATA"));
+}
+
+function dropIt(theEvent, what) {
+    
+    if (what == xwhat) {
+        var first = theEvent.dataTransfer.getData("Text");
+        var last = theEvent.target.getAttribute("DATA");
+        theEvent.preventDefault();
+        if (last == first) { return false; }
+        log[selected_id] = log[selected_id].replace(first, "");
+        if (last.length > 0) {
+            log[selected_id] = log[selected_id].replace(last, first + " " + last);
+        }
+        else {
+            log[selected_id] = log[selected_id] + first + " ";
+        }
+        
+        addToLog(selected_id);
+        
+    }
+    else {
+        theEvent.preventDefault();
+    }
+    
+}
+
+function displayHint(element, name) {
+    var top = 0, left = 0;
+    var box = document.getElementById("hint");
+    if (element) {
+	    do {
+		    top += element.offsetTop  || 0;
+		    left += element.offsetLeft || 0;
+		    element = element.offsetParent;
+	    } while(element);
+        box.style.display = "block";
+        box.style.top = top + "px";
+        box.style.left = left + "px";
+        box.innerHTML = "<p style='font-size: 10px;'><b>" + name + ":</b><br/>" + allOptions[name][1] + "</p>";
+    } else {
+        box.style.display = "none";
+    }
+}
+
+function clearLogs() {
+    for (i=1;i<=init_id;i++) {
+        log[i] = ""
+        names[i] = ""
+        var obj = document.getElementById("logformat_" + i);
+        if (obj) {
+            obj.parentNode.removeChild(obj);
+        }
+    }
+    init_id = 0;
+}
+function checkForLog() {
+    var data = window.location.search.substring(1);
+    if (data && data.length > 0) {
+        createLogformat(true);
+        addToLog(1, unescape(data));
+    }
+}
+function sendURL(id) {
+    var data = escape(log[id]);
+    var url = window.location.href.replace(/\?.*$/, "");
+    prompt("Copy this URL to pass on your data:", url + "?" + data);
+}
+    </script>
+	</head>
+	<body onload="checkForLog()">
+       
+        <div id="hint" style="display: none; padding: 5px; margin: 30px; max-width: 600px; background: #FEE; position: absolute; border: 1px solid #000; border-radius: 5px;">        </div>
+<div id="header"><p style="text-align:center"><img src="http://trafficserver.apache.org/images/trans_logo_tm_380x69.png" style="text-align: center"/></p><h4>XML log format builder</h4></div>
+<div id="contents">
+        <div class="css-treeview-parent">&nbsp; 
+		<div id="treeview" class="css-treeview" style="display: none;">
+        <b>Click to add a field:</b><br/>
+            <ul>
+			<li><input type="checkbox" id="item-0" /><label for="item-0">Log formats</label><ul>
+<li><input type="checkbox" id="item-0-0" /><label for="item-0-0">Client information</label><ul>
+<li><input type="checkbox" id="item-0-0-0" /><label for="item-0-0-0">Request time</label><ul>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqtn');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqtn', false);"><b>cqtn</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqts');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqts', false);"><b>cqts</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqtq');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqtq', false);"><b>cqtq</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqtd');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqtd', false);"><b>cqtd</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqtt');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqtt', false);"><b>cqtt</b> &nbsp; </a></li>
+</ul>
+<li><input type="checkbox" id="item-0-0-1" /><label for="item-0-0-1">Request scheme</label><ul>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqhv');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqhv', false);"><b>cqhv</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqtx');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqtx', false);"><b>cqtx</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqhm');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqhm', false);"><b>cqhm</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqus');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqus', false);"><b>cqus</b> &nbsp; </a></li>
+</ul>
+<li><input type="checkbox" id="item-0-0-2" /><label for="item-0-0-2">Other values</label><ul>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqup');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqup', false);"><b>cqup</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cquc');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cquc', false);"><b>cquc</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqu');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqu', false);"><b>cqu</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqhl');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqhl', false);"><b>cqhl</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'caun');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'caun', false);"><b>caun</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqbl');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqbl', false);"><b>cqbl</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cfsc');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cfsc', false);"><b>cfsc</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'chi');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'chi', false);"><b>chi</b> &nbsp; </a></li>
+</ul>
+<li><input type="checkbox" id="item-0-0-3" /><label for="item-0-0-3">Unmapped URLs</label><ul>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cquuc');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cquuc', false);"><b>cquuc</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cquup');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cquup', false);"><b>cquup</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cquuh');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cquuh', false);"><b>cquuh</b> &nbsp; </a></li>
+</ul>
+</ul>
+<li><input type="checkbox" id="item-0-1" /><label for="item-0-1">Trafficserver response</label><ul>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'phn');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'phn', false);"><b>phn</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'phi');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'phi', false);"><b>phi</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'pshl');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'pshl', false);"><b>pshl</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'pssc');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'pssc', false);"><b>pssc</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'phr');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'phr', false);"><b>phr</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'pscl');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'pscl', false);"><b>pscl</b> &nbsp; </a></li>
+</ul>
+<li><input type="checkbox" id="item-0-2" /><label for="item-0-2">Cache</label><ul>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'crc');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'crc', false);"><b>crc</b> &nbsp; </a></li>
+</ul>
+<li><input type="checkbox" id="item-0-3" /><label for="item-0-3">Proxy server</label><ul>
+<li><input type="checkbox" id="item-0-3-0" /><label for="item-0-3-0">Proxy response</label><ul>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'sssc');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'sssc', false);"><b>sssc</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'prob');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'prob', false);"><b>prob</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'sscl');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'sscl', false);"><b>sscl</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'pfsc');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'pfsc', false);"><b>pfsc</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'psct');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'psct', false);"><b>psct</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'sshv');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'sshv', false);"><b>sshv</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'sshl');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'sshl', false);"><b>sshl</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'fsiz');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'fsiz', false);"><b>fsiz</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'prcb');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'prcb', false);"><b>prcb</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'psql');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'psql', false);"><b>psql</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'crat');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'crat', false);"><b>crat</b> &nbsp; </a></li>
+</ul>
+<li><input type="checkbox" id="item-0-3-1" /><label for="item-0-3-1">Proxy request</label><ul>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'shi');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'shi', false);"><b>shi</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'pqsn');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'pqsn', false);"><b>pqsn</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'pqhl');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'pqhl', false);"><b>pqhl</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'pqsi');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'pqsi', false);"><b>pqsi</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'shn');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'shn', false);"><b>shn</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'pqbl');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'pqbl', false);"><b>pqbl</b> &nbsp; </a></li>
+</ul>
+<li><input type="checkbox" id="item-0-3-2" /><label for="item-0-3-2">Response time</label><ul>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'ttmsf');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'ttmsf', false);"><b>ttmsf</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'tts');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'tts', false);"><b>tts</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'ttms');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'ttms', false);"><b>ttms</b> &nbsp; </a></li>
+</ul>
+</ul>
+<li><input type="checkbox" id="item-0-4" /><label for="item-0-4">Headers</label><ul>
+<li><input type="checkbox" id="item-0-4-0" /><label for="item-0-4-0">Request headers</label><ul>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'pqh');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'pqh', true);"><b>pqh</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'cqh');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'cqh', true);"><b>cqh</b> &nbsp; </a></li>
+</ul>
+<li><input type="checkbox" id="item-0-4-1" /><label for="item-0-4-1">Response headers</label><ul>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'ssh');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'ssh', true);"><b>ssh</b> &nbsp; </a></li>
+<li> &nbsp; - <a href="javascript:void(0);" onMouseOver="displayHint(this, 'psh');" onMouseOut="displayHint(false);" onClick="addToLog(0, 'psh', true);"><b>psh</b> &nbsp; </a></li>
+</ul>
+</ul>
+</ul>
+            </ul>
+		</div>
+        </div>
+        <div style="float: left; width: 850px;">
+            
+            <div class="menubar">
+                <div class="menuitem" onclick="javascript: createLogformat();"><img src="document-new.png" align="absmiddle" style="margin-top: -4px; height: 24px; width: 24px;"> &nbsp; New log format</div>
+                <div class="splitter"></div>
+                <div class="menuitem" onclick="javascript: clearLogs();"><img src="reset.png" align="absmiddle" style="margin-top: -4px; height: 24px; width: 24px;"> &nbsp; Clear all logs</div>
+                <div class="splitter"></div>
+                <div class="menuitem" onclick="javascript: void(0);"><img src="help.png" align="absmiddle" style="margin-top: -4px; height: 24px; width: 24px;"> &nbsp; Help / about</div>
+            </div>
+            <div id="properties" style="display: none; margin-top: 70px; float: left; margin-left: 0px; width: 800px; height: 40px; border: 1px solid #000; border-radius: 5px; background: #FFF0F0;">
+            <small>
+               <b>Properties for selected log format:</b><br/>
+                Name: <span id="log_name"></span>
+            </small>
+            </div>
+            <div id="logs" style="float: left; margin-left: 0px;">
+            </div>
+        </div>
+    </div>
+	</body>
+</html>

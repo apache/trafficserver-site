@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The 1140px Grid - http://cssgrid.net/ -->
+    <link rel="stylesheet" type="text/css" href="/styles/1140.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css" media="screen" />
+    <!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+    <script type="text/javascript" src="/js/css3-mediaqueries.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold" rel="stylesheet">
+    <title>Via Decoder - Apache Traffic Server</title>
+    <!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file to you under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at . http://www.apache.org/licenses/LICENSE-2.0 . Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License. -->
+  <script type="text/javascript">
+var codes = {}
+codes[1] = {}
+codes[1]['title'] = "client-info Request headers received from client. Value is one of:"
+codes[1]['I'] = "If Modified Since (IMS)"
+codes[1]['C'] = "cookie"
+codes[1]['E'] = "error in request"
+codes[1]['S'] = "simple request (not conditional)"
+codes[1]['N'] = "no-cache"
+codes[2] = {}
+codes[2]['title'] = "cache-lookup Result of Traffic Server cache lookup for URL. Value is one of:"
+codes[2]['A'] = "in cache, not acceptable (a cache \"MISS\")"
+codes[2]['H'] = "in cache, fresh (a cache \"HIT\")"
+codes[2]['S'] = "in cache, stale (a cache \"MISS\")"
+codes[2]['R'] = "in cache, fresh Ram hit (a cache \"HIT\")"
+codes[2]['M'] = "miss (a cache \"MISS\")"
+codes[2][' '] = "no cache lookup performed"
+codes[3] = {}
+codes[3]['title'] = "server-info Response information received from origin server. Value is one of:"
+codes[3]['E'] = "error in response"
+codes[3][' '] = "no server connection needed"
+codes[3]['S'] = "served"
+codes[3]['N'] = "not-modified"
+codes[4] = {}
+codes[4]['title'] = "cache-fill Result of document write to cache. Value is one of:"
+codes[4]['U'] = "updated old cache copy"
+codes[4]['D'] = "cached copy deleted"
+codes[4]['W'] = "written into cache (new copy)"
+codes[4][' '] = "no cache write performed"
+codes[5] = {}
+codes[5]['title'] = "proxy-info Proxy operation result. Value is one of:"
+codes[5]['R'] = "origin server revalidated"
+codes[5][' '] = "unknown?"
+codes[5]['S'] = "served"
+codes[5]['N'] = "not-modified"
+codes[6] = {}
+codes[6]['title'] = "error-codes Value is one of:"
+codes[6]['A'] = "authorization failure"
+codes[6]['H'] = "header syntax unacceptable"
+codes[6]['C'] = "connection to server failed"
+codes[6]['T'] = "connection timed out"
+codes[6]['S'] = "server related error"
+codes[6]['D'] = "dns failure"
+codes[6]['N'] = "no error"
+codes[6]['F'] = "request forbidden"
+codes[7] = {}
+codes[7]['title'] = "tunnel-info Proxy-only service operation. Value is one of:"
+codes[7][' '] = "no tunneling"
+codes[7]['U'] = "tunneling because of url (url suggests dynamic content)"
+codes[7]['M'] = "tunneling due to a method (e.g. CONNECT)"
+codes[7]['O'] = "tunneling because cache is turned off"
+codes[7]['F'] = "tunneling due to a header field (such as presence of If-Range header)"
+codes[8] = {}
+codes[8]['title'] = "cache-type and cache-lookup cache result values (2 characters)"
+codes[8]['I'] = "icp"
+codes[8][' '] = "cache miss or no cache lookup"
+codes[8]['C'] = "cache"
+codes[9] = {}
+codes[9]['title'] = "cache-lookup-result character value is one of:"
+codes[9][' '] = "no cache lookup"
+codes[9]['S'] = "cache hit, but expired"
+codes[9]['U'] = "cache hit, but client forces revalidate (e.g. Pragma: no-cache)"
+codes[9]['D'] = "cache hit, but method forces revalidated (e.g. ftp, not anonymous)"
+codes[9]['I'] = "conditional miss (client sent conditional, fresh in cache, returned 412)"
+codes[9]['H'] = "cache hit"
+codes[9]['M'] = "cache miss (url not in cache)"
+codes[9]['C'] = "cache hit, but config forces revalidate"
+codes[9]['N'] = "conditional hit (client sent conditional, doc fresh in cache, returned 304)"
+codes[10] = {}
+codes[10]['title'] = "parent-proxy parent proxy connection status"
+codes[10][' '] = "no parent proxy"
+codes[10]['S'] = "connection opened successfully"
+codes[10]['F'] = "connection open failed"
+codes[11] = {}
+codes[11]['title'] = "server-conn-info origin server connection status"
+codes[11][' '] = "no server connection"
+codes[11]['S'] = "connection opened successfully"
+codes[11]['F'] = "connection open failed"
+
+function showVia(form, value) {
+    var text = value? value : form.via.value;
+    if (value) {
+        document.getElementById("via").value = value;
+    }
+    var via = document.getElementById("viaoutput")
+    var output = "";
+    var txtonly = text.match(/([a-zA-Z: ]+)/);
+    text = txtonly[1];
+    if (text.length == 5) {
+        text = text + " "
+    }
+    if (text.length == 22) {
+        var arr = text.match(/([a-zA-Z ]+):([a-zA-Z ]+)/);
+        output = output + "<h3>Proxy request results:</h3>";
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Request headers received from client:</div> <font color="#003399">' + codes[1][arr[1][1]] + '</font><br/>';
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Result of Traffic Server cache lookup for URL:</div> <font color="#003399">' + codes[2][arr[1][3]] + '</font><br/>';
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Response information received from origin server:</div> <font color="#003399">' + codes[3][arr[1][5]] + '</font><br/>';
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Result of document write-to-cache:</div> <font color="#003399">' + codes[4][arr[1][7]] + '</font><br/>';
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Proxy operation result:</div> <font color="#003399">' + codes[5][arr[1][9]] + '</font><br/>';
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Error codes (if any):</div> <font color="#003399">' + codes[6][arr[1][11]] + '</font><br/>';
+
+        output = output + "<h3>Operational results:</h3>";
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Tunnel info:</div> <font color="#003399">' + codes[7][arr[2][1]] + '</font><br/>';
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Cache-type and cache-lookup cache result values:</div> <font color="#003399">' + codes[8][arr[2][3]] + " / " + codes[9][arr[2][4]] + '</font><br/>';
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Parent proxy connection status:</div> <font color="#003399">' + codes[10][arr[2][6]] + '</font><br/>';
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Origin server connection status:</div> <font color="#003399">' + codes[11][arr[2][8]] + '</font><br/>';
+
+    } else if (text.length == 6) {
+        output = output + "<h3>Proxy request results:</h3>";
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Result of Traffic Server cache lookup for URL:</div> <font color="#003399">' + codes[2][text[1]] + '</font><br/>';
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Response information received from origin server:</div> <font color="#003399">' + codes[3][text[3]] + '</font><br/>';
+        output = output + '<div style="width: 450px; font-weight: bold; float: left;">Result of document write-to-cache:</div> <font color="#003399">' + codes[4][text[5]] + '</font><br/>';
+
+
+    } else {
+        output = "Invalid VIA data, must be 22 or 6 characters long.";
+    }
+    via.innerHTML = output;
+    if (form) {
+        window.location.hash = escape(text);
+    }
+    return false;
+}
+
+function checkQuery() {
+    var url = location.href;
+    if (url.indexOf("#") > 0) {
+        var qs = url.substring(url.indexOf("#")+1).replace("%20", " ").replace("+", " ");
+        if (qs && qs.length > 5) {
+            showVia(false, qs);
+        }
+    }
+}
+</script>
+</head>
+  <body class="container" onLoad="checkQuery();">
+    <!-- Header -->
+    <div class="row" id="header">
+      <div class="fourcol">
+        <a href="/"><img class="logo" alt="Apache Traffic Server" src="/images/trans_logo_tm_380x69.png" /></a>
+      </div>
+      <div class="fourcol">
+        <a href="http://www.apache.org/"><img alt="The Apache Software Foundation" src="http://www.apache.org/images/feather-small.png" /></a>
+      </div>
+      <div class="fourcol right last" id="searchbox">
+        <form action="/search.html" id="cse-search-box" name="cse-search-box">
+          <input type="hidden" name="cx" value="014552695451971253177:hliljs75koi" /><input type=
+          "hidden" name="cof" value="FORID:10" /><input type="hidden" name="ie" value=
+          "UTF-8" /><input type="text" name="q" size="22" style="font-size: 80%"/><input type="submit" name="sa" value=
+          "Search Documentation" style="font-size: 80%"/>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row nav">
+    <div class="eightcol">
+      <a href="http://trafficserver.apache.org/">Home</a>
+      <a href="/downloads">Downloads</a>
+      <a href="/docs/">Documentation</a>
+      <a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server">Wiki</a>
+      <a href="https://issues.apache.org/jira/browse/TS">Issues</a>
+      <a href="/users.html">Customers</a>
+      <a href="/acknowledgements.html">Acknowledgements</a>
+      <a href="/assistance.html">Assistance</a>
+    </div>
+    <div class="fourcol last right">
+      <a href="http://apache.org/security/">Security</a>
+      <a href="http://www.apache.org/foundation/sponsorship.html">Donate</a>
+      <a href="http://www.apache.org/foundation/thanks.html">Thanks</a>
+    </div>
+  </div>
+
+  <div class="row content">
+    <div class="twelvecol" style="padding: 10px;">      
+        <form onsubmit="return showVia(this);">
+        <h2>Via header parser</h2>
+        <b>NOTE: This tool works with ATS 8.0.0 and above for extended via headers. </b> For earlier versions use the command line tool traffic_via.<br>
+        Enter your Via header into the box below to parse it:<br/>
+        <input type="text" name="via" id="via" size="20"/><input type="button" onclick="showVia(this.form)" value="Parse header"/>
+        </form>
+
+        <div id="viaoutput">
+        </div>
+    </div>
+  </div>
+
+
+  <div id="footer" class="row">
+    <div class="tencol">
+
+      Copyright  &copy; 2012
+      <a href="http://www.apache.org/">The Apache Software Foundation</a>.
+      Licensed under
+      the <a href="http://www.apache.org/licenses/">Apache License</a>,
+      Version 2.0. Apache Traffic Server, Apache,
+      the Apache Traffic Server logo, and the Apache feather logo are
+      trademarks of The Apache Software Foundation.
+    </div>
+    <div class="twocol right last">
+      <span id="apache_logo">
+        <a href="http://www.apache.org/"><img alt="The Apache Software Foundation" src="http://www.apache.org/images/feather-small.png" /></a>
+      </span>
+    </div>
+  </div>
+
+</body>
+</html>
+

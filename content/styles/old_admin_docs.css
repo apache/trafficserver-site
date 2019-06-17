@@ -1,0 +1,29 @@
+body{
+	font-family:Tahoma, Geneva, sans-serif;
+	width:95%;
+}
+h1{
+	font-family:Arial;
+}
+h2{border-style: solid none none; border-color: grey; border-width: 3px 0px 0px;font-family:Arial;}
+h3{font-family:Arial;}
+h5{font-family:Arial; padding: 5px 5px 5px 15px; background:url(http://us.i1.yimg.com/us.yimg.com/i/us/pim/bn/downbr1.gif) no-repeat left center;}
+code{padding:15px 0px;}
+table{border:thin solid;border-collapse:collapse;}
+td{border:thin solid grey;  border-top-style:solid;}
+h1.doctitle{
+	/*position:relative;
+	top:-8px;
+	display:inline;
+	margin-left:0px;  */
+    margin-top:0px;
+}
+ul.leftnav{
+	margin-left:0px;
+	padding-left:15px;
+	font-family: Tahoma, Geneva, sans-serif;
+	width:170px;
+}
+#ft #incu_logo{float:right;}
+#cse-search-box{display:inline; float:right;margin:15px 5px 0 5px;}
+img{border:0;}
