@@ -7,7 +7,7 @@ Notice:    Licensed to the Apache Software Foundation (ASF) under one
            "License"); you may not use this file except in compliance
            with the License.  You may obtain a copy of the License at
            .
-             http://www.apache.org/licenses/LICENSE-2.0
+             https://www.apache.org/licenses/LICENSE-2.0
            .
            Unless required by applicable law or agreed to in writing,
            software distributed under the License is distributed on an
@@ -27,7 +27,7 @@ Within the major versions, all such patch and minor releases are all compatible.
 
 When downloading from a mirror, please be sure to [verify the hash and OpenPGP
 compatible signature](https://www.apache.org/info/verification.html).  To validate
-the PGP signatures the [public keys from the release manager](http://archive.apache.org/dist/trafficserver/KEYS)
+the PGP signatures the [public keys from the release manager](https://archive.apache.org/dist/trafficserver/KEYS)
 will be needed.  You can also
 [browse through all releases](https://archive.apache.org/dist/trafficserver/)
 and hash signatures.
@@ -67,12 +67,12 @@ details about [upgrading to 7.x](https://cwiki.apache.org/confluence/display/TS/
 # Current v6.x Release -- 6.2.3 # {#6.2.3}
 
  Apache Traffic Server 6.2.3 was released on August 4th, 2018.
- [[`PGP`](http://www.apache.org/dist/trafficserver/trafficserver-6.2.3.tar.bz2.asc)]
- [[`MD5`](http://www.apache.org/dist/trafficserver/trafficserver-6.2.3.tar.bz2.md5)]
- [[`SHA1`](http://www.apache.org/dist/trafficserver/trafficserver-6.2.3.tar.bz2.sha1)]
- [[`SHA512`](http://www.apache.org/dist/trafficserver/trafficserver-6.2.3.tar.bz2.sha512)]
+ [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-6.2.3.tar.bz2.asc)]
+ [[`MD5`](https://www.apache.org/dist/trafficserver/trafficserver-6.2.3.tar.bz2.md5)]
+ [[`SHA1`](https://www.apache.org/dist/trafficserver/trafficserver-6.2.3.tar.bz2.sha1)]
+ [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-6.2.3.tar.bz2.sha512)]
 
- <a href="http://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-6.2.3.tar.bz2" class="download_ts">Traffic Server 6.2.3</a>
+ <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-6.2.3.tar.bz2" class="download_ts">Traffic Server 6.2.3</a>
 
 v6.2.3 is our last 6.2.x LTS release. Additional details for this release are in the
 [CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/6.2.3/CHANGELOG-6.2.3)
@@ -83,6 +83,6 @@ For details on the v6.2.x release, please see
 
 # Archived Releases
 
-## [Apache Traffic Server Archive](http://archive.apache.org/dist/trafficserver/)
+## [Apache Traffic Server Archive](https://archive.apache.org/dist/trafficserver/)
 
 <!-- test -->
