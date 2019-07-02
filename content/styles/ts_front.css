@@ -22,7 +22,7 @@ a:hover{text-decoration:underline;}
 a{color:#528DC8;text-decoration:none;}
 body{font-size:90%;}
 h1,h2,h3{color:#528DC8;}
-html{background: url('http://trafficserver.apache.org/images/grey_paper.jpg');}
+html{background: url('https://trafficserver.apache.org/images/grey_paper.jpg');}
 .bullet{list-style: disc outside none; margin: 10px 0 10px 20px;}
 .bullet li{list-style:disc outside none;margin:10px 0 10px 20px;}
   li.c2 {float:right;}
