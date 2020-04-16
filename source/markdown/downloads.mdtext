@@ -19,7 +19,7 @@ RSS:       /rss/releases.rss
 
 
 
-The latest stable release of Apache Traffic Server is 8.0.7, released on 2020-04-20.
+The latest stable release of Apache Traffic Server is 8.0.7, released on 2020-04-16.
 In addition, we continue to support the v7.1.x LTS release train, currently v7.1.10
 which was released on 2020-04-16. We follow the [Semantic Versioning](http://semver.org)
 scheme. The goal is to release patch releases frequently, and minor releases as needed.
