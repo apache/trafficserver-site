@@ -27,7 +27,7 @@ Within the major versions, all such patch and minor releases are all compatible.
 
 When downloading from a mirror, please be sure to [verify the hash and OpenPGP
 compatible signature](https://www.apache.org/info/verification.html).  To validate
-the PGP signatures the [public keys from the release manager](https://archive.apache.org/dist/trafficserver/KEYS)
+the PGP signatures the [public keys from the release manager](https://www.apache.org/dist/trafficserver/KEYS)
 will be needed.  You can also
 [browse through all releases](https://archive.apache.org/dist/trafficserver/)
 and hash signatures.
