@@ -19,7 +19,7 @@ RSS:       /rss/releases.rss
 
 
 
-The latest stable release of Apache Traffic Server is v9.0.0, released on 2020-12-14.
+The latest stable release of Apache Traffic Server is v9.0.1, released on 2021-04-16.
 In addition, we continue to support the v8.1.x LTS release train, currently v8.1.1,
 which was released on 2020-12-02. We follow the [Semantic Versioning](http://semver.org)
 scheme. The goal is to release patch releases frequently, and minor releases as needed.
@@ -32,18 +32,18 @@ will be needed.  You can also
 [browse through all releases](https://archive.apache.org/dist/trafficserver/)
 and hash signatures.
 
-# Current v9.x Release -- 9.0.0 # {#9.0.0}
+# Current v9.x Release -- 9.0.1 # {#9.0.1}
 
- Apache Traffic Server v9.0.0 was released on December 14th, 2020.
- [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-9.0.0.tar.bz2.asc)]
- [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.0.0.tar.bz2.sha512)]
+ Apache Traffic Server v9.0.1 was released on April 16th, 2021.
+ [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-9.0.1.tar.bz2.asc)]
+ [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.0.1.tar.bz2.sha512)]
 
- <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-9.0.0.tar.bz2"
- class="download_ts">Traffic Server 9.0.0</a>
+ <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-9.0.1.tar.bz2"
+ class="download_ts">Traffic Server 9.0.1</a>
 
-v9.0.0 is our latest stable release. Additional details for this release are in the
-[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/7.1.x/CHANGELOG-7.1.12)
-and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/43?closed=1).
+v9.0.1 is our latest stable release. Additional details for this release are in the
+[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.0.x/CHANGELOG-9.0.1)
+and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/31?closed=1).
 
 For details on the v9.0.x release, please see
 [9.0.x News](https://docs.trafficserver.apache.org/en/9.0.x/release-notes/whats-new.en.html). There are also
