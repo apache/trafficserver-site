@@ -43,7 +43,7 @@ and hash signatures.
 
 v9.0.2 is our latest stable release. Additional details for this release are in the
 [CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.0.x/CHANGELOG-9.0.2)
-and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/31?closed=1).
+and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/48?closed=1).
 
 For details on the v9.0.x release, please see
 [9.0.x News](https://docs.trafficserver.apache.org/en/9.0.x/release-notes/whats-new.en.html). There are also
@@ -59,7 +59,7 @@ details about [upgrading to 9.x](https://docs.trafficserver.apache.org/en/9.0.x/
 
 v8.1.2 is our current stable release in the previous release train. Additional details for this release are in the
 [CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/8.1.x/CHANGELOG-8.1.2)
-and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/44?closed=1).
+and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/47?closed=1).
 
 For details on the v8.0.x release, please see
 [8.0.x News](https://cwiki.apache.org/confluence/display/TS/What's+New+in+v8.0.x). There are also
