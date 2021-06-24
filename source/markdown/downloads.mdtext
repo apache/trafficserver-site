@@ -19,9 +19,9 @@ RSS:       /rss/releases.rss
 
 
 
-The latest stable release of Apache Traffic Server is v9.0.1, released on 2021-04-16.
-In addition, we continue to support the v8.1.x LTS release train, currently v8.1.1,
-which was released on 2020-12-02. We follow the [Semantic Versioning](http://semver.org)
+The latest stable release of Apache Traffic Server is v9.0.2, released on 2021-06-24.
+In addition, we continue to support the v8.1.x LTS release train, currently v8.1.2,
+which was released on 2021-06-24. We follow the [Semantic Versioning](http://semver.org)
 scheme. The goal is to release patch releases frequently, and minor releases as needed.
 Within the major versions, all such patch and minor releases are all compatible.
 
@@ -32,33 +32,33 @@ will be needed.  You can also
 [browse through all releases](https://archive.apache.org/dist/trafficserver/)
 and hash signatures.
 
-# Current v9.x Release -- 9.0.1 # {#9.0.1}
+# Current v9.x Release -- 9.0.2 # {#9.0.2}
 
- Apache Traffic Server v9.0.1 was released on April 16th, 2021.
- [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-9.0.1.tar.bz2.asc)]
- [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.0.1.tar.bz2.sha512)]
+ Apache Traffic Server v9.0.2 was released on June 24th, 2021.
+ [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-9.0.2.tar.bz2.asc)]
+ [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.0.2.tar.bz2.sha512)]
 
- <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-9.0.1.tar.bz2"
- class="download_ts">Traffic Server 9.0.1</a>
+ <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-9.0.2.tar.bz2"
+ class="download_ts">Traffic Server 9.0.2</a>
 
-v9.0.1 is our latest stable release. Additional details for this release are in the
-[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.0.x/CHANGELOG-9.0.1)
+v9.0.2 is our latest stable release. Additional details for this release are in the
+[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.0.x/CHANGELOG-9.0.2)
 and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/31?closed=1).
 
 For details on the v9.0.x release, please see
 [9.0.x News](https://docs.trafficserver.apache.org/en/9.0.x/release-notes/whats-new.en.html). There are also
 details about [upgrading to 9.x](https://docs.trafficserver.apache.org/en/9.0.x/release-notes/upgrading.en.html).
 
-# Current v8.x Release -- 8.1.1 # {#8.1.1}
+# Current v8.x Release -- 8.1.2 # {#8.1.2}
 
- Apache Traffic Server v8.1.1 was released on December 2nd, 2020.
- [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.1.tar.bz2.asc)]
- [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.1.tar.bz2.sha512)]
+ Apache Traffic Server v8.1.2 was released on June 24th, 2020.
+ [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.2.tar.bz2.asc)]
+ [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.2.tar.bz2.sha512)]
 
- <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-8.1.1.tar.bz2" class="download_ts">Traffic Server 8.1.1</a>
+ <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-8.1.2.tar.bz2" class="download_ts">Traffic Server 8.1.2</a>
 
-v8.1.1 is our current stable release in the previous release train. Additional details for this release are in the
-[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/8.1.x/CHANGELOG-8.1.1)
+v8.1.2 is our current stable release in the previous release train. Additional details for this release are in the
+[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/8.1.x/CHANGELOG-8.1.2)
 and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/44?closed=1).
 
 For details on the v8.0.x release, please see
