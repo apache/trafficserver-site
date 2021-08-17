@@ -42,10 +42,10 @@ and hash signatures.
  class="download_ts">Traffic Server 9.1.0</a>
 
 v9.1.0 is our latest stable release. Additional details for this release are in the
-[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.0.x/CHANGELOG-9.1.0)
+[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.1.x/CHANGELOG-9.1.0)
 and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/32?closed=1).
 
-For details on the v9.0.x release, please see
+For details on the v9.x release, please see
 [9.0.x News](https://docs.trafficserver.apache.org/en/9.0.x/release-notes/whats-new.en.html). There are also
 details about [upgrading to 9.x](https://docs.trafficserver.apache.org/en/9.0.x/release-notes/upgrading.en.html).
 
