@@ -57,7 +57,7 @@ details about [upgrading to 9.x](https://docs.trafficserver.apache.org/en/9.0.x/
 
  <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-8.1.3.tar.bz2" class="download_ts">Traffic Server 8.1.3</a>
 
-v8.1.2 is our current stable release in the previous release train. Additional details for this release are in the
+v8.1.3 is our current stable release in the previous release train. Additional details for this release are in the
 [CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/8.1.x/CHANGELOG-8.1.3)
 and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/50?closed=1).
 
