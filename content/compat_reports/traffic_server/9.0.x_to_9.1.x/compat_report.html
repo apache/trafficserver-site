@@ -1,0 +1,1246 @@
+<!-- kind:binary;verdict:incompatible;affected:1.1;added:13;removed:0;type_problems_high:0;type_problems_medium:12;type_problems_low:2;interface_problems_high:5;interface_problems_medium:0;interface_problems_low:2;changed_constants:0;type_changes_other:2;tool_version:2.3 -->
+<!-- kind:source;verdict:incompatible;affected:0.9;added:27;removed:8;type_problems_high:0;type_problems_medium:0;type_problems_low:0;interface_problems_high:0;interface_problems_medium:0;interface_problems_low:0;changed_constants:0;type_changes_other:16;interface_changes_other:2;tool_version:2.3 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="keywords" content="traffic_server, compatibility, API, ABI, report" />
+<meta name="description" content="API/ABI compatibility report for the traffic_server object between 9.0.x and 9.1.x versions" />
+<title>traffic_server: 9.0.x to 9.1.x compatibility report</title>
+<style type="text/css">
+body {
+    font-family:Arial, sans-serif;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+    white-space:nowrap;
+}
+span.section {
+    font-weight:bold;
+    cursor:pointer;
+    color:#003E69;
+    white-space:nowrap;
+    margin-left:0.3125em;
+}
+span.new_sign {
+    font-weight:bold;
+    margin-left:1.65em;
+    color:#003E69;
+}
+span.new_sign_lbl {
+    margin-left:3em;
+    font-size:1em;
+    color:Black;
+}
+span:hover.section {
+    color:#336699;
+}
+span.sect_aff {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:#cc3300;
+}
+span.sect_info {
+    cursor:pointer;
+    padding-left:1.55em;
+    font-size:0.875em;
+    color:Black;
+}
+span.ext {
+    font-weight:normal;
+}
+span.h_name {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+div.h_list, div.lib_list {
+    font-size:0.94em;
+    padding-left:0.4em;
+}
+span.ns {
+    color:#408080;
+    font-size:0.94em;
+}
+span.lib_name {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.iname {
+    font-weight:bold;
+    color:#003E69;
+    margin-left:0.3125em;
+}
+span.iname_b {
+    font-weight:bold;
+}
+span.iname_a {
+    color:#333333;
+    font-weight:bold;
+    font-size:0.94em;
+}
+span.sym_p {
+    font-weight:normal;
+    white-space:normal;
+}
+span.sym_pd {
+    white-space:normal;
+}
+span.sym_p span, span.sym_pd span {
+    white-space:nowrap;
+}
+div.affect {
+    padding-left:1em;
+    padding-bottom:10px;
+    font-size:0.87em;
+    font-style:italic;
+    line-height:0.9em;
+}
+div.affected {
+    padding-left:1.9em;
+    padding-top:10px;
+}
+table.ptable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:0.95em;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:56.25em;
+}
+table.ptable td {
+    border:1px solid gray;
+    padding:3px;
+    font-size:0.875em;
+    text-align:left;
+    vertical-align:top;
+    max-width:28em;
+    word-wrap:break-word;
+}
+table.ptable th.pn {
+    width:2%;
+}
+table.ptable th.chg {
+    width:47%;
+}
+table.vtable {
+    border-collapse:collapse;
+    border:1px outset black;
+    margin-left:1.9em;
+    margin-top:0.7em;
+}
+table.vtable td {
+    border:1px solid gray;
+    padding:3px;
+    font-size:0.875em;
+    vertical-align:top;
+    max-width:450px;
+    word-wrap:break-word;
+}
+table.ptable th, table.vtable th {
+    background-color:#eeeeee;
+    font-weight:bold;
+    color:#333333;
+    font-family:Verdana, Arial;
+    font-size:0.875em;
+    border:1px solid gray;
+    text-align:center;
+    vertical-align:top;
+    white-space:nowrap;
+    padding:3px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:normal;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset gray;
+    padding:3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset gray;
+    padding:3px 5px 3px 10px;
+}
+span.mngl {
+    padding-left:1em;
+    font-size:0.875em;
+    cursor:text;
+    color:#444444;
+    font-weight:bold;
+}
+span.pleft {
+    padding-left:2.5em;
+}
+span.sym_ver {
+    color:#333333;
+    white-space:nowrap;
+    font-family:"DejaVu Sans Mono", Monospace;
+}
+span.attr {
+    color:#333333;
+    font-weight:normal;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.p {
+    font-style:italic;
+}
+span.fp {
+    font-style:italic;
+    background-color:#DCDCDC;
+}
+span.ttype {
+    font-weight:normal;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.value {
+    font-weight:bold;
+}
+.passed {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.warning {
+    background-color:#F4F4AF;
+    font-weight:normal;
+}
+.failed {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.new {
+    background-color:#C6DEFF;
+    font-weight:normal;
+}
+.compatible {
+    background-color:#CCFFCC;
+    font-weight:normal;
+}
+.almost_compatible {
+    background-color:#FFDAA3;
+    font-weight:normal;
+}
+.incompatible {
+    background-color:#FFCCCC;
+    font-weight:normal;
+}
+.gray {
+    background-color:#DCDCDC;
+    font-weight:normal;
+}
+.top_ref {
+    font-size:0.69em;
+}
+.footer {
+    font-size:0.75em;
+}
+
+.tabset {
+    float:left;
+}
+a.tab {
+    border:1px solid Black;
+    float:left;
+    margin:0px 5px -1px 0px;
+    padding:3px 5px 3px 5px;
+    position:relative;
+    font-size:0.875em;
+    background-color:#DDD;
+    text-decoration:none;
+    color:Black;
+}
+a.disabled:hover
+{
+    color:Black;
+    background:#EEE;
+}
+a.active:hover
+{
+    color:Black;
+    background:White;
+}
+a.active {
+    border-bottom-color:White;
+    background-color:White;
+}
+div.tab {
+    border-top:1px solid Black;
+    padding:0px;
+    width:100%;
+    clear:both;
+}
+</style>
+<script type="text/javascript" language="JavaScript">
+<!--
+function showContent(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi,"[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi,"[+]");
+    }
+}
+function initTabs()
+{
+    var url = window.location.href;
+    if(url.indexOf('_Source_')!=-1 || url.indexOf('#Source')!=-1)
+    {
+        var tab1 = document.getElementById('BinaryID');
+        var tab2 = document.getElementById('SourceID');
+        tab1.className='tab disabled';
+        tab2.className='tab active';
+    }
+    var sets = document.getElementsByTagName('div');
+    for (var i = 0; i < sets.length; i++)
+    {
+        if (sets[i].className.indexOf('tabset') != -1)
+        {
+            var tabs = [];
+            var links = sets[i].getElementsByTagName('a');
+            for (var j = 0; j < links.length; j++)
+            {
+                if (links[j].className.indexOf('tab') != -1)
+                {
+                    tabs.push(links[j]);
+                    links[j].tabs = tabs;
+                    var tab = document.getElementById(links[j].href.substr(links[j].href.indexOf('#') + 1));
+                    //reset all tabs on start
+                    if (tab)
+                    {
+                        if (links[j].className.indexOf('active')!=-1) {
+                            tab.style.display = 'block';
+                        }
+                        else {
+                            tab.style.display = 'none';
+                        }
+                    }
+                    links[j].onclick = function()
+                    {
+                        var tab = document.getElementById(this.href.substr(this.href.indexOf('#') + 1));
+                        if (tab)
+                        {
+                            //reset all tabs before change
+                            for (var k = 0; k < this.tabs.length; k++)
+                            {
+                                document.getElementById(this.tabs[k].href.substr(this.tabs[k].href.indexOf('#') + 1)).style.display = 'none';
+                                this.tabs[k].className = this.tabs[k].className.replace('active', 'disabled');
+                            }
+                            this.className = 'tab active';
+                            tab.style.display = 'block';
+                            // window.location.hash = this.id.replace('ID', '');
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if(url.indexOf('#')!=-1) {
+        location.href=location.href;
+    }
+}
+if (window.addEventListener) window.addEventListener('load', initTabs, false);
+else if (window.attachEvent) window.attachEvent('onload', initTabs);
+-->
+</script>
+</head>
+<body><a name='Source'></a><a name='Binary'></a><a name='Top'></a><h1>API compatibility report for the <span style='color:Blue;'>traffic_server</span> object between <span style='color:Red;'>9.0.x</span> and <span style='color:Red;'>9.1.x</span> versions on <span style='color:Blue;'>x86_64</span></h1>
+
+            <br/>
+            <div class='tabset'>
+            <a id='BinaryID' href='#BinaryTab' class='tab active'>Binary<br/>Compatibility</a>
+            <a id='SourceID' href='#SourceTab' style='margin-left:3px' class='tab disabled'>Source<br/>Compatibility</a>
+            </div><div id='BinaryTab' class='tab'>
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Module Name</th><td>traffic_server</td></tr>
+<tr><th>Version #1</th><td>9.0.x</td></tr>
+<tr><th>Version #2</th><td>9.1.x</td></tr>
+<tr><th>Arch</th><td>x86_64</td></tr>
+<tr><th>GCC Version</th><td>11.2.1</td></tr>
+<tr><th>Subject</th><td width='150px'>Binary Compatibility</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'><tr><th>Total Header Files</th><td><a href='#Headers' style='color:Blue;'>7</a></td></tr>
+<tr><th>Total Source Files</th><td><a href='#Sources' style='color:Blue;'>3</a></td></tr>
+<tr><th>Total Objects</th><td><a href='#Libs' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Symbols / Types</th><td>804 / 121</td></tr>
+<tr><th>Compatibility</th>
+<td class='warning'>98.9%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'><tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr><tr><th>Added Symbols</th><td>-</td><td class='new'><a href='#Binary_Added' style='color:Blue;'>13</a></td></tr>
+<tr><th>Removed Symbols</th><td>High</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td class='failed'><a href='#Type_Binary_Problems_Medium' style='color:Blue;'>12</a></td></tr>
+<tr><td>Low</td><td class='warning'><a href='#Type_Binary_Problems_Low' style='color:Blue;'>2</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Symbols</th><td>High</td><td class='failed'><a href='#Symbol_Binary_Problems_High' style='color:Blue;'>5</a></td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td class='warning'><a href='#Symbol_Binary_Problems_Low' style='color:Blue;'>2</a></td></tr>
+<tr><th>Problems with<br/>Constants</th><td>Low</td><td>0</td></tr>
+<tr><th>Other Changes<br/>in Data Types</th><td>-</td><td class='passed'><a href='#Other_Binary_Changes_In_Types' style='color:Blue;'>2</a></td></tr>
+</table>
+
+<a name='Binary_Added'></a><h2>Added Symbols <span class='new'>&nbsp;13&nbsp;</span></h2><hr/>
+<span class='h_name'>ts.h</span>, <span class='lib_name'>traffic_server</span><br/>
+<span class="iname">TSHttpTxnCacheDiskPathGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>int* <span class='color_p'>length</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnClientStreamIdGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>uint64_t* <span class='color_p'>stream_id</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnClientStreamPriorityGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>TSHttpPriority* <span class='color_p'>priority</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnServerProtocolStackContains&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>char const* <span class='color_p'>tag</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnServerProtocolStackGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>int <span class='color_p'>count</span></span>, <span>char const** <span class='color_p'>result</span></span>, <span>int* <span class='color_p'>actual</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnServerRespNoStoreGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnServerSsnTransactionCount&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnServerVConnGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>&#160;)</span></span><br/>
+<span class="iname">TSMgmtConfigFileAdd&#160;<span class='sym_p'><span>(&#160;char const* <span class='color_p'>parent</span></span>, <span>char const* <span class='color_p'>fileName</span></span>&#160;)</span></span><br/>
+<span class="iname">TSMgmtDataTypeGet&#160;<span class='sym_p'><span>(&#160;char const* <span class='color_p'>var_name</span></span>, <span>TSRecordDataType* <span class='color_p'>result</span></span>&#160;)</span></span><br/>
+<span class="iname">TSUrlRawPortGet&#160;<span class='sym_p'><span>(&#160;TSMBuffer <span class='color_p'>bufp</span></span>, <span>TSMLoc <span class='color_p'>obj</span></span>&#160;)</span></span><br/>
+<span class="iname">TSUrlRawSchemeGet&#160;<span class='sym_p'><span>(&#160;TSMBuffer <span class='color_p'>bufp</span></span>, <span>TSMLoc <span class='color_p'>obj</span></span>, <span>int* <span class='color_p'>length</span></span>&#160;)</span></span><br/>
+<span class="iname">TSVConnProvidedSslCert&#160;<span class='sym_p'><span>(&#160;TSVConn <span class='color_p'>sslp</span></span>&#160;)</span></span><br/>
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='High_Risk_Binary_Problems'></a><a name='Symbol_Binary_Problems_High'></a><a name='Interface_Binary_Problems_High'></a>
+<h2>Problems with Symbols, High Severity <span class='failed'>&nbsp;5&nbsp;</span></h2><hr/>
+<span class='h_name'>ts.h</span>, <span class='lib_name'>traffic_server</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_1')">
+<span class='ext'>[+]</span> TSContCreate&#160;<span class='sym_p'><span>(&#160;TSEventFunc <span class='color_p'>funcp</span></span>, <span>TSMutex <span class='color_p'>mutexp</span></span>&#160;)</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_1" style="display:none;">
+
+<table class='ptable'>
+<tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th>
+</tr>
+<tr>
+<th>1</th>
+<td>The parameter <b>mutexp</b> became passed in <b>rbx</b> register instead of <b>rbp</b>.</td>
+<td>Applications will read the wrong memory block instead of the parameter value.</td>
+</tr>
+</table>
+<br/>
+</div>
+<span class="section" onclick="javascript:showContent(this, 'c_2')">
+<span class='ext'>[+]</span> TSHttpHdrPrint&#160;<span class='sym_p'><span>(&#160;TSMBuffer <span class='color_p'>bufp</span></span>, <span>TSMLoc <span class='color_p'>obj</span></span>, <span>TSIOBuffer <span class='color_p'>iobufp</span></span>&#160;)</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_2" style="display:none;">
+
+<table class='ptable'>
+<tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th>
+</tr>
+<tr>
+<th>1</th>
+<td>The parameter <b>iobufp</b> became passed in <b>rbx</b> register instead of <b>rbp</b>.</td>
+<td>Applications will read the wrong memory block instead of the parameter value.</td>
+</tr>
+</table>
+<br/>
+</div>
+<span class="section" onclick="javascript:showContent(this, 'c_3')">
+<span class='ext'>[+]</span> TSHttpHdrVersionSet&#160;<span class='sym_p'><span>(&#160;TSMBuffer <span class='color_p'>bufp</span></span>, <span>TSMLoc <span class='color_p'>obj</span></span>, <span>int <span class='color_p'>ver</span></span>&#160;)</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_3" style="display:none;">
+
+<table class='ptable'>
+<tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th>
+</tr>
+<tr>
+<th>1</th>
+<td>The parameter <b>ver</b> became passed in <b>r12</b> register instead of <b>r13</b>.</td>
+<td>Applications will read the wrong memory block instead of the parameter value.</td>
+</tr>
+</table>
+<br/>
+</div>
+<span class="section" onclick="javascript:showContent(this, 'c_4')">
+<span class='ext'>[+]</span> TSUrlPrint&#160;<span class='sym_p'><span>(&#160;TSMBuffer <span class='color_p'>bufp</span></span>, <span>TSMLoc <span class='color_p'>obj</span></span>, <span>TSIOBuffer <span class='color_p'>iobufp</span></span>&#160;)</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_4" style="display:none;">
+
+<table class='ptable'>
+<tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th>
+</tr>
+<tr>
+<th>1</th>
+<td>The parameter <b>iobufp</b> became passed in <b>rbx</b> register instead of <b>rbp</b>.</td>
+<td>Applications will read the wrong memory block instead of the parameter value.</td>
+</tr>
+</table>
+<br/>
+</div>
+<span class="section" onclick="javascript:showContent(this, 'c_5')">
+<span class='ext'>[+]</span> TSVConnCreate&#160;<span class='sym_p'><span>(&#160;TSEventFunc <span class='color_p'>event_funcp</span></span>, <span>TSMutex <span class='color_p'>mutexp</span></span>&#160;)</span> <span class='failed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_5" style="display:none;">
+
+<table class='ptable'>
+<tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th>
+</tr>
+<tr>
+<th>1</th>
+<td>The parameter <b>mutexp</b> became passed in <b>rbx</b> register instead of <b>rbp</b>.</td>
+<td>Applications will read the wrong memory block instead of the parameter value.</td>
+</tr>
+</table>
+<br/>
+</div>
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Medium_Risk_Binary_Problems'></a><a name='Type_Binary_Problems_Medium'></a>
+<h2>Problems with Data Types, Medium Severity <span class='failed'>&nbsp;12&nbsp;</span></h2><hr/>
+<span class='h_name'>apidefs.h</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_6')">
+<span class='ext'>[+]</span> <span class='ttype'>enum</span> TSOverridableConfigKey <span class='failed'>&nbsp;12&nbsp;</span></span>
+<br/>
+<div id="c_6" style="display:none;">
+<table class='ptable'><tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th></tr><tr>
+<th>1</th>
+<td>Value of member <b>TS_CONFIG_HTTP_ALLOW_HALF_OPEN</b> has been changed from <b>107</b> to <b>108</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Value of member <b>TS_CONFIG_HTTP_ALLOW_MULTI_RANGE</b> has been changed from <b>105</b> to <b>106</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Value of member <b>TS_CONFIG_HTTP_HOST_RESOLUTION_PREFERENCE</b> has been changed from <b>117</b> to <b>118</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Value of member <b>TS_CONFIG_HTTP_PER_SERVER_CONNECTION_MATCH</b> has been changed from <b>110</b> to <b>111</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>5</th>
+<td>Value of member <b>TS_CONFIG_HTTP_REQUEST_BUFFER_ENABLED</b> has been changed from <b>106</b> to <b>107</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>6</th>
+<td>Value of member <b>TS_CONFIG_HTTP_SERVER_MIN_KEEP_ALIVE_CONNS</b> has been changed from <b>108</b> to <b>109</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>7</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_CA_CERT_FILENAME</b> has been changed from <b>116</b> to <b>117</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>8</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_PRIVATE_KEY_FILENAME</b> has been changed from <b>115</b> to <b>116</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>9</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_SNI_POLICY</b> has been changed from <b>114</b> to <b>115</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>10</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_VERIFY_SERVER</b> has been changed from <b>111</b> to <b>112</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>11</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_VERIFY_SERVER_POLICY</b> has been changed from <b>112</b> to <b>113</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>12</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_VERIFY_SERVER_PROPERTIES</b> has been changed from <b>113</b> to <b>114</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+</table>
+<span class="sect_aff" onclick="javascript:showContent(this, 'c_7')">
+[+] affected symbols: 7 (0.9%)</span>
+<div id="c_7" style="display:none;">
+<div class='affected'><span class='iname_a'>TSHttpTxnConfigFind&#160;<span class='sym_p'><span>(&#160;char const* <i>name</i></span>, <span>int <i>length</i></span>, <span>TSOverridableConfigKey* <span class='fp'>conf</span></span>, <span>TSRecordDataType* <i>type</i></span>&#160;)</span></span><br/>
+<div class='affect'>3rd parameter &#39;conf&#39; (pointer) has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigFloatGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtFloat* <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigFloatSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtFloat <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigIntGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtInt* <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigIntSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtInt <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigStringGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>char const** <i>value</i></span>, <span>int* <i>length</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigStringSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>char const* <i>value</i></span>, <span>int <i>length</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+</div>
+</div>
+<br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Low_Risk_Binary_Problems'></a><a name='Type_Binary_Problems_Low'></a>
+<h2>Problems with Data Types, Low Severity <span class='warning'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='h_name'>apidefs.h</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_8')">
+<span class='ext'>[+]</span> <span class='ttype'>enum</span> TSOverridableConfigKey <span class='warning'>&nbsp;2&nbsp;</span></span>
+<br/>
+<div id="c_8" style="display:none;">
+<table class='ptable'><tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th></tr><tr>
+<th>1</th>
+<td>Value of member <b>TS_CONFIG_HTTP_PER_SERVER_CONNECTION_MAX</b> has been changed from <b>109</b> to <b>110</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Value of member <b>TS_CONFIG_LAST_ENTRY</b> has been changed from <b>118</b> to <b>120</b>.</td>
+<td>Applications may execute a wrong branch of code in the library and therefore change the behavior.</td>
+</tr>
+</table>
+<span class="sect_aff" onclick="javascript:showContent(this, 'c_9')">
+[+] affected symbols: 7 (0.9%)</span>
+<div id="c_9" style="display:none;">
+<div class='affected'><span class='iname_a'>TSHttpTxnConfigFind&#160;<span class='sym_p'><span>(&#160;char const* <i>name</i></span>, <span>int <i>length</i></span>, <span>TSOverridableConfigKey* <span class='fp'>conf</span></span>, <span>TSRecordDataType* <i>type</i></span>&#160;)</span></span><br/>
+<div class='affect'>3rd parameter &#39;conf&#39; (pointer) has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigFloatGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtFloat* <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigFloatSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtFloat <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigIntGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtInt* <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigIntSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtInt <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigStringGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>char const** <i>value</i></span>, <span>int* <i>length</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigStringSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>char const* <i>value</i></span>, <span>int <i>length</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+</div>
+</div>
+<br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Symbol_Binary_Problems_Low'></a><a name='Interface_Binary_Problems_Low'></a>
+<h2>Problems with Symbols, Low Severity <span class='warning'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='h_name'>ts.h</span>, <span class='lib_name'>traffic_server</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_10')">
+<span class='ext'>[+]</span> TSHttpSsnClientProtocolStackGet&#160;<span class='sym_p'><span>(&#160;TSHttpSsn <span class='color_p'>ssnp</span></span>, <span>int <span class='color_p'>n</span></span>, <span>char const** <span class='color_p'>result</span></span>, <span>int* <span class='color_p'>actual</span></span>&#160;)</span> <span class='warning'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_10" style="display:none;">
+
+
+<span class='new_sign_lbl'>&#8675;</span>
+<br/>
+<span class='new_sign'>TSHttpSsnClientProtocolStackGet&#160;<span class='sym_p'><span>(&#160;TSHttpSsn <span class='color_p'>ssnp</span></span>, <span>int <span class='color_p'>count</span></span>, <span>char const** <span class='color_p'>result</span></span>, <span>int* <span class='color_p'>actual</span></span>&#160;)</span></span><br/>
+<table class='ptable'>
+<tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th>
+</tr>
+<tr>
+<th>1</th>
+<td><b>2nd</b> parameter <b>n</b> has been renamed to <b>count</b>.</td>
+<td>Renaming of a parameter may indicate a change in its semantic meaning.</td>
+</tr>
+</table>
+<br/>
+</div>
+<span class="section" onclick="javascript:showContent(this, 'c_11')">
+<span class='ext'>[+]</span> TSHttpTxnClientProtocolStackGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>int <span class='color_p'>n</span></span>, <span>char const** <span class='color_p'>result</span></span>, <span>int* <span class='color_p'>actual</span></span>&#160;)</span> <span class='warning'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_11" style="display:none;">
+
+
+<span class='new_sign_lbl'>&#8675;</span>
+<br/>
+<span class='new_sign'>TSHttpTxnClientProtocolStackGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>int <span class='color_p'>count</span></span>, <span>char const** <span class='color_p'>result</span></span>, <span>int* <span class='color_p'>actual</span></span>&#160;)</span></span><br/>
+<table class='ptable'>
+<tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th>
+</tr>
+<tr>
+<th>1</th>
+<td><b>2nd</b> parameter <b>n</b> has been renamed to <b>count</b>.</td>
+<td>Renaming of a parameter may indicate a change in its semantic meaning.</td>
+</tr>
+</table>
+<br/>
+</div>
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Other_Binary_Changes'></a><a name='Other_Binary_Changes_In_Types'></a>
+<h2>Other Changes in Data Types <span class='passed'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='h_name'>apidefs.h</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_12')">
+<span class='ext'>[+]</span> <span class='ttype'>enum</span> TSOverridableConfigKey <span class='passed'>&nbsp;2&nbsp;</span></span>
+<br/>
+<div id="c_12" style="display:none;">
+<table class='ptable'><tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th></tr><tr>
+<th>1</th>
+<td>The member <b>TS_CONFIG_HTTP_CONNECT_DEAD_POLICY</b> with value <b>119</b> has been added.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>The member <b>TS_CONFIG_HTTP_PROXY_PROTOCOL_OUT</b> with value <b>105</b> has been added.</td>
+<td>No effect.</td>
+</tr>
+</table>
+<span class="sect_aff" onclick="javascript:showContent(this, 'c_13')">
+[+] affected symbols: 7 (0.9%)</span>
+<div id="c_13" style="display:none;">
+<div class='affected'><span class='iname_a'>TSHttpTxnConfigFind&#160;<span class='sym_p'><span>(&#160;char const* <i>name</i></span>, <span>int <i>length</i></span>, <span>TSOverridableConfigKey* <span class='fp'>conf</span></span>, <span>TSRecordDataType* <i>type</i></span>&#160;)</span></span><br/>
+<div class='affect'>3rd parameter &#39;conf&#39; (pointer) has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigFloatGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtFloat* <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigFloatSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtFloat <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigIntGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtInt* <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigIntSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtInt <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigStringGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>char const** <i>value</i></span>, <span>int* <i>length</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigStringSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>char const* <i>value</i></span>, <span>int <i>length</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+</div>
+</div>
+<br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Headers'></a><h2>Header Files <span class='gray'>&nbsp;7&nbsp;</span></h2><hr/>
+<div class='h_list'>
+apidefs.h<br/>
+experimental.h<br/>
+Headers.h<br/>
+IntrusiveDList.h<br/>
+Plugin.h<br/>
+remap.h<br/>
+ts.h<br/>
+</div>
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Sources'></a><h2>Source Files <span class='gray'>&nbsp;3&nbsp;</span></h2><hr/>
+<div class='h_list'>
+InkAPI.cc<br/>
+InkIOCoreAPI.cc<br/>
+Plugin.cc<br/>
+</div>
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Libs'></a><h2>Objects <span class='gray'>&nbsp;1&nbsp;</span></h2><hr/>
+<div class='lib_list'>
+traffic_server<br/>
+</div>
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/></div><div id='SourceTab' class='tab'>
+<h2>Test Info</h2><hr/>
+<table class='summary'>
+<tr><th>Module Name</th><td>traffic_server</td></tr>
+<tr><th>Version #1</th><td>9.0.x</td></tr>
+<tr><th>Version #2</th><td>9.1.x</td></tr>
+<tr><th>Arch</th><td>x86_64</td></tr>
+<tr><th>Subject</th><td width='150px'>Source Compatibility</td></tr>
+</table>
+<h2>Test Results</h2><hr/>
+<table class='summary'><tr><th>Total Header Files</th><td><a href='#Headers' style='color:Blue;'>7</a></td></tr>
+<tr><th>Total Source Files</th><td><a href='#Sources' style='color:Blue;'>3</a></td></tr>
+<tr><th>Total Objects</th><td><a href='#Libs' style='color:Blue;'>1</a></td></tr>
+<tr><th>Total Symbols / Types</th><td>930 / 190</td></tr>
+<tr><th>Compatibility</th>
+<td class='warning'>99.1%</td>
+</tr>
+</table>
+<h2>Problem Summary</h2><hr/>
+<table class='summary'><tr><th></th><th style='text-align:center;'>Severity</th><th style='text-align:center;'>Count</th></tr><tr><th>Added Symbols</th><td>-</td><td class='new'><a href='#Source_Added' style='color:Blue;'>27</a></td></tr>
+<tr><th>Removed Symbols</th><td>High</td><td class='failed'><a href='#Source_Removed' style='color:Blue;'>8</a></td></tr>
+<tr><th rowspan='3'>Problems with<br/>Data Types</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th rowspan='3'>Problems with<br/>Symbols</th><td>High</td><td>0</td></tr>
+<tr><td>Medium</td><td>0</td></tr>
+<tr><td>Low</td><td>0</td></tr>
+<tr><th>Problems with<br/>Constants</th><td>Low</td><td>0</td></tr>
+<tr><th>Other Changes<br/>in Data Types</th><td>-</td><td class='passed'><a href='#Other_Source_Changes_In_Types' style='color:Blue;'>16</a></td></tr>
+<tr><th>Other Changes<br/>in Symbols</th><td>-</td><td class='passed'><a href='#Other_Source_Changes_In_Symbols' style='color:Blue;'>2</a></td></tr>
+</table>
+
+<a name='Source_Added'></a><h2>Added Symbols <span class='new'>&nbsp;27&nbsp;</span></h2><hr/>
+<span class='h_name'>IntrusiveDList.h</span><br/>
+<span class='ns'>namespace <b>ts</b></span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_14')">
+IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;::const_iterator::const_iterator <span class='attr'>[C1]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;::const_iterator::list_type const* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;::const_iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_14" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN15PoolableSession11FQDNLinkageEE14const_iteratorC1EPKS3_PKS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_15')">
+IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;::const_iterator::const_iterator <span class='attr'>[C2]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;::const_iterator::list_type const* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;::const_iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_15" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN15PoolableSession11FQDNLinkageEE14const_iteratorC2EPKS3_PKS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_16')">
+IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;::iterator::iterator <span class='attr'>[C1]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;::iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_16" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN15PoolableSession11FQDNLinkageEE8iteratorC1EPS3_PS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_17')">
+IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;::iterator::iterator <span class='attr'>[C2]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;PoolableSession::FQDNLinkage&gt;::iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_17" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN15PoolableSession11FQDNLinkageEE8iteratorC2EPS3_PS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_18')">
+IntrusiveDList&lt;PoolableSession::IPLinkage&gt;::const_iterator::const_iterator <span class='attr'>[C1]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;PoolableSession::IPLinkage&gt;::const_iterator::list_type const* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;PoolableSession::IPLinkage&gt;::const_iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_18" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN15PoolableSession9IPLinkageEE14const_iteratorC1EPKS3_PKS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_19')">
+IntrusiveDList&lt;PoolableSession::IPLinkage&gt;::const_iterator::const_iterator <span class='attr'>[C2]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;PoolableSession::IPLinkage&gt;::const_iterator::list_type const* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;PoolableSession::IPLinkage&gt;::const_iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_19" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN15PoolableSession9IPLinkageEE14const_iteratorC2EPKS3_PKS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_20')">
+IntrusiveDList&lt;PoolableSession::IPLinkage&gt;::iterator::iterator <span class='attr'>[C1]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;PoolableSession::IPLinkage&gt;* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;PoolableSession::IPLinkage&gt;::iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_20" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN15PoolableSession9IPLinkageEE8iteratorC1EPS3_PS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_21')">
+IntrusiveDList&lt;PoolableSession::IPLinkage&gt;::iterator::iterator <span class='attr'>[C2]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;PoolableSession::IPLinkage&gt;* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;PoolableSession::IPLinkage&gt;::iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_21" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN15PoolableSession9IPLinkageEE8iteratorC2EPS3_PS1_</span>
+<br/>
+<br/>
+</div>
+
+<br/>
+<span class='h_name'>LocalBuffer.h</span><br/>
+<span class='ns'>namespace <b>ts</b></span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_22')">
+LocalBuffer&lt;char, 1024ul&gt;::~LocalBuffer <span class='attr'>[D1]</span>&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_22" style="display:none;">
+<span class='mngl'>_ZN2ts11LocalBufferIcLm1024EED1Ev</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_23')">
+LocalBuffer&lt;char, 1024ul&gt;::~LocalBuffer <span class='attr'>[D2]</span>&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_23" style="display:none;">
+<span class='mngl'>_ZN2ts11LocalBufferIcLm1024EED2Ev</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_24')">
+LocalBuffer&lt;unsigned char, 1024ul&gt;::~LocalBuffer <span class='attr'>[D1]</span>&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_24" style="display:none;">
+<span class='mngl'>_ZN2ts11LocalBufferIhLm1024EED1Ev</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_25')">
+LocalBuffer&lt;unsigned char, 1024ul&gt;::~LocalBuffer <span class='attr'>[D2]</span>&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_25" style="display:none;">
+<span class='mngl'>_ZN2ts11LocalBufferIhLm1024EED2Ev</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_26')">
+LocalBuffer&lt;unsigned char, 4096ul&gt;::~LocalBuffer <span class='attr'>[D1]</span>&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_26" style="display:none;">
+<span class='mngl'>_ZN2ts11LocalBufferIhLm4096EED1Ev</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_27')">
+LocalBuffer&lt;unsigned char, 4096ul&gt;::~LocalBuffer <span class='attr'>[D2]</span>&#160;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_27" style="display:none;">
+<span class='mngl'>_ZN2ts11LocalBufferIhLm4096EED2Ev</span>
+<br/>
+<br/>
+</div>
+
+<br/>
+<span class='h_name'>ts.h</span><br/>
+<span class="iname">TSHttpTxnCacheDiskPathGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>int* <span class='color_p'>length</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnClientStreamIdGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>uint64_t* <span class='color_p'>stream_id</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnClientStreamPriorityGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>TSHttpPriority* <span class='color_p'>priority</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnServerProtocolStackContains&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>char const* <span class='color_p'>tag</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnServerProtocolStackGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>int <span class='color_p'>count</span></span>, <span>char const** <span class='color_p'>result</span></span>, <span>int* <span class='color_p'>actual</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnServerRespNoStoreGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnServerSsnTransactionCount&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>&#160;)</span></span><br/>
+<span class="iname">TSHttpTxnServerVConnGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>&#160;)</span></span><br/>
+<span class="iname">TSMgmtConfigFileAdd&#160;<span class='sym_p'><span>(&#160;char const* <span class='color_p'>parent</span></span>, <span>char const* <span class='color_p'>fileName</span></span>&#160;)</span></span><br/>
+<span class="iname">TSMgmtDataTypeGet&#160;<span class='sym_p'><span>(&#160;char const* <span class='color_p'>var_name</span></span>, <span>TSRecordDataType* <span class='color_p'>result</span></span>&#160;)</span></span><br/>
+<span class="iname">TSUrlRawPortGet&#160;<span class='sym_p'><span>(&#160;TSMBuffer <span class='color_p'>bufp</span></span>, <span>TSMLoc <span class='color_p'>obj</span></span>&#160;)</span></span><br/>
+<span class="iname">TSUrlRawSchemeGet&#160;<span class='sym_p'><span>(&#160;TSMBuffer <span class='color_p'>bufp</span></span>, <span>TSMLoc <span class='color_p'>obj</span></span>, <span>int* <span class='color_p'>length</span></span>&#160;)</span></span><br/>
+<span class="iname">TSVConnProvidedSslCert&#160;<span class='sym_p'><span>(&#160;TSVConn <span class='color_p'>sslp</span></span>&#160;)</span></span><br/>
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Source_Removed'></a><a name='Source_Withdrawn'></a><h2>Removed Symbols <span class='failed'>&nbsp;8&nbsp;</span></h2><hr/>
+<span class='h_name'>IntrusiveDList.h</span><br/>
+<span class='ns'>namespace <b>ts</b></span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_28')">
+IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;::const_iterator::const_iterator <span class='attr'>[C1]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;::const_iterator::list_type const* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;::const_iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_28" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN18Http1ServerSession11FQDNLinkageEE14const_iteratorC1EPKS3_PKS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_29')">
+IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;::const_iterator::const_iterator <span class='attr'>[C2]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;::const_iterator::list_type const* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;::const_iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_29" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN18Http1ServerSession11FQDNLinkageEE14const_iteratorC2EPKS3_PKS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_30')">
+IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;::iterator::iterator <span class='attr'>[C1]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;::iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_30" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN18Http1ServerSession11FQDNLinkageEE8iteratorC1EPS3_PS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_31')">
+IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;::iterator::iterator <span class='attr'>[C2]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;Http1ServerSession::FQDNLinkage&gt;::iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_31" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN18Http1ServerSession11FQDNLinkageEE8iteratorC2EPS3_PS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_32')">
+IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;::const_iterator::const_iterator <span class='attr'>[C1]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;::const_iterator::list_type const* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;::const_iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_32" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN18Http1ServerSession9IPLinkageEE14const_iteratorC1EPKS3_PKS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_33')">
+IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;::const_iterator::const_iterator <span class='attr'>[C2]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;::const_iterator::list_type const* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;::const_iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_33" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN18Http1ServerSession9IPLinkageEE14const_iteratorC2EPKS3_PKS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_34')">
+IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;::iterator::iterator <span class='attr'>[C1]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;::iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_34" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN18Http1ServerSession9IPLinkageEE8iteratorC1EPS3_PS1_</span>
+<br/>
+<br/>
+</div>
+
+<span class="section" onclick="javascript:showContent(this, 'c_35')">
+IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;::iterator::iterator <span class='attr'>[C2]</span>&#160;<span class='sym_p'><span>(&#160;IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;* <span class='color_p'>list</span></span>, <span>IntrusiveDList&lt;Http1ServerSession::IPLinkage&gt;::iterator::value_type* <span class='color_p'>v</span></span>&#160;)</span></span>
+<br/>
+<div id="c_35" style="display:none;">
+<span class='mngl'>_ZN2ts14IntrusiveDListIN18Http1ServerSession9IPLinkageEE8iteratorC2EPS3_PS1_</span>
+<br/>
+<br/>
+</div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Other_Source_Changes'></a><a name='Other_Source_Changes_In_Types'></a>
+<h2>Other Changes in Data Types <span class='passed'>&nbsp;16&nbsp;</span></h2><hr/>
+<span class='h_name'>apidefs.h</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_36')">
+<span class='ext'>[+]</span> <span class='ttype'>enum</span> TSOverridableConfigKey <span class='passed'>&nbsp;16&nbsp;</span></span>
+<br/>
+<div id="c_36" style="display:none;">
+<table class='ptable'><tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th></tr><tr>
+<th>1</th>
+<td>The member <b>TS_CONFIG_HTTP_CONNECT_DEAD_POLICY</b> with value <b>119</b> has been added.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>2</th>
+<td>The member <b>TS_CONFIG_HTTP_PROXY_PROTOCOL_OUT</b> with value <b>105</b> has been added.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Value of member <b>TS_CONFIG_HTTP_PER_SERVER_CONNECTION_MAX</b> has been changed from <b>109</b> to <b>110</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Value of member <b>TS_CONFIG_LAST_ENTRY</b> has been changed from <b>118</b> to <b>120</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>5</th>
+<td>Value of member <b>TS_CONFIG_HTTP_ALLOW_HALF_OPEN</b> has been changed from <b>107</b> to <b>108</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>6</th>
+<td>Value of member <b>TS_CONFIG_HTTP_ALLOW_MULTI_RANGE</b> has been changed from <b>105</b> to <b>106</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>7</th>
+<td>Value of member <b>TS_CONFIG_HTTP_HOST_RESOLUTION_PREFERENCE</b> has been changed from <b>117</b> to <b>118</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>8</th>
+<td>Value of member <b>TS_CONFIG_HTTP_PER_SERVER_CONNECTION_MATCH</b> has been changed from <b>110</b> to <b>111</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>9</th>
+<td>Value of member <b>TS_CONFIG_HTTP_REQUEST_BUFFER_ENABLED</b> has been changed from <b>106</b> to <b>107</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>10</th>
+<td>Value of member <b>TS_CONFIG_HTTP_SERVER_MIN_KEEP_ALIVE_CONNS</b> has been changed from <b>108</b> to <b>109</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>11</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_CA_CERT_FILENAME</b> has been changed from <b>116</b> to <b>117</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>12</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_PRIVATE_KEY_FILENAME</b> has been changed from <b>115</b> to <b>116</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>13</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_SNI_POLICY</b> has been changed from <b>114</b> to <b>115</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>14</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_VERIFY_SERVER</b> has been changed from <b>111</b> to <b>112</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>15</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_VERIFY_SERVER_POLICY</b> has been changed from <b>112</b> to <b>113</b>.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<th>16</th>
+<td>Value of member <b>TS_CONFIG_SSL_CLIENT_VERIFY_SERVER_PROPERTIES</b> has been changed from <b>113</b> to <b>114</b>.</td>
+<td>No effect.</td>
+</tr>
+</table>
+<span class="sect_aff" onclick="javascript:showContent(this, 'c_37')">
+[+] affected symbols: 7 (0.8%)</span>
+<div id="c_37" style="display:none;">
+<div class='affected'><span class='iname_a'>TSHttpTxnConfigFind&#160;<span class='sym_p'><span>(&#160;char const* <i>name</i></span>, <span>int <i>length</i></span>, <span>TSOverridableConfigKey* <span class='fp'>conf</span></span>, <span>TSRecordDataType* <i>type</i></span>&#160;)</span></span><br/>
+<div class='affect'>3rd parameter &#39;conf&#39; (pointer) has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigFloatGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtFloat* <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigFloatSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtFloat <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigIntGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtInt* <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigIntSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>TSMgmtInt <i>value</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigStringGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>char const** <i>value</i></span>, <span>int* <i>length</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+<span class='iname_a'>TSHttpTxnConfigStringSet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <i>txnp</i></span>, <span>TSOverridableConfigKey <span class='fp'>conf</span></span>, <span>char const* <i>value</i></span>, <span>int <i>length</i></span>&#160;)</span></span><br/>
+<div class='affect'>2nd parameter &#39;conf&#39; has base type &#39;enum TSOverridableConfigKey&#39;.</div>
+</div>
+</div>
+<br/><br/></div>
+
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Other_Source_Changes_In_Symbols'></a><a name='Other_Source_Changes_In_Interfaces'></a>
+<h2>Other Changes in Symbols <span class='passed'>&nbsp;2&nbsp;</span></h2><hr/>
+<span class='h_name'>ts.h</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_38')">
+<span class='ext'>[+]</span> TSHttpSsnClientProtocolStackGet&#160;<span class='sym_p'><span>(&#160;TSHttpSsn <span class='color_p'>ssnp</span></span>, <span>int <span class='color_p'>n</span></span>, <span>char const** <span class='color_p'>result</span></span>, <span>int* <span class='color_p'>actual</span></span>&#160;)</span> <span class='passed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_38" style="display:none;">
+
+
+<span class='new_sign_lbl'>&#8675;</span>
+<br/>
+<span class='new_sign'>TSHttpSsnClientProtocolStackGet&#160;<span class='sym_p'><span>(&#160;TSHttpSsn <span class='color_p'>ssnp</span></span>, <span>int <span class='color_p'>count</span></span>, <span>char const** <span class='color_p'>result</span></span>, <span>int* <span class='color_p'>actual</span></span>&#160;)</span></span><br/>
+<table class='ptable'>
+<tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th>
+</tr>
+<tr>
+<th>1</th>
+<td><b>2nd</b> parameter <b>n</b> has been renamed to <b>count</b>.</td>
+<td>No effect.</td>
+</tr>
+</table>
+<br/>
+</div>
+<span class="section" onclick="javascript:showContent(this, 'c_39')">
+<span class='ext'>[+]</span> TSHttpTxnClientProtocolStackGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>int <span class='color_p'>n</span></span>, <span>char const** <span class='color_p'>result</span></span>, <span>int* <span class='color_p'>actual</span></span>&#160;)</span> <span class='passed'>&nbsp;1&nbsp;</span></span>
+<br/>
+<div id="c_39" style="display:none;">
+
+
+<span class='new_sign_lbl'>&#8675;</span>
+<br/>
+<span class='new_sign'>TSHttpTxnClientProtocolStackGet&#160;<span class='sym_p'><span>(&#160;TSHttpTxn <span class='color_p'>txnp</span></span>, <span>int <span class='color_p'>count</span></span>, <span>char const** <span class='color_p'>result</span></span>, <span>int* <span class='color_p'>actual</span></span>&#160;)</span></span><br/>
+<table class='ptable'>
+<tr>
+<th class='pn'></th>
+<th class='chg'>Change</th>
+<th>Effect</th>
+</tr>
+<tr>
+<th>1</th>
+<td><b>2nd</b> parameter <b>n</b> has been renamed to <b>count</b>.</td>
+<td>No effect.</td>
+</tr>
+</table>
+<br/>
+</div>
+<br/>
+<a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Headers'></a><h2>Header Files <span class='gray'>&nbsp;7&nbsp;</span></h2><hr/>
+<div class='h_list'>
+apidefs.h<br/>
+experimental.h<br/>
+Headers.h<br/>
+IntrusiveDList.h<br/>
+Plugin.h<br/>
+remap.h<br/>
+ts.h<br/>
+</div>
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Sources'></a><h2>Source Files <span class='gray'>&nbsp;3&nbsp;</span></h2><hr/>
+<div class='h_list'>
+InkAPI.cc<br/>
+InkIOCoreAPI.cc<br/>
+Plugin.cc<br/>
+</div>
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<a name='Libs'></a><h2>Objects <span class='gray'>&nbsp;1&nbsp;</span></h2><hr/>
+<div class='lib_list'>
+traffic_server<br/>
+</div>
+<br/><a class='top_ref' href='#Top'>to the top</a><br/>
+<br/><br/><br/></div><hr/>
+<div class='footer' align='right'><i>Generated by <a href='https://github.com/lvc/abi-compliance-checker'>ABI Compliance Checker</a> 2.3 &#160;</i>
+</div>
+<br/>
+
+</body></html>
