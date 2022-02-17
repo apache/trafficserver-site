@@ -1,0 +1,1322 @@
+$VAR1 = {
+          'ABI_DUMPER_VERSION' => '1.1',
+          'ABI_DUMP_VERSION' => '3.5',
+          'Arch' => 'x86_64',
+          'Compiler' => 'GNU C++17 11.2.1 20220127 (Red Hat 11.2.1-9) -mcx16 -mtune=generic -march=x86-64 -g -Og -std=c++17 -feliminate-unused-debug-symbols -fno-strict-aliasing -fPIC',
+          'Headers' => {
+                         'Headers.h' => 1
+                       },
+          'Language' => 'C++',
+          'LibraryName' => 'libtsconfig.so.8.1.1',
+          'LibraryVersion' => '8.1.1',
+          'NameSpaces' => {
+                            '__gnu_cxx' => 1,
+                            '__pstl::execution::v1' => 1,
+                            'std' => 1,
+                            'std::__cxx11' => 1,
+                            'std::__exception_ptr' => 1,
+                            'ts' => 1,
+                            'ts::config' => 1,
+                            'ts::config::detail' => 1,
+                            'ts::msg' => 1
+                          },
+          'Needed' => {
+                        'libc.so.6' => 1,
+                        'libgcc_s.so.1' => 1,
+                        'libm.so.6' => 1,
+                        'libstdc++.so.6' => 1
+                      },
+          'PublicABI' => '1',
+          'Sources' => {},
+          'SymbolInfo' => {
+                            '60445' => {
+                                         'Header' => 'Headers.h',
+                                         'MnglName' => '_ZN2tslsERSoRKNS_6ErrataE',
+                                         'NameSpace' => 'ts',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'os',
+                                                               'type' => '60635'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'err',
+                                                               'type' => '60630'
+                                                             }
+                                                    },
+                                         'Return' => '60635',
+                                         'ShortName' => 'operator<<'
+                                       }
+                          },
+          'SymbolVersion' => {},
+          'Symbols' => {
+                         'libtsconfig.so.8.1.1' => {
+                                                     'TsConfig_Lex_Location' => -8,
+                                                     '_ZN2ts11NumericTypeIjNS_7CodeTagEEaSERKS2_' => 1,
+                                                     '_ZN2ts11NumericTypeIjNS_8MsgIdTagEEaSERKS2_' => 1,
+                                                     '_ZN2ts11NumericTypeImNS_6config6detail13ValueIndexTagEEC1Ev' => 1,
+                                                     '_ZN2ts11NumericTypeImNS_6config6detail13ValueIndexTagEEC2Ev' => 1,
+                                                     '_ZN2ts11NumericTypeImNS_6config6detail13ValueIndexTagEEaSERKS4_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEE3setEPS2_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEE5resetEPS2_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEE5unsetEv' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEE7releaseEv' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEEC1EPS2_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEEC1ERKS3_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEEC1Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEEC2EPS2_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEEC2ERKS3_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEEC2Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEED1Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEED2Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4DataEEaSERKS3_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4SinkEE3setEPS2_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4SinkEE5unsetEv' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4SinkEEC1ERKS3_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4SinkEEC2ERKS3_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4SinkEED1Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6Errata4SinkEED2Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEE3setEPS3_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEE5resetEPS3_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEE5unsetEv' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEEC1EOS4_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEEC1ERKS4_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEEC1Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEEC2EOS4_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEEC2ERKS4_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEEC2Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEED1Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEED2Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config4Path8ImplTypeEEaSERKS4_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config6detail14ValueTableImplEE3setEPS3_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config6detail14ValueTableImplEE5resetEPS3_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config6detail14ValueTableImplEE5unsetEv' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config6detail14ValueTableImplEEC1ERKS4_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config6detail14ValueTableImplEEC1Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config6detail14ValueTableImplEEC2ERKS4_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config6detail14ValueTableImplEEC2Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config6detail14ValueTableImplEED1Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config6detail14ValueTableImplEED2Ev' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config6detail14ValueTableImplEEaSEOS4_' => 1,
+                                                     '_ZN2ts12IntrusivePtrINS_6config6detail14ValueTableImplEEaSERKS4_' => 1,
+                                                     '_ZN2ts25IntrusivePtrDefaultPolicyINS_6Errata4DataEE8finalizeEPS2_' => 1,
+                                                     '_ZN2ts25IntrusivePtrDefaultPolicyINS_6Errata4SinkEE8finalizeEPS2_' => 1,
+                                                     '_ZN2ts25IntrusivePtrDefaultPolicyINS_6config4Path8ImplTypeEE8finalizeEPS3_' => 1,
+                                                     '_ZN2ts25IntrusivePtrDefaultPolicyINS_6config6detail14ValueTableImplEE8finalizeEPS3_' => 1,
+                                                     '_ZN2ts2RvINS_11NumericTypeImNS_6config6detail13ValueIndexTagEEEE6errataEv' => 1,
+                                                     '_ZN2ts2RvINS_11NumericTypeImNS_6config6detail13ValueIndexTagEEEE6resultEv' => 1,
+                                                     '_ZN2ts2RvINS_11NumericTypeImNS_6config6detail13ValueIndexTagEEEEC1ERKS5_' => 1,
+                                                     '_ZN2ts2RvINS_11NumericTypeImNS_6config6detail13ValueIndexTagEEEEC2ERKS5_' => 1,
+                                                     '_ZN2ts2RvINS_6config13ConfigurationEE6resultEv' => 1,
+                                                     '_ZN2ts2RvINS_6config13ConfigurationEEC1ERKS2_RKNS_6ErrataE' => 1,
+                                                     '_ZN2ts2RvINS_6config13ConfigurationEEC1Ev' => 1,
+                                                     '_ZN2ts2RvINS_6config13ConfigurationEEC2ERKS2_RKNS_6ErrataE' => 1,
+                                                     '_ZN2ts2RvINS_6config13ConfigurationEEC2Ev' => 1,
+                                                     '_ZN2ts2RvINS_6config4Path6Parser6ResultEEC1ERKS4_' => 1,
+                                                     '_ZN2ts2RvINS_6config4Path6Parser6ResultEEC1Ev' => 1,
+                                                     '_ZN2ts2RvINS_6config4Path6Parser6ResultEEC2ERKS4_' => 1,
+                                                     '_ZN2ts2RvINS_6config4Path6Parser6ResultEEC2Ev' => 1,
+                                                     '_ZN2ts2RvINS_6config5ValueEE6errataEv' => 1,
+                                                     '_ZN2ts2RvINS_6config5ValueEE6resultEv' => 1,
+                                                     '_ZN2ts2RvINS_6config5ValueEEC1Ev' => 1,
+                                                     '_ZN2ts2RvINS_6config5ValueEEC2Ev' => 1,
+                                                     '_ZN2ts3msg10logf_errnoENS_11NumericTypeIjNS_7CodeTagEEEPKcz' => 1,
+                                                     '_ZN2ts3msg10logf_errnoERNS_6ErrataENS_11NumericTypeIjNS_7CodeTagEEEPKcz' => 1,
+                                                     '_ZN2ts3msg10logf_errnoERNS_6RvBaseENS_11NumericTypeIjNS_7CodeTagEEEPKcz' => 1,
+                                                     '_ZN2ts3msg11vlogf_errnoERNS_6ErrataENS_11NumericTypeIjNS_8MsgIdTagEEENS3_IjNS_7CodeTagEEEPKcRA1_13__va_list_tag' => 1,
+                                                     '_ZN2ts3msg3logENS_11NumericTypeIjNS_7CodeTagEEEPKc' => 1,
+                                                     '_ZN2ts3msg3logERNS_6ErrataENS_11NumericTypeIjNS_7CodeTagEEEPKc' => 1,
+                                                     '_ZN2ts3msg3logERNS_6ErrataENS_11NumericTypeIjNS_8MsgIdTagEEENS3_IjNS_7CodeTagEEEPKc' => 1,
+                                                     '_ZN2ts3msg3logERNS_6RvBaseENS_11NumericTypeIjNS_7CodeTagEEEPKc' => 1,
+                                                     '_ZN2ts3msg4INFOE' => -4,
+                                                     '_ZN2ts3msg4WARNE' => -4,
+                                                     '_ZN2ts3msg4logfENS_11NumericTypeIjNS_7CodeTagEEEPKcz' => 1,
+                                                     '_ZN2ts3msg4logfERNS_6ErrataENS_11NumericTypeIjNS_7CodeTagEEEPKcz' => 1,
+                                                     '_ZN2ts3msg4logfERNS_6ErrataENS_11NumericTypeIjNS_8MsgIdTagEEENS3_IjNS_7CodeTagEEEPKcz' => 1,
+                                                     '_ZN2ts3msg4logfERNS_6RvBaseENS_11NumericTypeIjNS_7CodeTagEEEPKcz' => 1,
+                                                     '_ZN2ts3msg5DEBUGE' => -4,
+                                                     '_ZN2ts3msg5FATALE' => -4,
+                                                     '_ZN2ts3msg5vlogfERNS_6ErrataENS_11NumericTypeIjNS_8MsgIdTagEEENS3_IjNS_7CodeTagEEEPKcRA1_13__va_list_tag' => 1,
+                                                     '_ZN2ts3msg9log_errnoENS_11NumericTypeIjNS_7CodeTagEEEPKc' => 1,
+                                                     '_ZN2ts6Errata11NIL_MESSAGEE' => -48,
+                                                     '_ZN2ts6Errata12DEFAULT_GLUEB5cxx11E' => -32,
+                                                     '_ZN2ts6Errata12registerSinkERKNS_12IntrusivePtrINS0_4SinkEEE' => 1,
+                                                     '_ZN2ts6Errata3endEv' => 1,
+                                                     '_ZN2ts6Errata3popEv' => 1,
+                                                     '_ZN2ts6Errata4Data4pushEONS0_7MessageE' => 1,
+                                                     '_ZN2ts6Errata4Data4pushERKNS0_7MessageE' => 1,
+                                                     '_ZN2ts6Errata4DataD1Ev' => 1,
+                                                     '_ZN2ts6Errata4DataD2Ev' => 1,
+                                                     '_ZN2ts6Errata4pullERS0_' => 1,
+                                                     '_ZN2ts6Errata4pushEONS0_7MessageE' => 1,
+                                                     '_ZN2ts6Errata4pushERKNS0_7MessageE' => 1,
+                                                     '_ZN2ts6Errata4pushIJA8192_cEEERS0_NS_11NumericTypeIjNS_8MsgIdTagEEENS4_IjNS_7CodeTagEEEDpRKT_' => 1,
+                                                     '_ZN2ts6Errata4pushIJPKcEEERS0_NS_11NumericTypeIjNS_8MsgIdTagEEENS5_IjNS_7CodeTagEEEDpRKT_' => 1,
+                                                     '_ZN2ts6Errata5beginEv' => 1,
+                                                     '_ZN2ts6Errata5clearEv' => 1,
+                                                     '_ZN2ts6Errata7Message10isCodeZeroERKS1_' => 1,
+                                                     '_ZN2ts6Errata7Message12Default_CodeE' => -4,
+                                                     '_ZN2ts6Errata7Message12Success_TestE' => -8,
+                                                     '_ZN2ts6Errata7Message20DEFAULT_SUCCESS_TESTE' => -8,
+                                                     '_ZN2ts6Errata7Message9stringifyIJA8192_cEEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEDpRKT_' => 1,
+                                                     '_ZN2ts6Errata7Message9stringifyIJPKcEEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEDpRKT_' => 1,
+                                                     '_ZN2ts6Errata7MessageC1IJA8192_cEEENS_11NumericTypeIjNS_8MsgIdTagEEENS4_IjNS_7CodeTagEEEDpRKT_' => 1,
+                                                     '_ZN2ts6Errata7MessageC1IJPKcEEENS_11NumericTypeIjNS_8MsgIdTagEEENS5_IjNS_7CodeTagEEEDpRKT_' => 1,
+                                                     '_ZN2ts6Errata7MessageC2IJA8192_cEEENS_11NumericTypeIjNS_8MsgIdTagEEENS4_IjNS_7CodeTagEEEDpRKT_' => 1,
+                                                     '_ZN2ts6Errata7MessageC2IJPKcEEENS_11NumericTypeIjNS_8MsgIdTagEEENS5_IjNS_7CodeTagEEEDpRKT_' => 1,
+                                                     '_ZN2ts6Errata7MessageD1Ev' => 1,
+                                                     '_ZN2ts6Errata7MessageD2Ev' => 1,
+                                                     '_ZN2ts6Errata8instanceEv' => 1,
+                                                     '_ZN2ts6Errata9pre_writeEv' => 1,
+                                                     '_ZN2ts6ErrataC1ENS_11NumericTypeIjNS_8MsgIdTagEEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN2ts6ErrataC1EOS0_' => 1,
+                                                     '_ZN2ts6ErrataC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN2ts6ErrataC1ERKS0_' => 1,
+                                                     '_ZN2ts6ErrataC2ENS_11NumericTypeIjNS_8MsgIdTagEEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN2ts6ErrataC2EOS0_' => 1,
+                                                     '_ZN2ts6ErrataC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN2ts6ErrataC2ERKS0_' => 1,
+                                                     '_ZN2ts6ErrataD1Ev' => 1,
+                                                     '_ZN2ts6ErrataD2Ev' => 1,
+                                                     '_ZN2ts6ErrataaSEOS0_' => 1,
+                                                     '_ZN2ts6ErrataaSERKNS0_7MessageE' => 1,
+                                                     '_ZN2ts6ErrataaSERKS0_' => 1,
+                                                     '_ZN2ts6MakeRvINS_6config13ConfigurationEEENS_2RvIT_EERKS4_RKNS_6ErrataE' => 1,
+                                                     '_ZN2ts6config13Configuration12loadFromPathEPKc' => 1,
+                                                     '_ZN2ts6config4Path5resetEv' => 1,
+                                                     '_ZN2ts6config4Path6Parser5parseEPNS_11ConstBufferE' => 1,
+                                                     '_ZN2ts6config5Value10makeStringERKNS_11ConstBufferES4_' => 1,
+                                                     '_ZN2ts6config5Value11makeIntegerERKNS_11ConstBufferES4_' => 1,
+                                                     '_ZN2ts6config5Value4findERKNS0_4PathE' => 1,
+                                                     '_ZN2ts6config5Value4findERKNS_11ConstBufferE' => 1,
+                                                     '_ZN2ts6config5Value8makeListERKNS_11ConstBufferE' => 1,
+                                                     '_ZN2ts6config5Value8makePathERKNS0_4PathERKNS_11ConstBufferE' => 1,
+                                                     '_ZN2ts6config5Value9makeChildENS0_9ValueTypeERKNS_11ConstBufferE' => 1,
+                                                     '_ZN2ts6config5Value9makeGroupERKNS_11ConstBufferE' => 1,
+                                                     '_ZN2ts6config6detail10PseudoBool4TRUEE' => -16,
+                                                     '_ZN2ts6config6detail10PseudoBool5FALSEE' => -16,
+                                                     '_ZN2ts6config6detail10ValueTable13forceRootItemEv' => 1,
+                                                     '_ZN2ts6config6detail10ValueTable4makeENS_11NumericTypeImNS1_13ValueIndexTagEEENS0_9ValueTypeERKNS_11ConstBufferE' => 1,
+                                                     '_ZN2ts6config6detail10ValueTable5allocEm' => 1,
+                                                     '_ZN2ts6config6detail10ValueTable8instanceEv' => 1,
+                                                     '_ZN2ts6config6detail10ValueTableixENS_11NumericTypeImNS1_13ValueIndexTagEEE' => 1,
+                                                     '_ZN2ts6config6detail11NULL_BUFFERE' => -16,
+                                                     '_ZN2ts6config6detail13Type_PropertyE' => -24,
+                                                     '_ZN2ts6config6detail14ValueTableImpl9NULL_ITEME' => -120,
+                                                     '_ZN2ts6config6detail14ValueTableImplC1Ev' => 1,
+                                                     '_ZN2ts6config6detail14ValueTableImplC2Ev' => 1,
+                                                     '_ZN2ts6config6detail14ValueTableImplD1Ev' => 1,
+                                                     '_ZN2ts6config6detail14ValueTableImplD2Ev' => 1,
+                                                     '_ZN2ts6config6detail17NULL_CONST_BUFFERE' => -16,
+                                                     '_ZN2ts6config6detail9ValueItemC1ENS0_9ValueTypeE' => 1,
+                                                     '_ZN2ts6config6detail9ValueItemC2ENS0_9ValueTypeE' => 1,
+                                                     '_ZN2ts6config6detail9ValueItemD1Ev' => 1,
+                                                     '_ZN2ts6config6detail9ValueItemD2Ev' => 1,
+                                                     '_ZN2ts6config7Builder10groupCloseERKNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7Builder11syntaxErrorEPKc' => 1,
+                                                     '_ZN2ts6config7Builder12invalidTokenERKNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7Builder12literalValueERKNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7Builder19syntaxErrorDispatchEPvPKc' => 1,
+                                                     '_ZN2ts6config7Builder4initEv' => 1,
+                                                     '_ZN2ts6config7Builder5buildERKNS_6BufferE' => 1,
+                                                     '_ZN2ts6config7Builder7pathTagERKNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7Builder8dispatchEPvPNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7Builder8listOpenERKNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7Builder8pathOpenERKNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7Builder9groupNameERKNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7Builder9groupOpenERKNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7Builder9listCloseERKNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7Builder9pathCloseERKNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7Builder9pathIndexERKNS0_5TokenE' => 1,
+                                                     '_ZN2ts6config7BuilderD0Ev' => 1,
+                                                     '_ZN2ts6config7BuilderD1Ev' => 1,
+                                                     '_ZN2ts6config7BuilderD2Ev' => 1,
+                                                     '_ZN2tslsERSoRKNS_6ErrataE' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6Errata4DataEE3getEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6Errata4DataEE9use_countEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6Errata4DataEEcvPS2_Ev' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6Errata4DataEEcvbEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6Errata4DataEEdeEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6Errata4DataEEptEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6Errata4SinkEEdeEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6config4Path8ImplTypeEE3getEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6config4Path8ImplTypeEE9use_countEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6config4Path8ImplTypeEEcvbEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6config4Path8ImplTypeEEptEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6config6detail14ValueTableImplEE3getEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6config6detail14ValueTableImplEEcvbEv' => 1,
+                                                     '_ZNK2ts12IntrusivePtrINS_6config6detail14ValueTableImplEEptEv' => 1,
+                                                     '_ZNK2ts2RvINS_6config4Path6Parser6ResultEEcvRKS4_Ev' => 1,
+                                                     '_ZNK2ts2RvINS_6config5ValueEEcvRKS2_Ev' => 1,
+                                                     '_ZNK2ts6Errata3endEv' => 1,
+                                                     '_ZNK2ts6Errata4Data3topEv' => 1,
+                                                     '_ZNK2ts6Errata5beginEv' => 1,
+                                                     '_ZNK2ts6Errata5writeEPcmiiiPKc' => 1,
+                                                     '_ZNK2ts6Errata5writeERSoiiiPKc' => 1,
+                                                     '_ZNK2ts6config13Configuration7getRootEv' => 1,
+                                                     '_ZNK2ts6config5ValueixERKNS_11ConstBufferE' => 1,
+                                                     '_ZNK2ts6config5ValueixEm' => 1,
+                                                     '_ZNK2ts6config6detail10PseudoBoolntEv' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts12IntrusivePtrINS0_6Errata4SinkEEESaIS4_EE15_M_create_nodesEPPS4_S8_' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts12IntrusivePtrINS0_6Errata4SinkEEESaIS4_EE16_M_destroy_nodesEPPS4_S8_' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts12IntrusivePtrINS0_6Errata4SinkEEESaIS4_EE17_M_initialize_mapEm' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts12IntrusivePtrINS0_6Errata4SinkEEESaIS4_EED1Ev' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts12IntrusivePtrINS0_6Errata4SinkEEESaIS4_EED2Ev' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts6Errata7MessageESaIS2_EE15_M_create_nodesEPPS2_S6_' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts6Errata7MessageESaIS2_EE16_M_destroy_nodesEPPS2_S6_' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts6Errata7MessageESaIS2_EE17_M_initialize_mapEm' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts6Errata7MessageESaIS2_EEC1Ev' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts6Errata7MessageESaIS2_EEC2Ev' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts6Errata7MessageESaIS2_EED1Ev' => 1,
+                                                     '_ZNSt11_Deque_baseIN2ts6Errata7MessageESaIS2_EED2Ev' => 1,
+                                                     '_ZNSt12_Vector_baseIN2ts11NumericTypeImNS0_6config6detail13ValueIndexTagEEESaIS5_EED1Ev' => 1,
+                                                     '_ZNSt12_Vector_baseIN2ts11NumericTypeImNS0_6config6detail13ValueIndexTagEEESaIS5_EED2Ev' => 1,
+                                                     '_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN2ts6config6detail9ValueItemEPS5_EET0_T_SA_S9_' => 1,
+                                                     '_ZNSt5dequeIN2ts12IntrusivePtrINS0_6Errata4SinkEEESaIS4_EE16_M_push_back_auxIJRKS4_EEEvDpOT_' => 1,
+                                                     '_ZNSt5dequeIN2ts12IntrusivePtrINS0_6Errata4SinkEEESaIS4_EE17_M_reallocate_mapEmb' => 1,
+                                                     '_ZNSt5dequeIN2ts12IntrusivePtrINS0_6Errata4SinkEEESaIS4_EE19_M_destroy_data_auxESt15_Deque_iteratorIS4_RS4_PS4_ESA_' => 1,
+                                                     '_ZNSt5dequeIN2ts12IntrusivePtrINS0_6Errata4SinkEEESaIS4_EED1Ev' => 1,
+                                                     '_ZNSt5dequeIN2ts12IntrusivePtrINS0_6Errata4SinkEEESaIS4_EED2Ev' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EE12emplace_backIJS2_EEERS2_DpOT_' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EE13_M_insert_auxISt15_Deque_iteratorIS2_RS2_PS2_EEEvS9_T_SA_m' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EE16_M_pop_front_auxEv' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EE16_M_push_back_auxIJRKS2_EEEvDpOT_' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EE16_M_push_back_auxIJS2_EEEvDpOT_' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EE17_M_reallocate_mapEmb' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EE19_M_destroy_data_auxESt15_Deque_iteratorIS2_RS2_PS2_ES8_' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EE19_M_range_insert_auxISt15_Deque_iteratorIS2_RS2_PS2_EEEvS9_T_SA_St20forward_iterator_tag' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EE23_M_new_elements_at_backEm' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EE24_M_new_elements_at_frontEm' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EEC1ERKS4_' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EEC2ERKS4_' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EED1Ev' => 1,
+                                                     '_ZNSt5dequeIN2ts6Errata7MessageESaIS2_EED2Ev' => 1,
+                                                     '_ZNSt6vectorIN2ts11ConstBufferESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_' => 1,
+                                                     '_ZNSt6vectorIN2ts11NumericTypeImNS0_6config6detail13ValueIndexTagEEESaIS5_EE12emplace_backIJS5_EEERS5_DpOT_' => 1,
+                                                     '_ZNSt6vectorIN2ts11NumericTypeImNS0_6config6detail13ValueIndexTagEEESaIS5_EE17_M_realloc_insertIJS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_' => 1,
+                                                     '_ZNSt6vectorIN2ts6BufferESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_' => 1,
+                                                     '_ZNSt6vectorIN2ts6config6detail9ValueItemESaIS3_EE12emplace_backIJS3_EEERS3_DpOT_' => 1,
+                                                     '_ZNSt6vectorIN2ts6config6detail9ValueItemESaIS3_EE17_M_realloc_insertIJS3_EEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_' => 1,
+                                                     '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag' => 1,
+                                                     '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag' => 1,
+                                                     '_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED0Ev' => 1,
+                                                     '_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev' => 1,
+                                                     '_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED2Ev' => 1,
+                                                     '_ZSt14__copy_move_a1ILb0EN2ts6Errata7MessageERS2_PS2_S2_ESt15_Deque_iteratorIT3_RS6_PS6_ES5_IT0_T1_T2_ESD_S9_' => 1,
+                                                     '_ZSt14__copy_move_a1ILb0EPN2ts6Errata7MessageES2_EN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS7_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSD_PSD_EE6__typeES7_S7_SG_' => 1,
+                                                     '_ZSt14__copy_move_a1ILb1EN2ts6Errata7MessageERS2_PS2_S2_ESt15_Deque_iteratorIT3_RS6_PS6_ES5_IT0_T1_T2_ESD_S9_' => 1,
+                                                     '_ZSt14__copy_move_a1ILb1EPN2ts6Errata7MessageES2_EN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS7_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSD_PSD_EE6__typeES7_S7_SG_' => 1,
+                                                     '_ZSt15__copy_move_ditILb0EN2ts6Errata7MessageERS2_PS2_St15_Deque_iteratorIS2_S3_S4_EET3_S5_IT0_T1_T2_ESB_S7_' => 1,
+                                                     '_ZSt15__copy_move_ditILb1EN2ts6Errata7MessageERS2_PS2_St15_Deque_iteratorIS2_S3_S4_EET3_S5_IT0_T1_T2_ESB_S7_' => 1,
+                                                     '_ZSt22__uninitialized_copy_aISt15_Deque_iteratorIN2ts6Errata7MessageERS3_PS3_ES6_S3_ET0_T_S8_S7_RSaIT1_E' => 1,
+                                                     '_ZSt22__uninitialized_move_aISt15_Deque_iteratorIN2ts6Errata7MessageERS3_PS3_ES6_SaIS3_EET0_T_S9_S8_RT1_' => 1,
+                                                     '_ZSt23__copy_move_backward_a1ILb1EN2ts6Errata7MessageERS2_PS2_S2_ESt15_Deque_iteratorIT3_RS6_PS6_ES5_IT0_T1_T2_ESD_S9_' => 1,
+                                                     '_ZSt23__copy_move_backward_a1ILb1EPN2ts6Errata7MessageES2_EN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS7_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSD_PSD_EE6__typeES7_S7_SG_' => 1,
+                                                     '_ZSt24__copy_move_backward_ditILb1EN2ts6Errata7MessageERS2_PS2_St15_Deque_iteratorIS2_S3_S4_EET3_S5_IT0_T1_T2_ESB_S7_' => 1,
+                                                     '_ZSt25__uninitialized_copy_moveISt15_Deque_iteratorIN2ts6Errata7MessageERS3_PS3_ES6_S6_SaIS3_EET1_T_S9_T0_SA_S8_RT2_' => 1,
+                                                     '_ZSt25__uninitialized_move_copyISt15_Deque_iteratorIN2ts6Errata7MessageERS3_PS3_ES6_S6_SaIS3_EET1_T_S9_T0_SA_S8_RT2_' => 1,
+                                                     '_ZSt8_DestroyISt15_Deque_iteratorIN2ts6Errata7MessageERS3_PS3_EEvT_S7_' => 1,
+                                                     '_ZSt8_DestroyISt15_Deque_iteratorIN2ts6Errata7MessageERS3_PS3_ES3_EvT_S7_RSaIT0_E' => 1,
+                                                     '_ZTIN2ts6config7BuilderE' => -16,
+                                                     '_ZTSN2ts6config7BuilderE' => -21,
+                                                     '_ZTVN2ts6config7BuilderE' => -128,
+                                                     'tsconfig_create_buffer' => 1,
+                                                     'tsconfig_delete_buffer' => 1,
+                                                     'tsconfig_flush_buffer' => 1,
+                                                     'tsconfig_parse_buffer' => 1,
+                                                     'tsconfig_scan_buffer' => 1,
+                                                     'tsconfig_scan_bytes' => 1,
+                                                     'tsconfig_scan_string' => 1,
+                                                     'tsconfig_switch_to_buffer' => 1,
+                                                     'tsconfigalloc' => 1,
+                                                     'tsconfigerror' => 1,
+                                                     'tsconfigfree' => 1,
+                                                     'tsconfigget_column' => 1,
+                                                     'tsconfigget_debug' => 1,
+                                                     'tsconfigget_extra' => 1,
+                                                     'tsconfigget_in' => 1,
+                                                     'tsconfigget_leng' => 1,
+                                                     'tsconfigget_lineno' => 1,
+                                                     'tsconfigget_lval' => 1,
+                                                     'tsconfigget_out' => 1,
+                                                     'tsconfigget_text' => 1,
+                                                     'tsconfiglex' => 1,
+                                                     'tsconfiglex_current_col' => 1,
+                                                     'tsconfiglex_current_line' => 1,
+                                                     'tsconfiglex_destroy' => 1,
+                                                     'tsconfiglex_init' => 1,
+                                                     'tsconfiglex_init_extra' => 1,
+                                                     'tsconfigparse' => 1,
+                                                     'tsconfigpop_buffer_state' => 1,
+                                                     'tsconfigpush_buffer_state' => 1,
+                                                     'tsconfigrealloc' => 1,
+                                                     'tsconfigrestart' => 1,
+                                                     'tsconfigset_column' => 1,
+                                                     'tsconfigset_debug' => 1,
+                                                     'tsconfigset_extra' => 1,
+                                                     'tsconfigset_in' => 1,
+                                                     'tsconfigset_lineno' => 1,
+                                                     'tsconfigset_lval' => 1,
+                                                     'tsconfigset_out' => 1
+                                                   }
+                       },
+          'Target' => 'unix',
+          'TypeInfo' => {
+                          '14210' => {
+                                       'BaseType' => '6011',
+                                       'Header' => undef,
+                                       'Line' => '79',
+                                       'Name' => 'std::string',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Size' => '32',
+                                       'Type' => 'Typedef'
+                                     },
+                          '16349' => {
+                                       'Name' => 'std::basic_ostream<char>',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_CharT',
+                                                              'type' => '46932'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '17544' => {
+                                       'BaseType' => '16349',
+                                       'Header' => undef,
+                                       'Line' => '141',
+                                       'Name' => 'std::ostream',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Type' => 'Typedef'
+                                     },
+                          '17556' => {
+                                       'Base' => {
+                                                   '23576' => {
+                                                                'access' => 'protected',
+                                                                'pos' => '0'
+                                                              }
+                                                 },
+                                       'Header' => undef,
+                                       'Line' => '766',
+                                       'Name' => 'std::deque<ts::Errata::Message>',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Size' => '80',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Tp',
+                                                              'type' => '54823'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '21228' => {
+                                       'Base' => {
+                                                   '44106' => {
+                                                                'pos' => '0'
+                                                              }
+                                                 },
+                                       'Header' => undef,
+                                       'Line' => '124',
+                                       'Name' => 'std::allocator<ts::Errata::Message>',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'type' => '54823'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '22000' => {
+                                       'Copied' => 1,
+                                       'Header' => undef,
+                                       'Line' => '131',
+                                       'Name' => 'struct std::pointer_traits<ts::Errata::Message*>',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Ptr',
+                                                              'type' => '60795'
+                                                            }
+                                                   },
+                                       'Type' => 'Struct'
+                                     },
+                          '22051' => {
+                                       'BaseType' => '60795',
+                                       'Header' => undef,
+                                       'Line' => '141',
+                                       'Name' => 'std::pointer_traits<ts::Errata::Message*>::rebind',
+                                       'NameSpace' => 'std::pointer_traits<ts::Errata::Message*>',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '22097' => {
+                                       'Header' => undef,
+                                       'Line' => '113',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => '_M_cur',
+                                                            'offset' => '0',
+                                                            'type' => '22126'
+                                                          },
+                                                   '1' => {
+                                                            'name' => '_M_first',
+                                                            'offset' => '8',
+                                                            'type' => '22126'
+                                                          },
+                                                   '2' => {
+                                                            'name' => '_M_last',
+                                                            'offset' => '22',
+                                                            'type' => '22126'
+                                                          },
+                                                   '3' => {
+                                                            'name' => '_M_node',
+                                                            'offset' => '36',
+                                                            'type' => '22177'
+                                                          }
+                                                 },
+                                       'Name' => 'struct std::_Deque_iterator<ts::Errata::Message, ts::Errata::Message&, ts::Errata::Message*>',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Size' => '32',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Tp',
+                                                              'type' => '54823'
+                                                            },
+                                                     '1' => {
+                                                              'key' => '_Ref',
+                                                              'type' => '60866'
+                                                            },
+                                                     '2' => {
+                                                              'key' => '_Ptr',
+                                                              'type' => '60795'
+                                                            }
+                                                   },
+                                       'Type' => 'Struct'
+                                     },
+                          '22126' => {
+                                       'BaseType' => '22813',
+                                       'Header' => undef,
+                                       'Line' => '127',
+                                       'Name' => 'std::_Deque_iterator<ts::Errata::Message, ts::Errata::Message&, ts::Errata::Message*>::_Elt_pointer',
+                                       'NameSpace' => 'std::_Deque_iterator<ts::Errata::Message, ts::Errata::Message&, ts::Errata::Message*>',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '22177' => {
+                                       'BaseType' => '22813',
+                                       'Header' => undef,
+                                       'Line' => '128',
+                                       'Name' => 'std::_Deque_iterator<ts::Errata::Message, ts::Errata::Message&, ts::Errata::Message*>::_Map_pointer',
+                                       'NameSpace' => 'std::_Deque_iterator<ts::Errata::Message, ts::Errata::Message&, ts::Errata::Message*>',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '22813' => {
+                                       'BaseType' => '22051',
+                                       'Header' => undef,
+                                       'Line' => '155',
+                                       'Name' => 'std::__ptr_rebind',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '23576' => {
+                                       'Header' => undef,
+                                       'Line' => '408',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'access' => 'protected',
+                                                            'name' => '_M_impl',
+                                                            'offset' => '0',
+                                                            'type' => '23865'
+                                                          }
+                                                 },
+                                       'Name' => 'std::_Deque_base<ts::Errata::Message, std::allocator<ts::Errata::Message> >',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Size' => '80',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Tp',
+                                                              'type' => '54823'
+                                                            },
+                                                     '1' => {
+                                                              'key' => '_Alloc',
+                                                              'type' => '21228'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '23607' => {
+                                       'Header' => undef,
+                                       'Line' => '487',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => '_M_map',
+                                                            'offset' => '0',
+                                                            'type' => '23837'
+                                                          },
+                                                   '1' => {
+                                                            'name' => '_M_map_size',
+                                                            'offset' => '8',
+                                                            'type' => '313'
+                                                          },
+                                                   '2' => {
+                                                            'name' => '_M_start',
+                                                            'offset' => '22',
+                                                            'type' => '23851'
+                                                          },
+                                                   '3' => {
+                                                            'name' => '_M_finish',
+                                                            'offset' => '72',
+                                                            'type' => '23851'
+                                                          }
+                                                 },
+                                       'Name' => 'struct std::_Deque_base<ts::Errata::Message, std::allocator<ts::Errata::Message> >::_Deque_impl_data',
+                                       'NameSpace' => 'std::_Deque_base<ts::Errata::Message, std::allocator<ts::Errata::Message> >',
+                                       'PrivateABI' => 1,
+                                       'Protected' => 1,
+                                       'Size' => '80',
+                                       'Type' => 'Struct'
+                                     },
+                          '23837' => {
+                                       'BaseType' => '22177',
+                                       'Header' => undef,
+                                       'Line' => '485',
+                                       'Name' => 'std::_Deque_base<ts::Errata::Message, std::allocator<ts::Errata::Message> >::_Map_pointer',
+                                       'NameSpace' => 'std::_Deque_base<ts::Errata::Message, std::allocator<ts::Errata::Message> >',
+                                       'PrivateABI' => 1,
+                                       'Protected' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '23851' => {
+                                       'BaseType' => '22097',
+                                       'Header' => undef,
+                                       'Line' => '433',
+                                       'Name' => 'std::_Deque_base<ts::Errata::Message, std::allocator<ts::Errata::Message> >::iterator',
+                                       'NameSpace' => 'std::_Deque_base<ts::Errata::Message, std::allocator<ts::Errata::Message> >',
+                                       'PrivateABI' => 1,
+                                       'Protected' => 1,
+                                       'Size' => '32',
+                                       'Type' => 'Typedef'
+                                     },
+                          '23865' => {
+                                       'Base' => {
+                                                   '21228' => {
+                                                                'pos' => '0'
+                                                              },
+                                                   '23607' => {
+                                                                'pos' => '1'
+                                                              }
+                                                 },
+                                       'Header' => undef,
+                                       'Line' => '520',
+                                       'Name' => 'struct std::_Deque_base<ts::Errata::Message, std::allocator<ts::Errata::Message> >::_Deque_impl',
+                                       'NameSpace' => 'std::_Deque_base<ts::Errata::Message, std::allocator<ts::Errata::Message> >',
+                                       'PrivateABI' => 1,
+                                       'Protected' => 1,
+                                       'Size' => '80',
+                                       'Type' => 'Struct'
+                                     },
+                          '313' => {
+                                     'BaseType' => '50',
+                                     'Header' => undef,
+                                     'Line' => '2426',
+                                     'Name' => 'std::size_t',
+                                     'NameSpace' => 'std',
+                                     'PrivateABI' => 1,
+                                     'Size' => '8',
+                                     'Type' => 'Typedef'
+                                   },
+                          '41496' => {
+                                       'Name' => 'unsigned int',
+                                       'Size' => '4',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '41503' => {
+                                       'Name' => 'bool',
+                                       'Size' => '1',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '41538' => {
+                                       'Header' => undef,
+                                       'Line' => '55',
+                                       'Name' => '__gnu_cxx::new_allocator<char>',
+                                       'NameSpace' => '__gnu_cxx',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Tp',
+                                                              'type' => '46932'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '42615' => {
+                                       'Base' => {
+                                                   '5732' => {
+                                                               'pos' => '0'
+                                                             }
+                                                 },
+                                       'Copied' => 1,
+                                       'Header' => undef,
+                                       'Line' => '48',
+                                       'Name' => 'struct __gnu_cxx::__alloc_traits<std::allocator<char> >',
+                                       'NameSpace' => '__gnu_cxx',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Alloc',
+                                                              'type' => '759'
+                                                            }
+                                                   },
+                                       'Type' => 'Struct'
+                                     },
+                          '42815' => {
+                                       'BaseType' => '5744',
+                                       'Header' => undef,
+                                       'Line' => '57',
+                                       'Name' => '__gnu_cxx::__alloc_traits<std::allocator<char> >::pointer',
+                                       'NameSpace' => '__gnu_cxx::__alloc_traits<std::allocator<char> >',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '42839' => {
+                                       'BaseType' => '5807',
+                                       'Header' => undef,
+                                       'Line' => '59',
+                                       'Name' => '__gnu_cxx::__alloc_traits<std::allocator<char> >::size_type',
+                                       'NameSpace' => '__gnu_cxx::__alloc_traits<std::allocator<char> >',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '44106' => {
+                                       'Header' => undef,
+                                       'Line' => '55',
+                                       'Name' => '__gnu_cxx::new_allocator<ts::Errata::Message>',
+                                       'NameSpace' => '__gnu_cxx',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Tp',
+                                                              'type' => '54823'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '46798' => {
+                                       'Name' => 'long',
+                                       'Size' => '8',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '46922' => {
+                                       'BaseType' => '46932',
+                                       'Name' => 'char*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '46932' => {
+                                       'Name' => 'char',
+                                       'Size' => '1',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '50' => {
+                                    'Name' => 'unsigned long',
+                                    'Size' => '8',
+                                    'Type' => 'Intrinsic'
+                                  },
+                          '53117' => {
+                                       'BaseType' => '46932',
+                                       'Name' => 'char[16]',
+                                       'Size' => '16',
+                                       'Type' => 'Array'
+                                     },
+                          '53471' => {
+                                       'Header' => undef,
+                                       'Line' => '63',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'access' => 'protected',
+                                                            'name' => 'm_intrusive_pointer_reference_count',
+                                                            'offset' => '0',
+                                                            'type' => '53639'
+                                                          }
+                                                 },
+                                       'Name' => 'ts::IntrusivePtrCounter',
+                                       'NameSpace' => 'ts',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Class'
+                                     },
+                          '53639' => {
+                                       'BaseType' => '46798',
+                                       'Header' => undef,
+                                       'Line' => '91',
+                                       'Name' => 'ts::IntrusivePtrCounter::intrusive_ptr_reference_counter_type',
+                                       'NameSpace' => 'ts::IntrusivePtrCounter',
+                                       'PrivateABI' => 1,
+                                       'Protected' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '53689' => {
+                                       'Header' => undef,
+                                       'Line' => '145',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'access' => 'private',
+                                                            'name' => 'm_obj',
+                                                            'offset' => '0',
+                                                            'type' => '60523'
+                                                          }
+                                                 },
+                                       'Name' => 'ts::IntrusivePtr<ts::Errata::Data>',
+                                       'NameSpace' => 'ts',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => 'T',
+                                                              'type' => '54316'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '54303' => {
+                                       'Header' => undef,
+                                       'Line' => '83',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'access' => 'protected',
+                                                            'name' => 'm_data',
+                                                            'offset' => '0',
+                                                            'type' => '57403'
+                                                          }
+                                                 },
+                                       'Name' => 'ts::Errata',
+                                       'NameSpace' => 'ts',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Class'
+                                     },
+                          '54316' => {
+                                       'Base' => {
+                                                   '53471' => {
+                                                                'pos' => '0'
+                                                              }
+                                                 },
+                                       'Header' => undef,
+                                       'Line' => '500',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'm_log_on_delete',
+                                                            'offset' => '8',
+                                                            'type' => '41503'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'm_items',
+                                                            'offset' => '22',
+                                                            'type' => '57517'
+                                                          }
+                                                 },
+                                       'Name' => 'struct ts::Errata::Data',
+                                       'NameSpace' => 'ts::Errata',
+                                       'PrivateABI' => 1,
+                                       'Protected' => 1,
+                                       'Size' => '96',
+                                       'Type' => 'Struct'
+                                     },
+                          '54723' => {
+                                       'BaseType' => '57536',
+                                       'Header' => undef,
+                                       'Line' => '93',
+                                       'Name' => 'ts::Errata::Id',
+                                       'NameSpace' => 'ts::Errata',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '54778' => {
+                                       'BaseType' => '58350',
+                                       'Header' => undef,
+                                       'Line' => '101',
+                                       'Name' => 'ts::Errata::Code',
+                                       'NameSpace' => 'ts::Errata',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '54823' => {
+                                       'Header' => undef,
+                                       'Line' => '376',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'm_id',
+                                                            'offset' => '0',
+                                                            'type' => '54723'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'm_code',
+                                                            'offset' => '4',
+                                                            'type' => '54778'
+                                                          },
+                                                   '2' => {
+                                                            'name' => 'm_text',
+                                                            'offset' => '8',
+                                                            'type' => '14210'
+                                                          },
+                                                   '3' => {
+                                                            'name' => 'm_errata',
+                                                            'offset' => '64',
+                                                            'type' => '54303'
+                                                          }
+                                                 },
+                                       'Name' => 'struct ts::Errata::Message',
+                                       'NameSpace' => 'ts::Errata',
+                                       'PrivateABI' => 1,
+                                       'Size' => '48',
+                                       'Type' => 'Struct'
+                                     },
+                          '5732' => {
+                                      'Copied' => 1,
+                                      'Header' => undef,
+                                      'Line' => '411',
+                                      'Name' => 'struct std::allocator_traits<std::allocator<char> >',
+                                      'NameSpace' => 'std',
+                                      'PrivateABI' => 1,
+                                      'Size' => '1',
+                                      'TParam' => {
+                                                    '0' => {
+                                                             'type' => '759'
+                                                           }
+                                                  },
+                                      'Type' => 'Struct'
+                                    },
+                          '57403' => {
+                                       'BaseType' => '53689',
+                                       'Header' => undef,
+                                       'Line' => '88',
+                                       'Name' => 'ts::Errata::ImpPtr',
+                                       'NameSpace' => 'ts::Errata',
+                                       'PrivateABI' => 1,
+                                       'Protected' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '5744' => {
+                                      'BaseType' => '46922',
+                                      'Header' => undef,
+                                      'Line' => '420',
+                                      'Name' => 'std::allocator_traits<std::allocator<char> >::pointer',
+                                      'NameSpace' => 'std::allocator_traits<std::allocator<char> >',
+                                      'PrivateABI' => 1,
+                                      'Size' => '8',
+                                      'Type' => 'Typedef'
+                                    },
+                          '57517' => {
+                                       'BaseType' => '17556',
+                                       'Header' => undef,
+                                       'Line' => '104',
+                                       'Name' => 'ts::Errata::Container',
+                                       'NameSpace' => 'ts::Errata',
+                                       'PrivateABI' => 1,
+                                       'Size' => '80',
+                                       'Type' => 'Typedef'
+                                     },
+                          '57531' => {
+                                       'BaseType' => '54303',
+                                       'Name' => 'ts::Errata const',
+                                       'Size' => '8',
+                                       'Type' => 'Const'
+                                     },
+                          '57536' => {
+                                       'Base' => {
+                                                   '59778' => {
+                                                                'pos' => '0'
+                                                              }
+                                                 },
+                                       'Header' => undef,
+                                       'Line' => '97',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'access' => 'private',
+                                                            'name' => '_t',
+                                                            'offset' => '0',
+                                                            'type' => '57663'
+                                                          }
+                                                 },
+                                       'Name' => 'ts::NumericType<unsigned int, ts::MsgIdTag>',
+                                       'NameSpace' => 'ts',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => 'T',
+                                                              'type' => '41496'
+                                                            },
+                                                     '1' => {
+                                                              'key' => 'X',
+                                                              'type' => '60477'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '57663' => {
+                                       'BaseType' => '41496',
+                                       'Header' => undef,
+                                       'Line' => '100',
+                                       'Name' => 'ts::NumericType<unsigned int, ts::MsgIdTag>::raw_type',
+                                       'NameSpace' => 'ts::NumericType<unsigned int, ts::MsgIdTag>',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '5807' => {
+                                      'BaseType' => '313',
+                                      'Header' => undef,
+                                      'Line' => '435',
+                                      'Name' => 'std::allocator_traits<std::allocator<char> >::size_type',
+                                      'NameSpace' => 'std::allocator_traits<std::allocator<char> >',
+                                      'PrivateABI' => 1,
+                                      'Size' => '8',
+                                      'Type' => 'Typedef'
+                                    },
+                          '58350' => {
+                                       'Base' => {
+                                                   '60027' => {
+                                                                'pos' => '0'
+                                                              }
+                                                 },
+                                       'Header' => undef,
+                                       'Line' => '97',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'access' => 'private',
+                                                            'name' => '_t',
+                                                            'offset' => '0',
+                                                            'type' => '58477'
+                                                          }
+                                                 },
+                                       'Name' => 'ts::NumericType<unsigned int, ts::CodeTag>',
+                                       'NameSpace' => 'ts',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => 'T',
+                                                              'type' => '41496'
+                                                            },
+                                                     '1' => {
+                                                              'key' => 'X',
+                                                              'type' => '60482'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '58477' => {
+                                       'BaseType' => '41496',
+                                       'Header' => undef,
+                                       'Line' => '100',
+                                       'Name' => 'ts::NumericType<unsigned int, ts::CodeTag>::raw_type',
+                                       'NameSpace' => 'ts::NumericType<unsigned int, ts::CodeTag>',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '59778' => {
+                                       'Copied' => 1,
+                                       'Header' => undef,
+                                       'Line' => '70',
+                                       'Name' => 'ts::NumericTypeIntOperators<unsigned int, ts::MsgIdTag>',
+                                       'NameSpace' => 'ts',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => 'T',
+                                                              'type' => '41496'
+                                                            },
+                                                     '1' => {
+                                                              'key' => 'X',
+                                                              'type' => '60477'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '60027' => {
+                                       'Copied' => 1,
+                                       'Header' => undef,
+                                       'Line' => '70',
+                                       'Name' => 'ts::NumericTypeIntOperators<unsigned int, ts::CodeTag>',
+                                       'NameSpace' => 'ts',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => 'T',
+                                                              'type' => '41496'
+                                                            },
+                                                     '1' => {
+                                                              'key' => 'X',
+                                                              'type' => '60482'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '6011' => {
+                                      'Header' => undef,
+                                      'Line' => '85',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'access' => 'private',
+                                                           'name' => '_M_dataplus',
+                                                           'offset' => '0',
+                                                           'type' => '6024'
+                                                         },
+                                                  '1' => {
+                                                           'access' => 'private',
+                                                           'name' => '_M_string_length',
+                                                           'offset' => '8',
+                                                           'type' => '6224'
+                                                         },
+                                                  '2' => {
+                                                           'access' => 'private',
+                                                           'name' => 'unnamed0',
+                                                           'offset' => '22',
+                                                           'type' => '6187'
+                                                         }
+                                                },
+                                      'Name' => 'std::__cxx11::basic_string<char>',
+                                      'NameSpace' => 'std::__cxx11',
+                                      'PrivateABI' => 1,
+                                      'Size' => '32',
+                                      'TParam' => {
+                                                    '0' => {
+                                                             'key' => '_CharT',
+                                                             'type' => '46932'
+                                                           }
+                                                  },
+                                      'Type' => 'Class'
+                                    },
+                          '6024' => {
+                                      'Base' => {
+                                                  '759' => {
+                                                             'pos' => '0'
+                                                           }
+                                                },
+                                      'Header' => undef,
+                                      'Line' => '158',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => '_M_p',
+                                                           'offset' => '0',
+                                                           'type' => '6152'
+                                                         }
+                                                },
+                                      'Name' => 'struct std::__cxx11::basic_string<char>::_Alloc_hider',
+                                      'NameSpace' => 'std::__cxx11::basic_string<char>',
+                                      'Private' => 1,
+                                      'PrivateABI' => 1,
+                                      'Size' => '8',
+                                      'Type' => 'Struct'
+                                    },
+                          '60477' => {
+                                       'Name' => 'struct ts::MsgIdTag',
+                                       'NameSpace' => 'ts',
+                                       'PrivateABI' => 1,
+                                       'Type' => 'Struct'
+                                     },
+                          '60482' => {
+                                       'Name' => 'struct ts::CodeTag',
+                                       'NameSpace' => 'ts',
+                                       'PrivateABI' => 1,
+                                       'Type' => 'Struct'
+                                     },
+                          '60523' => {
+                                       'BaseType' => '54316',
+                                       'Name' => 'struct ts::Errata::Data*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '60630' => {
+                                       'BaseType' => '57531',
+                                       'Name' => 'ts::Errata const&',
+                                       'Size' => '8',
+                                       'Type' => 'Ref'
+                                     },
+                          '60635' => {
+                                       'BaseType' => '17544',
+                                       'Name' => 'std::ostream&',
+                                       'Size' => '8',
+                                       'Type' => 'Ref'
+                                     },
+                          '60795' => {
+                                       'BaseType' => '54823',
+                                       'Name' => 'struct ts::Errata::Message*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '60866' => {
+                                       'BaseType' => '54823',
+                                       'Name' => 'struct ts::Errata::Message&',
+                                       'Size' => '8',
+                                       'Type' => 'Ref'
+                                     },
+                          '6152' => {
+                                      'BaseType' => '42815',
+                                      'Header' => undef,
+                                      'Line' => '100',
+                                      'Name' => 'std::__cxx11::basic_string<char>::pointer',
+                                      'NameSpace' => 'std::__cxx11::basic_string<char>',
+                                      'PrivateABI' => 1,
+                                      'Size' => '8',
+                                      'Type' => 'Typedef'
+                                    },
+                          '6187' => {
+                                      'Header' => undef,
+                                      'Line' => '180',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => '_M_local_buf',
+                                                           'offset' => '0',
+                                                           'type' => '53117'
+                                                         },
+                                                  '1' => {
+                                                           'name' => '_M_allocated_capacity',
+                                                           'offset' => '0',
+                                                           'type' => '6224'
+                                                         }
+                                                },
+                                      'NameSpace' => 'std::__cxx11::basic_string<char>',
+                                      'Private' => 1,
+                                      'PrivateABI' => 1,
+                                      'Size' => '16',
+                                      'Type' => 'Union'
+                                    },
+                          '6224' => {
+                                      'BaseType' => '42839',
+                                      'Header' => undef,
+                                      'Line' => '96',
+                                      'Name' => 'std::__cxx11::basic_string<char>::size_type',
+                                      'NameSpace' => 'std::__cxx11::basic_string<char>',
+                                      'PrivateABI' => 1,
+                                      'Size' => '8',
+                                      'Type' => 'Typedef'
+                                    },
+                          '759' => {
+                                     'Base' => {
+                                                 '41538' => {
+                                                              'pos' => '0'
+                                                            }
+                                               },
+                                     'Header' => undef,
+                                     'Line' => '124',
+                                     'Name' => 'std::allocator<char>',
+                                     'NameSpace' => 'std',
+                                     'PrivateABI' => 1,
+                                     'Size' => '1',
+                                     'TParam' => {
+                                                   '0' => {
+                                                            'name' => 'char'
+                                                          }
+                                                 },
+                                     'Type' => 'Class'
+                                   }
+                        },
+          'UndefinedSymbols' => {
+                                  'libtsconfig.so.8.1.1' => {
+                                                              '_ITM_deregisterTMCloneTable' => 0,
+                                                              '_ITM_registerTMCloneTable' => 0,
+                                                              '_Unwind_Resume@GCC_3.0' => 0,
+                                                              '_ZNKSt5ctypeIcE13_M_widen_initEv@GLIBCXX_3.4.11' => 0,
+                                                              '_ZNSo3putEc@GLIBCXX_3.4' => 0,
+                                                              '_ZNSo5flushEv@GLIBCXX_3.4' => 0,
+                                                              '_ZNSo9_M_insertImEERSoT_@GLIBCXX_3.4.9' => 0,
+                                                              '_ZNSt6localeC1Ev@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt6localeD1Ev@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEmmPKcm@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt8ios_base4InitC1Ev@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt8ios_base4InitD1Ev@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt8ios_baseC2Ev@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt8ios_baseD2Ev@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate@GLIBCXX_3.4' => 0,
+                                                              '_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@GLIBCXX_3.4.9' => 0,
+                                                              '_ZSt16__throw_bad_castv@GLIBCXX_3.4' => 0,
+                                                              '_ZSt17__throw_bad_allocv@GLIBCXX_3.4' => 0,
+                                                              '_ZSt19__throw_logic_errorPKc@GLIBCXX_3.4' => 0,
+                                                              '_ZSt20__throw_length_errorPKc@GLIBCXX_3.4' => 0,
+                                                              '_ZSt28__throw_bad_array_new_lengthv@GLIBCXX_3.4.29' => 0,
+                                                              '_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21' => 0,
+                                                              '_ZTVN10__cxxabiv117__class_type_infoE@CXXABI_1.3' => 0,
+                                                              '_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21' => 0,
+                                                              '_ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21' => 0,
+                                                              '_ZTVSt15basic_streambufIcSt11char_traitsIcEE@GLIBCXX_3.4' => 0,
+                                                              '_ZTVSt9basic_iosIcSt11char_traitsIcEE@GLIBCXX_3.4' => 0,
+                                                              '_ZdlPvm@CXXABI_1.3.9' => 0,
+                                                              '_Znwm@GLIBCXX_3.4' => 0,
+                                                              '__assert_fail@GLIBC_2.2.5' => 0,
+                                                              '__cxa_atexit@GLIBC_2.2.5' => 0,
+                                                              '__cxa_begin_catch@CXXABI_1.3' => 0,
+                                                              '__cxa_end_catch@CXXABI_1.3' => 0,
+                                                              '__cxa_finalize@GLIBC_2.2.5' => 0,
+                                                              '__cxa_rethrow@CXXABI_1.3' => 0,
+                                                              '__errno_location@GLIBC_2.2.5' => 0,
+                                                              '__gmon_start__' => 0,
+                                                              '__gxx_personality_v0@CXXABI_1.3' => 0,
+                                                              'clearerr@GLIBC_2.2.5' => 0,
+                                                              'exit@GLIBC_2.2.5' => 0,
+                                                              'fclose@GLIBC_2.2.5' => 0,
+                                                              'ferror@GLIBC_2.2.5' => 0,
+                                                              'fileno@GLIBC_2.2.5' => 0,
+                                                              'fopen@GLIBC_2.2.5' => 0,
+                                                              'fprintf@GLIBC_2.2.5' => 0,
+                                                              'fread@GLIBC_2.2.5' => 0,
+                                                              'free@GLIBC_2.2.5' => 0,
+                                                              'fstat@GLIBC_2.33' => 0,
+                                                              'fwrite@GLIBC_2.2.5' => 0,
+                                                              'getc@GLIBC_2.2.5' => 0,
+                                                              'isalpha@GLIBC_2.2.5' => 0,
+                                                              'malloc@GLIBC_2.2.5' => 0,
+                                                              'memchr@GLIBC_2.2.5' => 0,
+                                                              'memcmp@GLIBC_2.2.5' => 0,
+                                                              'memcpy@GLIBC_2.14' => 0,
+                                                              'memmove@GLIBC_2.2.5' => 0,
+                                                              'realloc@GLIBC_2.2.5' => 0,
+                                                              'snprintf@GLIBC_2.2.5' => 0,
+                                                              'stderr@GLIBC_2.2.5' => 0,
+                                                              'stdin@GLIBC_2.2.5' => 0,
+                                                              'stdout@GLIBC_2.2.5' => 0,
+                                                              'stpcpy@GLIBC_2.2.5' => 0,
+                                                              'strerror_r@GLIBC_2.2.5' => 0,
+                                                              'strlen@GLIBC_2.2.5' => 0,
+                                                              'strtol@GLIBC_2.2.5' => 0,
+                                                              'vsnprintf@GLIBC_2.2.5' => 0
+                                                            }
+                                },
+          'WordSize' => '8'
+        };

@@ -1,0 +1,7 @@
+{
+  "Object": "lib/libtsmgmt.so.8.1.2",
+  "Lang": "C++",
+  "TotalSymbols": "81",
+  "PublicABI": "1",
+  "Version": "1.11"
+}

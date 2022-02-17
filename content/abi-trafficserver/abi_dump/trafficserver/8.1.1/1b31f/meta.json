@@ -1,0 +1,7 @@
+{
+  "Object": "lib/libtscore.so.8.1.1",
+  "Lang": "C++",
+  "TotalSymbols": "6",
+  "PublicABI": "1",
+  "Version": "1.11"
+}

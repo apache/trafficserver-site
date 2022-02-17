@@ -1,0 +1,8 @@
+{
+  "Affected": "0",
+  "Added": 17,
+  "Removed": 0,
+  "TotalProblems": 2,
+  "Object1": "lib/traffic_server.so",
+  "Object2": "lib/traffic_server.so"
+}

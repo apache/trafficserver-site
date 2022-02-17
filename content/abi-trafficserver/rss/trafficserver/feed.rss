@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<rss version='2.0'>
+
+<channel>
+<title>ABI changes review for trafficserver</title>
+<link>https://abi-laboratory.pro/tracker/timeline/trafficserver</link>
+<description>Binary compatibility analysis reports for trafficserver</description>
+    <item>
+        <title>trafficserver 9.1.2-rc0</title>
+        <link>https://abi-laboratory.pro/tracker/timeline/trafficserver</link>
+        <description>Binary compatibility: 100%.</description>
+        <pubDate>Mon, 08 Nov 2021 11:01:00 -0800</pubDate>
+    </item>
+    <item>
+        <title>trafficserver 9.1.1</title>
+        <link>https://abi-laboratory.pro/tracker/timeline/trafficserver</link>
+        <description>Binary compatibility: 100%.</description>
+        <pubDate>Fri, 29 Oct 2021 08:38:00 -0800</pubDate>
+    </item>
+    <item>
+        <title>trafficserver 9.1.0</title>
+        <link>https://abi-laboratory.pro/tracker/timeline/trafficserver</link>
+        <description>Binary compatibility: 99.25%, 32 problems, added 17 symbols.</description>
+        <pubDate>Thu, 05 Aug 2021 11:46:00 -0800</pubDate>
+    </item>
+    <item>
+        <title>trafficserver 9.0.2</title>
+        <link>https://abi-laboratory.pro/tracker/timeline/trafficserver</link>
+        <description>Binary compatibility: 100%.</description>
+        <pubDate>Wed, 05 May 2021 09:36:00 -0800</pubDate>
+    </item>
+    <item>
+        <title>trafficserver 9.0.1</title>
+        <link>https://abi-laboratory.pro/tracker/timeline/trafficserver</link>
+        <description>Binary compatibility: 100%, added 2 symbols.</description>
+        <pubDate>Mon, 14 Dec 2020 13:47:00 -0800</pubDate>
+    </item>
+    <item>
+        <title>trafficserver 9.0.0</title>
+        <link>https://abi-laboratory.pro/tracker/timeline/trafficserver</link>
+        <description>Binary compatibility: 95.74%, 265 problems, changed SONAME, removed 1 object, added 66 symbols, removed 18 symbols.</description>
+        <pubDate>Tue, 15 Feb 2022 16:10:00 -0800</pubDate>
+    </item>
+    <item>
+        <title>trafficserver 8.1.3</title>
+        <link>https://abi-laboratory.pro/tracker/timeline/trafficserver</link>
+        <description>Binary compatibility: 100%, added 6 objects.</description>
+        <pubDate>Mon, 01 Nov 2021 11:10:00 -0800</pubDate>
+    </item>
+    <item>
+        <title>trafficserver 8.1.2</title>
+        <link>https://abi-laboratory.pro/tracker/timeline/trafficserver</link>
+        <description>Binary compatibility: 100%.</description>
+        <pubDate>Mon, 21 Jun 2021 23:37:00 -0800</pubDate>
+    </item>
+    <item>
+        <title>trafficserver 8.1.1</title>
+        <link>https://abi-laboratory.pro/tracker/timeline/trafficserver</link>
+        <description>Binary compatibility: 100%.</description>
+        <pubDate>Mon, 30 Nov 2020 15:30:00 -0800</pubDate>
+    </item>
+</channel>
+
+</rss>

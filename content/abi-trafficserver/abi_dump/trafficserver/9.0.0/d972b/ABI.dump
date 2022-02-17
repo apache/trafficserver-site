@@ -1,0 +1,2219 @@
+$VAR1 = {
+          'ABI_DUMPER_VERSION' => '1.1',
+          'ABI_DUMP_VERSION' => '3.5',
+          'Arch' => 'x86_64',
+          'Compiler' => 'GNU C++17 11.2.1 20220127 (Red Hat 11.2.1-9) -mcx16 -mtune=generic -march=x86-64 -g -Og -std=c++17 -feliminate-unused-debug-symbols -fno-strict-aliasing -fPIC',
+          'Headers' => {
+                         'apidefs.h' => 1,
+                         'mgmtapi.h' => 1,
+                         'ts.h' => 1
+                       },
+          'Language' => 'C++',
+          'LibraryName' => 'libtsmgmt.so.9.0.0',
+          'LibraryVersion' => '9.0.0',
+          'NameSpaces' => {
+                            '__gnu_cxx' => 1,
+                            '__pstl::execution::v1' => 1,
+                            'detail' => 1,
+                            'std' => 1,
+                            'std::__cxx11' => 1,
+                            'std::__exception_ptr' => 1,
+                            'ts' => 1
+                          },
+          'Needed' => {
+                        'libc.so.6' => 1,
+                        'libcap.so.2' => 1,
+                        'libcrypto.so.1.1' => 1,
+                        'libgcc_s.so.1' => 1,
+                        'libhwloc.so.15' => 1,
+                        'libm.so.6' => 1,
+                        'libpcre.so.1' => 1,
+                        'libresolv.so.2' => 1,
+                        'libssl.so.1.1' => 1,
+                        'libstdc++.so.6' => 1,
+                        'libtscore.so.9' => 1,
+                        'libtscpputil.so.9' => 1
+                      },
+          'PublicABI' => '1',
+          'Sources' => {},
+          'SymbolInfo' => {
+                            '154559' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_regex',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'flags',
+                                                                'type' => '196'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'rec_vals',
+                                                                'type' => '29807'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSConfigRecordDescribeMatchMlt'
+                                        },
+                            '154688' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'flags',
+                                                                'type' => '196'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'val',
+                                                                'type' => '32613'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSConfigRecordDescribe'
+                                        },
+                            '154838' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'val',
+                                                                'type' => '32613'
+                                                              }
+                                                     },
+                                          'Return' => '1',
+                                          'ShortName' => 'TSConfigRecordDescriptionFree'
+                                        },
+                            '155197' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'event_name',
+                                                                'type' => '501'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'func',
+                                                                'type' => '30428'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSEventSignalCbUnregister'
+                                        },
+                            '155299' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'event_name',
+                                                                'type' => '501'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'func',
+                                                                'type' => '30428'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'data',
+                                                                'type' => '486'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSEventSignalCbRegister'
+                                        },
+                            '155428' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'event_name',
+                                                                'type' => '501'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'is_current',
+                                                                'type' => '26945'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSEventIsActive'
+                                        },
+                            '155530' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'active_events',
+                                                                'type' => '29807'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSActiveEventGetMlt'
+                                        },
+                            '155605' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'event_name',
+                                                                'type' => '1160'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSEventResolve'
+                                        },
+                            '155798' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'url_regex',
+                                                                'type' => '29783'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'list',
+                                                                'type' => '156373'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSInvalidateFromCacheUrlRegex'
+                                        },
+                            '156412' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'url_regex',
+                                                                'type' => '29783'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'list',
+                                                                'type' => '156373'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSDeleteFromCacheUrlRegex'
+                                        },
+                            '156987' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'url',
+                                                                'type' => '29783'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'info',
+                                                                'type' => '156373'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSDeleteFromCacheUrl'
+                                        },
+                            '157565' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'url_regex',
+                                                                'type' => '29783'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'list',
+                                                                'type' => '156373'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSLookupFromCacheUrlRegex'
+                                        },
+                            '158140' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'url',
+                                                                'type' => '29783'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'info',
+                                                                'type' => '156373'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSLookupFromCacheUrl'
+                                        },
+                            '158718' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'url',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'header',
+                                                                'type' => '1596'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'headerSize',
+                                                                'type' => '87758'
+                                                              },
+                                                       '3' => {
+                                                                'name' => 'body',
+                                                                'type' => '1596'
+                                                              },
+                                                       '4' => {
+                                                                'name' => 'bodySize',
+                                                                'type' => '87758'
+                                                              },
+                                                       '5' => {
+                                                                'name' => 'timeout',
+                                                                'type' => '63'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSReadFromUrlEx'
+                                        },
+                            '160201' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'url',
+                                                                'type' => '501'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'header',
+                                                                'type' => '1596'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'headerSize',
+                                                                'type' => '87758'
+                                                              },
+                                                       '3' => {
+                                                                'name' => 'body',
+                                                                'type' => '1596'
+                                                              },
+                                                       '4' => {
+                                                                'name' => 'bodySize',
+                                                                'type' => '87758'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSReadFromUrl'
+                                        },
+                            '160391' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'err_id',
+                                                                'type' => '29735'
+                                                              }
+                                                     },
+                                          'Return' => '501',
+                                          'ShortName' => 'TSGetErrorMessage'
+                                        },
+                            '161233' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'tag',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'data',
+                                                                'type' => '2583'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'data_size',
+                                                                'type' => '83'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSLifecycleMessage'
+                                        },
+                            '161362' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'dev',
+                                                                'type' => '1160'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSStorageDeviceCmdOffline'
+                                        },
+                            '161437' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'options',
+                                                                'type' => '196'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSDrain'
+                                        },
+                            '161512' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'options',
+                                                                'type' => '196'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSStop'
+                                        },
+                            '161587' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'options',
+                                                                'type' => '196'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSBounce'
+                                        },
+                            '161662' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'action',
+                                                                'type' => '29864'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSActionDo'
+                                        },
+                            '161762' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'options',
+                                                                'type' => '196'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRestart'
+                                        },
+                            '161837' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSReconfigure'
+                                        },
+                            '161884' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'options',
+                                                                'type' => '196'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'trace',
+                                                                'type' => '156373'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSProxyBacktraceGet'
+                                        },
+                            '161986' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'proxy_state',
+                                                                'type' => '29909'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'clear',
+                                                                'type' => '196'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSProxyStateSet'
+                                        },
+                            '162103' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Return' => '29909',
+                                          'ShortName' => 'TSProxyStateGet'
+                                        },
+                            '162150' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSDisconnect'
+                                        },
+                            '162182' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'p1',
+                                                                'type' => '63'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'p2',
+                                                                'type' => '63'
+                                                              }
+                                                     },
+                                          'Reg' => {
+                                                     '0' => 'rdi',
+                                                     '1' => 'rsi'
+                                                   },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSDisconnectRetrySet'
+                                        },
+                            '162230' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'p1',
+                                                                'type' => '162278'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'p2',
+                                                                'type' => '486'
+                                                              }
+                                                     },
+                                          'Reg' => {
+                                                     '0' => 'rdi',
+                                                     '1' => 'rsi'
+                                                   },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSDisconnectCbRegister'
+                                        },
+                            '162283' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'p1',
+                                                                'type' => '148698'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'p2',
+                                                                'type' => '63'
+                                                              }
+                                                     },
+                                          'Reg' => {
+                                                     '0' => 'rdi',
+                                                     '1' => 'rsi'
+                                                   },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSConnect'
+                                        },
+                            '162331' => {
+                                          'Header' => 'apidefs.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'p1',
+                                                                'type' => '63'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'p2',
+                                                                'type' => '22648'
+                                                              }
+                                                     },
+                                          'Reg' => {
+                                                     '0' => 'rdi',
+                                                     '1' => 'rsi'
+                                                   },
+                                          'Return' => '1',
+                                          'ShortName' => 'TSPluginInit'
+                                        },
+                            '162375' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSTerminate'
+                                        },
+                            '162422' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'socket_path',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'options',
+                                                                'type' => '30056'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSInit'
+                                        },
+                            '162524' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_list',
+                                                                'type' => '29807'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'action_need',
+                                                                'type' => '37459'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordSetMlt'
+                                        },
+                            '162892' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'str_val',
+                                                                'type' => '1160'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'action_need',
+                                                                'type' => '37459'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordSetString'
+                                        },
+                            '163021' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'float_val',
+                                                                'type' => '29771'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'action_need',
+                                                                'type' => '37459'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordSetFloat'
+                                        },
+                            '163152' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'counter_val',
+                                                                'type' => '29759'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'action_need',
+                                                                'type' => '37459'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordSetCounter'
+                                        },
+                            '163281' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'int_val',
+                                                                'type' => '29747'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'action_need',
+                                                                'type' => '37459'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordSetInt'
+                                        },
+                            '163410' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'val',
+                                                                'type' => '1160'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'action_need',
+                                                                'type' => '37459'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordSet'
+                                        },
+                            '163539' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'regex',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'rec_vals',
+                                                                'type' => '29807'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordGetMatchMlt'
+                                        },
+                            '163641' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_names',
+                                                                'type' => '148734'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'rec_vals',
+                                                                'type' => '29807'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordGetMlt'
+                                        },
+                            '164049' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'string_val',
+                                                                'type' => '156373'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordGetString'
+                                        },
+                            '164270' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'float_val',
+                                                                'type' => '164462'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordGetFloat'
+                                        },
+                            '164467' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'counter_val',
+                                                                'type' => '164659'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordGetCounter'
+                                        },
+                            '164664' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'int_val',
+                                                                'type' => '164856'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordGetInt'
+                                        },
+                            '164861' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'rec_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'rec_val',
+                                                                'type' => '32494'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSRecordGet'
+                                        },
+                            '164963' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'name',
+                                                                'type' => '1160'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSStatsReset'
+                                        },
+                            '165038' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'host_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'down_time',
+                                                                'type' => '63'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'reason',
+                                                                'type' => '1160'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSHostStatusSetDown'
+                                        },
+                            '165167' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'host_name',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'down_time',
+                                                                'type' => '63'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'reason',
+                                                                'type' => '1160'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSHostStatusSetUp'
+                                        },
+                            '165645' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'intl',
+                                                                'type' => '148746'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'min',
+                                                                'type' => '63'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'max',
+                                                                'type' => '63'
+                                                              }
+                                                     },
+                                          'Return' => '24220',
+                                          'ShortName' => 'TSIntListIsValid'
+                                        },
+                            '165857' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'intl',
+                                                                'type' => '148746'
+                                                              }
+                                                     },
+                                          'Return' => '63',
+                                          'ShortName' => 'TSIntListLen'
+                                        },
+                            '165932' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'intl',
+                                                                'type' => '148746'
+                                                              }
+                                                     },
+                                          'Return' => '24220',
+                                          'ShortName' => 'TSIntListIsEmpty'
+                                        },
+                            '166007' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'intl',
+                                                                'type' => '148746'
+                                                              }
+                                                     },
+                                          'Return' => '87758',
+                                          'ShortName' => 'TSIntListDequeue'
+                                        },
+                            '166105' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'intl',
+                                                                'type' => '148746'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'elem',
+                                                                'type' => '87758'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSIntListEnqueue'
+                                        },
+                            '166227' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'intl',
+                                                                'type' => '148746'
+                                                              }
+                                                     },
+                                          'Return' => '1',
+                                          'ShortName' => 'TSIntListDestroy'
+                                        },
+                            '166400' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Return' => '148746',
+                                          'ShortName' => 'TSIntListCreate'
+                                        },
+                            '166447' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'strl',
+                                                                'type' => '148734'
+                                                              }
+                                                     },
+                                          'Return' => '24220',
+                                          'ShortName' => 'TSStringListIsValid'
+                                        },
+                            '166628' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'strl',
+                                                                'type' => '148734'
+                                                              }
+                                                     },
+                                          'Return' => '63',
+                                          'ShortName' => 'TSStringListLen'
+                                        },
+                            '166701' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'strl',
+                                                                'type' => '148734'
+                                                              }
+                                                     },
+                                          'Return' => '24220',
+                                          'ShortName' => 'TSStringListIsEmpty'
+                                        },
+                            '166774' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'strl',
+                                                                'type' => '148734'
+                                                              }
+                                                     },
+                                          'Return' => '501',
+                                          'ShortName' => 'TSStringListDequeue'
+                                        },
+                            '166870' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'strl',
+                                                                'type' => '148734'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'str',
+                                                                'type' => '501'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSStringListEnqueue'
+                                        },
+                            '166988' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'strl',
+                                                                'type' => '148734'
+                                                              }
+                                                     },
+                                          'Return' => '1',
+                                          'ShortName' => 'TSStringListDestroy'
+                                        },
+                            '167158' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Return' => '148734',
+                                          'ShortName' => 'TSStringListCreate'
+                                        },
+                            '167204' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'l',
+                                                                'type' => '29807'
+                                                              }
+                                                     },
+                                          'Return' => '24220',
+                                          'ShortName' => 'TSListIsValid'
+                                        },
+                            '167383' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'l',
+                                                                'type' => '29807'
+                                                              }
+                                                     },
+                                          'Return' => '63',
+                                          'ShortName' => 'TSListLen'
+                                        },
+                            '167454' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'l',
+                                                                'type' => '29807'
+                                                              }
+                                                     },
+                                          'Return' => '24220',
+                                          'ShortName' => 'TSListIsEmpty'
+                                        },
+                            '167525' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'l',
+                                                                'type' => '29807'
+                                                              }
+                                                     },
+                                          'Return' => '486',
+                                          'ShortName' => 'TSListDequeue'
+                                        },
+                            '167619' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'l',
+                                                                'type' => '29807'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'data',
+                                                                'type' => '486'
+                                                              }
+                                                     },
+                                          'Return' => '29735',
+                                          'ShortName' => 'TSListEnqueue'
+                                        },
+                            '167735' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'l',
+                                                                'type' => '29807'
+                                                              }
+                                                     },
+                                          'Return' => '1',
+                                          'ShortName' => 'TSListDestroy'
+                                        },
+                            '167802' => {
+                                          'Header' => 'mgmtapi.h',
+                                          'Return' => '29807',
+                                          'ShortName' => 'TSListCreate'
+                                        },
+                            '167848' => {
+                                          'Header' => 'ts.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'ptr',
+                                                                'type' => '486'
+                                                              }
+                                                     },
+                                          'Return' => '1',
+                                          'ShortName' => '_TSfree'
+                                        },
+                            '167917' => {
+                                          'Header' => 'ts.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'str',
+                                                                'type' => '1160'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'length',
+                                                                'type' => '63'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'p3',
+                                                                'type' => '1160'
+                                                              }
+                                                     },
+                                          'Reg' => {
+                                                     '2' => 'rdx'
+                                                   },
+                                          'Return' => '501',
+                                          'ShortName' => '_TSstrdup'
+                                        },
+                            '168028' => {
+                                          'Header' => 'ts.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'ptr',
+                                                                'type' => '486'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'size',
+                                                                'type' => '196'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'p3',
+                                                                'type' => '1160'
+                                                              }
+                                                     },
+                                          'Reg' => {
+                                                     '2' => 'rdx'
+                                                   },
+                                          'Return' => '486',
+                                          'ShortName' => '_TSrealloc'
+                                        },
+                            '168140' => {
+                                          'Header' => 'ts.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'size',
+                                                                'type' => '196'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'p2',
+                                                                'type' => '1160'
+                                                              }
+                                                     },
+                                          'Reg' => {
+                                                     '1' => 'rsi'
+                                                   },
+                                          'Return' => '486',
+                                          'ShortName' => '_TSmalloc'
+                                        },
+                            '32475' => {
+                                         'Header' => 'mgmtapi.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'ele',
+                                                               'type' => '32494'
+                                                             }
+                                                    },
+                                         'Return' => '1',
+                                         'ShortName' => 'TSRecordEleDestroy'
+                                       },
+                            '32499' => {
+                                         'Header' => 'mgmtapi.h',
+                                         'Return' => '32494',
+                                         'ShortName' => 'TSRecordEleCreate'
+                                       },
+                            '32595' => {
+                                         'Header' => 'mgmtapi.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'val',
+                                                               'type' => '32613'
+                                                             }
+                                                    },
+                                         'Return' => '1',
+                                         'ShortName' => 'TSConfigRecordDescriptionDestroy'
+                                       },
+                            '32618' => {
+                                         'Header' => 'mgmtapi.h',
+                                         'Return' => '32613',
+                                         'ShortName' => 'TSConfigRecordDescriptionCreate'
+                                       },
+                            '82874' => {
+                                         'Header' => 'mgmtapi.h',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'event',
+                                                               'type' => '82893'
+                                                             }
+                                                    },
+                                         'Return' => '1',
+                                         'ShortName' => 'TSEventDestroy'
+                                       },
+                            '82940' => {
+                                         'Header' => 'mgmtapi.h',
+                                         'Return' => '82893',
+                                         'ShortName' => 'TSEventCreate'
+                                       }
+                          },
+          'SymbolVersion' => {},
+          'Symbols' => {
+                         'libtsmgmt.so.9.0.0' => {
+                                                   'TSActionDo' => 1,
+                                                   'TSActiveEventGetMlt' => 1,
+                                                   'TSBounce' => 1,
+                                                   'TSConfigRecordDescribe' => 1,
+                                                   'TSConfigRecordDescribeMatchMlt' => 1,
+                                                   'TSConfigRecordDescriptionCreate' => 1,
+                                                   'TSConfigRecordDescriptionDestroy' => 1,
+                                                   'TSConfigRecordDescriptionFree' => 1,
+                                                   'TSConnect' => 1,
+                                                   'TSDeleteFromCacheUrl' => 1,
+                                                   'TSDeleteFromCacheUrlRegex' => 1,
+                                                   'TSDisconnect' => 1,
+                                                   'TSDisconnectCbRegister' => 1,
+                                                   'TSDisconnectRetrySet' => 1,
+                                                   'TSDrain' => 1,
+                                                   'TSEventCreate' => 1,
+                                                   'TSEventDestroy' => 1,
+                                                   'TSEventIsActive' => 1,
+                                                   'TSEventResolve' => 1,
+                                                   'TSEventSignalCbRegister' => 1,
+                                                   'TSEventSignalCbUnregister' => 1,
+                                                   'TSGetErrorMessage' => 1,
+                                                   'TSHostStatusSetDown' => 1,
+                                                   'TSHostStatusSetUp' => 1,
+                                                   'TSInit' => 1,
+                                                   'TSIntListCreate' => 1,
+                                                   'TSIntListDequeue' => 1,
+                                                   'TSIntListDestroy' => 1,
+                                                   'TSIntListEnqueue' => 1,
+                                                   'TSIntListIsEmpty' => 1,
+                                                   'TSIntListIsValid' => 1,
+                                                   'TSIntListLen' => 1,
+                                                   'TSInvalidateFromCacheUrlRegex' => 1,
+                                                   'TSLifecycleMessage' => 1,
+                                                   'TSListCreate' => 1,
+                                                   'TSListDequeue' => 1,
+                                                   'TSListDestroy' => 1,
+                                                   'TSListEnqueue' => 1,
+                                                   'TSListIsEmpty' => 1,
+                                                   'TSListIsValid' => 1,
+                                                   'TSListLen' => 1,
+                                                   'TSLookupFromCacheUrl' => 1,
+                                                   'TSLookupFromCacheUrlRegex' => 1,
+                                                   'TSPluginInit' => 1,
+                                                   'TSProxyBacktraceGet' => 1,
+                                                   'TSProxyStateGet' => 1,
+                                                   'TSProxyStateSet' => 1,
+                                                   'TSReadFromUrl' => 1,
+                                                   'TSReadFromUrlEx' => 1,
+                                                   'TSReconfigure' => 1,
+                                                   'TSRecordEleCreate' => 1,
+                                                   'TSRecordEleDestroy' => 1,
+                                                   'TSRecordGet' => 1,
+                                                   'TSRecordGetCounter' => 1,
+                                                   'TSRecordGetFloat' => 1,
+                                                   'TSRecordGetInt' => 1,
+                                                   'TSRecordGetMatchMlt' => 1,
+                                                   'TSRecordGetMlt' => 1,
+                                                   'TSRecordGetString' => 1,
+                                                   'TSRecordSet' => 1,
+                                                   'TSRecordSetCounter' => 1,
+                                                   'TSRecordSetFloat' => 1,
+                                                   'TSRecordSetInt' => 1,
+                                                   'TSRecordSetMlt' => 1,
+                                                   'TSRecordSetString' => 1,
+                                                   'TSRestart' => 1,
+                                                   'TSStatsReset' => 1,
+                                                   'TSStop' => 1,
+                                                   'TSStorageDeviceCmdOffline' => 1,
+                                                   'TSStringListCreate' => 1,
+                                                   'TSStringListDequeue' => 1,
+                                                   'TSStringListDestroy' => 1,
+                                                   'TSStringListEnqueue' => 1,
+                                                   'TSStringListIsEmpty' => 1,
+                                                   'TSStringListIsValid' => 1,
+                                                   'TSStringListLen' => 1,
+                                                   'TSTerminate' => 1,
+                                                   '_TSfree' => 1,
+                                                   '_TSmalloc' => 1,
+                                                   '_TSrealloc' => 1,
+                                                   '_TSstrdup' => 1,
+                                                   '_Z10StatsResetPKc' => 1,
+                                                   '_Z10disconnectv' => 1,
+                                                   '_Z10mgmt_fataliPKcz' => 1,
+                                                   '_Z10mgmt_fopenPKcS0_' => 1,
+                                                   '_Z10ts_connectv' => 1,
+                                                   '_Z11EventSignalPKcP13__va_list_tag' => 1,
+                                                   '_Z11Reconfigurev' => 1,
+                                                   '_Z11mgmt_acceptiP8sockaddrPj' => 1,
+                                                   '_Z11mgmt_selectiP6fd_setS0_S0_P7timeval' => 1,
+                                                   '_Z11mgmt_sendtoiPviiP8sockaddri' => 1,
+                                                   '_Z11mgmt_socketiii' => 1,
+                                                   '_Z12EventResolvePKc' => 1,
+                                                   '_Z12get_event_idPKc' => 1,
+                                                   '_Z12mgmt_cleanupv' => 1,
+                                                   '_Z13EventIsActivePKcPb' => 1,
+                                                   '_Z13MgmtRecordGetPKcP11TSRecordEle' => 1,
+                                                   '_Z13MgmtRecordSetPKcS0_P13TSActionNeedT' => 1,
+                                                   '_Z13ProxyStateGetv' => 1,
+                                                   '_Z13ProxyStateSet13TSProxyStateT13TSCacheClearT' => 1,
+                                                   '_Z13TSEventSignalPcz' => 1,
+                                                   '_Z13connectDirectPKcim' => 1,
+                                                   '_Z13mgmt_readlineiPci' => 1,
+                                                   '_Z14get_event_namei' => 1,
+                                                   '_Z14mgmt_open_modePKcij' => 1,
+                                                   '_Z14mgmt_read_pipeiPci' => 1,
+                                                   '_Z14mgmt_sleep_seci' => 1,
+                                                   '_Z14mgmt_writelineiPKci' => 1,
+                                                   '_Z14reconnect_loopi' => 1,
+                                                   '_Z15HostStatusSetUpPKciS0_' => 1,
+                                                   '_Z15ServerBacktracejPPc' => 1,
+                                                   '_Z15mgmt_sleep_mseci' => 1,
+                                                   '_Z15mgmt_use_syslogv' => 1,
+                                                   '_Z15mgmt_write_pipeiPci' => 1,
+                                                   '_Z15sendHTTPRequestiPcm' => 1,
+                                                   '_Z15send_mgmt_errori6OpType11TSMgmtError' => 1,
+                                                   '_Z16LifecycleMessagePKcPKvm' => 1,
+                                                   '_Z16MgmtRecordSetIntPKclP13TSActionNeedT' => 1,
+                                                   '_Z16mgmt_get_peereidiPjS_' => 1,
+                                                   '_Z16mgmt_has_peereidv' => 1,
+                                                   '_Z16mgmt_sortipaddrsiPP7in_addr' => 1,
+                                                   '_Z16readHTTPResponseiPcim' => 1,
+                                                   '_Z16set_socket_pathsPKc' => 1,
+                                                   '_Z17ActiveEventGetMltP5llq_s' => 1,
+                                                   '_Z17HostStatusSetDownPKciS0_' => 1,
+                                                   '_Z17mgmt_message_readiPK16MgmtMarshallTypejz' => 1,
+                                                   '_Z17mgmt_read_timeoutiii' => 1,
+                                                   '_Z17parseHTTPResponsePcPS_PiS0_S1_' => 1,
+                                                   '_Z17recv_mgmt_messageiR16MgmtMarshallData' => 1,
+                                                   '_Z17recv_mgmt_requestPvm6OpTypez' => 1,
+                                                   '_Z17send_mgmt_requestRK19mgmt_message_sender6OpTypez' => 1,
+                                                   '_Z17send_mgmt_requesti6OpTypez' => 1,
+                                                   '_Z18MgmtRecordSetFloatPKcfP13TSActionNeedT' => 1,
+                                                   '_Z18mgmt_message_parsePKvmPK16MgmtMarshallTypejz' => 1,
+                                                   '_Z18mgmt_message_writeiPK16MgmtMarshallTypejz' => 1,
+                                                   '_Z18mgmt_write_timeoutiii' => 1,
+                                                   '_Z18recv_mgmt_responsePvm6OpTypez' => 1,
+                                                   '_Z18send_mgmt_responsei6OpTypez' => 1,
+                                                   '_Z18socket_test_threadPv' => 1,
+                                                   '_Z19MgmtRecordSetStringPKcS0_P13TSActionNeedT' => 1,
+                                                   '_Z19mgmt_getAddrForIntrPcP8sockaddrPi' => 1,
+                                                   '_Z19mgmt_message_lengthPK16MgmtMarshallTypejz' => 1,
+                                                   '_Z19mgmt_message_read_viPK16MgmtMarshallTypejP13__va_list_tag' => 1,
+                                                   '_Z20MgmtRecordSetCounterPKclP13TSActionNeedT' => 1,
+                                                   '_Z20mgmt_message_parse_vPKvmPK16MgmtMarshallTypejP13__va_list_tag' => 1,
+                                                   '_Z20mgmt_message_write_viPK16MgmtMarshallTypejP13__va_list_tag' => 1,
+                                                   '_Z20mgmt_transient_errorv' => 1,
+                                                   '_Z21EventSignalCbRegisterPKcPFvPcS1_iPvES2_' => 1,
+                                                   '_Z21MgmtRecordGetMatchingPKcPv' => 1,
+                                                   '_Z21mgmt_message_length_vPK16MgmtMarshallTypejP13__va_list_tag' => 1,
+                                                   '_Z21mgmt_message_marshallPvmPK16MgmtMarshallTypejz' => 1,
+                                                   '_Z22event_poll_thread_mainPv' => 1,
+                                                   '_Z22mgmt_open_mode_elevatePKcijb' => 1,
+                                                   '_Z22parse_generic_response6OpTypei' => 1,
+                                                   '_Z23EventSignalCbUnregisterPKcPFvPcS1_iPvE' => 1,
+                                                   '_Z23StorageDeviceCmdOfflinePKc' => 1,
+                                                   '_Z23mgmt_message_marshall_vPvmPK16MgmtMarshallTypejP13__va_list_tag' => 1,
+                                                   '_Z24MgmtConfigRecordDescribePKcjP25TSConfigRecordDescription' => 1,
+                                                   '_Z27extract_mgmt_request_optypePvm' => 1,
+                                                   '_Z27send_register_all_callbacksiP13CallbackTable' => 1,
+                                                   '_Z29send_unregister_all_callbacksiP13CallbackTable' => 1,
+                                                   '_Z32MgmtConfigRecordDescribeMatchingPKcjPv' => 1,
+                                                   '_Z4InitPKc13TSInitOptionT' => 1,
+                                                   '_Z4Stopj' => 1,
+                                                   '_Z5Drainj' => 1,
+                                                   '_Z6Bouncej' => 1,
+                                                   '_Z7Restartj' => 1,
+                                                   '_Z8mgmt_logPKcz' => 1,
+                                                   '_Z9Terminatev' => 1,
+                                                   '_Z9mgmt_elogiPKcz' => 1,
+                                                   '_Z9mgmt_openPKci' => 1,
+                                                   '_Z9reconnectv' => 1,
+                                                   '_ZN14mgmtapi_senderD0Ev' => 1,
+                                                   '_ZN14mgmtapi_senderD1Ev' => 1,
+                                                   '_ZN14mgmtapi_senderD2Ev' => 1,
+                                                   '_ZNK14mgmtapi_sender12is_connectedEv' => 1,
+                                                   '_ZNK14mgmtapi_sender4sendEPvm' => 1,
+                                                   '_ZNK5Diags5errorE10DiagsLevelPK14SourceLocationPKcz' => 1,
+                                                   '_ZTI14mgmtapi_sender' => -24,
+                                                   '_ZTI19mgmt_message_sender' => -16,
+                                                   '_ZTS14mgmtapi_sender' => -17,
+                                                   '_ZTS19mgmt_message_sender' => -22,
+                                                   '_ZTV14mgmtapi_sender' => -48,
+                                                   '_ZTV19mgmt_message_sender' => -48,
+                                                   'cb_table_register' => 1,
+                                                   'cb_table_unregister' => 1,
+                                                   'create_callback_table' => 1,
+                                                   'create_event_callback' => 1,
+                                                   'delete_callback_table' => 1,
+                                                   'delete_event_callback' => 1,
+                                                   'event_socket_fd' => -4,
+                                                   'event_socket_path' => -8,
+                                                   'get_events_with_callbacks' => 1,
+                                                   'main_socket_fd' => -4,
+                                                   'main_socket_path' => -8,
+                                                   'remote_event_callbacks' => -8,
+                                                   'ts_event_thread' => -8,
+                                                   'ts_init_options' => -4,
+                                                   'ts_test_thread' => -8
+                                                 }
+                       },
+          'Target' => 'unix',
+          'TypeInfo' => {
+                          '1' => {
+                                   'Name' => 'void',
+                                   'Type' => 'Intrinsic'
+                                 },
+                          '1160' => {
+                                      'BaseType' => '518',
+                                      'Name' => 'char const*',
+                                      'Size' => '8',
+                                      'Type' => 'Pointer'
+                                    },
+                          '144274' => {
+                                        'Name' => 'void(*)(void*)',
+                                        'Param' => {
+                                                     '0' => {
+                                                              'type' => '486'
+                                                            }
+                                                   },
+                                        'Return' => '1',
+                                        'Size' => '8',
+                                        'Type' => 'FuncPtr'
+                                      },
+                          '148698' => {
+                                        'BaseType' => '501',
+                                        'Header' => undef,
+                                        'Line' => '91',
+                                        'Name' => 'TSIpAddr',
+                                        'PrivateABI' => 1,
+                                        'Size' => '8',
+                                        'Type' => 'Typedef'
+                                      },
+                          '148734' => {
+                                        'BaseType' => '29795',
+                                        'Header' => undef,
+                                        'Line' => '95',
+                                        'Name' => 'TSStringList',
+                                        'PrivateABI' => 1,
+                                        'Size' => '8',
+                                        'Type' => 'Typedef'
+                                      },
+                          '148746' => {
+                                        'BaseType' => '29795',
+                                        'Header' => undef,
+                                        'Line' => '96',
+                                        'Name' => 'TSIntList',
+                                        'PrivateABI' => 1,
+                                        'Size' => '8',
+                                        'Type' => 'Typedef'
+                                      },
+                          '149538' => {
+                                        'BaseType' => '144274',
+                                        'Header' => undef,
+                                        'Line' => '226',
+                                        'Name' => 'TSDisconnectFunc',
+                                        'PrivateABI' => 1,
+                                        'Size' => '8',
+                                        'Type' => 'Typedef'
+                                      },
+                          '156373' => {
+                                        'BaseType' => '29783',
+                                        'Name' => 'TSString*',
+                                        'Size' => '8',
+                                        'Type' => 'Pointer'
+                                      },
+                          '1596' => {
+                                      'BaseType' => '501',
+                                      'Name' => 'char**',
+                                      'Size' => '8',
+                                      'Type' => 'Pointer'
+                                    },
+                          '162278' => {
+                                        'BaseType' => '149538',
+                                        'Name' => 'TSDisconnectFunc*',
+                                        'Size' => '8',
+                                        'Type' => 'Pointer'
+                                      },
+                          '164462' => {
+                                        'BaseType' => '29771',
+                                        'Name' => 'TSFloat*',
+                                        'Size' => '8',
+                                        'Type' => 'Pointer'
+                                      },
+                          '164659' => {
+                                        'BaseType' => '29759',
+                                        'Name' => 'TSCounter*',
+                                        'Size' => '8',
+                                        'Type' => 'Pointer'
+                                      },
+                          '164856' => {
+                                        'BaseType' => '29747',
+                                        'Name' => 'TSInt*',
+                                        'Size' => '8',
+                                        'Type' => 'Pointer'
+                                      },
+                          '196' => {
+                                     'Name' => 'unsigned int',
+                                     'Size' => '4',
+                                     'Type' => 'Intrinsic'
+                                   },
+                          '22648' => {
+                                       'BaseType' => '1160',
+                                       'Name' => 'char const**',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '2375' => {
+                                      'Name' => 'float',
+                                      'Size' => '4',
+                                      'Type' => 'Intrinsic'
+                                    },
+                          '24220' => {
+                                       'Name' => 'bool',
+                                       'Size' => '1',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '2583' => {
+                                      'BaseType' => '2588',
+                                      'Name' => 'void const*',
+                                      'Size' => '8',
+                                      'Type' => 'Pointer'
+                                    },
+                          '2588' => {
+                                      'BaseType' => '1',
+                                      'Name' => 'void const',
+                                      'Type' => 'Const'
+                                    },
+                          '26945' => {
+                                       'BaseType' => '24220',
+                                       'Name' => 'bool*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '294' => {
+                                     'BaseType' => '76',
+                                     'Header' => undef,
+                                     'Line' => '44',
+                                     'Name' => '__int64_t',
+                                     'PrivateABI' => 1,
+                                     'Size' => '8',
+                                     'Type' => 'Typedef'
+                                   },
+                          '29630' => {
+                                       'Header' => undef,
+                                       'Line' => '59',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'TS_ERR_OKAY',
+                                                            'value' => '0'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'TS_ERR_READ_FILE',
+                                                            'value' => '1'
+                                                          },
+                                                   '10' => {
+                                                             'name' => 'TS_ERR_SYS_CALL',
+                                                             'value' => '10'
+                                                           },
+                                                   '11' => {
+                                                             'name' => 'TS_ERR_PARAMS',
+                                                             'value' => '11'
+                                                           },
+                                                   '12' => {
+                                                             'name' => 'TS_ERR_NOT_SUPPORTED',
+                                                             'value' => '12'
+                                                           },
+                                                   '13' => {
+                                                             'name' => 'TS_ERR_PERMISSION_DENIED',
+                                                             'value' => '13'
+                                                           },
+                                                   '14' => {
+                                                             'name' => 'TS_ERR_FAIL',
+                                                             'value' => '14'
+                                                           },
+                                                   '2' => {
+                                                            'name' => 'TS_ERR_WRITE_FILE',
+                                                            'value' => '2'
+                                                          },
+                                                   '3' => {
+                                                            'name' => 'TS_ERR_PARSE_CONFIG_RULE',
+                                                            'value' => '3'
+                                                          },
+                                                   '4' => {
+                                                            'name' => 'TS_ERR_INVALID_CONFIG_RULE',
+                                                            'value' => '4'
+                                                          },
+                                                   '5' => {
+                                                            'name' => 'TS_ERR_NET_ESTABLISH',
+                                                            'value' => '5'
+                                                          },
+                                                   '6' => {
+                                                            'name' => 'TS_ERR_NET_READ',
+                                                            'value' => '6'
+                                                          },
+                                                   '7' => {
+                                                            'name' => 'TS_ERR_NET_WRITE',
+                                                            'value' => '7'
+                                                          },
+                                                   '8' => {
+                                                            'name' => 'TS_ERR_NET_EOF',
+                                                            'value' => '8'
+                                                          },
+                                                   '9' => {
+                                                            'name' => 'TS_ERR_NET_TIMEOUT',
+                                                            'value' => '9'
+                                                          }
+                                                 },
+                                       'Name' => 'enum TSMgmtError',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Enum'
+                                     },
+                          '29735' => {
+                                       'BaseType' => '29630',
+                                       'Header' => undef,
+                                       'Line' => '80',
+                                       'Name' => 'TSMgmtError',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '29747' => {
+                                       'BaseType' => '571',
+                                       'Header' => undef,
+                                       'Line' => '86',
+                                       'Name' => 'TSInt',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '29759' => {
+                                       'BaseType' => '571',
+                                       'Header' => undef,
+                                       'Line' => '87',
+                                       'Name' => 'TSCounter',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '29771' => {
+                                       'BaseType' => '2375',
+                                       'Header' => undef,
+                                       'Line' => '88',
+                                       'Name' => 'TSFloat',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '29783' => {
+                                       'BaseType' => '501',
+                                       'Header' => undef,
+                                       'Line' => '90',
+                                       'Name' => 'TSString',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '29795' => {
+                                       'BaseType' => '486',
+                                       'Header' => undef,
+                                       'Line' => '93',
+                                       'Name' => 'TSHandle',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '29807' => {
+                                       'BaseType' => '29795',
+                                       'Header' => undef,
+                                       'Line' => '94',
+                                       'Name' => 'TSList',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '29819' => {
+                                       'Header' => undef,
+                                       'Line' => '100',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'TS_ACTION_SHUTDOWN',
+                                                            'value' => '0'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'TS_ACTION_RESTART',
+                                                            'value' => '1'
+                                                          },
+                                                   '2' => {
+                                                            'name' => 'TS_ACTION_DYNAMIC',
+                                                            'value' => '2'
+                                                          },
+                                                   '3' => {
+                                                            'name' => 'TS_ACTION_RECONFIGURE',
+                                                            'value' => '3'
+                                                          },
+                                                   '4' => {
+                                                            'name' => 'TS_ACTION_UNDEFINED',
+                                                            'value' => '4'
+                                                          }
+                                                 },
+                                       'Name' => 'enum TSActionNeedT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Enum'
+                                     },
+                          '29864' => {
+                                       'BaseType' => '29819',
+                                       'Header' => undef,
+                                       'Line' => '106',
+                                       'Name' => 'TSActionNeedT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '29876' => {
+                                       'Header' => undef,
+                                       'Line' => '108',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'TS_PROXY_ON',
+                                                            'value' => '0'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'TS_PROXY_OFF',
+                                                            'value' => '1'
+                                                          },
+                                                   '2' => {
+                                                            'name' => 'TS_PROXY_UNDEFINED',
+                                                            'value' => '2'
+                                                          }
+                                                 },
+                                       'Name' => 'enum TSProxyStateT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Enum'
+                                     },
+                          '29909' => {
+                                       'BaseType' => '29876',
+                                       'Header' => undef,
+                                       'Line' => '112',
+                                       'Name' => 'TSProxyStateT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '29966' => {
+                                       'Header' => undef,
+                                       'Line' => '129',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'TS_REC_INT',
+                                                            'value' => '0'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'TS_REC_COUNTER',
+                                                            'value' => '1'
+                                                          },
+                                                   '2' => {
+                                                            'name' => 'TS_REC_FLOAT',
+                                                            'value' => '2'
+                                                          },
+                                                   '3' => {
+                                                            'name' => 'TS_REC_STRING',
+                                                            'value' => '3'
+                                                          },
+                                                   '4' => {
+                                                            'name' => 'TS_REC_UNDEFINED',
+                                                            'value' => '4'
+                                                          }
+                                                 },
+                                       'Name' => 'enum TSRecordT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Enum'
+                                     },
+                          '30011' => {
+                                       'BaseType' => '29966',
+                                       'Header' => undef,
+                                       'Line' => '135',
+                                       'Name' => 'TSRecordT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '30023' => {
+                                       'Header' => undef,
+                                       'Line' => '138',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'TS_MGMT_OPT_DEFAULTS',
+                                                            'value' => '0'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'TS_MGMT_OPT_NO_EVENTS',
+                                                            'value' => '1'
+                                                          },
+                                                   '2' => {
+                                                            'name' => 'TS_MGMT_OPT_NO_SOCK_TESTS',
+                                                            'value' => '2'
+                                                          }
+                                                 },
+                                       'Name' => 'enum TSInitOptionT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Enum'
+                                     },
+                          '30056' => {
+                                       'BaseType' => '30023',
+                                       'Header' => undef,
+                                       'Line' => '142',
+                                       'Name' => 'TSInitOptionT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '30068' => {
+                                       'Header' => undef,
+                                       'Line' => '165',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'int_val',
+                                                            'offset' => '0',
+                                                            'type' => '29747'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'counter_val',
+                                                            'offset' => '0',
+                                                            'type' => '29759'
+                                                          },
+                                                   '2' => {
+                                                            'name' => 'float_val',
+                                                            'offset' => '0',
+                                                            'type' => '29771'
+                                                          },
+                                                   '3' => {
+                                                            'name' => 'string_val',
+                                                            'offset' => '0',
+                                                            'type' => '29783'
+                                                          }
+                                                 },
+                                       'Name' => 'union TSRecordValueT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Union'
+                                     },
+                          '30130' => {
+                                       'BaseType' => '30068',
+                                       'Header' => undef,
+                                       'Line' => '170',
+                                       'Name' => 'TSRecordValueT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '30142' => {
+                                       'Header' => undef,
+                                       'Line' => '172',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'rec_name',
+                                                            'offset' => '0',
+                                                            'type' => '501'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'rec_class',
+                                                            'offset' => '8',
+                                                            'type' => '29747'
+                                                          },
+                                                   '2' => {
+                                                            'name' => 'rec_type',
+                                                            'offset' => '22',
+                                                            'type' => '30011'
+                                                          },
+                                                   '3' => {
+                                                            'name' => 'valueT',
+                                                            'offset' => '36',
+                                                            'type' => '30130'
+                                                          }
+                                                 },
+                                       'Name' => 'struct TSRecordEle',
+                                       'PrivateABI' => 1,
+                                       'Size' => '32',
+                                       'Type' => 'Struct'
+                                     },
+                          '30208' => {
+                                       'BaseType' => '30142',
+                                       'Header' => undef,
+                                       'Line' => '177',
+                                       'Name' => 'TSRecordEle',
+                                       'PrivateABI' => 1,
+                                       'Size' => '32',
+                                       'Type' => 'Typedef'
+                                     },
+                          '30220' => {
+                                       'Header' => undef,
+                                       'Line' => '179',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'rec_name',
+                                                            'offset' => '0',
+                                                            'type' => '501'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'rec_value',
+                                                            'offset' => '8',
+                                                            'type' => '30130'
+                                                          },
+                                                   '10' => {
+                                                             'name' => 'rec_updatetype',
+                                                             'offset' => '128',
+                                                             'type' => '29747'
+                                                           },
+                                                   '11' => {
+                                                             'name' => 'rec_checktype',
+                                                             'offset' => '136',
+                                                             'type' => '29747'
+                                                           },
+                                                   '12' => {
+                                                             'name' => 'rec_source',
+                                                             'offset' => '150',
+                                                             'type' => '29747'
+                                                           },
+                                                   '13' => {
+                                                             'name' => 'rec_checkexpr',
+                                                             'offset' => '260',
+                                                             'type' => '501'
+                                                           },
+                                                   '2' => {
+                                                            'name' => 'rec_default',
+                                                            'offset' => '22',
+                                                            'type' => '30130'
+                                                          },
+                                                   '3' => {
+                                                            'name' => 'rec_type',
+                                                            'offset' => '36',
+                                                            'type' => '30011'
+                                                          },
+                                                   '4' => {
+                                                            'name' => 'rec_class',
+                                                            'offset' => '50',
+                                                            'type' => '29747'
+                                                          },
+                                                   '5' => {
+                                                            'name' => 'rec_version',
+                                                            'offset' => '64',
+                                                            'type' => '29747'
+                                                          },
+                                                   '6' => {
+                                                            'name' => 'rec_rsb',
+                                                            'offset' => '72',
+                                                            'type' => '29747'
+                                                          },
+                                                   '7' => {
+                                                            'name' => 'rec_order',
+                                                            'offset' => '86',
+                                                            'type' => '29747'
+                                                          },
+                                                   '8' => {
+                                                            'name' => 'rec_access',
+                                                            'offset' => '100',
+                                                            'type' => '29747'
+                                                          },
+                                                   '9' => {
+                                                            'name' => 'rec_update',
+                                                            'offset' => '114',
+                                                            'type' => '29747'
+                                                          }
+                                                 },
+                                       'Name' => 'struct TSConfigRecordDescription',
+                                       'PrivateABI' => 1,
+                                       'Size' => '112',
+                                       'Type' => 'Struct'
+                                     },
+                          '30416' => {
+                                       'BaseType' => '30220',
+                                       'Header' => undef,
+                                       'Line' => '197',
+                                       'Name' => 'TSConfigRecordDescription',
+                                       'PrivateABI' => 1,
+                                       'Size' => '112',
+                                       'Type' => 'Typedef'
+                                     },
+                          '30428' => {
+                                       'BaseType' => '30440',
+                                       'Header' => undef,
+                                       'Line' => '225',
+                                       'Name' => 'TSEventSignalFunc',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '30440' => {
+                                       'Name' => 'void(*)(char*, char*, int, void*)',
+                                       'Param' => {
+                                                    '0' => {
+                                                             'type' => '501'
+                                                           },
+                                                    '1' => {
+                                                             'type' => '501'
+                                                           },
+                                                    '2' => {
+                                                             'type' => '63'
+                                                           },
+                                                    '3' => {
+                                                             'type' => '486'
+                                                           }
+                                                  },
+                                       'Return' => '1',
+                                       'Size' => '8',
+                                       'Type' => 'FuncPtr'
+                                     },
+                          '32494' => {
+                                       'BaseType' => '30208',
+                                       'Name' => 'TSRecordEle*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '32613' => {
+                                       'BaseType' => '30416',
+                                       'Name' => 'TSConfigRecordDescription*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '37459' => {
+                                       'BaseType' => '29864',
+                                       'Name' => 'TSActionNeedT*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '486' => {
+                                     'BaseType' => '1',
+                                     'Name' => 'void*',
+                                     'Size' => '8',
+                                     'Type' => 'Pointer'
+                                   },
+                          '501' => {
+                                     'BaseType' => '511',
+                                     'Name' => 'char*',
+                                     'Size' => '8',
+                                     'Type' => 'Pointer'
+                                   },
+                          '511' => {
+                                     'Name' => 'char',
+                                     'Size' => '1',
+                                     'Type' => 'Intrinsic'
+                                   },
+                          '518' => {
+                                     'BaseType' => '511',
+                                     'Name' => 'char const',
+                                     'Size' => '1',
+                                     'Type' => 'Const'
+                                   },
+                          '571' => {
+                                     'BaseType' => '294',
+                                     'Header' => undef,
+                                     'Line' => '27',
+                                     'Name' => 'int64_t',
+                                     'PrivateABI' => 1,
+                                     'Size' => '8',
+                                     'Type' => 'Typedef'
+                                   },
+                          '63' => {
+                                    'Name' => 'int',
+                                    'Size' => '4',
+                                    'Type' => 'Intrinsic'
+                                  },
+                          '76' => {
+                                    'Name' => 'long',
+                                    'Size' => '8',
+                                    'Type' => 'Intrinsic'
+                                  },
+                          '78131' => {
+                                       'Header' => undef,
+                                       'Line' => '122',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'TS_EVENT_PRIORITY_WARNING',
+                                                            'value' => '0'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'TS_EVENT_PRIORITY_ERROR',
+                                                            'value' => '1'
+                                                          },
+                                                   '2' => {
+                                                            'name' => 'TS_EVENT_PRIORITY_FATAL',
+                                                            'value' => '2'
+                                                          },
+                                                   '3' => {
+                                                            'name' => 'TS_EVENT_PRIORITY_UNDEFINED',
+                                                            'value' => '3'
+                                                          }
+                                                 },
+                                       'Name' => 'enum TSEventPriorityT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Enum'
+                                     },
+                          '78170' => {
+                                       'BaseType' => '78131',
+                                       'Header' => undef,
+                                       'Line' => '127',
+                                       'Name' => 'TSEventPriorityT',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '78227' => {
+                                       'Header' => undef,
+                                       'Line' => '215',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'id',
+                                                            'offset' => '0',
+                                                            'type' => '63'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'name',
+                                                            'offset' => '8',
+                                                            'type' => '501'
+                                                          },
+                                                   '2' => {
+                                                            'name' => 'description',
+                                                            'offset' => '22',
+                                                            'type' => '501'
+                                                          },
+                                                   '3' => {
+                                                            'name' => 'priority',
+                                                            'offset' => '36',
+                                                            'type' => '78170'
+                                                          }
+                                                 },
+                                       'Name' => 'struct TSMgmtEvent',
+                                       'PrivateABI' => 1,
+                                       'Size' => '32',
+                                       'Type' => 'Struct'
+                                     },
+                          '78292' => {
+                                       'BaseType' => '78227',
+                                       'Header' => undef,
+                                       'Line' => '220',
+                                       'Name' => 'TSMgmtEvent',
+                                       'PrivateABI' => 1,
+                                       'Size' => '32',
+                                       'Type' => 'Typedef'
+                                     },
+                          '82893' => {
+                                       'BaseType' => '78292',
+                                       'Name' => 'TSMgmtEvent*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '83' => {
+                                    'BaseType' => '95',
+                                    'Header' => undef,
+                                    'Line' => '209',
+                                    'Name' => 'size_t',
+                                    'PrivateABI' => 1,
+                                    'Size' => '8',
+                                    'Type' => 'Typedef'
+                                  },
+                          '87758' => {
+                                       'BaseType' => '63',
+                                       'Name' => 'int*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '95' => {
+                                    'Name' => 'unsigned long',
+                                    'Size' => '8',
+                                    'Type' => 'Intrinsic'
+                                  }
+                        },
+          'UndefinedSymbols' => {
+                                  'libtsmgmt.so.9.0.0' => {
+                                                            '_ITM_deregisterTMCloneTable' => 0,
+                                                            '_ITM_registerTMCloneTable' => 0,
+                                                            '_Unwind_Resume@GCC_3.0' => 0,
+                                                            '_Z10ink_atoi64PKcPS0_' => 0,
+                                                            '_Z11ink_strlcpyPcPKcm' => 0,
+                                                            '_Z11read_socketiPci' => 0,
+                                                            '_Z12close_socketi' => 0,
+                                                            '_Z12create_queuev' => 0,
+                                                            '_Z12delete_queueP5llq_s' => 0,
+                                                            '_Z12write_socketiPKci' => 0,
+                                                            '_Z14elevating_openPKcjj' => 0,
+                                                            '_Z14ink_mutex_initP15pthread_mutex_t' => 0,
+                                                            '_Z14queue_is_emptyP5llq_s' => 0,
+                                                            '_Z17ink_mutex_destroyP15pthread_mutex_t' => 0,
+                                                            '_Z7dequeueP5llq_s' => 0,
+                                                            '_Z7enqueueP5llq_sPv' => 0,
+                                                            '_Z9ink_abortPKcz' => 0,
+                                                            '_Z9ink_fatalPKcz' => 0,
+                                                            '_Z9queue_lenP5llq_s' => 0,
+                                                            '_ZN6Layout11relative_toB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEES3_' => 0,
+                                                            '_ZN6Layout3getEv' => 0,
+                                                            '_ZN6Layout6createESt17basic_string_viewIcSt11char_traitsIcEE' => 0,
+                                                            '_ZN9Tokenizer10InitializeEPcj' => 0,
+                                                            '_ZN9Tokenizer8iterNextEP14tok_iter_state' => 0,
+                                                            '_ZN9Tokenizer9iterFirstEP14tok_iter_state' => 0,
+                                                            '_ZN9TokenizerC1EPKc' => 0,
+                                                            '_ZN9TokenizerD1Ev' => 0,
+                                                            '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@GLIBCXX_3.4.21' => 0,
+                                                            '_ZNSt8ios_base4InitC1Ev@GLIBCXX_3.4' => 0,
+                                                            '_ZNSt8ios_base4InitD1Ev@GLIBCXX_3.4' => 0,
+                                                            '_ZTVN10__cxxabiv117__class_type_infoE@CXXABI_1.3' => 0,
+                                                            '_ZTVN10__cxxabiv120__si_class_type_infoE@CXXABI_1.3' => 0,
+                                                            '_ZdlPvm@CXXABI_1.3.9' => 0,
+                                                            '__cxa_atexit@GLIBC_2.2.5' => 0,
+                                                            '__cxa_finalize@GLIBC_2.2.5' => 0,
+                                                            '__cxa_pure_virtual@CXXABI_1.3' => 0,
+                                                            '__errno_location@GLIBC_2.2.5' => 0,
+                                                            '__gmon_start__' => 0,
+                                                            '__gxx_personality_v0@CXXABI_1.3' => 0,
+                                                            '_ink_assert' => 0,
+                                                            '_xstrdup' => 0,
+                                                            'accept@GLIBC_2.2.5' => 0,
+                                                            'ats_free' => 0,
+                                                            'ats_malloc' => 0,
+                                                            'ats_realloc' => 0,
+                                                            'bzero@GLIBC_2.2.5' => 0,
+                                                            'close@GLIBC_2.2.5' => 0,
+                                                            'connect@GLIBC_2.2.5' => 0,
+                                                            'diags' => 0,
+                                                            'exit@GLIBC_2.2.5' => 0,
+                                                            'fcntl@GLIBC_2.2.5' => 0,
+                                                            'fopen@GLIBC_2.2.5' => 0,
+                                                            'fprintf@GLIBC_2.2.5' => 0,
+                                                            'fwrite@GLIBC_2.2.5' => 0,
+                                                            'gethostbyname@GLIBC_2.2.5' => 0,
+                                                            'getsockopt@GLIBC_2.2.5' => 0,
+                                                            'ioctl@GLIBC_2.2.5' => 0,
+                                                            'memcpy@GLIBC_2.14' => 0,
+                                                            'memset@GLIBC_2.2.5' => 0,
+                                                            'open@GLIBC_2.2.5' => 0,
+                                                            'poll@GLIBC_2.2.5' => 0,
+                                                            'pthread_attr_destroy@GLIBC_2.2.5' => 0,
+                                                            'pthread_attr_init@GLIBC_2.2.5' => 0,
+                                                            'pthread_attr_setscope@GLIBC_2.2.5' => 0,
+                                                            'pthread_cancel@GLIBC_2.34' => 0,
+                                                            'pthread_create@GLIBC_2.34' => 0,
+                                                            'pthread_exit@GLIBC_2.2.5' => 0,
+                                                            'pthread_join@GLIBC_2.34' => 0,
+                                                            'pthread_mutex_lock@GLIBC_2.2.5' => 0,
+                                                            'pthread_mutex_unlock@GLIBC_2.2.5' => 0,
+                                                            'puts@GLIBC_2.2.5' => 0,
+                                                            'read@GLIBC_2.2.5' => 0,
+                                                            'select@GLIBC_2.2.5' => 0,
+                                                            'sendto@GLIBC_2.2.5' => 0,
+                                                            'signal@GLIBC_2.2.5' => 0,
+                                                            'sleep@GLIBC_2.2.5' => 0,
+                                                            'snprintf@GLIBC_2.2.5' => 0,
+                                                            'socket@GLIBC_2.2.5' => 0,
+                                                            'stderr@GLIBC_2.2.5' => 0,
+                                                            'strchr@GLIBC_2.2.5' => 0,
+                                                            'strcmp@GLIBC_2.2.5' => 0,
+                                                            'strerror@GLIBC_2.2.5' => 0,
+                                                            'strlen@GLIBC_2.2.5' => 0,
+                                                            'strstr@GLIBC_2.2.5' => 0,
+                                                            'syslog@GLIBC_2.2.5' => 0,
+                                                            'time@GLIBC_2.2.5' => 0,
+                                                            'usleep@GLIBC_2.2.5' => 0,
+                                                            'vsprintf@GLIBC_2.2.5' => 0,
+                                                            'write@GLIBC_2.2.5' => 0
+                                                          }
+                                },
+          'WordSize' => '8'
+        };

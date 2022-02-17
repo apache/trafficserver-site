@@ -1,0 +1,353 @@
+$VAR1 = {
+          'ABI_DUMPER_VERSION' => '1.1',
+          'ABI_DUMP_VERSION' => '3.5',
+          'Arch' => 'x86_64',
+          'Compiler' => 'GNU C++17 11.2.1 20220127 (Red Hat 11.2.1-9) -mcx16 -mtune=generic -march=x86-64 -g -Og -std=c++17 -feliminate-unused-debug-symbols -fno-strict-aliasing -fPIC',
+          'Headers' => {
+                         'Headers.h' => 1,
+                         'TextView.h' => 1
+                       },
+          'Language' => 'C++',
+          'LibraryName' => 'libtscpputil.so.9.1.1',
+          'LibraryVersion' => '9.1.1',
+          'NameSpaces' => {
+                            '__gnu_cxx' => 1,
+                            '__pstl::execution::v1' => 1,
+                            'std' => 1,
+                            'std::__cxx11' => 1,
+                            'std::__exception_ptr' => 1,
+                            'ts' => 1
+                          },
+          'Needed' => {
+                        'libc.so.6' => 1,
+                        'libgcc_s.so.1' => 1,
+                        'libm.so.6' => 1,
+                        'libstdc++.so.6' => 1
+                      },
+          'PublicABI' => '1',
+          'Sources' => {},
+          'SymbolInfo' => {
+                            '16400' => {
+                                         'Header' => 'Headers.h',
+                                         'MnglName' => '_ZStlsRSoRKN2ts8TextViewE',
+                                         'NameSpace' => 'std',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'os',
+                                                               'type' => '32675'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'b',
+                                                               'type' => '28222'
+                                                             }
+                                                    },
+                                         'Return' => '32675',
+                                         'ShortName' => 'operator<<'
+                                       },
+                            '27141' => {
+                                         'Data' => 1,
+                                         'Header' => 'TextView.h',
+                                         'MnglName' => '_ZN2ts13svtoi_convertE',
+                                         'NameSpace' => 'ts',
+                                         'Return' => '27349',
+                                         'ShortName' => 'svtoi_convert'
+                                       },
+                            '27264' => {
+                                         'Header' => 'TextView.h',
+                                         'MnglName' => '_ZN2ts5svtoiENS_8TextViewEPS0_i',
+                                         'NameSpace' => 'ts',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'src',
+                                                               'type' => '24715'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'out',
+                                                               'type' => '27298'
+                                                             },
+                                                      '2' => {
+                                                               'name' => 'base',
+                                                               'type' => '18490'
+                                                             }
+                                                    },
+                                         'Return' => '21996',
+                                         'ShortName' => 'svtoi'
+                                       },
+                            '35585' => {
+                                         'Header' => 'TextView.h',
+                                         'MnglName' => '_Z10strcasecmpRKSt17basic_string_viewIcSt11char_traitsIcEES4_',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'lhs',
+                                                               'type' => '22443'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'rhs',
+                                                               'type' => '22443'
+                                                             }
+                                                    },
+                                         'Return' => '18490',
+                                         'ShortName' => 'strcasecmp'
+                                       },
+                            '36026' => {
+                                         'Header' => 'TextView.h',
+                                         'MnglName' => '_Z6memcmpRKSt17basic_string_viewIcSt11char_traitsIcEES4_',
+                                         'Param' => {
+                                                      '0' => {
+                                                               'name' => 'lhs',
+                                                               'type' => '22443'
+                                                             },
+                                                      '1' => {
+                                                               'name' => 'rhs',
+                                                               'type' => '22443'
+                                                             }
+                                                    },
+                                         'Return' => '18490',
+                                         'ShortName' => 'memcmp'
+                                       }
+                          },
+          'SymbolVersion' => {},
+          'Symbols' => {
+                         'libtscpputil.so.9.1.1' => {
+                                                      '_Z10strcasecmpRKSt17basic_string_viewIcSt11char_traitsIcEES4_' => 1,
+                                                      '_Z6memcmpRKSt17basic_string_viewIcSt11char_traitsIcEES4_' => 1,
+                                                      '_ZN2ts10svto_radixILm10EEEmRNS_8TextViewE' => 1,
+                                                      '_ZN2ts10svto_radixILm16EEEmRNS_8TextViewE' => 1,
+                                                      '_ZN2ts10svto_radixILm8EEEmRNS_8TextViewE' => 1,
+                                                      '_ZN2ts13svtoi_convertE' => -256,
+                                                      '_ZN2ts5svtoiENS_8TextViewEPS0_i' => 1,
+                                                      '_ZNK2ts8TextView12stream_writeISoEERT_S3_RKS0_' => 1,
+                                                      '_ZStlsRSoRKN2ts8TextViewE' => 1
+                                                    }
+                       },
+          'Target' => 'unix',
+          'TypeInfo' => {
+                          '15645' => {
+                                       'Copied' => 1,
+                                       'Name' => 'std::basic_ostream<char>',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_CharT',
+                                                              'type' => '18781'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '16388' => {
+                                       'BaseType' => '15645',
+                                       'Header' => undef,
+                                       'Line' => '141',
+                                       'Name' => 'std::ostream',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Type' => 'Typedef'
+                                     },
+                          '18462' => {
+                                       'Name' => 'unsigned long',
+                                       'Size' => '8',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '18476' => {
+                                       'Name' => 'signed char',
+                                       'Size' => '1',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '18490' => {
+                                       'Name' => 'int',
+                                       'Size' => '4',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '18498' => {
+                                       'Name' => 'long',
+                                       'Size' => '8',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '18781' => {
+                                       'Name' => 'char',
+                                       'Size' => '1',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '18788' => {
+                                       'BaseType' => '18781',
+                                       'Name' => 'char const',
+                                       'Size' => '1',
+                                       'Type' => 'Const'
+                                     },
+                          '1895' => {
+                                      'Header' => undef,
+                                      'Line' => '98',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'access' => 'private',
+                                                           'name' => '_M_len',
+                                                           'offset' => '0',
+                                                           'type' => '287'
+                                                         },
+                                                  '1' => {
+                                                           'access' => 'private',
+                                                           'name' => '_M_str',
+                                                           'offset' => '8',
+                                                           'type' => '19237'
+                                                         }
+                                                },
+                                      'Name' => 'std::basic_string_view<char>',
+                                      'NameSpace' => 'std',
+                                      'PrivateABI' => 1,
+                                      'Size' => '16',
+                                      'TParam' => {
+                                                    '0' => {
+                                                             'key' => '_CharT',
+                                                             'type' => '18781'
+                                                           }
+                                                  },
+                                      'Type' => 'Class'
+                                    },
+                          '19237' => {
+                                       'BaseType' => '18788',
+                                       'Name' => 'char const*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '21434' => {
+                                       'BaseType' => '18476',
+                                       'Header' => undef,
+                                       'Line' => '37',
+                                       'Name' => '__int8_t',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'Type' => 'Typedef'
+                                     },
+                          '21631' => {
+                                       'BaseType' => '18498',
+                                       'Header' => undef,
+                                       'Line' => '72',
+                                       'Name' => '__intmax_t',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '21679' => {
+                                       'BaseType' => '21434',
+                                       'Header' => undef,
+                                       'Line' => '24',
+                                       'Name' => 'int8_t',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'Type' => 'Typedef'
+                                     },
+                          '21691' => {
+                                       'BaseType' => '21679',
+                                       'Name' => 'int8_t const',
+                                       'Size' => '1',
+                                       'Type' => 'Const'
+                                     },
+                          '21996' => {
+                                       'BaseType' => '21631',
+                                       'Header' => undef,
+                                       'Line' => '101',
+                                       'Name' => 'intmax_t',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '22443' => {
+                                       'BaseType' => '4270',
+                                       'Name' => 'std::string_view const&',
+                                       'Size' => '8',
+                                       'Type' => 'Ref'
+                                     },
+                          '24715' => {
+                                       'Base' => {
+                                                   '1895' => {
+                                                               'pos' => '0'
+                                                             }
+                                                 },
+                                       'Header' => undef,
+                                       'Line' => '133',
+                                       'Name' => 'ts::TextView',
+                                       'NameSpace' => 'ts',
+                                       'PrivateABI' => 1,
+                                       'Size' => '16',
+                                       'Type' => 'Class'
+                                     },
+                          '27136' => {
+                                       'BaseType' => '24715',
+                                       'Name' => 'ts::TextView const',
+                                       'Size' => '16',
+                                       'Type' => 'Const'
+                                     },
+                          '27298' => {
+                                       'BaseType' => '24715',
+                                       'Name' => 'ts::TextView*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '27333' => {
+                                       'BaseType' => '21691',
+                                       'Name' => 'int8_t const[256]',
+                                       'Size' => '256',
+                                       'Type' => 'Array'
+                                     },
+                          '27349' => {
+                                       'BaseType' => '27333',
+                                       'Name' => 'int8_t const[256] const',
+                                       'Size' => '256',
+                                       'Type' => 'Const'
+                                     },
+                          '28222' => {
+                                       'BaseType' => '27136',
+                                       'Name' => 'ts::TextView const&',
+                                       'Size' => '8',
+                                       'Type' => 'Ref'
+                                     },
+                          '287' => {
+                                     'BaseType' => '18462',
+                                     'Header' => undef,
+                                     'Line' => '2426',
+                                     'Name' => 'std::size_t',
+                                     'NameSpace' => 'std',
+                                     'PrivateABI' => 1,
+                                     'Size' => '8',
+                                     'Type' => 'Typedef'
+                                   },
+                          '32675' => {
+                                       'BaseType' => '16388',
+                                       'Name' => 'std::ostream&',
+                                       'Size' => '8',
+                                       'Type' => 'Ref'
+                                     },
+                          '4257' => {
+                                      'BaseType' => '1895',
+                                      'Header' => undef,
+                                      'Line' => '674',
+                                      'Name' => 'std::string_view',
+                                      'NameSpace' => 'std',
+                                      'PrivateABI' => 1,
+                                      'Size' => '16',
+                                      'Type' => 'Typedef'
+                                    },
+                          '4270' => {
+                                      'BaseType' => '4257',
+                                      'Name' => 'std::string_view const',
+                                      'Size' => '16',
+                                      'Type' => 'Const'
+                                    }
+                        },
+          'UndefinedSymbols' => {
+                                  'libtscpputil.so.9.1.1' => {
+                                                               '_ITM_deregisterTMCloneTable' => 0,
+                                                               '_ITM_registerTMCloneTable' => 0,
+                                                               '_ZNKSt5ctypeIcE13_M_widen_initEv@GLIBCXX_3.4.11' => 0,
+                                                               '_ZNSo5writeEPKcl@GLIBCXX_3.4' => 0,
+                                                               '_ZSt16__throw_bad_castv@GLIBCXX_3.4' => 0,
+                                                               '__cxa_finalize@GLIBC_2.2.5' => 0,
+                                                               '__gmon_start__' => 0,
+                                                               'isspace@GLIBC_2.2.5' => 0,
+                                                               'memcmp@GLIBC_2.2.5' => 0,
+                                                               'strncasecmp@GLIBC_2.2.5' => 0
+                                                             }
+                                },
+          'WordSize' => '8'
+        };

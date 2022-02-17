@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="trafficserver, ABI, changes, compatibility, report" />
+    <meta name="description" content="ABI changes/compatibility report between 8.1.3 and 9.0.0 versions of the trafficserver" />
+    <link rel="stylesheet" type="text/css" href="../../../../css/common.css?v=1.3" />
+    <link rel="stylesheet" type="text/css" href="../../../../css/report.css?v=1.1.1" />
+    
+    <title>
+        trafficserver: Objects ABI report between 8.1.3 and 9.0.0 versions
+    </title>
+    
+    </head>
+
+<body>
+<table cellpadding='0' cellspacing='0'>
+<tr><td align='center'><h1 class='tool'><a title='ABI tracker for trafficserver' href='../../../../timeline/trafficserver/index.html' class='tool'>ABI<br/>Tracker</a></h1></td><td width='30px;'></td><td><h1>(trafficserver)</h1></td></tr>
+</table>
+<hr/>
+<br/>
+<br/>
+<h1>Objects ABI report: <span class='version'>8.1.3</span> vs <span class='version'>9.0.0</span></h1>
+<br/>
+<br/>
+<table class='summary'>
+<tr><th>Object</th>
+<th>Backward<br/>Compatibility</th>
+<th>Added<br/>Symbols</th>
+<th>Removed<br/>Symbols</th>
+</tr>
+<tr>
+<td class='object'>libtsconfig.so.8.1.3</td>
+<td colspan='3' class='removed'>Removed from package</td>
+</tr>
+<tr>
+<td class='object'>libtscore.so.8.1.3<br/><br/><span class='incompatible'>(changed SONAME from<br/>"libtscore.so.8"<br/>to<br/>"libtscore.so.9")</span></td>
+<td class='ok'><a href='../../../../compat_report/trafficserver/8.1.3/9.0.0/eac52/abi_compat_report.html'>100%</a></td>
+<td class='added'><a class='num' href='../../../../compat_report/trafficserver/8.1.3/9.0.0/eac52/abi_compat_report.html#Added'>2 new</a></td>
+<td class='ok'>0</td>
+</tr>
+<tr>
+<td class='object'>libtscppapi.so.8.1.3<br/><br/><span class='incompatible'>(changed SONAME from<br/>"libtscppapi.so.8"<br/>to<br/>"libtscppapi.so.9")</span></td>
+<td class='ok'><a href='../../../../compat_report/trafficserver/8.1.3/9.0.0/eb6f6/abi_compat_report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+</tr>
+<tr>
+<td class='object'>libtscpputil.so.8.1.3<br/><br/><span class='incompatible'>(changed SONAME from<br/>"libtscpputil.so.8"<br/>to<br/>"libtscpputil.so.9")</span></td>
+<td class='incompatible'><a href='../../../../compat_report/trafficserver/8.1.3/9.0.0/b705d/abi_compat_report.html'>33.3%</a></td>
+<td class='added'><a class='num' href='../../../../compat_report/trafficserver/8.1.3/9.0.0/b705d/abi_compat_report.html#Added'>3 new</a></td>
+<td class='removed'><a class='num' href='../../../../compat_report/trafficserver/8.1.3/9.0.0/b705d/abi_compat_report.html#Removed'>2 removed</a></td>
+</tr>
+<tr>
+<td class='object'>libtsmgmt.so.8.1.3<br/><br/><span class='incompatible'>(changed SONAME from<br/>"libtsmgmt.so.8"<br/>to<br/>"libtsmgmt.so.9")</span></td>
+<td class='ok'><a href='../../../../compat_report/trafficserver/8.1.3/9.0.0/e6f84/abi_compat_report.html'>100%</a></td>
+<td class='ok'>0</td>
+<td class='ok'>0</td>
+</tr>
+<tr>
+<td class='object'>traffic_server.so</td>
+<td class='warning'><a href='../../../../compat_report/trafficserver/8.1.3/9.0.0/1e46a/abi_compat_report.html'>98.3%</a></td>
+<td class='added'><a class='num' href='../../../../compat_report/trafficserver/8.1.3/9.0.0/1e46a/abi_compat_report.html#Added'>44 new</a></td>
+<td class='removed'><a class='num' href='../../../../compat_report/trafficserver/8.1.3/9.0.0/1e46a/abi_compat_report.html#Removed'>11 removed</a></td>
+</tr>
+</table>
+<br/>
+<br/>
+<hr/>
+<div align='right'><a class='home' title="Andrey Ponomarenko's ABI laboratory" href='https://github.com/lvc'>github.com/lvc</a></div>
+<br/>
+
+</body>
+</html>

@@ -1,0 +1,2043 @@
+$VAR1 = {
+          'ABI_DUMPER_VERSION' => '1.1',
+          'ABI_DUMP_VERSION' => '3.5',
+          'Arch' => 'x86_64',
+          'Compiler' => 'GNU C++17 11.2.1 20220127 (Red Hat 11.2.1-9) -mcx16 -mtune=generic -march=x86-64 -g -Og -std=c++17 -feliminate-unused-debug-symbols -fno-strict-aliasing -fPIC',
+          'Headers' => {
+                         'Headers.h' => 1,
+                         'HttpMethod.h' => 1,
+                         'HttpVersion.h' => 1,
+                         'Plugin.h' => 1,
+                         'Url.h' => 1,
+                         'remap.h' => 1,
+                         'utils.h' => 1
+                       },
+          'Language' => 'C++',
+          'LibraryName' => 'libtscppapi.so.9.1.1',
+          'LibraryVersion' => '9.1.1',
+          'NameSpaces' => {
+                            '__gnu_cxx' => 1,
+                            '__pstl::execution::v1' => 1,
+                            'atscppapi' => 1,
+                            'atscppapi::detail' => 1,
+                            'atscppapi::transformations' => 1,
+                            'atscppapi::utils' => 1,
+                            'std' => 1,
+                            'std::__cxx11' => 1,
+                            'std::__detail' => 1,
+                            'std::__exception_ptr' => 1,
+                            'ts' => 1
+                          },
+          'Needed' => {
+                        'libc.so.6' => 1,
+                        'libgcc_s.so.1' => 1,
+                        'libm.so.6' => 1,
+                        'libstdc++.so.6' => 1,
+                        'libz.so.1' => 1
+                      },
+          'PublicABI' => '1',
+          'Sources' => {},
+          'SymbolInfo' => {
+                            '1046461' => {
+                                           'Header' => 'utils.h',
+                                           'MnglName' => '_ZN9atscppapi5utils15getIpPortStringB5cxx11EPK8sockaddr',
+                                           'NameSpace' => 'atscppapi::utils',
+                                           'Param' => {
+                                                        '0' => {
+                                                                 'name' => 'sockaddress',
+                                                                 'type' => '42598'
+                                                               }
+                                                      },
+                                           'Return' => '12944',
+                                           'ShortName' => 'getIpPortString'
+                                         },
+                            '1046487' => {
+                                           'Header' => 'Url.h',
+                                           'MnglName' => '_ZN9atscppapi5utils7getPortEPK8sockaddr',
+                                           'NameSpace' => 'atscppapi::utils',
+                                           'Param' => {
+                                                        '0' => {
+                                                                 'name' => 'sockaddress',
+                                                                 'type' => '42598'
+                                                               }
+                                                      },
+                                           'Return' => '23471',
+                                           'ShortName' => 'getPort'
+                                         },
+                            '1046513' => {
+                                           'Header' => 'utils.h',
+                                           'MnglName' => '_ZN9atscppapi5utils11getIpStringB5cxx11EPK8sockaddr',
+                                           'NameSpace' => 'atscppapi::utils',
+                                           'Param' => {
+                                                        '0' => {
+                                                                 'name' => 'sockaddress',
+                                                                 'type' => '42598'
+                                                               }
+                                                      },
+                                           'Return' => '12944',
+                                           'ShortName' => 'getIpString'
+                                         },
+                            '187501' => {
+                                          'Data' => 1,
+                                          'Header' => 'Plugin.h',
+                                          'MnglName' => '_ZN9atscppapi17HOOK_TYPE_STRINGSB5cxx11E',
+                                          'NameSpace' => 'atscppapi',
+                                          'Return' => '623999',
+                                          'ShortName' => 'HOOK_TYPE_STRINGS'
+                                        },
+                            '33443' => {
+                                         'Data' => 1,
+                                         'Header' => 'HttpVersion.h',
+                                         'MnglName' => '_ZN9atscppapi20HTTP_VERSION_STRINGSB5cxx11E',
+                                         'NameSpace' => 'atscppapi',
+                                         'Return' => '497579',
+                                         'ShortName' => 'HTTP_VERSION_STRINGS'
+                                       },
+                            '33542' => {
+                                         'Data' => 1,
+                                         'Header' => 'HttpMethod.h',
+                                         'MnglName' => '_ZN9atscppapi19HTTP_METHOD_STRINGSB5cxx11E',
+                                         'NameSpace' => 'atscppapi',
+                                         'Return' => '457672',
+                                         'ShortName' => 'HTTP_METHOD_STRINGS'
+                                       },
+                            '352406' => {
+                                          'Header' => 'Headers.h',
+                                          'MnglName' => '_ZN9atscppapilsERSoRNS_7HeadersE',
+                                          'NameSpace' => 'atscppapi',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'os',
+                                                                'type' => '364147'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'obj',
+                                                                'type' => '39739'
+                                                              }
+                                                     },
+                                          'Return' => '364147',
+                                          'ShortName' => 'operator<<'
+                                        },
+                            '352470' => {
+                                          'Header' => 'Headers.h',
+                                          'MnglName' => '_ZN9atscppapilsERSoRNS_11HeaderFieldE',
+                                          'NameSpace' => 'atscppapi',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'os',
+                                                                'type' => '364147'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'obj',
+                                                                'type' => '394051'
+                                                              }
+                                                     },
+                                          'Return' => '364147',
+                                          'ShortName' => 'operator<<'
+                                        },
+                            '601888' => {
+                                          'Header' => 'Plugin.h',
+                                          'MnglName' => '_ZN9atscppapi20RegisterGlobalPluginEPKcS1_S1_',
+                                          'NameSpace' => 'atscppapi',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'name',
+                                                                'type' => '23078'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'vendor',
+                                                                'type' => '23078'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'email',
+                                                                'type' => '23078'
+                                                              }
+                                                     },
+                                          'Return' => '20089',
+                                          'ShortName' => 'RegisterGlobalPlugin'
+                                        },
+                            '666314' => {
+                                          'Header' => 'remap.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'api_info',
+                                                                'type' => '666389'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'errbuf',
+                                                                'type' => '23041'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'errbuf_size',
+                                                                'type' => '22905'
+                                                              }
+                                                     },
+                                          'Reg' => {
+                                                     '0' => 'rdi',
+                                                     '1' => 'rsi',
+                                                     '2' => 'rdx'
+                                                   },
+                                          'Return' => '41200',
+                                          'ShortName' => 'TSRemapInit'
+                                        },
+                            '666394' => {
+                                          'Header' => 'remap.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'ih',
+                                                                'type' => '23016'
+                                                              }
+                                                     },
+                                          'Return' => '1',
+                                          'ShortName' => 'TSRemapDeleteInstance'
+                                        },
+                            '666483' => {
+                                          'Header' => 'remap.h',
+                                          'Param' => {
+                                                       '0' => {
+                                                                'name' => 'ih',
+                                                                'type' => '23016'
+                                                              },
+                                                       '1' => {
+                                                                'name' => 'rh',
+                                                                'type' => '42153'
+                                                              },
+                                                       '2' => {
+                                                                'name' => 'rri',
+                                                                'type' => '666038'
+                                                              }
+                                                     },
+                                          'Return' => '665503',
+                                          'ShortName' => 'TSRemapDoRemap'
+                                        }
+                          },
+          'SymbolVersion' => {},
+          'Symbols' => {
+                         'libtscppapi.so.9.1.1' => {
+                                                     'TSRemapDeleteInstance' => 1,
+                                                     'TSRemapDoRemap' => 1,
+                                                     'TSRemapInit' => 1,
+                                                     '_ZN9atscppapi10AsyncTimer3runEv' => 1,
+                                                     '_ZN9atscppapi10AsyncTimer6cancelEv' => 1,
+                                                     '_ZN9atscppapi10AsyncTimerC1ENS0_4TypeEii12TSThreadPool' => 1,
+                                                     '_ZN9atscppapi10AsyncTimerC2ENS0_4TypeEii12TSThreadPool' => 1,
+                                                     '_ZN9atscppapi10AsyncTimerD0Ev' => 1,
+                                                     '_ZN9atscppapi10AsyncTimerD1Ev' => 1,
+                                                     '_ZN9atscppapi10AsyncTimerD2Ev' => 1,
+                                                     '_ZN9atscppapi11HeaderField3endEv' => 1,
+                                                     '_ZN9atscppapi11HeaderField3strB5cxx11Ev' => 1,
+                                                     '_ZN9atscppapi11HeaderField5beginEv' => 1,
+                                                     '_ZN9atscppapi11HeaderField5clearEv' => 1,
+                                                     '_ZN9atscppapi11HeaderField5emptyEv' => 1,
+                                                     '_ZN9atscppapi11HeaderField5eraseERKNS_27header_field_value_iteratorE' => 1,
+                                                     '_ZN9atscppapi11HeaderField6appendEPKci' => 1,
+                                                     '_ZN9atscppapi11HeaderField6appendERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi11HeaderField6valuesB5cxx11EPKc' => 1,
+                                                     '_ZN9atscppapi11HeaderField6valuesB5cxx11Ec' => 1,
+                                                     '_ZN9atscppapi11HeaderField6valuesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi11HeaderField7setNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi11HeaderFieldD1Ev' => 1,
+                                                     '_ZN9atscppapi11HeaderFieldD2Ev' => 1,
+                                                     '_ZN9atscppapi11HeaderFieldaSEPKc' => 1,
+                                                     '_ZN9atscppapi11HeaderFieldaSERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi11HeaderFieldixB5cxx11Ei' => 1,
+                                                     '_ZN9atscppapi11RemapPlugin16remapTransactionERNS_11TransactionEP22_tm_remap_request_info' => 1,
+                                                     '_ZN9atscppapi11RemapPlugin7doRemapERKNS_3UrlES3_RNS_11TransactionERb' => 1,
+                                                     '_ZN9atscppapi11RemapPluginC1EPPv' => 1,
+                                                     '_ZN9atscppapi11RemapPluginC2EPPv' => 1,
+                                                     '_ZN9atscppapi11RemapPluginD0Ev' => 1,
+                                                     '_ZN9atscppapi11RemapPluginD1Ev' => 1,
+                                                     '_ZN9atscppapi11RemapPluginD2Ev' => 1,
+                                                     '_ZN9atscppapi11Transaction10configFindERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP22TSOverridableConfigKeyP16TSRecordDataType' => 1,
+                                                     '_ZN9atscppapi11Transaction10redirectToERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi11Transaction10setTimeoutENS0_11TimeoutTypeEi' => 1,
+                                                     '_ZN9atscppapi11Transaction11setCacheUrlERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi11Transaction12configIntGetE22TSOverridableConfigKeyPi' => 1,
+                                                     '_ZN9atscppapi11Transaction12configIntSetE22TSOverridableConfigKeyi' => 1,
+                                                     '_ZN9atscppapi11Transaction12resetHandlesEv' => 1,
+                                                     '_ZN9atscppapi11Transaction12setErrorBodyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi11Transaction12setErrorBodyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_' => 1,
+                                                     '_ZN9atscppapi11Transaction13setStatusCodeENS_10HttpStatusE' => 1,
+                                                     '_ZN9atscppapi11Transaction14configFloatGetE22TSOverridableConfigKeyPf' => 1,
+                                                     '_ZN9atscppapi11Transaction14configFloatSetE22TSOverridableConfigKeyf' => 1,
+                                                     '_ZN9atscppapi11Transaction14getCacheStatusEv' => 1,
+                                                     '_ZN9atscppapi11Transaction15configStringGetE22TSOverridableConfigKeyRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi11Transaction15configStringSetE22TSOverridableConfigKeyRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi11Transaction15getContextValueERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi11Transaction15getEffectiveUrlB5cxx11Ev' => 1,
+                                                     '_ZN9atscppapi11Transaction15setContextValueERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10shared_ptrINS0_12ContextValueEE' => 1,
+                                                     '_ZN9atscppapi11Transaction15setIncomingPortEt' => 1,
+                                                     '_ZN9atscppapi11Transaction16getCachedRequestEv' => 1,
+                                                     '_ZN9atscppapi11Transaction16getClientRequestEv' => 1,
+                                                     '_ZN9atscppapi11Transaction16getServerRequestEv' => 1,
+                                                     '_ZN9atscppapi11Transaction16setServerAddressEPK8sockaddr' => 1,
+                                                     '_ZN9atscppapi11Transaction16setSkipRemappingEi' => 1,
+                                                     '_ZN9atscppapi11Transaction17getCachedResponseEv' => 1,
+                                                     '_ZN9atscppapi11Transaction17getClientResponseEv' => 1,
+                                                     '_ZN9atscppapi11Transaction17getServerResponseEv' => 1,
+                                                     '_ZN9atscppapi11Transaction25getClientResponseBodySizeEv' => 1,
+                                                     '_ZN9atscppapi11Transaction25getServerResponseBodySizeEv' => 1,
+                                                     '_ZN9atscppapi11Transaction27getClientResponseHeaderSizeEv' => 1,
+                                                     '_ZN9atscppapi11Transaction27getServerResponseHeaderSizeEv' => 1,
+                                                     '_ZN9atscppapi11Transaction5errorERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi11Transaction5errorEv' => 1,
+                                                     '_ZN9atscppapi11Transaction6resumeEv' => 1,
+                                                     '_ZN9atscppapi11Transaction8setEventE7TSEvent' => 1,
+                                                     '_ZN9atscppapi11Transaction9addPluginEPNS_17TransactionPluginE' => 1,
+                                                     '_ZN9atscppapi11TransactionC1EPv' => 1,
+                                                     '_ZN9atscppapi11TransactionC2EPv' => 1,
+                                                     '_ZN9atscppapi11TransactionD1Ev' => 1,
+                                                     '_ZN9atscppapi11TransactionD2Ev' => 1,
+                                                     '_ZN9atscppapi12Continuation17_generalEventFuncEP10tsapi_cont7TSEventPv' => 1,
+                                                     '_ZN9atscppapi12GlobalPlugin12registerHookENS_6Plugin8HookTypeE' => 1,
+                                                     '_ZN9atscppapi12GlobalPluginC1Eb' => 1,
+                                                     '_ZN9atscppapi12GlobalPluginC2Eb' => 1,
+                                                     '_ZN9atscppapi12GlobalPluginD0Ev' => 1,
+                                                     '_ZN9atscppapi12GlobalPluginD1Ev' => 1,
+                                                     '_ZN9atscppapi12GlobalPluginD2Ev' => 1,
+                                                     '_ZN9atscppapi13AsyncProvider6cancelEv' => 1,
+                                                     '_ZN9atscppapi13AsyncProviderD0Ev' => 1,
+                                                     '_ZN9atscppapi13AsyncProviderD1Ev' => 1,
+                                                     '_ZN9atscppapi13AsyncProviderD2Ev' => 1,
+                                                     '_ZN9atscppapi13ClientRequestC1EPvS1_S1_' => 1,
+                                                     '_ZN9atscppapi13ClientRequestC2EPvS1_S1_' => 1,
+                                                     '_ZN9atscppapi13ClientRequestD1Ev' => 1,
+                                                     '_ZN9atscppapi13ClientRequestD2Ev' => 1,
+                                                     '_ZN9atscppapi13MLocContainerD1Ev' => 1,
+                                                     '_ZN9atscppapi13MLocContainerD2Ev' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetch17getRequestHeadersEv' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetch3runEv' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetch4initERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_10HttpMethodES8_NS0_13StreamingFlagE' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetchC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS0_13StreamingFlagENS_10HttpMethodE' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetchC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS0_13StreamingFlagES8_' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetchC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_10HttpMethodE' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetchC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetchC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS0_13StreamingFlagENS_10HttpMethodE' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetchC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS0_13StreamingFlagES8_' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetchC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_10HttpMethodE' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetchC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetchD0Ev' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetchD1Ev' => 1,
+                                                     '_ZN9atscppapi14AsyncHttpFetchD2Ev' => 1,
+                                                     '_ZN9atscppapi15HeaderFieldName3strB5cxx11Ev' => 1,
+                                                     '_ZN9atscppapi15HeaderFieldName5c_strEv' => 1,
+                                                     '_ZN9atscppapi15HeaderFieldName6lengthEv' => 1,
+                                                     '_ZN9atscppapi15HeaderFieldNameC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi15HeaderFieldNameC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi15HeaderFieldNamecvNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEv' => 1,
+                                                     '_ZN9atscppapi15HeaderFieldNamecvPKcEv' => 1,
+                                                     '_ZN9atscppapi15HeaderFieldNameeqEPKc' => 1,
+                                                     '_ZN9atscppapi15HeaderFieldNameeqERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi15HeaderFieldNameneEPKc' => 1,
+                                                     '_ZN9atscppapi15HeaderFieldNameneERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi15InterceptPlugin11handleEventEiPv' => 1,
+                                                     '_ZN9atscppapi15InterceptPlugin16getSslConnectionEv' => 1,
+                                                     '_ZN9atscppapi15InterceptPlugin17getRequestHeadersEv' => 1,
+                                                     '_ZN9atscppapi15InterceptPlugin17setOutputCompleteEv' => 1,
+                                                     '_ZN9atscppapi15InterceptPlugin5State8IoHandleD1Ev' => 1,
+                                                     '_ZN9atscppapi15InterceptPlugin5State8IoHandleD2Ev' => 1,
+                                                     '_ZN9atscppapi15InterceptPlugin6doReadEv' => 1,
+                                                     '_ZN9atscppapi15InterceptPlugin7produceEPKvi' => 1,
+                                                     '_ZN9atscppapi15InterceptPluginC1ERNS_11TransactionENS0_4TypeE' => 1,
+                                                     '_ZN9atscppapi15InterceptPluginC2ERNS_11TransactionENS0_4TypeE' => 1,
+                                                     '_ZN9atscppapi15InterceptPluginD0Ev' => 1,
+                                                     '_ZN9atscppapi15InterceptPluginD1Ev' => 1,
+                                                     '_ZN9atscppapi15InterceptPluginD2Ev' => 1,
+                                                     '_ZN9atscppapi15advanceIteratorEPNS_24HeaderFieldIteratorStateEPFP10tsapi_mlocP13tsapi_mbufferS3_S3_E' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipDeflateTransformation19handleInputCompleteEv' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipDeflateTransformation7consumeESt17basic_string_viewIcSt11char_traitsIcEE' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipDeflateTransformationC1ERNS_11TransactionENS_20TransformationPlugin4TypeE' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipDeflateTransformationC2ERNS_11TransactionENS_20TransformationPlugin4TypeE' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipDeflateTransformationD0Ev' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipDeflateTransformationD1Ev' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipDeflateTransformationD2Ev' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipInflateTransformation19handleInputCompleteEv' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipInflateTransformation7consumeESt17basic_string_viewIcSt11char_traitsIcEE' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipInflateTransformationC1ERNS_11TransactionENS_20TransformationPlugin4TypeE' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipInflateTransformationC2ERNS_11TransactionENS_20TransformationPlugin4TypeE' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipInflateTransformationD0Ev' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipInflateTransformationD1Ev' => 1,
+                                                     '_ZN9atscppapi15transformations25GzipInflateTransformationD2Ev' => 1,
+                                                     '_ZN9atscppapi17HOOK_TYPE_STRINGSB5cxx11E' => -320,
+                                                     '_ZN9atscppapi17TransactionPlugin12registerHookENS_6Plugin8HookTypeE' => 1,
+                                                     '_ZN9atscppapi17TransactionPlugin8getMutexEP13tsapi_httptxn' => 1,
+                                                     '_ZN9atscppapi17TransactionPlugin8getMutexEv' => 1,
+                                                     '_ZN9atscppapi17TransactionPluginC1ERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi17TransactionPluginC2ERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi17TransactionPluginD0Ev' => 1,
+                                                     '_ZN9atscppapi17TransactionPluginD1Ev' => 1,
+                                                     '_ZN9atscppapi17TransactionPluginD2Ev' => 1,
+                                                     '_ZN9atscppapi19HTTP_METHOD_STRINGSB5cxx11E' => -352,
+                                                     '_ZN9atscppapi20HTTP_VERSION_STRINGSB5cxx11E' => -128,
+                                                     '_ZN9atscppapi20RegisterGlobalPluginEPKcS1_S1_' => 1,
+                                                     '_ZN9atscppapi20TransformationPlugin10resumeContEv' => 1,
+                                                     '_ZN9atscppapi20TransformationPlugin17setOutputCompleteEv' => 1,
+                                                     '_ZN9atscppapi20TransformationPlugin5pauseEv' => 1,
+                                                     '_ZN9atscppapi20TransformationPlugin7produceESt17basic_string_viewIcSt11char_traitsIcEE' => 1,
+                                                     '_ZN9atscppapi20TransformationPlugin9doProduceESt17basic_string_viewIcSt11char_traitsIcEE' => 1,
+                                                     '_ZN9atscppapi20TransformationPluginC1ERNS_11TransactionENS0_4TypeE' => 1,
+                                                     '_ZN9atscppapi20TransformationPluginC2ERNS_11TransactionENS0_4TypeE' => 1,
+                                                     '_ZN9atscppapi20TransformationPluginD0Ev' => 1,
+                                                     '_ZN9atscppapi20TransformationPluginD1Ev' => 1,
+                                                     '_ZN9atscppapi20TransformationPluginD2Ev' => 1,
+                                                     '_ZN9atscppapi21header_field_iterator7nextDupEv' => 1,
+                                                     '_ZN9atscppapi21header_field_iteratorC1EPvS1_S1_' => 1,
+                                                     '_ZN9atscppapi21header_field_iteratorC1ERKS0_' => 1,
+                                                     '_ZN9atscppapi21header_field_iteratorC2EPvS1_S1_' => 1,
+                                                     '_ZN9atscppapi21header_field_iteratorC2ERKS0_' => 1,
+                                                     '_ZN9atscppapi21header_field_iteratorD1Ev' => 1,
+                                                     '_ZN9atscppapi21header_field_iteratorD2Ev' => 1,
+                                                     '_ZN9atscppapi21header_field_iteratoraSERKS0_' => 1,
+                                                     '_ZN9atscppapi21header_field_iteratordeEv' => 1,
+                                                     '_ZN9atscppapi21header_field_iteratorppEi' => 1,
+                                                     '_ZN9atscppapi21header_field_iteratorppEv' => 1,
+                                                     '_ZN9atscppapi25TransformationPluginStateD0Ev' => 1,
+                                                     '_ZN9atscppapi25TransformationPluginStateD1Ev' => 1,
+                                                     '_ZN9atscppapi25TransformationPluginStateD2Ev' => 1,
+                                                     '_ZN9atscppapi27header_field_value_iteratorC1EPvS1_S1_i' => 1,
+                                                     '_ZN9atscppapi27header_field_value_iteratorC1ERKS0_' => 1,
+                                                     '_ZN9atscppapi27header_field_value_iteratorC2EPvS1_S1_i' => 1,
+                                                     '_ZN9atscppapi27header_field_value_iteratorC2ERKS0_' => 1,
+                                                     '_ZN9atscppapi27header_field_value_iteratorD1Ev' => 1,
+                                                     '_ZN9atscppapi27header_field_value_iteratorD2Ev' => 1,
+                                                     '_ZN9atscppapi27header_field_value_iteratordeB5cxx11Ev' => 1,
+                                                     '_ZN9atscppapi27header_field_value_iteratorppEi' => 1,
+                                                     '_ZN9atscppapi27header_field_value_iteratorppEv' => 1,
+                                                     '_ZN9atscppapi3Url4initEPvS1_' => 1,
+                                                     '_ZN9atscppapi3Url7setHostERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi3Url7setPathERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi3Url7setPortEt' => 1,
+                                                     '_ZN9atscppapi3Url8setQueryERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi3Url9setSchemeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi3UrlC1EPvS1_' => 1,
+                                                     '_ZN9atscppapi3UrlC1Ev' => 1,
+                                                     '_ZN9atscppapi3UrlC2EPvS1_' => 1,
+                                                     '_ZN9atscppapi3UrlC2Ev' => 1,
+                                                     '_ZN9atscppapi3UrlD1Ev' => 1,
+                                                     '_ZN9atscppapi3UrlD2Ev' => 1,
+                                                     '_ZN9atscppapi4Stat3setEl' => 1,
+                                                     '_ZN9atscppapi4Stat4initERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS0_8SyncTypeEb' => 1,
+                                                     '_ZN9atscppapi4Stat9decrementEl' => 1,
+                                                     '_ZN9atscppapi4Stat9incrementEl' => 1,
+                                                     '_ZN9atscppapi4StatC1Ev' => 1,
+                                                     '_ZN9atscppapi4StatC2Ev' => 1,
+                                                     '_ZN9atscppapi4StatD1Ev' => 1,
+                                                     '_ZN9atscppapi4StatD2Ev' => 1,
+                                                     '_ZN9atscppapi5utils11getIpStringB5cxx11EPK8sockaddr' => 1,
+                                                     '_ZN9atscppapi5utils15getIpPortStringB5cxx11EPK8sockaddr' => 1,
+                                                     '_ZN9atscppapi5utils7getPortEPK8sockaddr' => 1,
+                                                     '_ZN9atscppapi5utils8internal14getHttpVersionEP13tsapi_mbufferP10tsapi_mloc' => 1,
+                                                     '_ZN9atscppapi5utils8internal14getTransactionEP13tsapi_httptxn' => 1,
+                                                     '_ZN9atscppapi5utils8internal20invokePluginForEventEPNS_12GlobalPluginEP13tsapi_httptxn7TSEvent' => 1,
+                                                     '_ZN9atscppapi5utils8internal20invokePluginForEventEPNS_12GlobalPluginEP17tsapi_httpaltinfo7TSEvent' => 1,
+                                                     '_ZN9atscppapi5utils8internal20invokePluginForEventEPNS_17TransactionPluginEP13tsapi_httptxn7TSEvent' => 1,
+                                                     '_ZN9atscppapi5utils8internal25getTransactionPluginMutexERNS_17TransactionPluginEP13tsapi_httptxn' => 1,
+                                                     '_ZN9atscppapi5utils8internal25initTransactionManagementEv' => 1,
+                                                     '_ZN9atscppapi5utils8internal27consumeFromTSIOBufferReaderB5cxx11EP18tsapi_bufferreader' => 1,
+                                                     '_ZN9atscppapi5utils8internal27convertInternalHookToTsHookENS_6Plugin8HookTypeE' => 1,
+                                                     '_ZN9atscppapi5utils8internal41convertInternalTransformationTypeToTsHookENS_20TransformationPlugin4TypeE' => 1,
+                                                     '_ZN9atscppapi6Logger11setLogLevelENS0_8LogLevelE' => 1,
+                                                     '_ZN9atscppapi6Logger17setRollingEnabledEb' => 1,
+                                                     '_ZN9atscppapi6Logger25setRollingIntervalSecondsEi' => 1,
+                                                     '_ZN9atscppapi6Logger4initERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbbNS0_8LogLevelEbi' => 1,
+                                                     '_ZN9atscppapi6Logger5flushEv' => 1,
+                                                     '_ZN9atscppapi6Logger7logInfoEPKcz' => 1,
+                                                     '_ZN9atscppapi6Logger8logDebugEPKcz' => 1,
+                                                     '_ZN9atscppapi6Logger8logErrorEPKcz' => 1,
+                                                     '_ZN9atscppapi6LoggerC1Ev' => 1,
+                                                     '_ZN9atscppapi6LoggerC2Ev' => 1,
+                                                     '_ZN9atscppapi6LoggerD1Ev' => 1,
+                                                     '_ZN9atscppapi6LoggerD2Ev' => 1,
+                                                     '_ZN9atscppapi6Plugin11handleOsDnsERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi6Plugin14handleTxnCloseERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi6Plugin15handleSelectAltERKNS_7RequestES3_RKNS_8ResponseE' => 1,
+                                                     '_ZN9atscppapi6Plugin22handleReadCacheHeadersERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi6Plugin24handleReadRequestHeadersERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi6Plugin24handleSendRequestHeadersERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi6Plugin25handleReadResponseHeadersERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi6Plugin25handleSendResponseHeadersERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi6Plugin29handleReadCacheLookupCompleteERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi6Plugin32handleReadRequestHeadersPreRemapERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi6Plugin33handleReadRequestHeadersPostRemapERNS_11TransactionE' => 1,
+                                                     '_ZN9atscppapi6PluginD0Ev' => 1,
+                                                     '_ZN9atscppapi6PluginD1Ev' => 1,
+                                                     '_ZN9atscppapi6PluginD2Ev' => 1,
+                                                     '_ZN9atscppapi6detail20ResumeAfterPauseCont4_runE7TSEventPv' => 1,
+                                                     '_ZN9atscppapi6detail20ResumeAfterPauseContD0Ev' => 1,
+                                                     '_ZN9atscppapi6detail20ResumeAfterPauseContD1Ev' => 1,
+                                                     '_ZN9atscppapi6detail20ResumeAfterPauseContD2Ev' => 1,
+                                                     '_ZN9atscppapi7Headers3endEv' => 1,
+                                                     '_ZN9atscppapi7Headers3setERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_' => 1,
+                                                     '_ZN9atscppapi7Headers3strB5cxx11Ev' => 1,
+                                                     '_ZN9atscppapi7Headers4findEPKci' => 1,
+                                                     '_ZN9atscppapi7Headers4findERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi7Headers5beginEv' => 1,
+                                                     '_ZN9atscppapi7Headers5clearEv' => 1,
+                                                     '_ZN9atscppapi7Headers5countEPKci' => 1,
+                                                     '_ZN9atscppapi7Headers5countERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi7Headers5emptyEv' => 1,
+                                                     '_ZN9atscppapi7Headers5eraseEPKci' => 1,
+                                                     '_ZN9atscppapi7Headers5eraseERKNS_21header_field_iteratorE' => 1,
+                                                     '_ZN9atscppapi7Headers5eraseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi7Headers5resetEPvS1_' => 1,
+                                                     '_ZN9atscppapi7Headers5valueERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj' => 1,
+                                                     '_ZN9atscppapi7Headers6appendERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_' => 1,
+                                                     '_ZN9atscppapi7Headers6valuesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKc' => 1,
+                                                     '_ZN9atscppapi7Headers6valuesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_' => 1,
+                                                     '_ZN9atscppapi7Headers6valuesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEc' => 1,
+                                                     '_ZN9atscppapi7Headers7wireStrB5cxx11Ev' => 1,
+                                                     '_ZN9atscppapi7HeadersC1EPvS1_' => 1,
+                                                     '_ZN9atscppapi7HeadersC1Ev' => 1,
+                                                     '_ZN9atscppapi7HeadersC2EPvS1_' => 1,
+                                                     '_ZN9atscppapi7HeadersC2Ev' => 1,
+                                                     '_ZN9atscppapi7HeadersD1Ev' => 1,
+                                                     '_ZN9atscppapi7HeadersD2Ev' => 1,
+                                                     '_ZN9atscppapi7HeadersixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi7Request4initEPvS1_' => 1,
+                                                     '_ZN9atscppapi7Request5resetEv' => 1,
+                                                     '_ZN9atscppapi7Request6getUrlEv' => 1,
+                                                     '_ZN9atscppapi7Request7setHostERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi7RequestC1EPvS1_' => 1,
+                                                     '_ZN9atscppapi7RequestC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_10HttpMethodENS_11HttpVersionE' => 1,
+                                                     '_ZN9atscppapi7RequestC1Ev' => 1,
+                                                     '_ZN9atscppapi7RequestC2EPvS1_' => 1,
+                                                     '_ZN9atscppapi7RequestC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_10HttpMethodENS_11HttpVersionE' => 1,
+                                                     '_ZN9atscppapi7RequestC2Ev' => 1,
+                                                     '_ZN9atscppapi7RequestD1Ev' => 1,
+                                                     '_ZN9atscppapi7RequestD2Ev' => 1,
+                                                     '_ZN9atscppapi8Response13setStatusCodeENS_10HttpStatusE' => 1,
+                                                     '_ZN9atscppapi8Response15setReasonPhraseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZN9atscppapi8Response4initEPvS1_' => 1,
+                                                     '_ZN9atscppapi8Response5resetEv' => 1,
+                                                     '_ZN9atscppapi8ResponseC1Ev' => 1,
+                                                     '_ZN9atscppapi8ResponseC2Ev' => 1,
+                                                     '_ZN9atscppapi8ResponseD1Ev' => 1,
+                                                     '_ZN9atscppapi8ResponseD2Ev' => 1,
+                                                     '_ZN9atscppapilsERSoRNS_11HeaderFieldE' => 1,
+                                                     '_ZN9atscppapilsERSoRNS_7HeadersE' => 1,
+                                                     '_ZNK9atscppapi11HeaderField4nameEv' => 1,
+                                                     '_ZNK9atscppapi11HeaderField4sizeEv' => 1,
+                                                     '_ZNK9atscppapi11HeaderFieldeqEPKc' => 1,
+                                                     '_ZNK9atscppapi11HeaderFieldeqERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZNK9atscppapi11HeaderFieldneEPKc' => 1,
+                                                     '_ZNK9atscppapi11HeaderFieldneERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE' => 1,
+                                                     '_ZNK9atscppapi11Transaction10getPluginsB5cxx11Ev' => 1,
+                                                     '_ZNK9atscppapi11Transaction12getAtsHandleEv' => 1,
+                                                     '_ZNK9atscppapi11Transaction16getClientAddressEv' => 1,
+                                                     '_ZNK9atscppapi11Transaction16getServerAddressEv' => 1,
+                                                     '_ZNK9atscppapi11Transaction17getNextHopAddressEv' => 1,
+                                                     '_ZNK9atscppapi11Transaction17isInternalRequestEv' => 1,
+                                                     '_ZNK9atscppapi11Transaction18getIncomingAddressEv' => 1,
+                                                     '_ZNK9atscppapi13ClientRequest14getPristineUrlEv' => 1,
+                                                     '_ZNK9atscppapi14AsyncHttpFetch11getResponseEv' => 1,
+                                                     '_ZNK9atscppapi14AsyncHttpFetch13getRequestUrlEv' => 1,
+                                                     '_ZNK9atscppapi14AsyncHttpFetch14getRequestBodyB5cxx11Ev' => 1,
+                                                     '_ZNK9atscppapi14AsyncHttpFetch15getResponseBodyERPKvRm' => 1,
+                                                     '_ZNK9atscppapi14AsyncHttpFetch9getResultEv' => 1,
+                                                     '_ZNK9atscppapi17TransactionPlugin11isWebsocketEv' => 1,
+                                                     '_ZNK9atscppapi20TransformationPlugin8isPausedEv' => 1,
+                                                     '_ZNK9atscppapi21header_field_iteratoreqERKS0_' => 1,
+                                                     '_ZNK9atscppapi21header_field_iteratorneERKS0_' => 1,
+                                                     '_ZNK9atscppapi27header_field_value_iteratoreqERKS0_' => 1,
+                                                     '_ZNK9atscppapi27header_field_value_iteratorneERKS0_' => 1,
+                                                     '_ZNK9atscppapi31CaseInsensitiveStringComparator7compareERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_' => 1,
+                                                     '_ZNK9atscppapi31CaseInsensitiveStringComparatorclERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_' => 1,
+                                                     '_ZNK9atscppapi3Url12getUrlStringB5cxx11Ev' => 1,
+                                                     '_ZNK9atscppapi3Url7getHostB5cxx11Ev' => 1,
+                                                     '_ZNK9atscppapi3Url7getPathB5cxx11Ev' => 1,
+                                                     '_ZNK9atscppapi3Url7getPortEv' => 1,
+                                                     '_ZNK9atscppapi3Url8getQueryB5cxx11Ev' => 1,
+                                                     '_ZNK9atscppapi3Url9getSchemeB5cxx11Ev' => 1,
+                                                     '_ZNK9atscppapi4Stat3getEv' => 1,
+                                                     '_ZNK9atscppapi6Logger11getLogLevelEv' => 1,
+                                                     '_ZNK9atscppapi6Logger16isRollingEnabledEv' => 1,
+                                                     '_ZNK9atscppapi6Logger25getRollingIntervalSecondsEv' => 1,
+                                                     '_ZNK9atscppapi7Headers11lengthBytesEv' => 1,
+                                                     '_ZNK9atscppapi7Headers13isInitializedEv' => 1,
+                                                     '_ZNK9atscppapi7Headers4sizeEv' => 1,
+                                                     '_ZNK9atscppapi7Request10getHeadersEv' => 1,
+                                                     '_ZNK9atscppapi7Request10getVersionEv' => 1,
+                                                     '_ZNK9atscppapi7Request9getMethodEv' => 1,
+                                                     '_ZNK9atscppapi8Response10getHeadersEv' => 1,
+                                                     '_ZNK9atscppapi8Response10getVersionEv' => 1,
+                                                     '_ZNK9atscppapi8Response13getStatusCodeEv' => 1,
+                                                     '_ZNK9atscppapi8Response15getReasonPhraseB5cxx11Ev' => 1,
+                                                     '_ZNSt12_Vector_baseIcSaIcEED1Ev' => 1,
+                                                     '_ZNSt12_Vector_baseIcSaIcEED2Ev' => 1,
+                                                     '_ZNSt12_Vector_baseIhSaIhEED1Ev' => 1,
+                                                     '_ZNSt12_Vector_baseIhSaIhEED2Ev' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi13MLocContainerELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi13MLocContainerELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi13MLocContainerELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi13MLocContainerELN9__gnu_cxx12_Lock_policyE2EED0Ev' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi13MLocContainerELN9__gnu_cxx12_Lock_policyE2EED1Ev' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi13MLocContainerELN9__gnu_cxx12_Lock_policyE2EED2Ev' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi7RequestELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi7RequestELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi7RequestELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi7RequestELN9__gnu_cxx12_Lock_policyE2EED0Ev' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi7RequestELN9__gnu_cxx12_Lock_policyE2EED1Ev' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPN9atscppapi7RequestELN9__gnu_cxx12_Lock_policyE2EED2Ev' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPSt15recursive_mutexLN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPSt15recursive_mutexLN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPSt15recursive_mutexLN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPSt15recursive_mutexLN9__gnu_cxx12_Lock_policyE2EED0Ev' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPSt15recursive_mutexLN9__gnu_cxx12_Lock_policyE2EED1Ev' => 1,
+                                                     '_ZNSt15_Sp_counted_ptrIPSt15recursive_mutexLN9__gnu_cxx12_Lock_policyE2EED2Ev' => 1,
+                                                     '_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv' => 1,
+                                                     '_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv' => 1,
+                                                     '_ZNSt7__cxx1110_List_baseIPN9atscppapi17TransactionPluginESaIS3_EE8_M_clearEv' => 1,
+                                                     '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag' => 1,
+                                                     '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag' => 1,
+                                                     '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_' => 1,
+                                                     '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_' => 1,
+                                                     '_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED0Ev' => 1,
+                                                     '_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev' => 1,
+                                                     '_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED2Ev' => 1,
+                                                     '_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN9atscppapi11Transaction12ContextValueEEESt10_Select1stISD_ESt4lessIS5_ESaISD_EE14_M_insert_nodeEPSt18_Rb_tree_node_baseSL_PSt13_Rb_tree_nodeISD_E' => 1,
+                                                     '_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN9atscppapi11Transaction12ContextValueEEESt10_Select1stISD_ESt4lessIS5_ESaISD_EE14_M_lower_boundEPSt13_Rb_tree_nodeISD_EPSt18_Rb_tree_node_baseRS7_' => 1,
+                                                     '_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN9atscppapi11Transaction12ContextValueEEESt10_Select1stISD_ESt4lessIS5_ESaISD_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS7_EESO_IJEEEEESt17_Rb_tree_iteratorISD_ESt23_Rb_tree_const_iteratorISD_EDpOT_' => 1,
+                                                     '_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN9atscppapi11Transaction12ContextValueEEESt10_Select1stISD_ESt4lessIS5_ESaISD_EE24_M_get_insert_unique_posERS7_' => 1,
+                                                     '_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN9atscppapi11Transaction12ContextValueEEESt10_Select1stISD_ESt4lessIS5_ESaISD_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISD_ERS7_' => 1,
+                                                     '_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN9atscppapi11Transaction12ContextValueEEESt10_Select1stISD_ESt4lessIS5_ESaISD_EE4findERS7_' => 1,
+                                                     '_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St10shared_ptrIN9atscppapi11Transaction12ContextValueEEESt10_Select1stISD_ESt4lessIS5_ESaISD_EE8_M_eraseEPSt13_Rb_tree_nodeISD_E' => 1,
+                                                     '_ZTIN9atscppapi10AsyncTimerE' => -24,
+                                                     '_ZTIN9atscppapi11RemapPluginE' => -16,
+                                                     '_ZTIN9atscppapi11noncopyableE' => -16,
+                                                     '_ZTIN9atscppapi12ContinuationE' => -16,
+                                                     '_ZTIN9atscppapi12GlobalPluginE' => -24,
+                                                     '_ZTIN9atscppapi13AsyncProviderE' => -16,
+                                                     '_ZTIN9atscppapi14AsyncHttpFetchE' => -24,
+                                                     '_ZTIN9atscppapi15InterceptPluginE' => -24,
+                                                     '_ZTIN9atscppapi15transformations25GzipDeflateTransformationE' => -24,
+                                                     '_ZTIN9atscppapi15transformations25GzipInflateTransformationE' => -24,
+                                                     '_ZTIN9atscppapi17TransactionPluginE' => -24,
+                                                     '_ZTIN9atscppapi20TransformationPluginE' => -24,
+                                                     '_ZTIN9atscppapi25TransformationPluginStateE' => -56,
+                                                     '_ZTIN9atscppapi6PluginE' => -40,
+                                                     '_ZTIN9atscppapi6detail20ResumeAfterPauseContE' => -24,
+                                                     '_ZTISt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE' => -16,
+                                                     '_ZTISt15_Sp_counted_ptrIPN9atscppapi13MLocContainerELN9__gnu_cxx12_Lock_policyE2EE' => -24,
+                                                     '_ZTISt15_Sp_counted_ptrIPN9atscppapi7RequestELN9__gnu_cxx12_Lock_policyE2EE' => -24,
+                                                     '_ZTISt15_Sp_counted_ptrIPSt15recursive_mutexLN9__gnu_cxx12_Lock_policyE2EE' => -24,
+                                                     '_ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE' => -24,
+                                                     '_ZTSN9atscppapi10AsyncTimerE' => -25,
+                                                     '_ZTSN9atscppapi11RemapPluginE' => -26,
+                                                     '_ZTSN9atscppapi11noncopyableE' => -26,
+                                                     '_ZTSN9atscppapi12ContinuationE' => -27,
+                                                     '_ZTSN9atscppapi12GlobalPluginE' => -27,
+                                                     '_ZTSN9atscppapi13AsyncProviderE' => -28,
+                                                     '_ZTSN9atscppapi14AsyncHttpFetchE' => -29,
+                                                     '_ZTSN9atscppapi15InterceptPluginE' => -30,
+                                                     '_ZTSN9atscppapi15transformations25GzipDeflateTransformationE' => -57,
+                                                     '_ZTSN9atscppapi15transformations25GzipInflateTransformationE' => -57,
+                                                     '_ZTSN9atscppapi17TransactionPluginE' => -32,
+                                                     '_ZTSN9atscppapi20TransformationPluginE' => -35,
+                                                     '_ZTSN9atscppapi25TransformationPluginStateE' => -40,
+                                                     '_ZTSN9atscppapi6PluginE' => -20,
+                                                     '_ZTSN9atscppapi6detail20ResumeAfterPauseContE' => -42,
+                                                     '_ZTSSt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE' => -47,
+                                                     '_ZTSSt15_Sp_counted_ptrIPN9atscppapi13MLocContainerELN9__gnu_cxx12_Lock_policyE2EE' => -79,
+                                                     '_ZTSSt15_Sp_counted_ptrIPN9atscppapi7RequestELN9__gnu_cxx12_Lock_policyE2EE' => -72,
+                                                     '_ZTSSt15_Sp_counted_ptrIPSt15recursive_mutexLN9__gnu_cxx12_Lock_policyE2EE' => -71,
+                                                     '_ZTSSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE' => -52,
+                                                     '_ZTVN9atscppapi10AsyncTimerE' => -48,
+                                                     '_ZTVN9atscppapi11RemapPluginE' => -48,
+                                                     '_ZTVN9atscppapi12ContinuationE' => -40,
+                                                     '_ZTVN9atscppapi12GlobalPluginE' => -120,
+                                                     '_ZTVN9atscppapi13AsyncProviderE' => -48,
+                                                     '_ZTVN9atscppapi14AsyncHttpFetchE' => -48,
+                                                     '_ZTVN9atscppapi15InterceptPluginE' => -136,
+                                                     '_ZTVN9atscppapi15transformations25GzipDeflateTransformationE' => -136,
+                                                     '_ZTVN9atscppapi15transformations25GzipInflateTransformationE' => -136,
+                                                     '_ZTVN9atscppapi17TransactionPluginE' => -120,
+                                                     '_ZTVN9atscppapi20TransformationPluginE' => -136,
+                                                     '_ZTVN9atscppapi25TransformationPluginStateE' => -40,
+                                                     '_ZTVN9atscppapi6PluginE' => -120,
+                                                     '_ZTVN9atscppapi6detail20ResumeAfterPauseContE' => -40,
+                                                     '_ZTVSt15_Sp_counted_ptrIPN9atscppapi13MLocContainerELN9__gnu_cxx12_Lock_policyE2EE' => -56,
+                                                     '_ZTVSt15_Sp_counted_ptrIPN9atscppapi7RequestELN9__gnu_cxx12_Lock_policyE2EE' => -56,
+                                                     '_ZTVSt15_Sp_counted_ptrIPSt15recursive_mutexLN9__gnu_cxx12_Lock_policyE2EE' => -56,
+                                                     '_ZTVSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE' => -56
+                                                   }
+                       },
+          'Target' => 'unix',
+          'TypeInfo' => {
+                          '-1' => {
+                                    'Name' => '...',
+                                    'Type' => 'Intrinsic'
+                                  },
+                          '1' => {
+                                   'Name' => 'void',
+                                   'Type' => 'Intrinsic'
+                                 },
+                          '12944' => {
+                                       'BaseType' => '5672',
+                                       'Header' => undef,
+                                       'Line' => '79',
+                                       'Name' => 'std::string',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Size' => '32',
+                                       'Type' => 'Typedef'
+                                     },
+                          '12956' => {
+                                       'BaseType' => '12944',
+                                       'Name' => 'std::string const',
+                                       'Size' => '32',
+                                       'Type' => 'Const'
+                                     },
+                          '13741' => {
+                                       'Header' => undef,
+                                       'Line' => '578',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'access' => 'private',
+                                                            'name' => '_M_pi',
+                                                            'offset' => '0',
+                                                            'type' => '39412'
+                                                          }
+                                                 },
+                                       'Name' => 'std::__shared_count<2>',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Lp',
+                                                              'type' => '20537',
+                                                              'val' => '2'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '14724' => {
+                                       'Base' => {
+                                                   '1784' => {
+                                                               'pos' => '0'
+                                                             }
+                                                 },
+                                       'Header' => undef,
+                                       'Line' => '122',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => '_vptr',
+                                                            'offset' => '0',
+                                                            'type' => '43481'
+                                                          },
+                                                   '1' => {
+                                                            'access' => 'private',
+                                                            'name' => '_M_use_count',
+                                                            'offset' => '8',
+                                                            'type' => '26862'
+                                                          },
+                                                   '2' => {
+                                                            'access' => 'private',
+                                                            'name' => '_M_weak_count',
+                                                            'offset' => '18',
+                                                            'type' => '26862'
+                                                          }
+                                                 },
+                                       'Name' => 'std::_Sp_counted_base<2>',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Size' => '16',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Lp',
+                                                              'type' => '20537',
+                                                              'val' => '2'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '17179' => {
+                                       'Header' => undef,
+                                       'Line' => '127',
+                                       'Name' => 'struct std::iterator<std::forward_iterator_tag, int, long, int*, int&>',
+                                       'NameSpace' => 'std',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Category',
+                                                              'type' => '333'
+                                                            },
+                                                     '1' => {
+                                                              'key' => '_Tp',
+                                                              'type' => '22905'
+                                                            },
+                                                     '2' => {
+                                                              'key' => '_Distance',
+                                                              'type' => '22918'
+                                                            },
+                                                     '3' => {
+                                                              'key' => '_Pointer',
+                                                              'type' => '39587'
+                                                            },
+                                                     '4' => {
+                                                              'key' => '_Reference',
+                                                              'type' => '39592'
+                                                            }
+                                                   },
+                                       'Type' => 'Struct'
+                                     },
+                          '1784' => {
+                                      'Copied' => 1,
+                                      'Header' => undef,
+                                      'Line' => '103',
+                                      'Name' => 'std::_Mutex_base<2>',
+                                      'NameSpace' => 'std',
+                                      'PrivateABI' => 1,
+                                      'Size' => '1',
+                                      'TParam' => {
+                                                    '0' => {
+                                                             'key' => '_Lp',
+                                                             'type' => '20537',
+                                                             'val' => '2'
+                                                           }
+                                                  },
+                                      'Type' => 'Class'
+                                    },
+                          '20089' => {
+                                       'Name' => 'bool',
+                                       'Size' => '1',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '20118' => {
+                                       'Header' => undef,
+                                       'Line' => '55',
+                                       'Name' => '__gnu_cxx::new_allocator<char>',
+                                       'NameSpace' => '__gnu_cxx',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Tp',
+                                                              'type' => '23051'
+                                                            }
+                                                   },
+                                       'Type' => 'Class'
+                                     },
+                          '20537' => {
+                                       'Header' => undef,
+                                       'Line' => '49',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => '_S_single',
+                                                            'value' => '0'
+                                                          },
+                                                   '1' => {
+                                                            'name' => '_S_mutex',
+                                                            'value' => '1'
+                                                          },
+                                                   '2' => {
+                                                            'name' => '_S_atomic',
+                                                            'value' => '2'
+                                                          }
+                                                 },
+                                       'Name' => 'enum __gnu_cxx::_Lock_policy',
+                                       'NameSpace' => '__gnu_cxx',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Enum'
+                                     },
+                          '21189' => {
+                                       'Base' => {
+                                                   '5393' => {
+                                                               'pos' => '0'
+                                                             }
+                                                 },
+                                       'Copied' => 1,
+                                       'Header' => undef,
+                                       'Line' => '48',
+                                       'Name' => 'struct __gnu_cxx::__alloc_traits<std::allocator<char> >',
+                                       'NameSpace' => '__gnu_cxx',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'TParam' => {
+                                                     '0' => {
+                                                              'key' => '_Alloc',
+                                                              'type' => '476'
+                                                            }
+                                                   },
+                                       'Type' => 'Struct'
+                                     },
+                          '21389' => {
+                                       'BaseType' => '5405',
+                                       'Header' => undef,
+                                       'Line' => '57',
+                                       'Name' => '__gnu_cxx::__alloc_traits<std::allocator<char> >::pointer',
+                                       'NameSpace' => '__gnu_cxx::__alloc_traits<std::allocator<char> >',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '21413' => {
+                                       'BaseType' => '5468',
+                                       'Header' => undef,
+                                       'Line' => '59',
+                                       'Name' => '__gnu_cxx::__alloc_traits<std::allocator<char> >::size_type',
+                                       'NameSpace' => '__gnu_cxx::__alloc_traits<std::allocator<char> >',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '22870' => {
+                                       'Name' => 'unsigned short',
+                                       'Size' => '2',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '22877' => {
+                                       'Name' => 'unsigned long',
+                                       'Size' => '8',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '22905' => {
+                                       'Name' => 'int',
+                                       'Size' => '4',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '22918' => {
+                                       'Name' => 'long',
+                                       'Size' => '8',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '23016' => {
+                                       'BaseType' => '1',
+                                       'Name' => 'void*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '23041' => {
+                                       'BaseType' => '23051',
+                                       'Name' => 'char*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '23051' => {
+                                       'Name' => 'char',
+                                       'Size' => '1',
+                                       'Type' => 'Intrinsic'
+                                     },
+                          '23058' => {
+                                       'BaseType' => '23051',
+                                       'Name' => 'char const',
+                                       'Size' => '1',
+                                       'Type' => 'Const'
+                                     },
+                          '23078' => {
+                                       'BaseType' => '23058',
+                                       'Name' => 'char const*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '23159' => {
+                                       'BaseType' => '22870',
+                                       'Header' => undef,
+                                       'Line' => '40',
+                                       'Name' => '__uint16_t',
+                                       'PrivateABI' => 1,
+                                       'Size' => '2',
+                                       'Type' => 'Typedef'
+                                     },
+                          '23471' => {
+                                       'BaseType' => '23159',
+                                       'Header' => undef,
+                                       'Line' => '25',
+                                       'Name' => 'uint16_t',
+                                       'PrivateABI' => 1,
+                                       'Size' => '2',
+                                       'Type' => 'Typedef'
+                                     },
+                          '26862' => {
+                                       'BaseType' => '22905',
+                                       'Header' => undef,
+                                       'Line' => '32',
+                                       'Name' => '_Atomic_word',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '27297' => {
+                                       'BaseType' => '22870',
+                                       'Header' => undef,
+                                       'Line' => '28',
+                                       'Name' => 'sa_family_t',
+                                       'PrivateABI' => 1,
+                                       'Size' => '2',
+                                       'Type' => 'Typedef'
+                                     },
+                          '27309' => {
+                                       'Header' => undef,
+                                       'Line' => '178',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'sa_family',
+                                                            'offset' => '0',
+                                                            'type' => '27297'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'sa_data',
+                                                            'offset' => '2',
+                                                            'type' => '27354'
+                                                          }
+                                                 },
+                                       'Name' => 'struct sockaddr',
+                                       'PrivateABI' => 1,
+                                       'Size' => '16',
+                                       'Type' => 'Struct'
+                                     },
+                          '27349' => {
+                                       'BaseType' => '27309',
+                                       'Name' => 'struct sockaddr const',
+                                       'Size' => '16',
+                                       'Type' => 'Const'
+                                     },
+                          '27354' => {
+                                       'BaseType' => '23051',
+                                       'Name' => 'char[14]',
+                                       'Size' => '14',
+                                       'Type' => 'Array'
+                                     },
+                          '296' => {
+                                     'BaseType' => '22877',
+                                     'Header' => undef,
+                                     'Line' => '2426',
+                                     'Name' => 'std::size_t',
+                                     'NameSpace' => 'std',
+                                     'PrivateABI' => 1,
+                                     'Size' => '8',
+                                     'Type' => 'Typedef'
+                                   },
+                          '29741' => {
+                                       'BaseType' => '23051',
+                                       'Name' => 'char[16]',
+                                       'Size' => '16',
+                                       'Type' => 'Array'
+                                     },
+                          '30107' => {
+                                       'Header' => undef,
+                                       'Line' => '49',
+                                       'Name' => 'atscppapi::noncopyable',
+                                       'NameSpace' => 'atscppapi',
+                                       'PrivateABI' => 1,
+                                       'Size' => '1',
+                                       'Type' => 'Class'
+                                     },
+                          '31137' => {
+                                       'Base' => {
+                                                   '17179' => {
+                                                                'pos' => '0'
+                                                              }
+                                                 },
+                                       'Header' => undef,
+                                       'Line' => '172',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'access' => 'private',
+                                                            'name' => 'state_',
+                                                            'offset' => '0',
+                                                            'type' => '39622'
+                                                          }
+                                                 },
+                                       'Name' => 'atscppapi::header_field_iterator',
+                                       'NameSpace' => 'atscppapi',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Class'
+                                     },
+                          '31509' => {
+                                       'Header' => undef,
+                                       'Line' => '196',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'mloc_container_',
+                                                            'offset' => '0',
+                                                            'type' => '335935'
+                                                          }
+                                                 },
+                                       'Name' => 'struct atscppapi::HeaderFieldIteratorState',
+                                       'NameSpace' => 'atscppapi',
+                                       'PrivateABI' => 1,
+                                       'Size' => '16',
+                                       'Type' => 'Struct'
+                                     },
+                          '31514' => {
+                                       'Header' => undef,
+                                       'Line' => '234',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'access' => 'private',
+                                                            'name' => 'iter_',
+                                                            'offset' => '0',
+                                                            'type' => '31137'
+                                                          }
+                                                 },
+                                       'Name' => 'atscppapi::HeaderField',
+                                       'NameSpace' => 'atscppapi',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Class'
+                                     },
+                          '32362' => {
+                                       'Base' => {
+                                                   '30107' => {
+                                                                'pos' => '0'
+                                                              }
+                                                 },
+                                       'Header' => undef,
+                                       'Line' => '399',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'access' => 'private',
+                                                            'name' => 'state_',
+                                                            'offset' => '0',
+                                                            'type' => '39687'
+                                                          }
+                                                 },
+                                       'Name' => 'atscppapi::Headers',
+                                       'NameSpace' => 'atscppapi',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Class'
+                                     },
+                          '325' => {
+                                     'Header' => undef,
+                                     'Line' => '93',
+                                     'Name' => 'struct std::input_iterator_tag',
+                                     'NameSpace' => 'std',
+                                     'PrivateABI' => 1,
+                                     'Size' => '1',
+                                     'Type' => 'Struct'
+                                   },
+                          '332408' => {
+                                        'Name' => 'std::basic_ostream<char>',
+                                        'NameSpace' => 'std',
+                                        'PrivateABI' => 1,
+                                        'TParam' => {
+                                                      '0' => {
+                                                               'key' => '_CharT',
+                                                               'type' => '23051'
+                                                             }
+                                                    },
+                                        'Type' => 'Class'
+                                      },
+                          '333' => {
+                                     'Base' => {
+                                                 '325' => {
+                                                            'pos' => '0'
+                                                          }
+                                               },
+                                     'Header' => undef,
+                                     'Line' => '99',
+                                     'Name' => 'struct std::forward_iterator_tag',
+                                     'NameSpace' => 'std',
+                                     'PrivateABI' => 1,
+                                     'Size' => '1',
+                                     'Type' => 'Struct'
+                                   },
+                          '333569' => {
+                                        'Copied' => 1,
+                                        'Header' => undef,
+                                        'Line' => '971',
+                                        'Name' => 'std::__shared_ptr_access<atscppapi::MLocContainer, 2>',
+                                        'NameSpace' => 'std',
+                                        'PrivateABI' => 1,
+                                        'Size' => '1',
+                                        'TParam' => {
+                                                      '0' => {
+                                                               'key' => '_Tp',
+                                                               'type' => '352284'
+                                                             },
+                                                      '1' => {
+                                                               'key' => '_Lp',
+                                                               'type' => '20537',
+                                                               'val' => '2'
+                                                             }
+                                                    },
+                                        'Type' => 'Class'
+                                      },
+                          '333716' => {
+                                        'Header' => undef,
+                                        'Line' => '1987',
+                                        'Name' => 'struct std::remove_extent<atscppapi::MLocContainer>',
+                                        'NameSpace' => 'std',
+                                        'PrivateABI' => 1,
+                                        'Size' => '1',
+                                        'TParam' => {
+                                                      '0' => {
+                                                               'key' => '_Tp',
+                                                               'type' => '352284'
+                                                             }
+                                                    },
+                                        'Type' => 'Struct'
+                                      },
+                          '333730' => {
+                                        'BaseType' => '352284',
+                                        'Header' => undef,
+                                        'Line' => '1988',
+                                        'Name' => 'std::remove_extent<atscppapi::MLocContainer>::type',
+                                        'NameSpace' => 'std::remove_extent<atscppapi::MLocContainer>',
+                                        'PrivateABI' => 1,
+                                        'Size' => '24',
+                                        'Type' => 'Typedef'
+                                      },
+                          '33397' => {
+                                       'Base' => {
+                                                   '30107' => {
+                                                                'pos' => '0'
+                                                              }
+                                                 },
+                                       'Header' => undef,
+                                       'Line' => '478',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'hdr_buf_',
+                                                            'offset' => '0',
+                                                            'type' => '42130'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'hdr_loc_',
+                                                            'offset' => '8',
+                                                            'type' => '42107'
+                                                          },
+                                                   '2' => {
+                                                            'name' => 'self_created_structures_',
+                                                            'offset' => '22',
+                                                            'type' => '20089'
+                                                          }
+                                                 },
+                                       'Name' => 'struct atscppapi::HeadersState',
+                                       'NameSpace' => 'atscppapi',
+                                       'PrivateABI' => 1,
+                                       'Size' => '24',
+                                       'Type' => 'Struct'
+                                     },
+                          '335256' => {
+                                        'Base' => {
+                                                    '333569' => {
+                                                                  'pos' => '0'
+                                                                }
+                                                  },
+                                        'Header' => undef,
+                                        'Line' => '1052',
+                                        'Memb' => {
+                                                    '0' => {
+                                                             'access' => 'private',
+                                                             'name' => '_M_ptr',
+                                                             'offset' => '0',
+                                                             'type' => '352838'
+                                                           },
+                                                    '1' => {
+                                                             'access' => 'private',
+                                                             'name' => '_M_refcount',
+                                                             'offset' => '8',
+                                                             'type' => '13741'
+                                                           }
+                                                  },
+                                        'Name' => 'std::__shared_ptr<atscppapi::MLocContainer, 2>',
+                                        'NameSpace' => 'std',
+                                        'PrivateABI' => 1,
+                                        'Size' => '16',
+                                        'TParam' => {
+                                                      '0' => {
+                                                               'key' => '_Tp',
+                                                               'type' => '352284'
+                                                             },
+                                                      '1' => {
+                                                               'key' => '_Lp',
+                                                               'type' => '20537',
+                                                               'val' => '2'
+                                                             }
+                                                    },
+                                        'Type' => 'Class'
+                                      },
+                          '335533' => {
+                                        'BaseType' => '333730',
+                                        'Header' => undef,
+                                        'Line' => '1056',
+                                        'Name' => 'std::__shared_ptr<atscppapi::MLocContainer, 2>::element_type',
+                                        'NameSpace' => 'std::__shared_ptr<atscppapi::MLocContainer, 2>',
+                                        'PrivateABI' => 1,
+                                        'Size' => '24',
+                                        'Type' => 'Typedef'
+                                      },
+                          '335935' => {
+                                        'Base' => {
+                                                    '335256' => {
+                                                                  'pos' => '0'
+                                                                }
+                                                  },
+                                        'Header' => undef,
+                                        'Line' => '122',
+                                        'Name' => 'std::shared_ptr<atscppapi::MLocContainer>',
+                                        'NameSpace' => 'std',
+                                        'PrivateABI' => 1,
+                                        'Size' => '16',
+                                        'TParam' => {
+                                                      '0' => {
+                                                               'key' => '_Tp',
+                                                               'type' => '352284'
+                                                             }
+                                                    },
+                                        'Type' => 'Class'
+                                      },
+                          '337955' => {
+                                        'BaseType' => '332408',
+                                        'Header' => undef,
+                                        'Line' => '141',
+                                        'Name' => 'std::ostream',
+                                        'NameSpace' => 'std',
+                                        'PrivateABI' => 1,
+                                        'Type' => 'Typedef'
+                                      },
+                          '352284' => {
+                                        'Header' => undef,
+                                        'Line' => '180',
+                                        'Memb' => {
+                                                    '0' => {
+                                                             'name' => 'hdr_buf_',
+                                                             'offset' => '0',
+                                                             'type' => '42130'
+                                                           },
+                                                    '1' => {
+                                                             'name' => 'hdr_loc_',
+                                                             'offset' => '8',
+                                                             'type' => '42107'
+                                                           },
+                                                    '2' => {
+                                                             'name' => 'field_loc_',
+                                                             'offset' => '22',
+                                                             'type' => '42107'
+                                                           }
+                                                  },
+                                        'Name' => 'struct atscppapi::MLocContainer',
+                                        'NameSpace' => 'atscppapi',
+                                        'PrivateABI' => 1,
+                                        'Size' => '24',
+                                        'Type' => 'Struct'
+                                      },
+                          '352838' => {
+                                        'BaseType' => '335533',
+                                        'Name' => 'std::__shared_ptr<atscppapi::MLocContainer, 2>::element_type*',
+                                        'Size' => '8',
+                                        'Type' => 'Pointer'
+                                      },
+                          '364147' => {
+                                        'BaseType' => '337955',
+                                        'Name' => 'std::ostream&',
+                                        'Size' => '8',
+                                        'Type' => 'Ref'
+                                      },
+                          '394051' => {
+                                        'BaseType' => '31514',
+                                        'Name' => 'atscppapi::HeaderField&',
+                                        'Size' => '8',
+                                        'Type' => 'Ref'
+                                      },
+                          '39412' => {
+                                       'BaseType' => '14724',
+                                       'Name' => 'std::_Sp_counted_base<2>*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '39587' => {
+                                       'BaseType' => '22905',
+                                       'Name' => 'int*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '39592' => {
+                                       'BaseType' => '22905',
+                                       'Name' => 'int&',
+                                       'Size' => '8',
+                                       'Type' => 'Ref'
+                                     },
+                          '39622' => {
+                                       'BaseType' => '31509',
+                                       'Name' => 'struct atscppapi::HeaderFieldIteratorState*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '39687' => {
+                                       'BaseType' => '33397',
+                                       'Name' => 'struct atscppapi::HeadersState*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '39739' => {
+                                       'BaseType' => '32362',
+                                       'Name' => 'atscppapi::Headers&',
+                                       'Size' => '8',
+                                       'Type' => 'Ref'
+                                     },
+                          '41171' => {
+                                       'Header' => undef,
+                                       'Line' => '590',
+                                       'Memb' => {
+                                                   '0' => {
+                                                            'name' => 'TS_ERROR',
+                                                            'value' => '18446744073709551615 (-1)'
+                                                          },
+                                                   '1' => {
+                                                            'name' => 'TS_SUCCESS',
+                                                            'value' => '0'
+                                                          }
+                                                 },
+                                       'Name' => 'enum TSReturnCode',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Enum'
+                                     },
+                          '41200' => {
+                                       'BaseType' => '41171',
+                                       'Header' => undef,
+                                       'Line' => '593',
+                                       'Name' => 'TSReturnCode',
+                                       'PrivateABI' => 1,
+                                       'Size' => '4',
+                                       'Type' => 'Typedef'
+                                     },
+                          '42107' => {
+                                       'BaseType' => '42120',
+                                       'Header' => undef,
+                                       'Line' => '916',
+                                       'Name' => 'TSMLoc',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '42120' => {
+                                       'BaseType' => '42125',
+                                       'Name' => 'struct tsapi_mloc*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '42125' => {
+                                       'Name' => 'struct tsapi_mloc',
+                                       'PrivateABI' => 1,
+                                       'Type' => 'Struct'
+                                     },
+                          '42130' => {
+                                       'BaseType' => '42143',
+                                       'Header' => undef,
+                                       'Line' => '917',
+                                       'Name' => 'TSMBuffer',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '42143' => {
+                                       'BaseType' => '42148',
+                                       'Name' => 'struct tsapi_mbuffer*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '42148' => {
+                                       'Name' => 'struct tsapi_mbuffer',
+                                       'PrivateABI' => 1,
+                                       'Type' => 'Struct'
+                                     },
+                          '42153' => {
+                                       'BaseType' => '42166',
+                                       'Header' => undef,
+                                       'Line' => '919',
+                                       'Name' => 'TSHttpTxn',
+                                       'PrivateABI' => 1,
+                                       'Size' => '8',
+                                       'Type' => 'Typedef'
+                                     },
+                          '42166' => {
+                                       'BaseType' => '42171',
+                                       'Name' => 'struct tsapi_httptxn*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '42171' => {
+                                       'Name' => 'struct tsapi_httptxn',
+                                       'PrivateABI' => 1,
+                                       'Type' => 'Struct'
+                                     },
+                          '42598' => {
+                                       'BaseType' => '27349',
+                                       'Name' => 'struct sockaddr const*',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '43481' => {
+                                       'BaseType' => '43486',
+                                       'Name' => 'int(**)(...)',
+                                       'Size' => '8',
+                                       'Type' => 'Pointer'
+                                     },
+                          '43486' => {
+                                       'Name' => 'int(*)(...)',
+                                       'Param' => {
+                                                    '0' => {
+                                                             'type' => '-1'
+                                                           }
+                                                  },
+                                       'Return' => '22905',
+                                       'Size' => '8',
+                                       'Type' => 'FuncPtr'
+                                     },
+                          '457672' => {
+                                        'BaseType' => '12956',
+                                        'Name' => 'std::string const[11]',
+                                        'Size' => '352',
+                                        'Type' => 'Array'
+                                      },
+                          '476' => {
+                                     'Base' => {
+                                                 '20118' => {
+                                                              'pos' => '0'
+                                                            }
+                                               },
+                                     'Header' => undef,
+                                     'Line' => '124',
+                                     'Name' => 'std::allocator<char>',
+                                     'NameSpace' => 'std',
+                                     'PrivateABI' => 1,
+                                     'Size' => '1',
+                                     'TParam' => {
+                                                   '0' => {
+                                                            'name' => 'char'
+                                                          }
+                                                 },
+                                     'Type' => 'Class'
+                                   },
+                          '497579' => {
+                                        'BaseType' => '12956',
+                                        'Name' => 'std::string const[4]',
+                                        'Size' => '128',
+                                        'Type' => 'Array'
+                                      },
+                          '5393' => {
+                                      'Copied' => 1,
+                                      'Header' => undef,
+                                      'Line' => '411',
+                                      'Name' => 'struct std::allocator_traits<std::allocator<char> >',
+                                      'NameSpace' => 'std',
+                                      'PrivateABI' => 1,
+                                      'Size' => '1',
+                                      'TParam' => {
+                                                    '0' => {
+                                                             'type' => '476'
+                                                           }
+                                                  },
+                                      'Type' => 'Struct'
+                                    },
+                          '5405' => {
+                                      'BaseType' => '23041',
+                                      'Header' => undef,
+                                      'Line' => '420',
+                                      'Name' => 'std::allocator_traits<std::allocator<char> >::pointer',
+                                      'NameSpace' => 'std::allocator_traits<std::allocator<char> >',
+                                      'PrivateABI' => 1,
+                                      'Size' => '8',
+                                      'Type' => 'Typedef'
+                                    },
+                          '5468' => {
+                                      'BaseType' => '296',
+                                      'Header' => undef,
+                                      'Line' => '435',
+                                      'Name' => 'std::allocator_traits<std::allocator<char> >::size_type',
+                                      'NameSpace' => 'std::allocator_traits<std::allocator<char> >',
+                                      'PrivateABI' => 1,
+                                      'Size' => '8',
+                                      'Type' => 'Typedef'
+                                    },
+                          '5672' => {
+                                      'Header' => undef,
+                                      'Line' => '85',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'access' => 'private',
+                                                           'name' => '_M_dataplus',
+                                                           'offset' => '0',
+                                                           'type' => '5685'
+                                                         },
+                                                  '1' => {
+                                                           'access' => 'private',
+                                                           'name' => '_M_string_length',
+                                                           'offset' => '8',
+                                                           'type' => '5884'
+                                                         },
+                                                  '2' => {
+                                                           'access' => 'private',
+                                                           'name' => 'unnamed0',
+                                                           'offset' => '22',
+                                                           'type' => '5849'
+                                                         }
+                                                },
+                                      'Name' => 'std::__cxx11::basic_string<char>',
+                                      'NameSpace' => 'std::__cxx11',
+                                      'PrivateABI' => 1,
+                                      'Size' => '32',
+                                      'TParam' => {
+                                                    '0' => {
+                                                             'key' => '_CharT',
+                                                             'type' => '23051'
+                                                           }
+                                                  },
+                                      'Type' => 'Class'
+                                    },
+                          '5685' => {
+                                      'Base' => {
+                                                  '476' => {
+                                                             'pos' => '0'
+                                                           }
+                                                },
+                                      'Header' => undef,
+                                      'Line' => '158',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => '_M_p',
+                                                           'offset' => '0',
+                                                           'type' => '5814'
+                                                         }
+                                                },
+                                      'Name' => 'struct std::__cxx11::basic_string<char>::_Alloc_hider',
+                                      'NameSpace' => 'std::__cxx11::basic_string<char>',
+                                      'Private' => 1,
+                                      'PrivateABI' => 1,
+                                      'Size' => '8',
+                                      'Type' => 'Struct'
+                                    },
+                          '5814' => {
+                                      'BaseType' => '21389',
+                                      'Header' => undef,
+                                      'Line' => '100',
+                                      'Name' => 'std::__cxx11::basic_string<char>::pointer',
+                                      'NameSpace' => 'std::__cxx11::basic_string<char>',
+                                      'PrivateABI' => 1,
+                                      'Size' => '8',
+                                      'Type' => 'Typedef'
+                                    },
+                          '5849' => {
+                                      'Header' => undef,
+                                      'Line' => '180',
+                                      'Memb' => {
+                                                  '0' => {
+                                                           'name' => '_M_local_buf',
+                                                           'offset' => '0',
+                                                           'type' => '29741'
+                                                         },
+                                                  '1' => {
+                                                           'name' => '_M_allocated_capacity',
+                                                           'offset' => '0',
+                                                           'type' => '5884'
+                                                         }
+                                                },
+                                      'NameSpace' => 'std::__cxx11::basic_string<char>',
+                                      'Private' => 1,
+                                      'PrivateABI' => 1,
+                                      'Size' => '16',
+                                      'Type' => 'Union'
+                                    },
+                          '5884' => {
+                                      'BaseType' => '21413',
+                                      'Header' => undef,
+                                      'Line' => '96',
+                                      'Name' => 'std::__cxx11::basic_string<char>::size_type',
+                                      'NameSpace' => 'std::__cxx11::basic_string<char>',
+                                      'PrivateABI' => 1,
+                                      'Size' => '8',
+                                      'Type' => 'Typedef'
+                                    },
+                          '623999' => {
+                                        'BaseType' => '12956',
+                                        'Name' => 'std::string const[10]',
+                                        'Size' => '320',
+                                        'Type' => 'Array'
+                                      },
+                          '665298' => {
+                                        'Header' => undef,
+                                        'Line' => '38',
+                                        'Memb' => {
+                                                    '0' => {
+                                                             'name' => 'size',
+                                                             'offset' => '0',
+                                                             'type' => '22877'
+                                                           },
+                                                    '1' => {
+                                                             'name' => 'tsremap_version',
+                                                             'offset' => '8',
+                                                             'type' => '22877'
+                                                           }
+                                                  },
+                                        'Name' => 'struct _tsremap_api_info',
+                                        'PrivateABI' => 1,
+                                        'Size' => '16',
+                                        'Type' => 'Struct'
+                                      },
+                          '665338' => {
+                                        'BaseType' => '665298',
+                                        'Header' => undef,
+                                        'Line' => '41',
+                                        'Name' => 'TSRemapInterface',
+                                        'PrivateABI' => 1,
+                                        'Size' => '16',
+                                        'Type' => 'Typedef'
+                                      },
+                          '665350' => {
+                                        'Header' => undef,
+                                        'Line' => '43',
+                                        'Memb' => {
+                                                    '0' => {
+                                                             'name' => 'mapFromUrl',
+                                                             'offset' => '0',
+                                                             'type' => '42107'
+                                                           },
+                                                    '1' => {
+                                                             'name' => 'mapToUrl',
+                                                             'offset' => '8',
+                                                             'type' => '42107'
+                                                           },
+                                                    '2' => {
+                                                             'name' => 'requestUrl',
+                                                             'offset' => '22',
+                                                             'type' => '42107'
+                                                           },
+                                                    '3' => {
+                                                             'name' => 'requestBufp',
+                                                             'offset' => '36',
+                                                             'type' => '42130'
+                                                           },
+                                                    '4' => {
+                                                             'name' => 'requestHdrp',
+                                                             'offset' => '50',
+                                                             'type' => '42107'
+                                                           },
+                                                    '5' => {
+                                                             'name' => 'redirect',
+                                                             'offset' => '64',
+                                                             'type' => '22905'
+                                                           }
+                                                  },
+                                        'Name' => 'struct _tm_remap_request_info',
+                                        'PrivateABI' => 1,
+                                        'Size' => '48',
+                                        'Type' => 'Struct'
+                                      },
+                          '665442' => {
+                                        'BaseType' => '665350',
+                                        'Header' => undef,
+                                        'Line' => '60',
+                                        'Name' => 'TSRemapRequestInfo',
+                                        'PrivateABI' => 1,
+                                        'Size' => '48',
+                                        'Type' => 'Typedef'
+                                      },
+                          '665454' => {
+                                        'Header' => undef,
+                                        'Line' => '63',
+                                        'Memb' => {
+                                                    '0' => {
+                                                             'name' => 'TSREMAP_NO_REMAP',
+                                                             'value' => '0'
+                                                           },
+                                                    '1' => {
+                                                             'name' => 'TSREMAP_DID_REMAP',
+                                                             'value' => '1'
+                                                           },
+                                                    '2' => {
+                                                             'name' => 'TSREMAP_NO_REMAP_STOP',
+                                                             'value' => '2'
+                                                           },
+                                                    '3' => {
+                                                             'name' => 'TSREMAP_DID_REMAP_STOP',
+                                                             'value' => '3'
+                                                           },
+                                                    '4' => {
+                                                             'name' => 'TSREMAP_ERROR',
+                                                             'value' => '18446744073709551615 (-1)'
+                                                           }
+                                                  },
+                                        'Name' => 'enum TSRemapStatus',
+                                        'PrivateABI' => 1,
+                                        'Size' => '4',
+                                        'Type' => 'Enum'
+                                      },
+                          '665503' => {
+                                        'BaseType' => '665454',
+                                        'Header' => undef,
+                                        'Line' => '76',
+                                        'Name' => 'TSRemapStatus',
+                                        'PrivateABI' => 1,
+                                        'Size' => '4',
+                                        'Type' => 'Typedef'
+                                      },
+                          '666038' => {
+                                        'BaseType' => '665442',
+                                        'Name' => 'TSRemapRequestInfo*',
+                                        'Size' => '8',
+                                        'Type' => 'Pointer'
+                                      },
+                          '666389' => {
+                                        'BaseType' => '665338',
+                                        'Name' => 'TSRemapInterface*',
+                                        'Size' => '8',
+                                        'Type' => 'Pointer'
+                                      }
+                        },
+          'UndefinedSymbols' => {
+                                  'libtscppapi.so.9.1.1' => {
+                                                              'TSActionCancel' => 0,
+                                                              'TSCacheUrlSet' => 0,
+                                                              'TSContCall' => 0,
+                                                              'TSContCreate' => 0,
+                                                              'TSContDataGet' => 0,
+                                                              'TSContDataSet' => 0,
+                                                              'TSContDestroy' => 0,
+                                                              'TSContMutexGet' => 0,
+                                                              'TSContScheduleEveryOnPool' => 0,
+                                                              'TSContScheduleOnPool' => 0,
+                                                              'TSDebug' => 0,
+                                                              'TSError' => 0,
+                                                              'TSFetchCreate' => 0,
+                                                              'TSFetchDestroy' => 0,
+                                                              'TSFetchHeaderAdd' => 0,
+                                                              'TSFetchLaunch' => 0,
+                                                              'TSFetchReadData' => 0,
+                                                              'TSFetchRespGet' => 0,
+                                                              'TSFetchRespHdrMBufGet' => 0,
+                                                              'TSFetchRespHdrMLocGet' => 0,
+                                                              'TSFetchUrl' => 0,
+                                                              'TSFetchWriteData' => 0,
+                                                              'TSHandleMLocRelease' => 0,
+                                                              'TSHttpAltInfoCachedReqGet' => 0,
+                                                              'TSHttpAltInfoCachedRespGet' => 0,
+                                                              'TSHttpAltInfoClientReqGet' => 0,
+                                                              'TSHttpHdrCreate' => 0,
+                                                              'TSHttpHdrMethodGet' => 0,
+                                                              'TSHttpHdrParseReq' => 0,
+                                                              'TSHttpHdrParseResp' => 0,
+                                                              'TSHttpHdrReasonGet' => 0,
+                                                              'TSHttpHdrReasonSet' => 0,
+                                                              'TSHttpHdrStatusGet' => 0,
+                                                              'TSHttpHdrStatusSet' => 0,
+                                                              'TSHttpHdrTypeSet' => 0,
+                                                              'TSHttpHdrUrlGet' => 0,
+                                                              'TSHttpHdrVersionGet' => 0,
+                                                              'TSHttpHookAdd' => 0,
+                                                              'TSHttpParserCreate' => 0,
+                                                              'TSHttpParserDestroy' => 0,
+                                                              'TSHttpTxnActiveTimeoutSet' => 0,
+                                                              'TSHttpTxnCacheLookupStatusGet' => 0,
+                                                              'TSHttpTxnCachedReqGet' => 0,
+                                                              'TSHttpTxnCachedRespGet' => 0,
+                                                              'TSHttpTxnClientAddrGet' => 0,
+                                                              'TSHttpTxnClientIncomingPortSet' => 0,
+                                                              'TSHttpTxnClientReqGet' => 0,
+                                                              'TSHttpTxnClientRespBodyBytesGet' => 0,
+                                                              'TSHttpTxnClientRespGet' => 0,
+                                                              'TSHttpTxnClientRespHdrBytesGet' => 0,
+                                                              'TSHttpTxnConfigFind' => 0,
+                                                              'TSHttpTxnConfigFloatGet' => 0,
+                                                              'TSHttpTxnConfigFloatSet' => 0,
+                                                              'TSHttpTxnConfigIntGet' => 0,
+                                                              'TSHttpTxnConfigIntSet' => 0,
+                                                              'TSHttpTxnConfigStringGet' => 0,
+                                                              'TSHttpTxnConfigStringSet' => 0,
+                                                              'TSHttpTxnConnectTimeoutSet' => 0,
+                                                              'TSHttpTxnDNSTimeoutSet' => 0,
+                                                              'TSHttpTxnEffectiveUrlStringGet' => 0,
+                                                              'TSHttpTxnErrorBodySet' => 0,
+                                                              'TSHttpTxnHookAdd' => 0,
+                                                              'TSHttpTxnIncomingAddrGet' => 0,
+                                                              'TSHttpTxnIntercept' => 0,
+                                                              'TSHttpTxnIsInternal' => 0,
+                                                              'TSHttpTxnIsWebsocket' => 0,
+                                                              'TSHttpTxnNextHopAddrGet' => 0,
+                                                              'TSHttpTxnNoActivityTimeoutSet' => 0,
+                                                              'TSHttpTxnPristineUrlGet' => 0,
+                                                              'TSHttpTxnRedirectUrlSet' => 0,
+                                                              'TSHttpTxnReenable' => 0,
+                                                              'TSHttpTxnServerAddrGet' => 0,
+                                                              'TSHttpTxnServerAddrSet' => 0,
+                                                              'TSHttpTxnServerIntercept' => 0,
+                                                              'TSHttpTxnServerReqGet' => 0,
+                                                              'TSHttpTxnServerRespBodyBytesGet' => 0,
+                                                              'TSHttpTxnServerRespGet' => 0,
+                                                              'TSHttpTxnServerRespHdrBytesGet' => 0,
+                                                              'TSHttpTxnStatusSet' => 0,
+                                                              'TSIOBufferBlockNext' => 0,
+                                                              'TSIOBufferBlockReadStart' => 0,
+                                                              'TSIOBufferCopy' => 0,
+                                                              'TSIOBufferCreate' => 0,
+                                                              'TSIOBufferDestroy' => 0,
+                                                              'TSIOBufferReaderAlloc' => 0,
+                                                              'TSIOBufferReaderAvail' => 0,
+                                                              'TSIOBufferReaderConsume' => 0,
+                                                              'TSIOBufferReaderFree' => 0,
+                                                              'TSIOBufferReaderStart' => 0,
+                                                              'TSIOBufferWrite' => 0,
+                                                              'TSMBufferCreate' => 0,
+                                                              'TSMBufferDestroy' => 0,
+                                                              'TSMimeHdrFieldAppend' => 0,
+                                                              'TSMimeHdrFieldCreate' => 0,
+                                                              'TSMimeHdrFieldDestroy' => 0,
+                                                              'TSMimeHdrFieldFind' => 0,
+                                                              'TSMimeHdrFieldGet' => 0,
+                                                              'TSMimeHdrFieldNameGet' => 0,
+                                                              'TSMimeHdrFieldNameSet' => 0,
+                                                              'TSMimeHdrFieldNext' => 0,
+                                                              'TSMimeHdrFieldNextDup' => 0,
+                                                              'TSMimeHdrFieldValueDelete' => 0,
+                                                              'TSMimeHdrFieldValueStringGet' => 0,
+                                                              'TSMimeHdrFieldValueStringInsert' => 0,
+                                                              'TSMimeHdrFieldValuesClear' => 0,
+                                                              'TSMimeHdrFieldValuesCount' => 0,
+                                                              'TSMimeHdrFieldsClear' => 0,
+                                                              'TSMimeHdrFieldsCount' => 0,
+                                                              'TSMimeHdrLengthGet' => 0,
+                                                              'TSMutexCreate' => 0,
+                                                              'TSMutexLock' => 0,
+                                                              'TSMutexUnlock' => 0,
+                                                              'TSPluginRegister' => 0,
+                                                              'TSSkipRemappingSet' => 0,
+                                                              'TSStatCreate' => 0,
+                                                              'TSStatFindName' => 0,
+                                                              'TSStatIntDecrement' => 0,
+                                                              'TSStatIntGet' => 0,
+                                                              'TSStatIntIncrement' => 0,
+                                                              'TSStatIntSet' => 0,
+                                                              'TSTextLogObjectCreate' => 0,
+                                                              'TSTextLogObjectDestroy' => 0,
+                                                              'TSTextLogObjectFlush' => 0,
+                                                              'TSTextLogObjectRollingEnabledSet' => 0,
+                                                              'TSTextLogObjectRollingIntervalSecSet' => 0,
+                                                              'TSTextLogObjectWrite' => 0,
+                                                              'TSTransformCreate' => 0,
+                                                              'TSTransformOutputVConnGet' => 0,
+                                                              'TSUrlCreate' => 0,
+                                                              'TSUrlHostGet' => 0,
+                                                              'TSUrlHostSet' => 0,
+                                                              'TSUrlHttpQueryGet' => 0,
+                                                              'TSUrlHttpQuerySet' => 0,
+                                                              'TSUrlParse' => 0,
+                                                              'TSUrlPathGet' => 0,
+                                                              'TSUrlPathSet' => 0,
+                                                              'TSUrlPortGet' => 0,
+                                                              'TSUrlPortSet' => 0,
+                                                              'TSUrlSchemeGet' => 0,
+                                                              'TSUrlSchemeSet' => 0,
+                                                              'TSUrlStringGet' => 0,
+                                                              'TSUserArgGet' => 0,
+                                                              'TSUserArgIndexReserve' => 0,
+                                                              'TSUserArgSet' => 0,
+                                                              'TSVConnClose' => 0,
+                                                              'TSVConnClosedGet' => 0,
+                                                              'TSVConnRead' => 0,
+                                                              'TSVConnShutdown' => 0,
+                                                              'TSVConnSslConnectionGet' => 0,
+                                                              'TSVConnWrite' => 0,
+                                                              'TSVConnWriteVIOGet' => 0,
+                                                              'TSVIOBufferGet' => 0,
+                                                              'TSVIOContGet' => 0,
+                                                              'TSVIONBytesSet' => 0,
+                                                              'TSVIONDoneGet' => 0,
+                                                              'TSVIONDoneSet' => 0,
+                                                              'TSVIONTodoGet' => 0,
+                                                              'TSVIOReaderGet' => 0,
+                                                              'TSVIOReenable' => 0,
+                                                              'TS_HTTP_METHOD_CONNECT' => 0,
+                                                              'TS_HTTP_METHOD_DELETE' => 0,
+                                                              'TS_HTTP_METHOD_GET' => 0,
+                                                              'TS_HTTP_METHOD_HEAD' => 0,
+                                                              'TS_HTTP_METHOD_OPTIONS' => 0,
+                                                              'TS_HTTP_METHOD_POST' => 0,
+                                                              'TS_HTTP_METHOD_PURGE' => 0,
+                                                              'TS_HTTP_METHOD_PUSH' => 0,
+                                                              'TS_HTTP_METHOD_PUT' => 0,
+                                                              'TS_HTTP_METHOD_TRACE' => 0,
+                                                              'TS_MIME_FIELD_HOST' => 0,
+                                                              'TS_MIME_LEN_HOST' => 0,
+                                                              '_ITM_deregisterTMCloneTable' => 0,
+                                                              '_ITM_registerTMCloneTable' => 0,
+                                                              '_TSAssert' => 0,
+                                                              '_TSReleaseAssert' => 0,
+                                                              '_TSfree' => 0,
+                                                              '_TSmalloc' => 0,
+                                                              '_TSstrdup' => 0,
+                                                              '_Unwind_Resume@GCC_3.0' => 0,
+                                                              '_ZNKSt5ctypeIcE13_M_widen_initEv@GLIBCXX_3.4.11' => 0,
+                                                              '_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEPKc@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSo3putEc@GLIBCXX_3.4' => 0,
+                                                              '_ZNSo5flushEv@GLIBCXX_3.4' => 0,
+                                                              '_ZNSo9_M_insertImEERSoT_@GLIBCXX_3.4.9' => 0,
+                                                              '_ZNSt6localeC1Ev@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt6localeD1Ev@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEmmPKcm@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE14_M_replace_auxEmmmc@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEm@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcm@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev@GLIBCXX_3.4.21' => 0,
+                                                              '_ZNSt8__detail15_List_node_base7_M_hookEPS0_@GLIBCXX_3.4.15' => 0,
+                                                              '_ZNSt8ios_baseC2Ev@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt8ios_baseD2Ev@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@GLIBCXX_3.4' => 0,
+                                                              '_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate@GLIBCXX_3.4' => 0,
+                                                              '_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@GLIBCXX_3.4.9' => 0,
+                                                              '_ZSt16__throw_bad_castv@GLIBCXX_3.4' => 0,
+                                                              '_ZSt17__throw_bad_allocv@GLIBCXX_3.4' => 0,
+                                                              '_ZSt18_Rb_tree_decrementPSt18_Rb_tree_node_base@GLIBCXX_3.4' => 0,
+                                                              '_ZSt18_Rb_tree_incrementPSt18_Rb_tree_node_base@GLIBCXX_3.4' => 0,
+                                                              '_ZSt19__throw_logic_errorPKc@GLIBCXX_3.4' => 0,
+                                                              '_ZSt20__throw_length_errorPKc@GLIBCXX_3.4' => 0,
+                                                              '_ZSt20__throw_system_errori@GLIBCXX_3.4.11' => 0,
+                                                              '_ZSt29_Rb_tree_insert_and_rebalancebPSt18_Rb_tree_node_baseS0_RS_@GLIBCXX_3.4' => 0,
+                                                              '_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21' => 0,
+                                                              '_ZTVN10__cxxabiv117__class_type_infoE@CXXABI_1.3' => 0,
+                                                              '_ZTVN10__cxxabiv120__si_class_type_infoE@CXXABI_1.3' => 0,
+                                                              '_ZTVN10__cxxabiv121__vmi_class_type_infoE@CXXABI_1.3' => 0,
+                                                              '_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21' => 0,
+                                                              '_ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21' => 0,
+                                                              '_ZTVSt15basic_streambufIcSt11char_traitsIcEE@GLIBCXX_3.4' => 0,
+                                                              '_ZTVSt9basic_iosIcSt11char_traitsIcEE@GLIBCXX_3.4' => 0,
+                                                              '_ZdlPvm@CXXABI_1.3.9' => 0,
+                                                              '_Znwm@GLIBCXX_3.4' => 0,
+                                                              '__assert_fail@GLIBC_2.2.5' => 0,
+                                                              '__cxa_atexit@GLIBC_2.2.5' => 0,
+                                                              '__cxa_begin_catch@CXXABI_1.3' => 0,
+                                                              '__cxa_end_catch@CXXABI_1.3' => 0,
+                                                              '__cxa_finalize@GLIBC_2.2.5' => 0,
+                                                              '__cxa_guard_abort@CXXABI_1.3' => 0,
+                                                              '__cxa_guard_acquire@CXXABI_1.3' => 0,
+                                                              '__cxa_guard_release@CXXABI_1.3' => 0,
+                                                              '__cxa_pure_virtual@CXXABI_1.3' => 0,
+                                                              '__cxa_rethrow@CXXABI_1.3' => 0,
+                                                              '__errno_location@GLIBC_2.2.5' => 0,
+                                                              '__gmon_start__' => 0,
+                                                              '__gxx_personality_v0@CXXABI_1.3' => 0,
+                                                              '__libc_single_threaded@GLIBC_2.32' => 0,
+                                                              'deflate' => 0,
+                                                              'deflateEnd' => 0,
+                                                              'deflateInit2_' => 0,
+                                                              'inet_ntop@GLIBC_2.2.5' => 0,
+                                                              'inflate' => 0,
+                                                              'inflateEnd' => 0,
+                                                              'inflateInit2_' => 0,
+                                                              'memcmp@GLIBC_2.2.5' => 0,
+                                                              'memcpy@GLIBC_2.14' => 0,
+                                                              'memset@GLIBC_2.2.5' => 0,
+                                                              'pthread_mutex_lock@GLIBC_2.2.5' => 0,
+                                                              'pthread_mutex_trylock@GLIBC_2.34' => 0,
+                                                              'pthread_mutex_unlock@GLIBC_2.2.5' => 0,
+                                                              'pthread_once@GLIBC_2.34' => 0,
+                                                              'snprintf@GLIBC_2.2.5' => 0,
+                                                              'strcasecmp@GLIBC_2.2.5' => 0,
+                                                              'strlen@GLIBC_2.2.5' => 0,
+                                                              'strtol@GLIBC_2.2.5' => 0,
+                                                              'vsnprintf@GLIBC_2.2.5' => 0
+                                                            }
+                                },
+          'WordSize' => '8'
+        };
