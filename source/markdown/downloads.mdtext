@@ -32,22 +32,22 @@ will be needed.  You can also
 [browse through all releases](https://archive.apache.org/dist/trafficserver/)
 and hash signatures.
 
-# Current v9.x Release -- 9.1.1 # {#9.1.1}
+# Current v9.x Release -- 9.1.2 # {#9.1.2}
 
- Apache Traffic Server v9.1.0 was released on November 2nd, 2021.
- [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-9.1.1.tar.bz2.asc)]
- [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.1.1.tar.bz2.sha512)]
+ Apache Traffic Server v9.1.2 was released on March 11th, 2022.
+ [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-9.1.2.tar.bz2.asc)]
+ [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.1.2.tar.bz2.sha512)]
 
- <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-9.1.1.tar.bz2"
- class="download_ts">Traffic Server 9.1.1</a>
+ <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-9.1.2.tar.bz2"
+ class="download_ts">Traffic Server 9.1.2</a>
 
-v9.1.0 is our latest stable release. Additional details for this release are in the
-[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.1.x/CHANGELOG-9.1.1)
-and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/51?closed=1).
+v9.1.2 is our latest stable release. Additional details for this release are in the
+[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.1.x/CHANGELOG-9.1.2)
+and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/milestone/55?closed=1).
 
 For details on the v9.x release, please see
-[9.0.x News](https://docs.trafficserver.apache.org/en/9.0.x/release-notes/whats-new.en.html). There are also
-details about [upgrading to 9.x](https://docs.trafficserver.apache.org/en/9.0.x/release-notes/upgrading.en.html).
+[9.1.x News](https://docs.trafficserver.apache.org/en/9.1.x/release-notes/whats-new.en.html). There are also
+details about [upgrading to 9.x](https://docs.trafficserver.apache.org/en/9.1.x/release-notes/upgrading.en.html).
 
 # Current v8.x Release -- 8.1.3 # {#8.1.3}
 
