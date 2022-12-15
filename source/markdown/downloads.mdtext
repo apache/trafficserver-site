@@ -19,9 +19,9 @@ RSS:       /rss/releases.rss
 
 
 
-The latest stable release of Apache Traffic Server is v9.1.3, released on 2022-08-09.
-In addition, we continue to support the v8.1.x LTS release train, currently v8.1.5,
-which was released on 2022-08-09. We follow the [Semantic Versioning](http://semver.org)
+The latest stable release of Apache Traffic Server is v9.1.4, released on 2022-12-15.
+In addition, we continue to support the v8.1.x LTS release train, currently v8.1.6,
+which was released on 2022-12-15. We follow the [Semantic Versioning](http://semver.org)
 scheme. The goal is to release patch releases frequently, and minor releases as needed.
 Within the major versions, all such patch and minor releases are all compatible.
 
@@ -32,35 +32,35 @@ will be needed.  You can also
 [browse through all releases](https://archive.apache.org/dist/trafficserver/)
 and hash signatures.
 
-# Current v9.x Release -- 9.1.3 # {#9.1.3}
+# Current v9.x Release -- 9.1.4 # {#9.1.4}
 
- Apache Traffic Server v9.1.3 was released on August 9th, 2022.
- [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-9.1.3.tar.bz2.asc)]
- [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.1.3.tar.bz2.sha512)]
+ Apache Traffic Server v9.1.4 was released on December 15th, 2022.
+ [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-9.1.4.tar.bz2.asc)]
+ [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.1.4.tar.bz2.sha512)]
 
- <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-9.1.3.tar.bz2"
- class="download_ts">Traffic Server 9.1.3</a>
+ <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-9.1.4.tar.bz2"
+ class="download_ts">Traffic Server 9.1.4</a>
 
-v9.1.3 is our latest stable release. Additional details for this release are in the
-[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.1.x/CHANGELOG-9.1.3)
-and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:9.1.3).
+v9.1.4 is our latest stable release. Additional details for this release are in the
+[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.1.x/CHANGELOG-9.1.4)
+and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:9.1.4).
 
 For details on the v9.x release, please see
 [9.1.x News](https://docs.trafficserver.apache.org/en/9.1.x/release-notes/whats-new.en.html). There are also
 details about [upgrading to 9.x](https://docs.trafficserver.apache.org/en/9.1.x/release-notes/upgrading.en.html).
 
-# Current v8.x Release -- 8.1.5 # {#8.1.5}
+# Current v8.x Release -- 8.1.6 # {#8.1.6}
 
- Apache Traffic Server v8.1.5 was released on August 9th, 2022.
- [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.5.tar.bz2.asc)]
- [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.5.tar.bz2.sha512)]
+ Apache Traffic Server v8.1.6 was released on December 15th, 2022.
+ [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.6.tar.bz2.asc)]
+ [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.6.tar.bz2.sha512)]
 
- <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-8.1.5.tar.bz2"
- class="download_ts">Traffic Server 8.1.5</a>
+ <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-8.1.6.tar.bz2"
+ class="download_ts">Traffic Server 8.1.6</a>
 
-v8.1.5 is our latest stable release for the 8.x release. Additional details for this release are in the
-[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/8.1.x/CHANGELOG-8.1.5)
-and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:8.1.5).
+v8.1.6 is our latest stable release for the 8.x release. Additional details for this release are in the
+[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/8.1.x/CHANGELOG-8.1.6)
+and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:8.1.6).
 
 # Archived Releases
 
