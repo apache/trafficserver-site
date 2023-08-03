@@ -32,36 +32,36 @@ will be needed.  You can also
 [browse through all releases](https://archive.apache.org/dist/trafficserver/)
 and hash signatures.
 
-# Current v9.x Release -- 9.2.1 # {#9.2.1}
+# Current v9.x Release -- 9.2.2 # {#9.2.2}
 
- Apache Traffic Server v9.2.1 was released on June 12th, 2023.
- [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-9.2.1.tar.bz2.asc)]
- [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.2.1.tar.bz2.sha512)]
+ Apache Traffic Server v9.2.2 was released on August 3rd, 2023.
+ [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-9.2.2.tar.bz2.asc)]
+ [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.2.2.tar.bz2.sha512)]
 
- <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-9.2.1.tar.bz2"
- class="download_ts">Traffic Server 9.2.1</a>
+ <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-9.2.2.tar.bz2"
+ class="download_ts">Traffic Server 9.2.2</a>
 
-v9.2.1 is our latest stable release. Additional details for this release are in the
-[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.2.x/CHANGELOG-9.2.1)
-and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:9.2.1).
+v9.2.2 is our latest stable release. Additional details for this release are in the
+[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/9.2.x/CHANGELOG-9.2.2)
+and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:9.2.2).
 
 For details on the v9.x release, please see
 [9.2.x News](https://docs.trafficserver.apache.org/en/9.2.x/release-notes/whats-new.en.html)
 (there's a new section specific to v9.2.x). There are also
 details about [upgrading to 9.x](https://docs.trafficserver.apache.org/en/9.2.x/release-notes/upgrading.en.html).
 
-# Current v8.x Release -- 8.1.7 # {#8.1.7}
+# Current v8.x Release -- 8.1.8 # {#8.1.8}
 
- Apache Traffic Server v8.1.7 was released on June 12th, 2023.
- [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.7.tar.bz2.asc)]
- [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.7.tar.bz2.sha512)]
+ Apache Traffic Server v8.1.8 was released on August 3rd, 2023.
+ [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.8.tar.bz2.asc)]
+ [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.8.tar.bz2.sha512)]
 
- <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-8.1.7.tar.bz2"
- class="download_ts">Traffic Server 8.1.7</a>
+ <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-8.1.8.tar.bz2"
+ class="download_ts">Traffic Server 8.1.8</a>
 
 v8.1.6 is our latest stable release for the 8.x release. Additional details for this release are in the
-[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/8.1.x/CHANGELOG-8.1.7)
-and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:8.1.7).
+[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/8.1.x/CHANGELOG-8.1.8)
+and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:8.1.8).
 
 # Archived Releases
 
