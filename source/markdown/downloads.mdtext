@@ -20,8 +20,8 @@ RSS:       /rss/releases.rss
 
 
 The latest stable release of Apache Traffic Server is v9.2.3, released on 2023-10-9.
-In addition, we continue to support the v8.1.x LTS release train, currently v8.1.8,
-which was released on 2023-08-03. We follow the [Semantic Versioning](http://semver.org)
+In addition, we continue to support the v8.1.x LTS release train, currently v8.1.9,
+which was released on 2023-10-09. We follow the [Semantic Versioning](http://semver.org)
 scheme. The goal is to release patch releases frequently, and minor releases as needed.
 Within the major versions, all such patch and minor releases are all compatible.
 
