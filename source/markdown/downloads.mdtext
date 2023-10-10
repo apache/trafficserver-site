@@ -34,7 +34,7 @@ and hash signatures.
 
 # Current v9.x Release -- 9.2.3 # {#9.2.3}
 
- Apache Traffic Server v9.2.3 was released on August 3rd, 2023.
+ Apache Traffic Server v9.2.3 was released on October 9th, 2023.
  [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-9.2.3.tar.bz2.asc)]
  [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.2.3.tar.bz2.sha512)]
 
@@ -50,18 +50,18 @@ For details on the v9.x release, please see
 (there's a new section specific to v9.2.x). There are also
 details about [upgrading to 9.x](https://docs.trafficserver.apache.org/en/9.2.x/release-notes/upgrading.en.html).
 
-# Current v8.x Release -- 8.1.8 # {#8.1.8}
+# Current v8.x Release -- 8.1.9 # {#8.1.9}
 
- Apache Traffic Server v8.1.8 was released on August 3rd, 2023.
- [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.8.tar.bz2.asc)]
- [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.8.tar.bz2.sha512)]
+ Apache Traffic Server v8.1.9 was released on October 9th, 2023.
+ [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.9.tar.bz2.asc)]
+ [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-8.1.9.tar.bz2.sha512)]
 
- <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-8.1.8.tar.bz2"
- class="download_ts">Traffic Server 8.1.8</a>
+ <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-8.1.9.tar.bz2"
+ class="download_ts">Traffic Server 8.1.9</a>
 
-v8.1.6 is our latest stable release for the 8.x release. Additional details for this release are in the
-[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/8.1.x/CHANGELOG-8.1.8)
-and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:8.1.8).
+v8.1.9 is our latest stable release for the 8.x release. Additional details for this release are in the
+[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/8.1.x/CHANGELOG-8.1.9)
+and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:8.1.9).
 
 # Archived Releases
 
