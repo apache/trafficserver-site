@@ -1,0 +1,14 @@
+.headerlink {
+    display: none;
+}
+
+*:hover > .headerlink {
+    display: inline;
+}
+
+.main-content {
+    /* account for navbar */
+    margin-top: 25px;
+
+    min-height: calc(100vh - 160px);
+}
