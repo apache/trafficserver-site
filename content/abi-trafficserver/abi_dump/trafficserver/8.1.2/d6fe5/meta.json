@@ -1,7 +1,0 @@
-{
-  "Object": "lib/traffic_server.so",
-  "Lang": "C++",
-  "TotalSymbols": "751",
-  "PublicABI": "1",
-  "Version": "1.11"
-}

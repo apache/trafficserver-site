@@ -1,3 +1,0 @@
-Options +Includes +MultiViews
-AddOutputFilter INCLUDES .html
-DirectoryIndex index

@@ -1,74 +1,301 @@
 Title: Companies using Apache Traffic Server
-Notice:    Licensed to the Apache Software Foundation (ASF) under one
-           or more contributor license agreements.  See the NOTICE file
-           distributed with this work for additional information
-           regarding copyright ownership.  The ASF licenses this file
-           to you under the Apache License, Version 2.0 (the
-           "License"); you may not use this file except in compliance
-           with the License.  You may obtain a copy of the License at
-           .
-             https://www.apache.org/licenses/LICENSE-2.0
-           .
-           Unless required by applicable law or agreed to in writing,
-           software distributed under the License is distributed on an
-           "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-           KIND, either express or implied.  See the License for the
-           specific language governing permissions and limitations
-           under the License.
 
-		
+# Companies using Apache Traffic Server
 
-# Companies using Apache Traffic Server #
-Apache Traffic Server is used world-wide by companies of many sizes, ranging from the 
-small entrepreneurial starter companies to the large Internet conglomerates like Yahoo, 
-Comcast and Akamai. Companies that use Apache Traffic Server include:
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Yahoo!</h5>
+          <p class="card-text"><a href="https://www.yahoo.com">https://www.yahoo.com</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- LinkedIn -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">LinkedIn</h5>
+          <p class="card-text"><a href="https://www.linkedin.com/">https://www.linkedin.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Go Daddy -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Go Daddy</h5>
+          <p class="card-text"><a href="https://www.godaddy.com/">https://www.godaddy.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Yahoo! Japan -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Yahoo! Japan</h5>
+          <p class="card-text"><a href="https://www.yahoo.co.jp/">https://www.yahoo.co.jp/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Akamai -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Akamai</h5>
+          <p class="card-text"><a href="https://www.akamai.com/">https://www.akamai.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Upyun -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Upyun</h5>
+          <p class="card-text"><a href="https://www.upyun.com/">https://www.upyun.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Verycloud! China -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Verycloud! China</h5>
+          <p class="card-text"><a href="https://www.verycloud.cn/">https://www.verycloud.cn/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Websense -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Websense</h5>
+          <p class="card-text"><a href="https://www.websense.com/">https://www.websense.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Azion Technologies -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Azion Technologies</h5>
+          <p class="card-text"><a href="https://www.azion.com">https://www.azion.com</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- 4399 -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">4399</h5>
+          <p class="card-text"><a href="https://www.4399.com/">https://www.4399.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Openwave Mobility -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Openwave Mobility</h5>
+          <p class="card-text"><a href="https://owmobility.com/">https://owmobility.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Torchbox -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Torchbox</h5>
+          <p class="card-text"><a href="https://torchbox.com/">https://torchbox.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- IISpeed -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">IISpeed</h5>
+          <p class="card-text"><a href="https://www.iispeed.com/">https://www.iispeed.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- OmniTI -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">OmniTI</h5>
+          <p class="card-text"><a href="https://www.omniti.com/">https://www.omniti.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Betfair -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Betfair</h5>
+          <p class="card-text"><a href="https://www.betfair.com/">https://www.betfair.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- IP Only -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">IP Only</h5>
+          <p class="card-text"><a href="https://www.ip-only.com/link=ats">https://www.ip-only.com/link=ats</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- The Lounge -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">The Lounge</h5>
+          <p class="card-text"><a href="https://www.thelounge.net/">https://www.thelounge.net/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Internode -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Internode</h5>
+          <p class="card-text"><a href="https://www.internode.on.net/">https://www.internode.on.net/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- SiC Software -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">SiC Software</h5>
+          <p class="card-text"><a href="https://www.sic-software.com/">https://www.sic-software.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Devaus -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Devaus</h5>
+          <p class="card-text"><a href="https://www.devaus.net/">https://www.devaus.net/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- PowerHTTP -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">PowerHTTP</h5>
+          <p class="card-text"><a href="https://www.powerhttp.com/">https://www.powerhttp.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- VNG -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">VNG</h5>
+          <p class="card-text"><a href="https://vng.com.vn/">https://vng.com.vn/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Suomen Tilauslentopalvelu -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Suomen Tilauslentopalvelu</h5>
+          <p class="card-text"><a href="https://www.tilauslentopalvelu.fi/">https://www.tilauslentopalvelu.fi/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Guruve -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Guruve</h5>
+          <p class="card-text"><a href="https://www.guruve.com/">https://www.guruve.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- eQualit.ie -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">eQualit.ie</h5>
+          <p class="card-text"><a href="https://equalit.ie/">https://equalit.ie/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Frisch Inspiriert -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Frisch Inspiriert</h5>
+          <p class="card-text"><a href="https://frisch-inspiriert.de/">https://frisch-inspiriert.de/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- Brainswear -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Brainswear</h5>
+          <p class="card-text"><a href="https://www.brainswear.at/">https://www.brainswear.at/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- eehu.com -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">eehu.com</h5>
+          <p class="card-text"><a href="https://www.eehu.com/">https://www.eehu.com/</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for other items -->
+    <!-- titanbet.co.uk -->
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">titanbet.co.uk</h5>
+          <p class="card-text"><a href="https://www.titanbet.co.uk">https://www.titanbet.co.uk</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-<a rel="nofollow" href="http://www.comcast.com"><img alt="Comcast" src="/images/companies/comcast.png" title=""/></a>
-<a rel="nofollow" href="http://www.yahoo.com"><img alt="Yahoo!" src="/images/companies/yahoo.png" title=""/></a>
-<a rel="nofollow" href="http://www.linkedin.com/"><img alt="LinkedIn" src="/images/companies/linkedin.png" title=""/></a>
-<a rel="nofollow" href="http://www.godaddy.com/"><img alt="Go Daddy" src="/images/companies/godaddy.png" title=""/></a>
-<a rel="nofollow" href="http://www.yahoo.co.jp/"><img alt="Yahoo! Japan" src="/images/companies/yahoo_japan.png" title=""/></a>
-</p>
-
-<p>
-<a rel="nofollow" href="http://www.akamai.com/"><img alt="Akamai" src="/images/companies/akamai.png" title=""/></a>
-<a rel="nofollow" href="http://www.upyun.com/"><img alt="Upyun" src="/images/companies/upyunLogo.png" title=""/></a>
-<a rel="nofollow" href="http://www.verycloud.cn/"><img alt="Verycloud! China" src="/images/companies/verycloud_logo.png" title=""/></a>
-<a rel="nofollow" href="http://www.websense.com/"><img alt="Websense" src="/images/companies/websense.png" title=""/></a>
-<a rel="nofollow" href="http://www.azion.com"><img alt="Azion Technologies" src="/images/companies/azion.png" title=""/></a>
-</p>
-
-<p>
-<a rel="nofollow" href="http://www.4399.com/"><img alt="4399" src="/images/companies/4399_logo.gif" title=""/></a>
-<a rel="nofollow" href="http://owmobility.com/"><img alt="Openwave Mobility" src="/images/companies/owmobility.png" title=""/></a>
-<a rel="nofollow" href="https://torchbox.com/"><img alt="Torchbox" src="/images/companies/torchbox.png" title=""/></a>
-<a rel="nofollow" href="http://www.iispeed.com/"><img alt="IISpeed" src="/images/companies/iispeed.png" title=""/></a>
-<a rel="nofollow" href="http://www.omniti.com/"><img alt="OmniTI" src="/images/companies/omniti.png" title=""/></a>
-</p>
-
-<p>
-<a rel="nofollow" href="http://www.betfair.com/"><img alt="Betfair" src="/images/companies/betfair.png" title=""/></a>
-<a rel="nofollow" href="http://www.ip-only.com/link=ats"><img alt="IP Only" src="/images/companies/iponly.png" title=""/></a>
-<a rel="nofollow" href="http://www.thelounge.net/"><img alt="The Lounge" src="/images/companies/tthelounge.png" title=""/></a>
-<a rel="nofollow" href="http://www.internode.on.net/"><img alt="Internode" src="/images/companies/internode.png" title=""/></a>
-<a rel="nofollow" href="http://www.sic-software.com/"><img alt="SiC Software" src="/images/companies/sic.png" title=""/></a>
-</p>
-
-<p>
-<a rel="nofollow" href="http://www.devaus.net/"><img alt="Devaus" src="/images/companies/devaus.png" title=""/></a>
-<a rel="nofollow" href="http://www.powerhttp.com/"><img alt="PowerHTTP" src="/images/companies/powerhttp.png" title=""/></a>
-<a rel="nofollow" href="http://vng.com.vn/"><img alt="VNG" src="/images/companies/vng.png" title=""/></a>
-<a rel="nofollow" href="http://www.tilauslentopalvelu.fi/"><img alt="Suomen Tilauslentopalvelu" src="/images/companies/suomen.png" title=""/></a>
-<a rel="nofollow" href="http://www.guruve.com/"><img alt="Guruve" src="/images/companies/guruve.png" title=""/></a>
-</p>
-
-<p>
-<a rel="nofollow" href="http://equalit.ie/"><img alt="eQualit.ie" src="/images/companies/equalit.ie.png" title=""/></a>
-<a rel="nofollow" href="http://frisch-inspiriert.de/"><img alt="Frisch Inspiriert" src="/images/companies/frisch.png" title=""/></a>
-<a rel="nofollow" href="http://www.brainswear.at/"><img alt="Brainswear" src="/images/companies/brainswear.png" title=""/></a>
-<a rel="nofollow" href="http://www.eehu.com/"><img alt="eehu.com" src="/images/companies/eehu.png" title=""/></a>
-<a rel="nofollow" href="http://www.titanbet.co.uk"><img alt="titanbet.co.uk" src="/images/companies/titanbet.png" title=""/></a>
-</p>
-
-Please contact private@trafficserver.apache.org to be added.
+<!-- Contact information -->
+<div class="container mt-4">
+  <p>Please contact <a href="mailto:private@trafficserver.apache.org">private@trafficserver.apache.org</a> to be added.</p>
+</div>

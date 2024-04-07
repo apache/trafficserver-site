@@ -1,360 +1,303 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="google-site-verification" content="0Zvqk8EoyLzvCzEZj86bw4McxpCrEzUskO2c1n5OqE8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- The 1140px Grid - https://cssgrid.net/ -->
-  <link rel="stylesheet" type="text/css" href="/styles/1140.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="/styles/styles.css" media="screen" />
-  <!--css3-mediaqueries-js - https://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
-  <script type="text/javascript" src="/js/css3-mediaqueries.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apache Traffic Server</title>
-
-  <!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
-       See the NOTICE file distributed with this work for additional information regarding copyright ownership.
-       The ASF licenses this file to you under the Apache License, Version 2.0 (the &quot;License&quot;); you
-       may not use this file except in compliance with the License.  You may obtain a copy of the License at
-
-           https://www.apache.org/licenses/LICENSE-2.0
-
-      Unless required by applicable law or agreed to in writing, software distributed under the License is
-      distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
-      or implied.  See the License for the specific language governing permissions and limitations under the
-      License. -->
-
-
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/css/styles.css" rel="stylesheet">
 </head>
 
-<body class="container">
+<body>
   <!-- Header -->
-  <div class="row" id="header">
-    <div class="fourcol">
-      <a href="/"><img class="logo" alt="Apache Traffic Server" src="/images/press/ts_logo_tm_380x73.png" /></a>
-    </div>
-    <div class="fourcol">
-      <a href="https://www.apache.org/"><img alt="The Apache Software Foundation" src="https://www.apache.org/images/feather-small.png" /></a>
-    </div>
-    <div class="fourcol right last" id="searchbox">
-      <form action="https://docs.trafficserver.apache.org/en/latest/search.html" id="cse-search-box" name="cse-search-box">
-        <input type="text" name="q" size="22" style="font-size: 80%" />
-        <input type="submit" name="sa" value="Search Documentation" style="font-size: 80%" />
-      </form>
-    </div>
-  </div>
-  </div>
-
-  <div class="row nav">
-    <div class="ninecol">
-      <a href="https://trafficserver.apache.org/">Home</a>
-      <a href="downloads">Downloads</a>
-      <a href="https://docs.trafficserver.apache.org/en/latest/index.html">Documentation</a>
-      <a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server">Wiki</a>
-      <a href="https://github.com/apache/trafficserver/issues">Issues</a>
-      <a href="https://ci.trafficserver.apache.org/">CI</a>
-      <a href="/users.html">Customers</a>
-      <a href="/acknowledgements.html">Acknowledgements</a>
-      <a href="/press.html">Press kit</a>
-      <a href="/assistance.html">Assistance</a>
-    </div>
-    <div class="threecol last right">
-      <a href="https://apache.org/security/">Security</a>
-      <a href="https://www.apache.org/foundation/sponsorship.html">Donate</a>
-      <a href="https://www.apache.org/foundation/thanks.html">Thanks</a>
-    </div>
-  </div>
-
-  <div class="row content">
-    <div class="eightcol">
-      <div id="blurbbox">
-        <p style="padding-top: 20px;">Apache Traffic Server™ software is a fast, scalable and extensible HTTP/1.1 and
-          HTTP/2 compliant caching
-          proxy server. Formerly a commercial product, Yahoo! donated it to the Apache
-          Foundation, and currently used by several major CDNs and content owners.</p>
-      </div>
-    </div>
-    <div class="fourcol right last">
-      <span id="download">
-        <a title="Downloads" href="/downloads">Downloads</a>
-      </span>
-      <span style="display: table; margin:0 auto;">
-        <a href="https://twitter.com/trafficserver" class="twitter-follow-button" data-show-count="false">Follow
-          @trafficserver</a>
-        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
-      </span>
-    </div>
-  </div>
-
-  <div class="row content">
-    <div class="twelvecol banner">
-      <h1 id="Overview">Overview</h1>
-    </div>
-  </div>
-
-  <div class="row content">
-    <div class="fourcol">
-      <div id="blurbbox">
-        <ul>
-          <li>
-            <b>Caching</b>
-            <p>Improve your response time, while reducing server load and bandwidth needs by
-              caching and reusing frequently-requested web pages, images, and web service
-              calls.</p>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="primaryLinksDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Primary Links
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="primaryLinksDropdown">
+              <li><a class="dropdown-item" href="/">Home</a></li>
+              <li><a class="dropdown-item" href="/downloads">Downloads</a></li>
+              <li><a class="dropdown-item"
+                  href="https://docs.trafficserver.apache.org/en/latest/index.html">🔗 Documentation</a></li>
+              <li><a class="dropdown-item"
+                  href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server">🔗 Wiki</a></li>
+              <li><a class="dropdown-item" href="https://github.com/apache/trafficserver/issues">🔗 Issues</a></li>
+            </ul>
           </li>
-
-          <li>
-            <b>Proxying</b>
-            <p>Easily add keep-alive, filter or anonymize content requests, or add load
-              balancing by adding a proxy layer.</p>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" href="/users.html">Customers</a></li>
+              <li><a class="dropdown-item" href="/acknowledgements.html">Acknowledgements</a></li>
+              <li><a class="dropdown-item" href="/press.html">Press kit</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="asfDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              ASF
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="asfDropdown">
+              <li><a class="dropdown-item" href="https://apache.org/security/">🔗 Security</a></li>
+              <li><a class="dropdown-item" href="https://www.apache.org/foundation/sponsorship.html">🔗 Donate</a></li>
+              <li><a class="dropdown-item" href="https://www.apache.org/foundation/thanks.html">🔗 Thanks</a></li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
+  </nav>
 
-    <div class="fourcol">
-      <div id="blurbbox">
-        <ul>
-          <li>
-            <b>Fast</b>
-            <p>Scales well on modern SMP hardware, handling 10s of thousands of requests per
-              second.</p>
-          </li>
-          <li>
-            <b>Extensible</b>
-            <p>APIs to write your own plug-ins to do anything from modifying HTTP headers to
-              handling ESI requests to writing your own cache algorithm.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="fourcol last">
-      <div id="blurbbox">
-        <ul>
-          <li>
-            <b>Proven</b>
-            <p>Handling over 400TB a day at <a href="https://www.yahoo.com/">Yahoo!</a> both as
-              forward and reverse proxies, Apache Traffic Server is battle
-              hardened. Also visit our <a href="users.html">Customers page</a> for
-              some of our corporate users and supporters.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="row content">
-    <div class="twelvecol banner">
-      <h1 id="LearnMore">Learn More</h1>
-    </div>
-  </div>
-
-  <div class="row content">
-    <div class="fourcol">
-      <div id="blurbbox">
-        <div class="banner">
-          <h3>Get Support</h3>
-        </div>
-        <ul class="blurblist">
-          <li>
-            <p>Having trouble with builds, configurations or are you getting errors you don't understand?
-              <a href="mailto:users-subscribe@trafficserver.apache.org">Subscribe</a> to our Users Mailing List
-              or join our <b>#traffic-server</b> channel on <a href="https://the-asf.slack.com/" title="Slack">
-                The ASF Slack</a> workspace to get help! Use your @apache.org email address to automatically join.
-              If you need a workspace invitation, contact us on our devevelop mailing list, or ask any ASF
-              committer.</p> 
-          </li>
-
-          <li>
-            <p>
-              Can't get your plugin to work? Have questions about the ATS code? Or maybe you have suggestions for
-              improvements or new features? <a href="mailto:dev-subscribe@trafficserver.apache.org">Get help</a>
-              from developers or start a discussion on our dev discussion list.</p>
-          </li>
-
-          <li>
-            <p>
-              <a href="https://cwiki.apache.org/confluence/display/TS/Filing+useful+bug+reports">Report</a> or confirm
-              bugs or try out the latest patches from our <a href="https://github.com/apache/trafficserver/">Bug
-                Tracker</a></p>
-          </li>
-
-          <li>
-            <p>
-              <a href="https://cwiki.apache.org/confluence/display/TS/Filing+useful+bug+reports">Learn how</a> to ask
-              <i>good</i> questions, create useful bug reports and how to apply patches.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="fourcol">
-      <div id="blurbbox">
-        <div class="banner">
-          <h3>Get Involved</h3>
-        </div>
-
-        <ul class="blurblist">
-          <li>
-            <p><a href="mailto:users-subscribe@trafficserver.apache.org">Subscribe</a> and
-              help out on the users Mailing List or simply share your usecase or experience.
-              For sometimes speedier responses check out our Slack channel
-              <b>#traffic-server</b> on <a href="https://the-asf.slack.com/" title="Slack">
-                The ASF Slack</a> workspace.
-          </li>
-
-          <li>
-            <p>
-              Impress developers or help others by <a href="mailto:dev-subscribe@trafficserver.apache.org">participating</a>
-              on
-              our dev discussion list or <a href="mailto:commits-subscribe@trafficserver.apache.org">follow</a> the
-              latest development on
-              our commits list.</p>
-          </li>
-
-          <li>
-            <p>
-              <a href="https://cwiki.apache.org/confluence/display/TS/Filing+useful+bug+reports">Report</a> issues or
-              bring patches to our <a href="https://github.com/apache/trafficserver/">Bug Tracker</a></p>
-          </li>
-
-          <li>
-            <p>
-              Visit our wiki to see a list of
-              <a href="https://cwiki.apache.org/confluence/display/TS/Projects" title="Apache Traffic Server - Projects">Projects</a>
-              we are currently working on.</p>
-          </li>
-
-          <li>
-            <p>
-              Learn <a href="https://cwiki.apache.org/confluence/display/TS/Contributing">how to create patches</a> to
-              the code or the
-              documentation and how to debug Apache Traffic Server.</p>
-          </li>
-
-          <li>
-            <p>We've <a href="https://github.com/apache/trafficserver/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">tagged
-                github issues</a> that have a low entrance barrier.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="fourcol last">
-      <div id="blurbbox">
-        <div class="banner">
-          <h3>Web Resources</h3>
-        </div>
-
-        <ul class="blurblist">
-          <li>
-            <a href="https://docs.trafficserver.apache.org/en/latest/admin-guide/index.en.html">Administrator's Guide</a>
-            <p>Installing, configuring and administrating Apache Traffic Server</p>
-          </li>
-
-          <li>
-            <a href="https://docs.trafficserver.apache.org/en/latest/developer-guide/index.en.html">Developer's Guide</a>
-            <p>Developing Apache Traffic Server plug-ins and how the code works</p>
-          </li>
-
-          <li>
-            <a href="https://cwiki.apache.org/confluence/display/TS/FAQ">Frequently Asked
-              Questions</a>
-            <p>A running list of your most common questions</p>
-          </li>
-
-          <li>
-            <a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server">Wiki</a>
-            and <a href="https://blogs.apache.org/trafficserver/">Our blog</a>
-            <p>Collaboration and interesting topics around the project</p>
-          </li>
-
-        </ul>
+  <div class="container main-content">
+    <h1 id='welcome-to-apache-traffic-server'>Welcome to Apache Traffic Server!<a href='#welcome-to-apache-traffic-server' title='Permanent link to this' class='headerlink'>&para;</a></h1>
+<p>Apache Traffic Server™ is a powerful, versatile HTTP/1.1 and HTTP/2 compliant caching proxy server. Originally a commercial product, it was generously donated to the Apache Foundation by Yahoo! and is now utilized by numerous major CDNs and content owners.</p>
+<p>Explore our features, get support, and join the community to leverage the full potential of Apache Traffic Server.</p>
+<hr />
+<h2 id='get-started'>Get Started<a href='#get-started' title='Permanent link to this' class='headerlink'>&para;</a></h2>
+<h3 id='downloads'><a href="/downloads">Downloads</a><a href='#downloads' title='Permanent link to this' class='headerlink'>&para;</a></h3>
+<p>Get the latest version of Apache Traffic Server.</p>
+<h3 id='follow-trafficserver'><a href="https://twitter.com/trafficserver">Follow @trafficserver</a><a href='#follow-trafficserver' title='Permanent link to this' class='headerlink'>&para;</a></h3>
+<p>Stay updated with the latest news and announcements.</p>
+<hr />
+<h2 id='key-features'>Key Features<a href='#key-features' title='Permanent link to this' class='headerlink'>&para;</a></h2>
+<h3 id='caching'>Caching<a href='#caching' title='Permanent link to this' class='headerlink'>&para;</a></h3>
+<p>Enhance response time, reduce server load, and minimize bandwidth consumption by caching frequently-requested web pages, images, and web service calls.</p>
+<h3 id='proxying'>Proxying<a href='#proxying' title='Permanent link to this' class='headerlink'>&para;</a></h3>
+<p>Effortlessly implement keep-alive, content filtering, anonymization, or load balancing through a flexible proxy layer.</p>
+<h3 id='fast'>Fast<a href='#fast' title='Permanent link to this' class='headerlink'>&para;</a></h3>
+<p>Designed to scale efficiently on modern SMP hardware, capable of handling tens of thousands of requests per second.</p>
+<h3 id='extensible'>Extensible<a href='#extensible' title='Permanent link to this' class='headerlink'>&para;</a></h3>
+<p>Utilize APIs to develop custom plugins for tasks ranging from HTTP header modification to implementing bespoke cache algorithms.</p>
+<h3 id='proven'>Proven<a href='#proven' title='Permanent link to this' class='headerlink'>&para;</a></h3>
+<p>Battle-tested at Yahoo!, processing over 400TB of data daily as both forward and reverse proxies. Explore our <a href="users.html">Customers page</a> for insights into our corporate users and supporters.</p>
+<hr />
+<h2 id='learn-more'>Learn More<a href='#learn-more' title='Permanent link to this' class='headerlink'>&para;</a></h2>
+<h3 id='get-support'>Get Support<a href='#get-support' title='Permanent link to this' class='headerlink'>&para;</a></h3>
+<h4 id='users-mailing-list-slack-channel'>Users Mailing List &amp; Slack Channel<a href='#users-mailing-list-slack-channel' title='Permanent link to this' class='headerlink'>&para;</a></h4>
+<p>Subscribe to our Users Mailing List or join our <strong>#traffic-server</strong> channel on <a href="https://the-asf.slack.com/">The ASF Slack</a>. Reach out for assistance with builds, configurations, or any questions.</p>
+<h4 id='developers-bug-tracking'>Developers &amp; Bug Tracking<a href='#developers-bug-tracking' title='Permanent link to this' class='headerlink'>&para;</a></h4>
+<p>Join our dev discussion list for help with plugin development or code-related inquiries. Report or confirm bugs through our <a href="https://github.com/apache/trafficserver/">Bug Tracker</a>.</p>
+<h4 id='useful-resources'>Useful Resources<a href='#useful-resources' title='Permanent link to this' class='headerlink'>&para;</a></h4>
+<p>Learn how to ask effective questions, create informative bug reports, and apply patches efficiently.</p>
+<h3 id='get-involved'>Get Involved<a href='#get-involved' title='Permanent link to this' class='headerlink'>&para;</a></h3>
+<h4 id='community-engagement'>Community Engagement<a href='#community-engagement' title='Permanent link to this' class='headerlink'>&para;</a></h4>
+<p>Participate in our users and developers mailing lists. Share your experiences or seek assistance on our Slack channel.</p>
+<h4 id='contribution-development'>Contribution &amp; Development<a href='#contribution-development' title='Permanent link to this' class='headerlink'>&para;</a></h4>
+<p>Contribute to ongoing projects, create patches, or debug Apache Traffic Server. Explore beginner-friendly tasks tagged in our GitHub issues.</p>
+<h3 id='web-resources'>Web Resources<a href='#web-resources' title='Permanent link to this' class='headerlink'>&para;</a></h3>
+<ul>
+<li><strong><a href="https://docs.trafficserver.apache.org/en/latest/admin-guide/index.en.html">Administrator's Guide</a>:</strong> Installation, configuration, and administration guidelines.</li>
+<li><strong><a href="https://docs.trafficserver.apache.org/en/latest/developer-guide/index.en.html">Developer's Guide</a>:</strong> Insights into plugin development and underlying code mechanisms.</li>
+<li><strong><a href="https://cwiki.apache.org/confluence/display/TS/FAQ">Frequently Asked Questions</a>:</strong> Answers to common queries and troubleshooting tips.</li>
+<li><strong><a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server">Wiki</a> and <a href="https://blogs.apache.org/trafficserver/">Blog</a>:</strong> Collaboration platforms and project insights.</li>
+</ul>
+<hr />
+<h2 id='news-updates'>News &amp; Updates<a href='#news-updates' title='Permanent link to this' class='headerlink'>&para;</a></h2>
+<p>Stay informed about the latest releases, security fixes, and project developments.</p>
+<div class="accordion" id="news">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#04032024c" aria-expanded="true" aria-controls="collapseOne">
+        April 3, 2024
+      </button>
+    </h2>
+    <div id="04032024c" class="accordion-collapse collapse show" data-bs-parent="#news">
+      <div class="accordion-body">
+        We are releasing both v9.2.4 and v8.1.10. We recommend everyone to upgrade to one of these versions of ATS.
       </div>
     </div>
   </div>
-
-  <div class="row content">
-    <div class="twelvecol banner">
-      <h1 id="News">News</h1>
+  <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#10092023c" aria-expanded="false" aria-controls="10092023c">
+      October 9, 2023
+    </button>
+  </h2>
+  <div id="10092023c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      We are releasing both v9.2.3 and v8.1.9. We recommend everyone to upgrade to one of these versions of ATS.
     </div>
   </div>
-
-  <div class="row content">
-    <div class="twelvecol">
-      <div id="blurbbox">
-        <ul>
-          <li><b>April 3, 2024:</b>We are releasing both v9.2.4 and v8.1.10. We recommend everyone to upgrade to one of these versions of ATS.</li>
-          <li><b>October 9, 2023:</b>We are releasing both v9.2.3 and v8.1.9. We recommend everyone to upgrade to one of these versions of ATS.</li>
-          <li><b>August 3, 2023:</b> We are releasing both v9.2.2 and v8.1.8 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.</li>
-	        <li><b>June 12, 2023:</b> We are releasing both v9.2.1 and v8.1.7 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.</li>
-          <li><b>January 23, 2023:</b>The first version of the stable v9.2.x ATS branch is now available for download. This version, \
-v9.2.0, is a feature and bug fix release over previous v9.1.x releases.</li>
-          <li><b>December 15, 2022:</b> We are releasing both v9.1.4 and v8.1.6 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.</li>
-          <li><b>August 9, 2022:</b> We are releasing both v9.1.3 and v8.1.5 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.</li>
-          <li><b>March 21, 2022:</b>The latest version of the stable v8.x ATS release is now available for download. This version, v8.1.4, is a bug fix release over previous 8.x releases.</li>
-          <li><b>March 11, 2021:</b>The latest version of the stable v9.x ATS
-          release is now available for immediate download! This version,
-          v9.1.2, is a bug fix release over previous 9.x releases.</li>
-          <li><b>November 2, 2021:</b>We are releasing both v9.1.1 and v8.1.3 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.</li>
-          <li><b>August 17, 2021:</b>We are releasing both v9.1.0, which is our next current release.</li>
-          <li><b>June 24, 2021:</b>We are releasing both v9.0.2 and v8.1.2 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.</li>
-          <li><b>April 16, 2021:</b>We are pleased to announce v9.0.1, which is bug-fix release on the v9.x LTS train.</li>
-        </ul>
-      </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#08032023c" aria-expanded="false" aria-controls="08032023c">
+      August 3, 2023
+    </button>
+  </h2>
+  <div id="08032023c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      We are releasing both v9.2.2 and v8.1.8 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.
     </div>
   </div>
-
-  <div class="row content">
-    <div class="twelvecol banner">
-      <h1 id="Misc">Miscellaneous</h1>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#06122023c" aria-expanded="false" aria-controls="06122023c">
+      June 12, 2023
+    </button>
+  </h2>
+  <div id="06122023c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      We are releasing both v9.2.1 and v8.1.7 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.
     </div>
   </div>
-
-  <div class="row content">
-    <div class="sixcol">
-      <div id="blurbbox">
-        <ul>
-          <li><a href="https://github.com/apache/trafficserver/">View Git code repository</a></li>
-          <li><a href="https://cwiki.apache.org/confluence/display/TS/Supported+Operating+Systems">Supported Operating
-              Systems</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="sixcol last">
-      <div id="blurbbox">
-        <ul>
-          <li><a href="https://www.apache.org/licenses/">License</a></li>
-          <li><a href="https://cwiki.apache.org/confluence/display/TS/Building">Build Instructions</a></li>
-          <li><a href="https://cwiki.apache.org/confluence/display/TS/Committers">Committers</a></li>
-          <li><a href="https://mail-archives.apache.org/mod_mbox/trafficserver-users/">Users Archives</a></li>
-          <li><a href="https://mail-archives.apache.org/mod_mbox/trafficserver-dev/">Dev Archives</a></li>
-        </ul>
-      </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#01232023c" aria-expanded="false" aria-controls="01232023c">
+      January 23, 2023
+    </button>
+  </h2>
+  <div id="01232023c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      The first version of the stable v9.2.x ATS branch is now available for download. This version, v9.2.0, is a feature and bug fix release over previous v9.1.x releases.
     </div>
   </div>
-
-  <div id="footer" class="row">
-    <div class="tencol">
-
-      Copyright &copy; 2018
-      <a href="https://www.apache.org/">The Apache Software Foundation</a>.
-      Licensed under
-      the <a href="https://www.apache.org/licenses/">Apache License</a>,
-      Version 2.0. Apache Traffic Server, Apache,
-      the Apache Traffic Server logo, and the Apache feather logo are
-      trademarks of The Apache Software Foundation.
-    </div>
-    <div class="twocol right last">
-      <span id="apache_logo">
-        <a href="https://www.apache.org/"><img alt="The Apache Software Foundation" src="https://www.apache.org/images/feather-small.png" /></a>
-      </span>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#12152022c" aria-expanded="false" aria-controls="12152022c">
+      December 15, 2022
+    </button>
+  </h2>
+  <div id="12152022c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      We are releasing both v9.1.4 and v8.1.6 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.
     </div>
   </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#08092022c" aria-expanded="false" aria-controls="08092022c">
+      August 9, 2022
+    </button>
+  </h2>
+  <div id="08092022c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      We are releasing both v9.1.3 and v8.1.5 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#03212022c" aria-expanded="false" aria-controls="03212022c">
+      March 21, 2022
+    </button>
+  </h2>
+  <div id="03212022c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      The latest version of the stable v8.x ATS release is now available for download. This version, v8.1.4, is a bug fix release over previous 8.x releases.
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#03112021c" aria-expanded="false" aria-controls="03112021c">
+      March 11, 2021
+    </button>
+  </h2>
+  <div id="03112021c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      The latest version of the stable v9.x ATS release is now available for immediate download! This version, v9.1.2, is a bug fix release over previous 9.x releases.
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#11022021c" aria-expanded="false" aria-controls="11022021c">
+      November 2, 2021
+    </button>
+  </h2>
+  <div id="11022021c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      We are releasing both v9.1.1 and v8.1.3 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#08172021c" aria-expanded="false" aria-controls="08172021c">
+      August 17, 2021
+    </button>
+  </h2>
+  <div id="08172021c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      We are releasing both v9.1.0, which is our next current release.
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#06242021c" aria-expanded="false" aria-controls="06242021c">
+      June 24, 2021
+    </button>
+  </h2>
+  <div id="06242021c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      We are releasing both v9.0.2 and v8.1.2 which include security fixes. We recommend everyone to upgrade to one of these versions of ATS.
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#04162021c" aria-expanded="false" aria-controls="04162021c">
+      April 16, 2021
+    </button>
+  </h2>
+  <div id="04162021c" class="accordion-collapse collapse" data-bs-parent="#news">
+    <div class="accordion-body">
+      We are pleased to announce v9.0.1, which is a bug-fix release on the v9.x LTS train.
+    </div>
+  </div>
+</div>
 
+</div>
+
+<hr />
+<h2 id='miscellaneous'>Miscellaneous<a href='#miscellaneous' title='Permanent link to this' class='headerlink'>&para;</a></h2>
+<p>Explore additional resources and information about Apache Traffic Server.</p>
+<ul>
+<li><strong><a href="https://github.com/apache/trafficserver/">View Git code repository</a>:</strong> Access the project's source code.</li>
+<li><strong><a href="https://cwiki.apache.org/confluence/display/TS/Supported+Operating+Systems">Supported Operating Systems</a>:</strong> Compatibility information.</li>
+<li><strong><a href="https://www.apache.org/licenses/">License</a>:</strong> Understand our licensing terms.</li>
+<li><strong><a href="https://cwiki.apache.org/confluence/display/TS/Building">Build Instructions</a>:</strong> Guidelines for building Apache Traffic Server.</li>
+<li><strong><a href="https://cwiki.apache.org/confluence/display/TS/Committers">Committers</a>:</strong> Meet the project's committers.</li>
+<li><strong><a href="https://mail-archives.apache.org/mod_mbox/trafficserver-users/">Users Archives</a></strong> &amp; <strong><a href="https://mail-archives.apache.org/mod_mbox/trafficserver-dev/">Dev Archives</a>:</strong> Access mailing list archives.</li>
+</ul>
+  </div>
+
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+        <p class="mb-0">
+            Copyright &copy; 2024
+            <a href="https://www.apache.org/" class="text-light">The Apache Software Foundation</a>.
+            Licensed under the
+            <a href="https://www.apache.org/licenses/" class="text-light">Apache License</a>,
+            Version 2.0. Apache Traffic Server, Apache,
+            the Apache Traffic Server logo, and the Apache feather logo are
+            trademarks of The Apache Software Foundation.
+        </p>
+    </div>
+</footer>
+
+
+
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
