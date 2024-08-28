@@ -20,8 +20,8 @@ RSS:       /rss/releases.rss
 
 
 The latest stable release of Apache Traffic Server is v10.0.0, released on 2024-08-27.
-In addition, we continue to support the v8.1.x LTS release train, currently v8.1.9,
-which was released on 2023-10-09. We follow the [Semantic Versioning](http://semver.org)
+In addition, we continue to support the v9.2.x LTS release train, currently v9.2.5,
+which was released on 2024-07-25. We follow the [Semantic Versioning](http://semver.org)
 scheme. The goal is to release patch releases frequently, and minor releases as needed.
 Within the major versions, all such patch and minor releases are all compatible.
 
@@ -56,7 +56,7 @@ details about [upgrading to 10.x](https://docs.trafficserver.apache.org/en/lates
  [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-9.2.5.tar.bz2.sha512)]
 
  <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-9.2.5.tar.bz2"
- class="download_ts">Traffic Server 9.2.4</a>
+ class="download_ts">Traffic Server 9.2.5</a>
 
 For details on the v9.x release, please see
 [9.2.x News](https://docs.trafficserver.apache.org/en/9.2.x/release-notes/whats-new.en.html)
