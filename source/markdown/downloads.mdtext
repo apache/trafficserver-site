@@ -19,7 +19,7 @@ RSS:       /rss/releases.rss
 
 
 
-The latest stable release of Apache Traffic Server is v10.0.2, released on 2024-11-12.
+The latest stable release of Apache Traffic Server is v10.0.3, released on 2025-1-31.
 In addition, we continue to support the v9.2.x LTS release train, currently v9.2.7,
 which was released on 2024-11-26. We follow the [Semantic Versioning](http://semver.org)
 scheme. The goal is to release patch releases frequently, and minor releases as needed.
@@ -32,18 +32,18 @@ will be needed.  You can also
 [browse through all releases](https://archive.apache.org/dist/trafficserver/)
 and hash signatures.
 
-# Current v10.x Release -- 10.0.2 # {#10.0.2}
+# Current v10.x Release -- 10.0.3 # {#10.0.3}
 
- Apache Traffic Server v10.0.2 was released on August 27th, 2024.
- [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-10.0.2.tar.bz2.asc)]
- [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-10.0.2.tar.bz2.sha512)]
+ Apache Traffic Server v10.0.3 was released on January 31st, 2025.
+ [[`PGP`](https://www.apache.org/dist/trafficserver/trafficserver-10.0.3.tar.bz2.asc)]
+ [[`SHA512`](https://www.apache.org/dist/trafficserver/trafficserver-10.0.3.tar.bz2.sha512)]
 
- <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-10.0.2.tar.bz2"
- class="download_ts">Traffic Server 10.0.2</a>
+ <a href="https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-10.0.3.tar.bz2"
+ class="download_ts">Traffic Server 10.0.3</a>
 
-v10.0.2 is our latest stable release. Additional details for this release are in the
-[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/10.0.x/CHANGELOG-10.0.2)
-and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:10.0.2).
+v10.0.3 is our latest stable release. Additional details for this release are in the
+[CHANGELOG](https://raw.githubusercontent.com/apache/trafficserver/10.0.x/CHANGELOG-10.0.3)
+and the the related [Github Issues and PRs](https://github.com/apache/trafficserver/pulls?q=is:closed+is:pr+milestone:10.0.3).
 
 For details on the v10.x release, please see
 [10.x News](https://docs.trafficserver.apache.org/en/latest/release-notes/whats-new.en.html). There are also
