@@ -1,215 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Apache Traffic Server - Acknowledgements</title>
- 
- <!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
- See the NOTICE file distributed with this work for additional information regarding copyright ownership.
- The ASF licenses this file to you under the Apache License, Version 2.0 (the "License"); you
- may not use this file except in compliance with the License. You may obtain a copy of the License at
- 
- https://www.apache.org/licenses/LICENSE-2.0
- 
- Unless required by applicable law or agreed to in writing, software distributed under the License is
- distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and limitations under the License. -->
- 
- <!-- Tailwind CSS -->
- <script src="https://cdn.tailwindcss.com"></script>
- <script>
- tailwind.config = {
- theme: {
- extend: {
- colors: {
- 'primary': '#1e3a8a',
- 'accent': '#3b82f6',
- 'secondary': '#64748b'
- },
- fontFamily: {
- 'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'SF Pro', 'Segoe UI', 'Roboto', 'sans-serif']
- }
- }
- }
- }
- </script>
- 
- <!-- Custom Styles -->
- <link rel="stylesheet" href="/styles/custom.css">
- 
- <style>
- .headerlink, .elementid-permalink {
- visibility: hidden;
- }
- 
- /* Mobile menu animation */
- .mobile-menu-enter {
- animation: slideDown 0.3s ease-out;
- }
- 
- @keyframes slideDown {
- from {
- opacity: 0;
- transform: translateY(-10px);
- }
- to {
- opacity: 1;
- transform: translateY(0);
- }
- }
- </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apache Traffic Server - Acknowledgements</title>
+    
+    <!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+         See the NOTICE file distributed with this work for additional information regarding copyright ownership.
+         The ASF licenses this file to you under the Apache License, Version 2.0 (the "License"); you
+         may not use this file except in compliance with the License. You may obtain a copy of the License at
+         
+         https://www.apache.org/licenses/LICENSE-2.0
+         
+         Unless required by applicable law or agreed to in writing, software distributed under the License is
+         distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+         See the License for the specific language governing permissions and limitations under the License. -->
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1e3a8a',
+                        'accent': '#3b82f6',
+                        'secondary': '#64748b'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'SF Pro', 'Segoe UI', 'Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/styles/custom.css">
 </head>
 <body class="font-sans text-gray-800 bg-white">
- <!-- Header -->
- <header class="sticky top-0 z-50 bg-white shadow-sm">
- <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
- <div class="flex justify-between items-center py-4">
- <!-- Logo -->
- <div class="flex items-center">
- <a href="/" class="flex items-center space-x-3">
- <img src="/images/press/ts_logo_tm_380x73.png" alt="Apache Traffic Server" class="h-12 w-auto">
- </a>
- </div>
- 
- <!-- Desktop Navigation -->
- <nav class="hidden lg:flex items-center space-x-6">
- <a href="/" class="text-gray-700 hover:text-accent transition-colors font-medium">Home</a>
- <a href="/downloads" class="text-gray-700 hover:text-accent transition-colors font-medium">Downloads</a>
- <a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Documentation</a>
- 
- <a href="https://github.com/apache/trafficserver/issues" class="text-gray-700 hover:text-accent transition-colors font-medium">Issues</a>
- <a href="https://ci.trafficserver.apache.org/" class="text-gray-700 hover:text-accent transition-colors font-medium">CI</a>
- <a href="/users.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Customers</a>
- </nav>
- 
- <!-- Apache Logo -->
- <div class="hidden lg:flex items-center space-x-4">
- <a href="https://www.apache.org/" class="flex items-center">
- <img src="https://www.apache.org/images/feather-small.png" alt="The Apache Software Foundation" class="h-10 w-auto">
- </a>
- </div>
- 
- <!-- Mobile menu button -->
- <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-gray-700 hover:text-accent hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-accent" aria-label="Toggle menu">
- <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
- <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
- <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
- </svg>
- </button>
- </div>
- 
- <!-- Mobile Navigation -->
- <nav id="mobile-menu" class="hidden lg:hidden pb-4 mobile-menu-enter">
- <div class="space-y-2">
- <a href="/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Home</a>
- <a href="/downloads" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Downloads</a>
- <a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Documentation</a>
- <a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Wiki</a>
- <a href="https://github.com/apache/trafficserver/issues" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Issues</a>
- <a href="https://ci.trafficserver.apache.org/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">CI</a>
- <a href="/users.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Customers</a>
- <a href="/acknowledgements.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Acknowledgements</a>
- <a href="/press.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Press Kit</a>
- <a href="/assistance.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Assistance</a>
- <div class="border-t border-gray-200 my-2"></div>
- <a href="https://github.com/apache/trafficserver/security/policy" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Security</a>
- <a href="https://www.apache.org/foundation/sponsorship.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Donate</a>
- <a href="https://www.apache.org/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Apache Foundation</a>
- </div>
- </nav>
- </div>
- </header>
- 
- <!-- Main Content -->
- <main class="min-h-screen bg-gray-50 py-12">
- <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
- <div class="bg-white rounded-lg shadow-sm p-8">
- <div id="content" class="prose prose-blue max-w-none">
- <h1 id='acknowledgements'>Acknowledgements<a href='#acknowledgements' title='Permanent link to this' class='headerlink'>&para;</a></h1>
-<p>The Apache Traffic Server team would like to acknowledge the support and 
-contributions of the following companies, organizations and individuals:</p>
-<ul>
-<li><a href="http://www.yahoo.com">Yahoo!</a>, for donating the original source code for the Apache Traffic Server to us.</li>
-<li><a href="http://www.rackspace.com">Rackspace</a>, for providing virtualized resources to our Continuous Integration system.</li>
-<li><a href="http://www.godaddy.com">GoDaddy</a>, for additional resources to our CI, as well as SSL certificates for our sites.</li>
-<li><a href="http://www.measurement-factory.com/">The Measurement Factory</a>, for letting us run their Co-Advisor test suite against Apache Traffic Server.</li>
-</ul>
- </div>
- </div>
- </div>
- </main>
- 
- <!-- Footer -->
- <footer class="bg-gray-50 border-t border-gray-200 mt-16">
- <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
- <!-- Column 1 -->
- <div>
- <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Resources</h3>
- <ul class="space-y-3">
- <li><a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="text-secondary hover:text-accent transition-colors">Documentation</a></li>
- <li><a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server" class="text-secondary hover:text-accent transition-colors">Wiki</a></li>
- <li><a href="https://cwiki.apache.org/confluence/display/TS/FAQ" class="text-secondary hover:text-accent transition-colors">FAQ</a></li>
- <li><a href="https://github.com/apache/trafficserver/" class="text-secondary hover:text-accent transition-colors">Source Code</a></li>
- </ul>
- </div>
- 
- <!-- Column 2 -->
- <div>
- <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Community</h3>
- <ul class="space-y-3">
- <li><a href="/users.html" class="text-secondary hover:text-accent transition-colors">Customers</a></li>
- <li><a href="/assistance.html" class="text-secondary hover:text-accent transition-colors">Get Help</a></li>
- <li><a href="https://github.com/apache/trafficserver/issues" class="text-secondary hover:text-accent transition-colors">Issues</a></li>
- <li><a href="https://the-asf.slack.com/" class="text-secondary hover:text-accent transition-colors">Slack Channel</a></li>
- </ul>
- </div>
- 
- <!-- Column 3 -->
- <div>
- <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Apache</h3>
- <ul class="space-y-3">
- <li><a href="https://www.apache.org/" class="text-secondary hover:text-accent transition-colors">Foundation</a></li>
- <li><a href="https://www.apache.org/licenses/" class="text-secondary hover:text-accent transition-colors">License</a></li>
- <li><a href="https://github.com/apache/trafficserver/security/policy" class="text-secondary hover:text-accent transition-colors">Security</a></li>
- <li><a href="https://www.apache.org/foundation/sponsorship.html" class="text-secondary hover:text-accent transition-colors">Donate</a></li>
- <li><a href="https://www.apache.org/foundation/thanks.html" class="text-secondary hover:text-accent transition-colors">Thanks</a></li>
- </ul>
- </div>
- 
- <!-- Column 4 -->
- <div>
- <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">More</h3>
- <ul class="space-y-3">
- <li><a href="/press.html" class="text-secondary hover:text-accent transition-colors">Press Kit</a></li>
- <li><a href="/acknowledgements.html" class="text-secondary hover:text-accent transition-colors">Acknowledgements</a></li>
- <li><a href="https://blogs.apache.org/trafficserver/" class="text-secondary hover:text-accent transition-colors">Blog</a></li>
- <li><a href="https://twitter.com/trafficserver" class="text-secondary hover:text-accent transition-colors">Twitter</a></li>
- </ul>
- </div>
- </div>
- 
- <div class="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
- <p class="text-secondary text-sm text-center md:text-left">
- Copyright &copy; 2025 <a href="https://www.apache.org/" class="hover:text-accent">The Apache Software Foundation</a>.
- Licensed under the <a href="https://www.apache.org/licenses/" class="hover:text-accent">Apache License</a>, Version 2.0.
- Apache Traffic Server, Apache, the Apache Traffic Server logo, and the Apache feather logo are trademarks of The Apache Software Foundation.
- </p>
- <div class="mt-4 md:mt-0">
- <a href="https://www.apache.org/" class="inline-block">
- <img src="https://www.apache.org/images/feather-small.png" alt="Apache" class="h-8 w-auto">
- </a>
- </div>
- </div>
- </div>
- </footer>
- 
- <!-- Mobile Menu Script -->
- <script src="/js/menu.js"></script>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center space-x-3">
+                        <img src="/images/press/ts_logo_tm_380x73.png" alt="Apache Traffic Server" class="h-12 w-auto">
+                    </a>
+                </div>
+                
+                <nav class="hidden lg:flex items-center space-x-6">
+                    <a href="/" class="text-gray-700 hover:text-accent transition-colors font-medium">Home</a>
+                    <a href="/downloads.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Downloads</a>
+                    <a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Documentation</a>
+                    <a href="https://github.com/apache/trafficserver/issues" class="text-gray-700 hover:text-accent transition-colors font-medium">Issues</a>
+                    <a href="https://ci.trafficserver.apache.org/" class="text-gray-700 hover:text-accent transition-colors font-medium">CI</a>
+                    <a href="/users.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Customers</a>
+                </nav>
+                
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="https://www.apache.org/" class="flex items-center">
+                        <img src="https://www.apache.org/images/feather-small.png" alt="The Apache Software Foundation" class="h-10 w-auto">
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-gray-700 hover:text-accent hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-accent" aria-label="Toggle menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav id="mobile-menu" class="hidden lg:hidden pb-4 mobile-menu-enter">
+                <div class="space-y-2">
+                    <a href="/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Home</a>
+                    <a href="/downloads.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Downloads</a>
+                    <a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Documentation</a>
+                    <a href="https://github.com/apache/trafficserver/issues" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Issues</a>
+                    <a href="https://ci.trafficserver.apache.org/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">CI</a>
+                    <a href="/users.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Customers</a>
+                    <a href="/acknowledgements.html" class="block px-3 py-2 rounded-md bg-blue-50 text-accent font-semibold">Acknowledgements</a>
+                    <a href="/press.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Press Kit</a>
+                    <a href="/assistance.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Assistance</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-700 text-white py-16">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Acknowledgements</h1>
+            <p class="text-xl text-blue-100 leading-relaxed max-w-3xl mx-auto">
+                We're grateful to the companies, organizations, and individuals who support and contribute to Apache Traffic Server.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="min-h-screen bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Contributors Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Yahoo! Card -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-primary mb-2">
+                                <a href="http://www.yahoo.com" class="hover:text-accent transition-colors">Yahoo!</a>
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                For donating the original source code for Apache Traffic Server to the Apache Software Foundation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rackspace Card -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-primary mb-2">
+                                <a href="http://www.rackspace.com" class="hover:text-accent transition-colors">Rackspace</a>
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                For providing virtualized resources to our Continuous Integration system.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GoDaddy Card -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-primary mb-2">
+                                <a href="http://www.godaddy.com" class="hover:text-accent transition-colors">GoDaddy</a>
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                For additional resources to our CI infrastructure, as well as SSL certificates for our sites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Measurement Factory Card -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-primary mb-2">
+                                <a href="http://www.measurement-factory.com/" class="hover:text-accent transition-colors">The Measurement Factory</a>
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                For letting us run their Co-Advisor test suite against Apache Traffic Server.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Thank You Section -->
+            <div class="mt-16 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 border border-blue-200 text-center">
+                <svg class="w-16 h-16 text-accent mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                </svg>
+                <h2 class="text-2xl font-bold text-primary mb-3">Thank You!</h2>
+                <p class="text-gray-700 text-lg max-w-2xl mx-auto">
+                    We deeply appreciate the support from our community. Your contributions make Apache Traffic Server better for everyone.
+                </p>
+            </div>
+
+            <!-- Community CTA -->
+            <div class="mt-12 bg-white rounded-xl shadow-sm border border-gray-200 p-8 text-center">
+                <h2 class="text-2xl font-bold text-primary mb-4">Join Our Community</h2>
+                <p class="text-gray-600 mb-6">
+                    Want to contribute to Apache Traffic Server? We'd love to have you!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://github.com/apache/trafficserver" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-900 text-white font-semibold rounded-lg hover:shadow-lg transition-all">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                    <a href="/assistance.html" class="inline-flex items-center px-6 py-3 bg-white border-2 border-gray-300 text-gray-800 font-semibold rounded-lg hover:bg-gray-50 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                        Get Help
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="text-secondary hover:text-accent transition-colors">Documentation</a></li>
+                        <li><a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server" class="text-secondary hover:text-accent transition-colors">Wiki</a></li>
+                        <li><a href="https://cwiki.apache.org/confluence/display/TS/FAQ" class="text-secondary hover:text-accent transition-colors">FAQ</a></li>
+                        <li><a href="https://github.com/apache/trafficserver/" class="text-secondary hover:text-accent transition-colors">Source Code</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Community</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/users.html" class="text-secondary hover:text-accent transition-colors">Customers</a></li>
+                        <li><a href="/assistance.html" class="text-secondary hover:text-accent transition-colors">Get Help</a></li>
+                        <li><a href="https://github.com/apache/trafficserver/issues" class="text-secondary hover:text-accent transition-colors">Issues</a></li>
+                        <li><a href="https://the-asf.slack.com/" class="text-secondary hover:text-accent transition-colors">Slack Channel</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Apache</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://www.apache.org/" class="text-secondary hover:text-accent transition-colors">Foundation</a></li>
+                        <li><a href="https://www.apache.org/licenses/" class="text-secondary hover:text-accent transition-colors">License</a></li>
+                        <li><a href="https://github.com/apache/trafficserver/security/policy" class="text-secondary hover:text-accent transition-colors">Security</a></li>
+                        <li><a href="https://www.apache.org/foundation/sponsorship.html" class="text-secondary hover:text-accent transition-colors">Donate</a></li>
+                        <li><a href="https://www.apache.org/foundation/thanks.html" class="text-secondary hover:text-accent transition-colors">Thanks</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">More</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/press.html" class="text-secondary hover:text-accent transition-colors">Press Kit</a></li>
+                        <li><a href="/acknowledgements.html" class="text-secondary hover:text-accent transition-colors">Acknowledgements</a></li>
+                        <li><a href="https://blogs.apache.org/trafficserver/" class="text-secondary hover:text-accent transition-colors">Blog</a></li>
+                        <li><a href="https://twitter.com/trafficserver" class="text-secondary hover:text-accent transition-colors">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-secondary text-sm text-center md:text-left">
+                    Copyright &copy; 2025 <a href="https://www.apache.org/" class="hover:text-accent">The Apache Software Foundation</a>.
+                    Licensed under the <a href="https://www.apache.org/licenses/" class="hover:text-accent">Apache License</a>, Version 2.0.
+                    Apache Traffic Server, Apache, the Apache Traffic Server logo, and the Apache feather logo are trademarks of The Apache Software Foundation.
+                </p>
+                <div class="mt-4 md:mt-0">
+                    <a href="https://www.apache.org/" class="inline-block">
+                        <img src="https://www.apache.org/images/feather-small.png" alt="Apache" class="h-8 w-auto">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Mobile Menu Script -->
+    <script src="/js/menu.js"></script>
 </body>
 </html>
-
-
-
-
