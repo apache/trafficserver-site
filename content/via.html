@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via Header Decoder - Apache Traffic Server</title>
+    
+    <link rel="stylesheet" href="/styles/tailwind-complete.css">
+    <link rel="stylesheet" href="/styles/custom.css">
+
+    <script type="text/javascript">
+var codes = {}
+codes[1] = {}
+codes[1]['title'] = "client-info Request headers received from client. Value is one of:"
+codes[1]['I'] = "If Modified Since (IMS)"
+codes[1]['C'] = "cookie"
+codes[1]['E'] = "error in request"
+codes[1]['S'] = "simple request (not conditional)"
+codes[1]['N'] = "no-cache"
+codes[2] = {}
+codes[2]['title'] = "cache-lookup Result of Traffic Server cache lookup for URL. Value is one of:"
+codes[2]['A'] = "in cache, not acceptable (a cache \"MISS\")"
+codes[2]['H'] = "in cache, fresh (a cache \"HIT\")"
+codes[2]['S'] = "in cache, stale (a cache \"MISS\")"
+codes[2]['R'] = "in cache, fresh Ram hit (a cache \"HIT\")"
+codes[2]['M'] = "miss (a cache \"MISS\")"
+codes[2][' '] = "no cache lookup performed"
+codes[3] = {}
+codes[3]['title'] = "server-info Response information received from origin server. Value is one of:"
+codes[3]['E'] = "error in response"
+codes[3][' '] = "no server connection needed"
+codes[3]['S'] = "served"
+codes[3]['N'] = "not-modified"
+codes[4] = {}
+codes[4]['title'] = "cache-fill Result of document write to cache. Value is one of:"
+codes[4]['U'] = "updated old cache copy"
+codes[4]['D'] = "cached copy deleted"
+codes[4]['W'] = "written into cache (new copy)"
+codes[4][' '] = "no cache write performed"
+codes[5] = {}
+codes[5]['title'] = "proxy-info Proxy operation result. Value is one of:"
+codes[5]['R'] = "origin server revalidated"
+codes[5][' '] = "unknown?"
+codes[5]['S'] = "served"
+codes[5]['N'] = "not-modified"
+codes[6] = {}
+codes[6]['title'] = "error-codes Value is one of:"
+codes[6]['A'] = "authorization failure"
+codes[6]['H'] = "header syntax unacceptable"
+codes[6]['C'] = "connection to server failed"
+codes[6]['T'] = "connection timed out"
+codes[6]['S'] = "server related error"
+codes[6]['D'] = "dns failure"
+codes[6]['N'] = "no error"
+codes[6]['F'] = "request forbidden"
+codes[7] = {}
+codes[7]['title'] = "tunnel-info Proxy-only service operation. Value is one of:"
+codes[7][' '] = "no tunneling"
+codes[7]['U'] = "tunneling because of url (url suggests dynamic content)"
+codes[7]['M'] = "tunneling due to a method (e.g. CONNECT)"
+codes[7]['O'] = "tunneling because cache is turned off"
+codes[7]['F'] = "tunneling due to a header field (such as presence of If-Range header)"
+codes[8] = {}
+codes[8]['title'] = "cache-type and cache-lookup cache result values (2 characters)"
+codes[8]['I'] = "icp"
+codes[8][' '] = "cache miss or no cache lookup"
+codes[8]['C'] = "cache"
+codes[9] = {}
+codes[9]['title'] = "cache-lookup-result character value is one of:"
+codes[9][' '] = "no cache lookup"
+codes[9]['S'] = "cache hit, but expired"
+codes[9]['U'] = "cache hit, but client forces revalidate (e.g. Pragma: no-cache)"
+codes[9]['D'] = "cache hit, but method forces revalidated (e.g. ftp, not anonymous)"
+codes[9]['I'] = "conditional miss (client sent conditional, fresh in cache, returned 412)"
+codes[9]['H'] = "cache hit"
+codes[9]['M'] = "cache miss (url not in cache)"
+codes[9]['C'] = "cache hit, but config forces revalidate"
+codes[9]['N'] = "conditional hit (client sent conditional, doc fresh in cache, returned 304)"
+codes[10] = {}
+codes[10]['title'] = "parent-proxy parent proxy connection status"
+codes[10][' '] = "no parent proxy"
+codes[10]['S'] = "connection opened successfully"
+codes[10]['F'] = "connection open failed"
+codes[11] = {}
+codes[11]['title'] = "server-conn-info origin server connection status"
+codes[11][' '] = "no server connection"
+codes[11]['S'] = "connection opened successfully"
+codes[11]['F'] = "connection open failed"
+
+function showVia(form, value) {
+    var text = value? value : form.via.value;
+    if (value) {
+        document.getElementById("via").value = value;
+    }
+    var via = document.getElementById("viaoutput")
+    var output = "";
+    var txtonly = text.match(/([a-zA-Z: ]+)/);
+    text = txtonly[1];
+    if (text.length == 5) {
+        text = text + " "
+    }
+    if (text.length == 22) {
+        var arr = text.match(/([a-zA-Z ]+):([a-zA-Z ]+)/);
+        output = output + '<h3 class="text-lg font-bold text-primary mt-6 mb-3">Proxy request results:</h3>';
+        output = output + '<div class="grid grid-cols-1 gap-2">';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Request headers received from client:</span> <span class="text-accent">' + codes[1][arr[1][1]] + '</span></div>';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Result of Traffic Server cache lookup:</span> <span class="text-accent">' + codes[2][arr[1][3]] + '</span></div>';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Response from origin server:</span> <span class="text-accent">' + codes[3][arr[1][5]] + '</span></div>';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Result of document write-to-cache:</span> <span class="text-accent">' + codes[4][arr[1][7]] + '</span></div>';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Proxy operation result:</span> <span class="text-accent">' + codes[5][arr[1][9]] + '</span></div>';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Error codes (if any):</span> <span class="text-accent">' + codes[6][arr[1][11]] + '</span></div>';
+        output = output + '</div>';
+
+        output = output + '<h3 class="text-lg font-bold text-primary mt-6 mb-3">Operational results:</h3>';
+        output = output + '<div class="grid grid-cols-1 gap-2">';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Tunnel info:</span> <span class="text-accent">' + codes[7][arr[2][1]] + '</span></div>';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Cache-type and lookup result:</span> <span class="text-accent">' + codes[8][arr[2][3]] + " / " + codes[9][arr[2][4]] + '</span></div>';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Parent proxy connection status:</span> <span class="text-accent">' + codes[10][arr[2][6]] + '</span></div>';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Origin server connection status:</span> <span class="text-accent">' + codes[11][arr[2][8]] + '</span></div>';
+        output = output + '</div>';
+
+    } else if (text.length == 6) {
+        output = output + '<h3 class="text-lg font-bold text-primary mt-6 mb-3">Proxy request results:</h3>';
+        output = output + '<div class="grid grid-cols-1 gap-2">';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Result of Traffic Server cache lookup:</span> <span class="text-accent">' + codes[2][text[1]] + '</span></div>';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Response from origin server:</span> <span class="text-accent">' + codes[3][text[3]] + '</span></div>';
+        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Result of document write-to-cache:</span> <span class="text-accent">' + codes[4][text[5]] + '</span></div>';
+        output = output + '</div>';
+
+    } else {
+        output = '<p class="text-red-600 font-medium">Invalid VIA data, must be 22 or 6 characters long.</p>';
+    }
+    via.innerHTML = output;
+    if (form) {
+        window.location.hash = escape(text);
+    }
+    return false;
+}
+
+function checkQuery() {
+    var url = location.href;
+    if (url.indexOf("#") > 0) {
+        var qs = url.substring(url.indexOf("#")+1).replace("%20", " ").replace("+", " ");
+        if (qs && qs.length > 5) {
+            showVia(false, qs);
+        }
+    }
+}
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white" onload="checkQuery();">
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center space-x-3">
+                        <img src="/images/press/ts_logo_tm_380x73.png" alt="Apache Traffic Server" class="h-12 w-auto">
+                    </a>
+                </div>
+                
+                <nav class="hidden lg:flex items-center space-x-6">
+                    <a href="/" class="text-gray-700 hover:text-accent transition-colors font-medium">Home</a>
+                    <a href="/downloads.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Downloads</a>
+                    <a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Documentation</a>
+                    <a href="https://github.com/apache/trafficserver/issues" class="text-gray-700 hover:text-accent transition-colors font-medium">Issues</a>
+                    <a href="https://ci.trafficserver.apache.org/" class="text-gray-700 hover:text-accent transition-colors font-medium">CI</a>
+                    <a href="/users.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Customers</a>
+                </nav>
+                
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="https://www.apache.org/" class="flex items-center">
+                        <img src="https://www.apache.org/images/feather-small.png" alt="The Apache Software Foundation" class="h-10 w-auto">
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-gray-700 hover:text-accent hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-accent" aria-label="Toggle menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav id="mobile-menu" class="lg:hidden hidden pb-4 space-y-2">
+                <a href="/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Home</a>
+                <a href="/downloads.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Downloads</a>
+                <a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Documentation</a>
+                <a href="https://github.com/apache/trafficserver/issues" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Issues</a>
+                <a href="https://ci.trafficserver.apache.org/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">CI</a>
+                <a href="/users.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Customers</a>
+                <a href="/acknowledgements.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Acknowledgements</a>
+                <a href="/press.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Press Kit</a>
+                <a href="/via.html" class="block px-3 py-2 rounded-md bg-blue-50 text-accent font-semibold">Via Decoder</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-primary mb-4">Via Header Decoder</h1>
+                <p class="text-xl text-gray-600">Parse and understand Apache Traffic Server Via headers</p>
+            </div>
+
+            <!-- Tool Card -->
+            <div class="bg-white rounded-xl shadow-lg border border-gray-200 p-8">
+                <form onsubmit="return showVia(this);">
+                    <div class="mb-6">
+                        <label for="via" class="block text-sm font-semibold text-gray-700 mb-2">Enter Via Header</label>
+                        <div class="flex gap-4">
+                            <input type="text" name="via" id="via" 
+                                class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent text-lg font-mono"
+                                placeholder="e.g., uScMsEf pSeN:eC sF">
+                            <button type="button" onclick="showVia(this.form)" 
+                                class="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-900 text-white font-semibold rounded-lg hover:shadow-lg transition-all">
+                                Parse Header
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+                        <p class="text-sm text-blue-800">
+                            <strong>Note:</strong> This tool works with ATS 8.0.0 and above for extended via headers. 
+                            For earlier versions, use the command line tool <code class="bg-blue-100 px-1 rounded">traffic_via</code>.
+                        </p>
+                    </div>
+                </form>
+
+                <!-- Output -->
+                <div id="viaoutput" class="mt-6">
+                </div>
+            </div>
+
+            <!-- Reference Section -->
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold text-primary mb-6">Via Header Format Reference</h2>
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <p class="text-gray-600 mb-4">
+                        The Via header in Apache Traffic Server encodes information about how the proxy handled the request. 
+                        Extended via headers (22 characters) provide detailed information in the format:
+                    </p>
+                    <code class="block bg-gray-800 text-green-400 p-4 rounded-lg font-mono text-sm mb-4">
+                        [client-info][cache-lookup][server-info][cache-fill][proxy-info][error-codes]:[tunnel][cache-type][cache-result][parent][server]
+                    </code>
+                    <p class="text-gray-600">
+                        For more details, see the 
+                        <a href="https://docs.trafficserver.apache.org/en/latest/appendices/faq.en.html#what-is-the-format-of-the-via-header" 
+                           class="text-accent hover:underline">Via Header Documentation</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="text-secondary hover:text-accent transition-colors">Documentation</a></li>
+                        <li><a href="https://github.com/apache/trafficserver/" class="text-secondary hover:text-accent transition-colors">Source Code</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Community</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/users.html" class="text-secondary hover:text-accent transition-colors">Customers</a></li>
+                        <li><a href="https://github.com/apache/trafficserver/issues" class="text-secondary hover:text-accent transition-colors">Issues</a></li>
+                        <li><a href="https://the-asf.slack.com/" class="text-secondary hover:text-accent transition-colors">Slack Channel</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Apache</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://www.apache.org/" class="text-secondary hover:text-accent transition-colors">Foundation</a></li>
+                        <li><a href="https://www.apache.org/licenses/" class="text-secondary hover:text-accent transition-colors">License</a></li>
+                        <li><a href="https://github.com/apache/trafficserver/security/policy" class="text-secondary hover:text-accent transition-colors">Security</a></li>
+                        <li><a href="https://privacy.apache.org/policies/privacy-policy-public.html" class="text-secondary hover:text-accent transition-colors">Privacy</a></li>
+                        <li><a href="https://www.apache.org/events/current-event.html" class="text-secondary hover:text-accent transition-colors">Events</a></li>
+                        <li><a href="https://www.apache.org/foundation/sponsorship.html" class="text-secondary hover:text-accent transition-colors">Donate</a></li>
+                        <li><a href="https://www.apache.org/foundation/thanks.html" class="text-secondary hover:text-accent transition-colors">Thanks</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">More</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/press.html" class="text-secondary hover:text-accent transition-colors">Press Kit</a></li>
+                        <li><a href="/acknowledgements.html" class="text-secondary hover:text-accent transition-colors">Acknowledgements</a></li>
+                        <li><a href="https://x.com/trafficserver" class="text-secondary hover:text-accent transition-colors">X</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-secondary text-sm text-center md:text-left">
+                    Copyright &copy; 2025 <a href="https://www.apache.org/" class="hover:text-accent">The Apache Software Foundation</a>.
+                    Licensed under the <a href="https://www.apache.org/licenses/" class="hover:text-accent">Apache License</a>, Version 2.0.
+                    Apache Traffic Server, Apache, the Apache Traffic Server logo, and the Apache feather logo are trademarks of The Apache Software Foundation.
+                </p>
+                <div class="mt-4 md:mt-0">
+                    <a href="https://www.apache.org/" class="inline-block">
+                        <img src="https://www.apache.org/images/feather-small.png" alt="Apache" class="h-8 w-auto">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/menu.js"></script>
+</body>
+</html>
+
