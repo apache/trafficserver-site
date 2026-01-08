@@ -1,67 +1,116 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml"
-  xml:lang="en" lang="en">
-  <head>
-    <title>Third Party Assistance - Apache Traffic Server</title>
-    <!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file to you under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License.  You may obtain a copy of the License at . https://www.apache.org/licenses/LICENSE-2.0 . Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Third Party Assistance - Apache Traffic Server</title>
+ 
+ <!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+ See the NOTICE file distributed with this work for additional information regarding copyright ownership.
+ The ASF licenses this file to you under the Apache License, Version 2.0 (the "License"); you
+ may not use this file except in compliance with the License. You may obtain a copy of the License at
+ 
+ https://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software distributed under the License is
+ distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and limitations under the License. -->
     
-    <!-- The 1140px Grid - https://cssgrid.net/ -->
-    <!-- page_base =  -->
-    <link rel="stylesheet" type="text/css" href="styles/1140.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="styles/pygments_style.css" />
-    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold" />
-    <style type="text/css">
-        .headerlink, .elementid-permalink {
-            visibility: hidden;
-          }
-    </style>
-    <!--css3-mediaqueries-js - https://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
-    <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-  </head>
-
-  <body class="container">
-    <!-- Header -->
-    <div class="row" id="header">
-      <div class="fourcol">
-        <a href="/"><img class="logo" alt="Apache Traffic Server" src="/images/press/ts_logo_tm_380x73.png" /></a>
-      </div>
-      <div class="threecol">
-        <a href="https://www.apache.org/"><img alt="The Apache Software Foundation" src="https://www.apache.org/images/feather-small.png" /></a>
-      </div>
-      <div class="fivecol right last" id="searchbox">
-        
-        <div id="header-sub">Apache Traffic Server Downloads </div>
-      </div>
-    </div>
-
-    <!-- Navigation (next, previous, up, languages) -->
-    <div class="row nav">
-      
-      <div class="ninecol">
-        <a href="https://trafficserver.apache.org/">Home</a>
-        <a href="/downloads">Downloads</a>
-        <a href="https://docs.trafficserver.apache.org/en/latest/index.html">Documentation</a>
-        <a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server">Wiki</a>
-        <a href="https://github.com/apache/trafficserver/issues">Issues</a>
-        <a href="/users.html">Customers</a>
-        <a href="/acknowledgements.html">Acknowledgements</a>
-        <a href="/press.html">Press kit</a>
-        <a href="/assistance.html">Assistance</a>
-      </div>
-      <div class="threecol last right">
-        <a href="https://github.com/apache/trafficserver/security/policy">Security</a>
-        <a href="https://www.apache.org/foundation/sponsorship.html">Donate</a>
-        <a href="https://www.apache.org/foundation/thanks.html">Thanks</a>
-      </div>
-      
-    </div>
-
-    <div class="row content">
-      <div class="twelvecol">
-        <div id="content">
-          <h1 id='third-party-assistance'>Third Party Assistance<a href='#third-party-assistance' title='Permanent link to this' class='headerlink'>&para;</a></h1>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/newsite/styles/tailwind-complete.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/newsite/styles/custom.css">
+ 
+ <style>
+ .headerlink, .elementid-permalink {
+ visibility: hidden;
+ }
+ 
+ /* Mobile menu animation */
+ .mobile-menu-enter {
+ animation: slideDown 0.3s ease-out;
+ }
+ 
+ @keyframes slideDown {
+ from {
+ opacity: 0;
+ transform: translateY(-10px);
+ }
+ to {
+ opacity: 1;
+ transform: translateY(0);
+ }
+ }
+ </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+ <!-- Header -->
+ <header class="sticky top-0 z-50 bg-white shadow-sm">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="flex justify-between items-center py-4">
+ <!-- Logo -->
+ <div class="flex items-center">
+ <a href="/newsite/" class="flex items-center space-x-3">
+ <img src="/images/press/ts_logo_tm_380x73.png" alt="Apache Traffic Server" class="h-12 w-auto">
+ </a>
+ </div>
+ 
+ <!-- Desktop Navigation -->
+ <nav class="hidden lg:flex items-center space-x-6">
+ <a href="/newsite/" class="text-gray-700 hover:text-accent transition-colors font-medium">Home</a>
+ <a href="/newsite/downloads" class="text-gray-700 hover:text-accent transition-colors font-medium">Downloads</a>
+ <a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Documentation</a>
+ 
+ <a href="https://github.com/apache/trafficserver/issues" class="text-gray-700 hover:text-accent transition-colors font-medium">Issues</a>
+ <a href="https://ci.trafficserver.apache.org/" class="text-gray-700 hover:text-accent transition-colors font-medium">CI</a>
+ <a href="/newsite/users.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Customers</a>
+ </nav>
+ 
+ <!-- Apache Logo -->
+ <div class="hidden lg:flex items-center space-x-4">
+ <a href="https://www.apache.org/" class="flex items-center">
+ <img src="https://www.apache.org/images/feather-small.png" alt="The Apache Software Foundation" class="h-10 w-auto">
+ </a>
+ </div>
+ 
+ <!-- Mobile menu button -->
+ <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-gray-700 hover:text-accent hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-accent" aria-label="Toggle menu">
+ <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+ <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+ </svg>
+ </button>
+ </div>
+ 
+ <!-- Mobile Navigation -->
+ <nav id="mobile-menu" class="hidden lg:hidden pb-4 mobile-menu-enter">
+ <div class="space-y-2">
+ <a href="/newsite/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Home</a>
+ <a href="/newsite/downloads" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Downloads</a>
+ <a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Documentation</a>
+ <a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Wiki</a>
+ <a href="https://github.com/apache/trafficserver/issues" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Issues</a>
+ <a href="https://ci.trafficserver.apache.org/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">CI</a>
+ <a href="/newsite/users.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Customers</a>
+ <a href="/newsite/acknowledgements.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Acknowledgements</a>
+ <a href="/newsite/press.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Press Kit</a>
+ <a href="/newsite/assistance.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Assistance</a>
+ <div class="border-t border-gray-200 my-2"></div>
+ <a href="https://github.com/apache/trafficserver/security/policy" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Security</a>
+ <a href="https://www.apache.org/foundation/sponsorship.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Donate</a>
+ <a href="https://www.apache.org/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Apache Foundation</a>
+ </div>
+ </nav>
+ </div>
+ </header>
+ 
+ <!-- Main Content -->
+ <main class="min-h-screen bg-gray-50 py-12">
+ <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="bg-white rounded-lg shadow-sm p-8">
+ <div id="content" class="prose prose-blue max-w-none">
+ <h1 id='third-party-assistance'>Third Party Assistance<a href='#third-party-assistance' title='Permanent link to this' class='headerlink'>&para;</a></h1>
 <p>This page is intended as an independently made list of companies offering 
 commercial or free support and consulting for the Apache Traffic Server. </p>
 <p>This list is NOT an endorsement nor a recommendation by the Traffic Server 
@@ -73,7 +122,7 @@ recommend one resource over the other.</p>
 <p>Sorted alphabetically</p>
 <p><a href="http://www.mirimar.net/">Mirimar Networks</a></p>
 <p><a href="https://www.network-geographics.com/">Network Geographics</a> </p>
-<p><a href="http://www.omniti.com/">OmniTI</a>  </p>
+<p><a href="http://www.omniti.com/">OmniTI</a> </p>
 <p><a href="http://www.we-amp.com/">We-Amp</a></p>
 <p>Any company or individual that so wishes, can be put on this page by sending an 
 email to dev [at] trafficserver.apache.org, listing:</p>
@@ -81,30 +130,81 @@ email to dev [at] trafficserver.apache.org, listing:</p>
 <li>The name of the company/individual doing ATS support</li>
 <li>A link to their/his/her web site</li>
 </ul>
-        </div>
-      </div>
-      <div class="fourcol last">
-        
-        
-      </div>
-    </div>
-
-    <div id="footer" class="row">
-    <div class="tencol">
-      Copyright  &copy; 2019
-      <a href="https://www.apache.org/">The Apache Software Foundation</a>.
-      Licensed under
-      the <a href="https://www.apache.org/licenses/">Apache License</a>,
-      Version 2.0. Apache Traffic Server, Apache,
-      the Apache Traffic Server logo, and the Apache feather logo are
-      trademarks of The Apache Software Foundation.
-      </div>
-      <div class="twocol right last">
-      <span id="apache_logo">
-        <a href="https://www.apache.org/"><img alt="The Apache Software Foundation" src="https://www.apache.org/images/feather-small.png" /></a>
-      </span>
-      </div>
-    </div>
-
-  </body>
+ </div>
+ </div>
+ </div>
+ </main>
+ 
+ <!-- Footer -->
+ <footer class="bg-gray-50 border-t border-gray-200 mt-16">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+ <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+ <!-- Column 1 -->
+ <div>
+ <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Resources</h3>
+ <ul class="space-y-3">
+ <li><a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="text-secondary hover:text-accent transition-colors">Documentation</a></li>
+ <li><a href="https://cwiki.apache.org/confluence/display/TS/Apache+Traffic+Server" class="text-secondary hover:text-accent transition-colors">Wiki</a></li>
+ <li><a href="https://cwiki.apache.org/confluence/display/TS/FAQ" class="text-secondary hover:text-accent transition-colors">FAQ</a></li>
+ <li><a href="https://github.com/apache/trafficserver/" class="text-secondary hover:text-accent transition-colors">Source Code</a></li>
+ </ul>
+ </div>
+ 
+ <!-- Column 2 -->
+ <div>
+ <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Community</h3>
+ <ul class="space-y-3">
+ <li><a href="/newsite/users.html" class="text-secondary hover:text-accent transition-colors">Customers</a></li>
+ <li><a href="/newsite/assistance.html" class="text-secondary hover:text-accent transition-colors">Get Help</a></li>
+ <li><a href="https://github.com/apache/trafficserver/issues" class="text-secondary hover:text-accent transition-colors">Issues</a></li>
+ <li><a href="https://the-asf.slack.com/" class="text-secondary hover:text-accent transition-colors">Slack Channel</a></li>
+ </ul>
+ </div>
+ 
+ <!-- Column 3 -->
+ <div>
+ <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Apache</h3>
+ <ul class="space-y-3">
+ <li><a href="https://www.apache.org/" class="text-secondary hover:text-accent transition-colors">Foundation</a></li>
+ <li><a href="https://www.apache.org/licenses/" class="text-secondary hover:text-accent transition-colors">License</a></li>
+ <li><a href="https://github.com/apache/trafficserver/security/policy" class="text-secondary hover:text-accent transition-colors">Security</a></li>
+ <li><a href="https://www.apache.org/foundation/sponsorship.html" class="text-secondary hover:text-accent transition-colors">Donate</a></li>
+ <li><a href="https://www.apache.org/foundation/thanks.html" class="text-secondary hover:text-accent transition-colors">Thanks</a></li>
+ </ul>
+ </div>
+ 
+ <!-- Column 4 -->
+ <div>
+ <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">More</h3>
+ <ul class="space-y-3">
+ <li><a href="/newsite/press.html" class="text-secondary hover:text-accent transition-colors">Press Kit</a></li>
+ <li><a href="/newsite/acknowledgements.html" class="text-secondary hover:text-accent transition-colors">Acknowledgements</a></li>
+ <li><a href="https://blogs.apache.org/trafficserver/" class="text-secondary hover:text-accent transition-colors">Blog</a></li>
+ <li><a href="https://twitter.com/trafficserver" class="text-secondary hover:text-accent transition-colors">Twitter</a></li>
+ </ul>
+ </div>
+ </div>
+ 
+ <div class="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
+ <p class="text-secondary text-sm text-center md:text-left">
+ Copyright &copy; 2025 <a href="https://www.apache.org/" class="hover:text-accent">The Apache Software Foundation</a>.
+ Licensed under the <a href="https://www.apache.org/licenses/" class="hover:text-accent">Apache License</a>, Version 2.0.
+ Apache Traffic Server, Apache, the Apache Traffic Server logo, and the Apache feather logo are trademarks of The Apache Software Foundation.
+ </p>
+ <div class="mt-4 md:mt-0">
+ <a href="https://www.apache.org/" class="inline-block">
+ <img src="https://www.apache.org/images/feather-small.png" alt="Apache" class="h-8 w-auto">
+ </a>
+ </div>
+ </div>
+ </div>
+ </footer>
+ 
+ <!-- Mobile Menu Script -->
+ <script src="/newsite/js/menu.js"></script>
+</body>
 </html>
+
+
+
+
