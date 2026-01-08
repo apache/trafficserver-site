@@ -30,6 +30,10 @@ content/
 
 ## Building the Site
 
+The site is automatically built by [Apache Buildbot](https://ci2.apache.org/#/builders?tags=trafficserver-site) when changes are pushed to the `asf-site` branch. Buildbot runs `source/generate.py` to generate the HTML files from templates.
+
+To build manually (for local testing):
+
 ```bash
 cd source
 python3 generate.py
@@ -60,14 +64,7 @@ This generates `content/index.html` and `content/downloads.html` from templates.
 }
 ```
 
-2. Run the generator:
-
-```bash
-cd source
-python3 generate.py
-```
-
-3. Commit and push the changes.
+2. Commit and push the changes to `asf-site`. Buildbot will automatically run the generator.
 
 ## URL Patterns
 
@@ -102,3 +99,10 @@ python3 -m http.server 8080
 - Firefox
 - Safari (macOS/iOS)
 - Mobile browsers
+
+## Useful Links
+
+- **Live Site:** https://trafficserver.apache.org/
+- **Buildbot:** https://ci2.apache.org/#/builders?tags=trafficserver-site
+- **ASF Website Checker:** https://whimsy.apache.org/site/project/trafficserver - Checks for required ASF content (privacy policy, events link, copyright, etc.)
+- **W3C Link Checker:** https://validator.w3.org/checklink?uri=https%3A%2F%2Ftrafficserver.apache.org&recursive=on - Validates links and anchors in web pages
