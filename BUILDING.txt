@@ -1,12 +1,56 @@
-NOTE: This is now handled by the buildbot, you only need to change the markdown
-      files and the buildbot will regenerate the site and publish it.
-      
-# Building the web site
+# Building the Apache Traffic Server Website
 
-* Install the markdown module for Python 3: sudo pip3 install markdown
-* Edit or create the appropriate markdown file in source/ (you can have sub-dirs there)
-* open a shell, go to the source/ dir
-* Run: python3 generate.py
-* Commit the changes to git :)
+## Quick Start
 
+1. Edit `source/versions.json` to update version numbers or add news
+2. Run: `cd source && python3 generate.py`
+3. Commit the changes to git
 
+## Files
+
+- `source/versions.json` - Version numbers, release dates, and news items
+- `source/templates/` - HTML templates with placeholders
+- `source/generate.py` - Script that generates HTML from templates
+- `content/` - Generated HTML output (served by the website)
+
+## Releasing a New Version
+
+Edit `source/versions.json`:
+
+```json
+{
+  "versions": {
+    "v10": {
+      "version": "10.2.0",
+      "date": "February 1, 2026",
+      "branch": "10.2.x",
+      "description": "Latest features and improvements"
+    }
+  },
+  "news": [
+    {
+      "date": "February 1, 2026",
+      "text": "We are releasing version <strong>v10.2.0</strong>!"
+    }
+  ]
+}
+```
+
+Then run the generator:
+
+```bash
+cd source
+python3 generate.py
+```
+
+The script will:
+- Generate `content/index.html` with updated news
+- Generate `content/downloads.html` with updated version info and download URLs
+
+## URL Patterns
+
+Download URLs are automatically generated from version info:
+- Download: `https://www.apache.org/dyn/closer.cgi/trafficserver/trafficserver-{version}.tar.bz2`
+- PGP: `https://www.apache.org/dist/trafficserver/trafficserver-{version}.tar.bz2.asc`
+- SHA512: `https://www.apache.org/dist/trafficserver/trafficserver-{version}.tar.bz2.sha512`
+- Changelog: `https://raw.githubusercontent.com/apache/trafficserver/{branch}/CHANGELOG-{version}`
