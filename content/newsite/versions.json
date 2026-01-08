@@ -1,0 +1,56 @@
+{
+  "versions": {
+    "v10": {
+      "version": "10.1.0",
+      "date": "August 13, 2025",
+      "branch": "10.1.x",
+      "description": "First minor version of ATS 10 with new features and improvements",
+      "label": "Latest Stable",
+      "label_color": "green"
+    },
+    "v9": {
+      "version": "9.2.11",
+      "date": "June 17, 2025",
+      "branch": "9.2.x",
+      "description": "Long-term support with security fixes and critical updates",
+      "label": "LTS",
+      "label_color": "blue"
+    }
+  },
+
+  "news": [
+    {
+      "date": "August 13, 2025",
+      "text": "The first minor version of ATS 10 is released: <strong>v10.1.0</strong>!"
+    },
+    {
+      "date": "June 17, 2025",
+      "text": "We are releasing version <strong>v10.0.6</strong> and <strong>v9.2.11</strong> which include security fixes and improvements. We recommend everyone to upgrade to one of these versions of ATS."
+    },
+    {
+      "date": "April 2, 2025",
+      "text": "We are releasing version <strong>v10.0.5</strong> and <strong>v9.2.10</strong> which include security fixes and improvements. We recommend everyone to upgrade to one of these versions of ATS."
+    },
+    {
+      "date": "March 5, 2025",
+      "text": "We are releasing version <strong>v10.0.4</strong> and <strong>v9.2.9</strong> with several bugfixes and improvements."
+    },
+    {
+      "date": "January 31, 2025",
+      "text": "We are releasing version <strong>9.2.8</strong> with several bugfixes and improvements."
+    },
+    {
+      "date": "January 31, 2025",
+      "text": "We are releasing version <strong>10.0.3</strong> with several bugfixes and improvements."
+    },
+    {
+      "date": "November 26, 2024",
+      "text": "We are releasing version <strong>v9.2.7</strong> with several bugfixes."
+    },
+    {
+      "date": "November 12, 2024",
+      "text": "We are releasing version <strong>v10.0.2</strong> and <strong>v9.2.6</strong> with several bugfixes and improvements."
+    }
+  ]
+}
+
