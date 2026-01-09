@@ -106,3 +106,4 @@ python3 -m http.server 8080
 - **Buildbot:** https://ci2.apache.org/#/builders?tags=%2Btrafficserver-website
 - **ASF Website Checker:** https://whimsy.apache.org/site/project/trafficserver - Checks for required ASF content (privacy policy, events link, copyright, etc.)
 - **W3C Link Checker:** https://validator.w3.org/checklink?uri=https%3A%2F%2Ftrafficserver.apache.org&recursive=on - Validates links and anchors in web pages
+- **W3C HTML Validator:** https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrafficserver.apache.org%2F - Validates HTML markup
