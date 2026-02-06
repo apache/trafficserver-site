@@ -9,8 +9,8 @@
       "label_color": "green"
     },
     "v9": {
-      "version": "9.2.11",
-      "date": "June 17, 2025",
+      "version": "9.2.12",
+      "date": "February 06, 2026",
       "branch": "9.2.x",
       "description": "Long-term support with security fixes and critical updates",
       "label": "LTS",
@@ -19,6 +19,10 @@
   },
 
   "news": [
+    {
+      "date": "February 06, 2026",
+      "text": "We are releasing version <strong>v9.2.12</strong> with several bugfixes and improvements."
+    },
     {
       "date": "August 13, 2025",
       "text": "The first minor version of ATS 10 is released: <strong>v10.1.0</strong>!"
