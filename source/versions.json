@@ -1,10 +1,10 @@
 {
   "versions": {
     "v10": {
-      "version": "10.1.0",
-      "date": "August 13, 2025",
+      "version": "10.1.1",
+      "date": "February 06, 2026",
       "branch": "10.1.x",
-      "description": "First minor version of ATS 10 with new features and improvements",
+      "description": "Bugfix and stability release for the 10.1 stable release",
       "label": "Latest Stable",
       "label_color": "green"
     },
@@ -21,7 +21,7 @@
   "news": [
     {
       "date": "February 06, 2026",
-      "text": "We are releasing version <strong>v9.2.12</strong> with several bugfixes and improvements."
+      "text": "We are releasing version <strong>v9.2.12</strong> and <strong>v10.1.1</strong> with several bugfixes and improvements."
     },
     {
       "date": "August 13, 2025",
