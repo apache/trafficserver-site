@@ -1,7 +1,7 @@
 {
   "versions": {
     "v10": {
-      "version": "10.1.1",
+      "version": "10.1.2",
       "date": "February 06, 2026",
       "branch": "10.1.x",
       "description": "Bugfix and stability release for the 10.1 stable release",
@@ -9,8 +9,8 @@
       "label_color": "green"
     },
     "v9": {
-      "version": "9.2.12",
-      "date": "February 06, 2026",
+      "version": "9.2.13",
+      "date": "April 02, 2026",
       "branch": "9.2.x",
       "description": "Long-term support with security fixes and critical updates",
       "label": "LTS",
@@ -19,6 +19,10 @@
   },
 
   "news": [
+    {
+      "date": "April 02, 2026",
+      "text": "We are releasing version <strong>v9.2.13</strong> and <strong>v10.1.2</strong> which include security fixes and improvements. We recommend everyone to upgrade to one of these versions of ATS."
+    },
     {
       "date": "February 06, 2026",
       "text": "We are releasing version <strong>v9.2.12</strong> and <strong>v10.1.1</strong> with several bugfixes and improvements."
