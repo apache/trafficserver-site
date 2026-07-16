@@ -1,3 +1,6 @@
 Options +Includes +MultiViews
 AddOutputFilter INCLUDES .html
 DirectoryIndex index
+
+# The Via decoder ring moved from /tools/via to /via.html; keep old links working.
+Redirect 301 /tools/via /via.html
