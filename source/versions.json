@@ -1,24 +1,27 @@
 {
   "versions": {
     "v10": {
-      "version": "10.1.3",
-      "date": "July 16, 2026",
+      "version": "10.1.4",
+      "date": "July 28, 2026",
       "branch": "10.1.x",
-      "description": "Bugfix and stability release for the 10.1 stable release",
+      "description": "Bugfix, security and stability release for the 10.1 stable release",
       "label": "Latest Stable",
       "label_color": "green"
     },
     "v9": {
-      "version": "9.2.14",
-      "date": "July 16, 2026",
+      "version": "9.2.15",
+      "date": "July 28, 2026",
       "branch": "9.2.x",
       "description": "Long-term support with security fixes and critical updates",
       "label": "LTS",
       "label_color": "blue"
     }
   },
-
   "news": [
+    {
+      "date": "July 28, 2026",
+      "text": "<strong>Upcoming:</strong> Apache Traffic Server <strong>v9.2.15</strong> and <strong>v10.1.4</strong> security releases addressing 34 CVEs. Read the <a href=\"security-2026-07.html\" class=\"text-accent underline\">July 2026 CVE release advisory</a>."
+    },
     {
       "date": "July 16, 2026",
       "text": "We are releasing version <strong>v9.2.14</strong> and <strong>v10.1.3</strong> which include security fixes and improvements. We recommend everyone to upgrade to one of these versions of ATS."
@@ -65,4 +68,3 @@
     }
   ]
 }
-
