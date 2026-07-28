@@ -18,27 +18,34 @@ To update:
     <meta name="google-site-verification" content="0Zvqk8EoyLzvCzEZj86bw4McxpCrEzUskO2c1n5OqE8">
     <title>Apache Traffic Server</title>
     
-    <link rel="stylesheet" href="/styles/tailwind-complete.css">
-    <link rel="stylesheet" href="/styles/custom.css">
+    <link rel="stylesheet" href="styles/tailwind-complete.css">
+    <link rel="stylesheet" href="styles/custom.css">
+    <style>
+        @keyframes atsPulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:.5; transform:scale(1.15); } }
+        .ats-alert-icon { animation: atsPulse 1.8s ease-in-out infinite; }
+        .ats-alert-cta { transition: transform .2s ease, box-shadow .2s ease; }
+        .ats-alert-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,0,0,.28); }
+        @media (prefers-reduced-motion: reduce) { .ats-alert-icon { animation: none; } }
+    </style>
 </head>
 <body class="font-sans text-gray-800 bg-white">
     <header class="sticky top-0 z-50 bg-white shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
-                    <a href="/" class="flex items-center space-x-3">
-                        <img src="/images/press/ts_logo_tm_380x73.png" alt="Apache Traffic Server" class="h-12 w-auto">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="images/press/ts_logo_tm_380x73.png" alt="Apache Traffic Server" class="h-12 w-auto">
                     </a>
                 </div>
                 
                 <nav class="hidden lg:flex items-center space-x-6">
-                    <a href="/" class="text-gray-700 hover:text-accent transition-colors font-medium">Home</a>
-                    <a href="/downloads.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Downloads</a>
+                    <a href="index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Home</a>
+                    <a href="downloads.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Downloads</a>
                     <a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Documentation</a>
                     <a href="https://github.com/apache/trafficserver" class="text-gray-700 hover:text-accent transition-colors font-medium">GitHub</a>
                     <a href="https://github.com/apache/trafficserver/issues" class="text-gray-700 hover:text-accent transition-colors font-medium">Issues</a>
                     <a href="https://ci.trafficserver.apache.org/" class="text-gray-700 hover:text-accent transition-colors font-medium">CI</a>
-                    <a href="/users.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Customers</a>
+                    <a href="users.html" class="text-gray-700 hover:text-accent transition-colors font-medium">Customers</a>
                 </nav>
                 
                 <div class="hidden lg:flex items-center space-x-4">
@@ -57,20 +64,42 @@ To update:
             
             <nav id="mobile-menu" class="hidden lg:hidden pb-4 mobile-menu-enter">
                 <div class="space-y-2">
-                    <a href="/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Home</a>
-                    <a href="/downloads.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Downloads</a>
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Home</a>
+                    <a href="downloads.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Downloads</a>
                     <a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Documentation</a>
                     <a href="https://github.com/apache/trafficserver" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">GitHub</a>
                     <a href="https://github.com/apache/trafficserver/issues" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Issues</a>
                     <a href="https://ci.trafficserver.apache.org/" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">CI</a>
-                    <a href="/users.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Customers</a>
-                    <a href="/acknowledgements.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Acknowledgements</a>
-                    <a href="/press.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Press Kit</a>
+                    <a href="users.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Customers</a>
+                    <a href="acknowledgements.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Acknowledgements</a>
+                    <a href="press.html" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors font-medium">Press Kit</a>
                 </div>
             </nav>
         </div>
     </header>
     
+    <!-- ============================================================ -->
+    <!-- HOT TOPIC BANNER - current security release                  -->
+    <!-- Update the text/link here when the featured topic changes.   -->
+    <!-- ============================================================ -->
+    <a href="security-2026-07.html" class="block" style="background:linear-gradient(135deg,#d97706 0%,#b45309 100%);border-top:3px solid #78350f;box-shadow:0 4px 16px rgba(180,83,9,.4);text-decoration:none;" aria-label="July 2026 CVE release security advisory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style="padding-top:.9rem;padding-bottom:.9rem;">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <svg class="h-8 w-8 flex-shrink-0 ats-alert-icon" style="color:#fff" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                    <span class="flex-shrink-0" style="display:inline-block;background:#1e3a8a;color:#fff;font-size:.85rem;font-weight:800;letter-spacing:.1em;padding:.4rem .9rem;border-radius:9999px;white-space:nowrap;box-shadow:0 1px 3px rgba(0,0,0,.25);">SECURITY RELEASE</span>
+                    <div style="color:#fff;line-height:1.35;text-shadow:0 1px 2px rgba(0,0,0,.28);">
+                        <div style="font-size:1.2rem;font-weight:700;letter-spacing:.01em;">July 2026 CVE Release</div>
+                        <div style="font-size:1.02rem;opacity:.95;"><strong>34</strong> vulnerabilities fixed in Apache Traffic Server 9.2.14 &amp; 10.1.3. Upgrading is strongly recommended.</div>
+                    </div>
+                </div>
+                <span class="ats-alert-cta" style="display:inline-block;background:#fff;color:#b45309;font-weight:700;font-size:.98rem;letter-spacing:.01em;padding:.65rem 1.35rem;border-radius:.5rem;white-space:nowrap;box-shadow:0 3px 12px rgba(0,0,0,.2);">Read the advisory &rarr;</span>
+            </div>
+        </div>
+    </a>
+
     <section class="relative bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-700 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -85,7 +114,7 @@ To update:
                         Powering major CDNs and content providers worldwide, serving multiple terabits per second of traffic.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="/downloads.html" class="btn-gradient inline-block px-8 py-4 rounded-lg font-semibold text-white text-lg text-center">
+                        <a href="downloads.html" class="btn-gradient inline-block px-8 py-4 rounded-lg font-semibold text-white text-lg text-center">
                             Download Now
                         </a>
                         <a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="inline-block px-8 py-4 rounded-lg font-semibold bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white text-lg text-center transition-all border border-white/20">
@@ -178,7 +207,7 @@ To update:
                     </div>
                     <h3 class="text-xl font-semibold text-primary mb-4">Proven</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Battle-tested at scale, powering multiple terabits per second of traffic at major CDNs and content providers worldwide. Visit our <a href="/users.html" class="text-accent underline">Customers page</a> for more users.
+                        Battle-tested at scale, powering multiple terabits per second of traffic at major CDNs and content providers worldwide. Visit our <a href="users.html" class="text-accent underline">Customers page</a> for more users.
                     </p>
                 </div>
 
@@ -286,7 +315,7 @@ To update:
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
                             <div>
-                                <p class="text-gray-600">Use the <a href="/via.html" class="text-accent underline">Via Header Decoder</a> to parse and debug ATS Via headers.</p>
+                                <p class="text-gray-600">Use the <a href="via.html" class="text-accent underline">Via Header Decoder</a> to parse and debug ATS Via headers.</p>
                             </div>
                         </li>
                     </ul>
@@ -302,6 +331,10 @@ To update:
             
             <div class="max-w-4xl mx-auto">
                 <div class="space-y-6">
+                    <div class="border-l-4 border-accent pl-6 py-2">
+                        <p class="text-sm text-secondary font-semibold mb-1">July 28, 2026</p>
+                        <p class="text-gray-700"><strong>Upcoming:</strong> Apache Traffic Server <strong>v9.2.15</strong> and <strong>v10.1.4</strong> security releases addressing 34 CVEs. Read the <a href="security-2026-07.html" class="text-accent underline">July 2026 CVE release advisory</a>.</p>
+                    </div>
                     <div class="border-l-4 border-accent pl-6 py-2">
                         <p class="text-sm text-secondary font-semibold mb-1">July 16, 2026</p>
                         <p class="text-gray-700">We are releasing version <strong>v9.2.14</strong> and <strong>v10.1.3</strong> which include security fixes and improvements. We recommend everyone to upgrade to one of these versions of ATS.</p>
@@ -330,14 +363,10 @@ To update:
                         <p class="text-sm text-secondary font-semibold mb-1">March 5, 2025</p>
                         <p class="text-gray-700">We are releasing version <strong>v10.0.4</strong> and <strong>v9.2.9</strong> with several bugfixes and improvements.</p>
                     </div>
-                    <div class="border-l-4 border-accent pl-6 py-2">
-                        <p class="text-sm text-secondary font-semibold mb-1">January 31, 2025</p>
-                        <p class="text-gray-700">We are releasing version <strong>9.2.8</strong> with several bugfixes and improvements.</p>
-                    </div>
                 </div>
                 
                 <div class="mt-8 text-center">
-                    <a href="/downloads.html" class="inline-block px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-lg font-medium transition-colors">
+                    <a href="downloads.html" class="inline-block px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-lg font-medium transition-colors">
                         View All Releases
                     </a>
                 </div>
@@ -353,14 +382,14 @@ To update:
                     <ul class="space-y-3">
                         <li><a href="https://docs.trafficserver.apache.org/en/latest/index.html" class="text-secondary hover:text-accent transition-colors">Documentation</a></li>
                         <li><a href="https://github.com/apache/trafficserver/" class="text-secondary hover:text-accent transition-colors">Source Code</a></li>
-                        <li><a href="/via.html" class="text-secondary hover:text-accent transition-colors">Via Header Decoder</a></li>
+                        <li><a href="via.html" class="text-secondary hover:text-accent transition-colors">Via Header Decoder</a></li>
                     </ul>
                 </div>
                 
                 <div>
                     <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Community</h3>
                     <ul class="space-y-3">
-                        <li><a href="/users.html" class="text-secondary hover:text-accent transition-colors">Customers</a></li>
+                        <li><a href="users.html" class="text-secondary hover:text-accent transition-colors">Customers</a></li>
                         <li><a href="https://github.com/apache/trafficserver/issues" class="text-secondary hover:text-accent transition-colors">Issues</a></li>
                         <li><a href="https://infra.apache.org/slack.html" class="text-secondary hover:text-accent transition-colors">Slack (#traffic-server)</a></li>
                     </ul>
@@ -382,8 +411,8 @@ To update:
                 <div>
                     <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">More</h3>
                     <ul class="space-y-3">
-                        <li><a href="/press.html" class="text-secondary hover:text-accent transition-colors">Press Kit</a></li>
-                        <li><a href="/acknowledgements.html" class="text-secondary hover:text-accent transition-colors">Acknowledgements</a></li>
+                        <li><a href="press.html" class="text-secondary hover:text-accent transition-colors">Press Kit</a></li>
+                        <li><a href="acknowledgements.html" class="text-secondary hover:text-accent transition-colors">Acknowledgements</a></li>
                     </ul>
                 </div>
             </div>
@@ -403,7 +432,7 @@ To update:
         </div>
     </footer>
     
-    <script src="/js/menu.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
 
