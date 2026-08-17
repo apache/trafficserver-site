@@ -1,10 +1,10 @@
 {
   "versions": {
     "v10": {
-      "version": "10.1.4",
-      "date": "July 28, 2026",
-      "branch": "10.1.x",
-      "description": "Bugfix, security and stability release for the 10.1 stable release",
+      "version": "10.2.0",
+      "date": "August 17, 2026",
+      "branch": "10.2.x",
+      "description": "First release of 10.2.0",
       "label": "Latest Stable",
       "label_color": "green"
     },
@@ -18,6 +18,10 @@
     }
   },
   "news": [
+    {
+      "date": "August 17, 2026",
+      "text": "Apache Traffic Server <strong>v10.2.0</strong> released!"
+    },
     {
       "date": "July 28, 2026",
       "text": "<strong>Upcoming:</strong> Apache Traffic Server <strong>v9.2.15</strong> and <strong>v10.1.4</strong> security releases addressing 34 CVEs. Read the <a href=\"security-2026-07.html\" class=\"text-accent underline\">July 2026 CVE release advisory</a>."
