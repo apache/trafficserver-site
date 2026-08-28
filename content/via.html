@@ -8,140 +8,62 @@
     <link rel="stylesheet" href="styles/tailwind-complete.css">
     <link rel="stylesheet" href="styles/custom.css">
 
+    <script src="/js/via-decoder.js"></script>
     <script type="text/javascript">
-var codes = {}
-codes[1] = {}
-codes[1]['title'] = "client-info Request headers received from client. Value is one of:"
-codes[1]['I'] = "If Modified Since (IMS)"
-codes[1]['C'] = "cookie"
-codes[1]['E'] = "error in request"
-codes[1]['S'] = "simple request (not conditional)"
-codes[1]['N'] = "no-cache"
-codes[2] = {}
-codes[2]['title'] = "cache-lookup Result of Traffic Server cache lookup for URL. Value is one of:"
-codes[2]['A'] = "in cache, not acceptable (a cache \"MISS\")"
-codes[2]['H'] = "in cache, fresh (a cache \"HIT\")"
-codes[2]['S'] = "in cache, stale (a cache \"MISS\")"
-codes[2]['R'] = "in cache, fresh Ram hit (a cache \"HIT\")"
-codes[2]['M'] = "miss (a cache \"MISS\")"
-codes[2][' '] = "no cache lookup performed"
-codes[3] = {}
-codes[3]['title'] = "server-info Response information received from origin server. Value is one of:"
-codes[3]['E'] = "error in response"
-codes[3][' '] = "no server connection needed"
-codes[3]['S'] = "served"
-codes[3]['N'] = "not-modified"
-codes[4] = {}
-codes[4]['title'] = "cache-fill Result of document write to cache. Value is one of:"
-codes[4]['U'] = "updated old cache copy"
-codes[4]['D'] = "cached copy deleted"
-codes[4]['W'] = "written into cache (new copy)"
-codes[4][' '] = "no cache write performed"
-codes[5] = {}
-codes[5]['title'] = "proxy-info Proxy operation result. Value is one of:"
-codes[5]['R'] = "origin server revalidated"
-codes[5][' '] = "unknown?"
-codes[5]['S'] = "served"
-codes[5]['N'] = "not-modified"
-codes[6] = {}
-codes[6]['title'] = "error-codes Value is one of:"
-codes[6]['A'] = "authorization failure"
-codes[6]['H'] = "header syntax unacceptable"
-codes[6]['C'] = "connection to server failed"
-codes[6]['T'] = "connection timed out"
-codes[6]['S'] = "server related error"
-codes[6]['D'] = "dns failure"
-codes[6]['N'] = "no error"
-codes[6]['F'] = "request forbidden"
-codes[7] = {}
-codes[7]['title'] = "tunnel-info Proxy-only service operation. Value is one of:"
-codes[7][' '] = "no tunneling"
-codes[7]['U'] = "tunneling because of url (url suggests dynamic content)"
-codes[7]['M'] = "tunneling due to a method (e.g. CONNECT)"
-codes[7]['O'] = "tunneling because cache is turned off"
-codes[7]['F'] = "tunneling due to a header field (such as presence of If-Range header)"
-codes[8] = {}
-codes[8]['title'] = "cache-type and cache-lookup cache result values (2 characters)"
-codes[8]['I'] = "icp"
-codes[8][' '] = "cache miss or no cache lookup"
-codes[8]['C'] = "cache"
-codes[9] = {}
-codes[9]['title'] = "cache-lookup-result character value is one of:"
-codes[9][' '] = "no cache lookup"
-codes[9]['S'] = "cache hit, but expired"
-codes[9]['U'] = "cache hit, but client forces revalidate (e.g. Pragma: no-cache)"
-codes[9]['D'] = "cache hit, but method forces revalidated (e.g. ftp, not anonymous)"
-codes[9]['I'] = "conditional miss (client sent conditional, fresh in cache, returned 412)"
-codes[9]['H'] = "cache hit"
-codes[9]['M'] = "cache miss (url not in cache)"
-codes[9]['C'] = "cache hit, but config forces revalidate"
-codes[9]['N'] = "conditional hit (client sent conditional, doc fresh in cache, returned 304)"
-codes[10] = {}
-codes[10]['title'] = "parent-proxy parent proxy connection status"
-codes[10][' '] = "no parent proxy"
-codes[10]['S'] = "connection opened successfully"
-codes[10]['F'] = "connection open failed"
-codes[11] = {}
-codes[11]['title'] = "server-conn-info origin server connection status"
-codes[11][' '] = "no server connection"
-codes[11]['S'] = "connection opened successfully"
-codes[11]['F'] = "connection open failed"
+function escapeHtml(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function renderSection(heading, fields) {
+    if (fields.length == 0) {
+        return "";
+    }
+    var out = '<h3 class="text-lg font-bold text-primary mt-6 mb-3">' + heading + '</h3>';
+    out += '<div class="grid grid-cols-1 gap-2">';
+    for (var i = 0; i < fields.length; i++) {
+        var f = fields[i];
+        var code = f.code == " " ? "(space)" : escapeHtml(f.code);
+        var desc = escapeHtml(f.description);
+        if (f.padded) {
+            desc += ' <span class="text-gray-400 italic">(value missing from input, assumed to be a stripped trailing space)</span>';
+        }
+        out += '<div class="flex"><span class="w-80 flex-shrink-0 font-semibold text-gray-700 mr-2">' + escapeHtml(f.title) + ':</span>' +
+               '<span class="font-mono text-gray-500 mr-2">' + code + '</span>' +
+               '<span class="' + (f.unknown ? 'text-red-600' : 'text-accent') + '">' + desc + '</span></div>';
+    }
+    out += '</div>';
+    return out;
+}
 
 function showVia(form, value) {
-    var text = value? value : form.via.value;
+    var text = value ? value : document.getElementById("via").value;
     if (value) {
         document.getElementById("via").value = value;
     }
-    var via = document.getElementById("viaoutput")
-    var output = "";
-    var txtonly = text.match(/([a-zA-Z: ]+)/);
-    text = txtonly[1];
-    if (text.length == 5) {
-        text = text + " "
-    }
-    if (text.length == 22) {
-        var arr = text.match(/([a-zA-Z ]+):([a-zA-Z ]+)/);
-        output = output + '<h3 class="text-lg font-bold text-primary mt-6 mb-3">Proxy request results:</h3>';
-        output = output + '<div class="grid grid-cols-1 gap-2">';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Request headers received from client:</span> <span class="text-accent">' + codes[1][arr[1][1]] + '</span></div>';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Result of Traffic Server cache lookup:</span> <span class="text-accent">' + codes[2][arr[1][3]] + '</span></div>';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Response from origin server:</span> <span class="text-accent">' + codes[3][arr[1][5]] + '</span></div>';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Result of document write-to-cache:</span> <span class="text-accent">' + codes[4][arr[1][7]] + '</span></div>';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Proxy operation result:</span> <span class="text-accent">' + codes[5][arr[1][9]] + '</span></div>';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Error codes (if any):</span> <span class="text-accent">' + codes[6][arr[1][11]] + '</span></div>';
-        output = output + '</div>';
-
-        output = output + '<h3 class="text-lg font-bold text-primary mt-6 mb-3">Operational results:</h3>';
-        output = output + '<div class="grid grid-cols-1 gap-2">';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Tunnel info:</span> <span class="text-accent">' + codes[7][arr[2][1]] + '</span></div>';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Cache-type and lookup result:</span> <span class="text-accent">' + codes[8][arr[2][3]] + " / " + codes[9][arr[2][4]] + '</span></div>';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Parent proxy connection status:</span> <span class="text-accent">' + codes[10][arr[2][6]] + '</span></div>';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Origin server connection status:</span> <span class="text-accent">' + codes[11][arr[2][8]] + '</span></div>';
-        output = output + '</div>';
-
-    } else if (text.length == 6) {
-        output = output + '<h3 class="text-lg font-bold text-primary mt-6 mb-3">Proxy request results:</h3>';
-        output = output + '<div class="grid grid-cols-1 gap-2">';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Result of Traffic Server cache lookup:</span> <span class="text-accent">' + codes[2][text[1]] + '</span></div>';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Response from origin server:</span> <span class="text-accent">' + codes[3][text[3]] + '</span></div>';
-        output = output + '<div class="flex"><span class="w-80 font-semibold text-gray-700">Result of document write-to-cache:</span> <span class="text-accent">' + codes[4][text[5]] + '</span></div>';
-        output = output + '</div>';
-
+    var result = ViaDecoder.decodeVia(text);
+    var output;
+    if (result.ok) {
+        var proxy = [], operational = [];
+        for (var i = 0; i < result.fields.length; i++) {
+            (result.fields[i].section == "proxy" ? proxy : operational).push(result.fields[i]);
+        }
+        output = renderSection("Proxy request results:", proxy) +
+                 renderSection("Operational results:", operational);
     } else {
-        output = '<p class="text-red-600 font-medium">Invalid VIA data, must be 22 or 6 characters long.</p>';
+        output = '<p class="text-red-600 font-medium">' + escapeHtml(result.error) + '</p>';
     }
-    via.innerHTML = output;
+    document.getElementById("viaoutput").innerHTML = output;
     if (form) {
-        window.location.hash = escape(text);
+        window.location.hash = encodeURIComponent(result.ok ? result.via : text);
     }
     return false;
 }
 
 function checkQuery() {
-    var url = location.href;
-    if (url.indexOf("#") > 0) {
-        var qs = url.substring(url.indexOf("#")+1).replace("%20", " ").replace("+", " ");
-        if (qs && qs.length > 5) {
+    var hash = window.location.hash;
+    if (hash && hash.length > 1) {
+        var qs = decodeURIComponent(hash.substring(1).replace(/\+/g, " "));
+        if (qs) {
             showVia(false, qs);
         }
     }
@@ -216,7 +138,7 @@ function checkQuery() {
                         <div class="flex gap-4">
                             <input type="text" name="via" id="via" 
                                 class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent text-lg font-mono"
-                                placeholder="e.g., uScMsSfWpSeN:u xCHuSxS">
+                                placeholder="e.g., uScMsSfWpSeN:t cCMp sS or a full Via header">
                             <button type="button" onclick="showVia(this.form)" 
                                 class="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-900 text-white font-semibold rounded-lg hover:shadow-lg transition-all">
                                 Parse Header
@@ -226,8 +148,9 @@ function checkQuery() {
                     
                     <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
                         <p class="text-sm text-blue-800">
-                            <strong>Note:</strong> This tool works with ATS 8.0.0 and above for extended via headers. 
-                            For earlier versions, use the command line tool <code class="bg-blue-100 px-1 rounded">traffic_via</code>.
+                            <strong>Note:</strong> Paste the via code or the entire Via header line. All Traffic Server
+                            via formats are accepted, including pre-8.0 headers and partial codes. The command line tool
+                            <code class="bg-blue-100 px-1 rounded">traffic_via</code> can also decode these.
                         </p>
                     </div>
                 </form>
