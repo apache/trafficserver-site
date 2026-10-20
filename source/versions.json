@@ -9,8 +9,8 @@
       "label_color": "green"
     },
     "v9": {
-      "version": "9.2.15",
-      "date": "July 28, 2026",
+      "version": "9.2.16",
+      "date": "October 20, 2026",
       "branch": "9.2.x",
       "description": "Long-term support with security fixes and critical updates",
       "label": "LTS",
@@ -18,6 +18,10 @@
     }
   },
   "news": [
+    {
+      "date": "October 20, 2026",
+      "test": "Apache Traffic Server <strong>v9.2.16</strong> security release."
+    },
     {
       "date": "August 17, 2026",
       "text": "Apache Traffic Server <strong>v10.2.0</strong> released!"
