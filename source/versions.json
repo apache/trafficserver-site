@@ -20,7 +20,7 @@
   "news": [
     {
       "date": "October 20, 2026",
-      "test": "Apache Traffic Server <strong>v9.2.16</strong> security release."
+      "text": "Apache Traffic Server <strong>v9.2.16</strong> security release."
     },
     {
       "date": "August 17, 2026",
