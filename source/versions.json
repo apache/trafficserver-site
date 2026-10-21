@@ -1,10 +1,10 @@
 {
   "versions": {
     "v10": {
-      "version": "10.2.0",
+      "version": "10.2.1",
       "date": "August 17, 2026",
       "branch": "10.2.x",
-      "description": "First release of 10.2.0",
+      "description": "Security fixes and updates for 10.2.1",
       "label": "Latest Stable",
       "label_color": "green"
     },
@@ -18,6 +18,10 @@
     }
   },
   "news": [
+    {
+      "date": "October 20, 2026",
+      "text": "Apache Traffic Server <strong>v10.2.1</strong> and <strong>v10.1.5</strong> security release."
+    },
     {
       "date": "October 20, 2026",
       "text": "Apache Traffic Server <strong>v9.2.16</strong> security release."
