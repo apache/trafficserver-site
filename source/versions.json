@@ -20,7 +20,7 @@
   "news": [
     {
       "date": "October 20, 2026",
-      "text": "Apache Traffic Server <strong>v10.2.1</strong> and <strong>v10.1.5</strong> security release."
+      "text": "Apache Traffic Server <strong>v10.2.1</strong> and <strong>v10.1.5</strong> security release. Read the <a href=\"security-2026-10.html\" class=\"text-accent underline\">October 2026 CVE release advisory</a>."
     },
     {
       "date": "October 20, 2026",
